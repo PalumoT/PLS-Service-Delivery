@@ -21,7 +21,7 @@
         </filter_condition>
         <is_rest>false</is_rest>
         <message/>
-        <name>NVS - Calculate Estimated End Date</name>
+        <name>NVS - Calculate Planned End Date</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -31,7 +31,7 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous) {
-	if(current.planned_start_date.nil() || current.planned_efforts_hours.nil()){
+	if(current.planned_start_date.nil() || current.estimated_efforts_hours.nil()){
 		current.planned_end_date = "";
 		return;
 	}
@@ -46,8 +46,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4d7644d64fc772003fb88e401310c7bb</sys_id>
-        <sys_mod_count>19</sys_mod_count>
-        <sys_name>NVS - Calculate Estimated End Date</sys_name>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>NVS - Calculate Planned End Date</sys_name>
         <sys_overrides/>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
         <sys_policy/>
@@ -55,7 +55,7 @@
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_script_4d7644d64fc772003fb88e401310c7bb</sys_update_name>
         <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-06-09 15:10:48</sys_updated_on>
+        <sys_updated_on>2017-06-09 15:25:30</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

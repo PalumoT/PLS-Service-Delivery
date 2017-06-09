@@ -12,7 +12,7 @@
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
-        <sys_security_acl display_value="x_novrp_pls_task.estimated_end_date">b921e45e4f4b72003fb88e401310c73b</sys_security_acl>
+        <sys_security_acl display_value="x_novrp_pls_task.planned_end_date">b921e45e4f4b72003fb88e401310c73b</sys_security_acl>
         <sys_update_name>sys_security_acl_role_fb41a85e4f4b72003fb88e401310c72f</sys_update_name>
         <sys_updated_by>paul.galmot</sys_updated_by>
         <sys_updated_on>2017-06-01 11:23:11</sys_updated_on>

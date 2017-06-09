@@ -25,19 +25,19 @@
 function generateResourcePlan(){
 	var answer = true;
 	
-	if(!g_form.getValue("estimated_start_date")){
+	if(!g_form.getValue("planned_start_date")){
 		answer = false;
-		g_form.showFieldMsg("estimated_start_date", "Mandatory field", 'error');
+		g_form.showFieldMsg("planned_start_date", "Mandatory field", 'error');
 	}
 	
-	if(!g_form.getValue("estimated_end_date")){
+	if(!g_form.getValue("planned_end_date")){
 		answer = false;
-		g_form.showFieldMsg("estimated_end_date", "Mandatory field", 'error');
+		g_form.showFieldMsg("planned_end_date", "Mandatory field", 'error');
 	}
 	
-	if(!g_form.getValue("estimated_efforts_hours")){
+	if(!g_form.getValue("planned_efforts_hours")){
 		answer = false;
-		g_form.showFieldMsg("estimated_efforts_hours", "Mandatory field", 'error');
+		g_form.showFieldMsg("planned_efforts_hours", "Mandatory field", 'error');
 	}
 	
 	if(!answer){
@@ -70,7 +70,7 @@ function runBusRuleCode(){
 	for(var i=0; i<milestones.length; i++){
 		var milestone = milestones[i];
 		var result = getTasks(deliverable, milestone);
-		var start = dateTimeHelper.calculateEndDate(current.estimated_start_date, total);
+		var start = dateTimeHelper.calculateEndDate(current.planned_start_date, total);
 		var end = dateTimeHelper.calculateEndDate(start, result.hours);
 		
 		message += "Milestone " + milestone + " => " + result.hours + "<br/>";
@@ -195,7 +195,7 @@ function getTasks(catalogItem, milestone){
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>76397e3e4f6ef600b734260f0310c717</sys_id>
-        <sys_mod_count>119</sys_mod_count>
+        <sys_mod_count>120</sys_mod_count>
         <sys_name>Generate Resource Plan</sys_name>
         <sys_overrides/>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
@@ -203,8 +203,8 @@ function getTasks(catalogItem, milestone){
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_ui_action_76397e3e4f6ef600b734260f0310c717</sys_update_name>
-        <sys_updated_by>paul.galmot</sys_updated_by>
-        <sys_updated_on>2017-06-08 11:16:05</sys_updated_on>
+        <sys_updated_by>GALMOPA1</sys_updated_by>
+        <sys_updated_on>2017-06-09 15:19:40</sys_updated_on>
         <table>x_novrp_pls_service_request</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

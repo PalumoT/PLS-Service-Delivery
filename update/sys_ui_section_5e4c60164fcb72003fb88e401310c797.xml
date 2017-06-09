@@ -4,168 +4,168 @@
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.begin_split</element>
             <position>0</position>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-06-02 10:45:43</sys_created_on>
-            <sys_id>e46229264f4bb20062b50fbf0310c740</sys_id>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-06-09 15:26:49</sys_created_on>
+            <sys_id>aad5aab04f5bbe003fb88e401310c77d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Planning" display_value="Planning" name="x_novrp_pls_service_request" sys_domain="global" view="Default view">5e4c60164fcb72003fb88e401310c797</sys_ui_section>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-02 10:45:43</sys_updated_on>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-06-09 15:26:49</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>estimated_start_date</element>
+            <element>planned_start_date</element>
             <position>1</position>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-06-02 10:45:43</sys_created_on>
-            <sys_id>686229264f4bb20062b50fbf0310c740</sys_id>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-06-09 15:26:49</sys_created_on>
+            <sys_id>2ed5aab04f5bbe003fb88e401310c77d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Planning" display_value="Planning" name="x_novrp_pls_service_request" sys_domain="global" view="Default view">5e4c60164fcb72003fb88e401310c797</sys_ui_section>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-02 10:45:43</sys_updated_on>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-06-09 15:26:49</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>estimated_efforts_hours</element>
             <position>2</position>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-06-02 10:45:43</sys_created_on>
-            <sys_id>e86229264f4bb20062b50fbf0310c740</sys_id>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-06-09 15:26:49</sys_created_on>
+            <sys_id>aed5aab04f5bbe003fb88e401310c77d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Planning" display_value="Planning" name="x_novrp_pls_service_request" sys_domain="global" view="Default view">5e4c60164fcb72003fb88e401310c797</sys_ui_section>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-02 10:45:43</sys_updated_on>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-06-09 15:26:49</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>estimated_end_date</element>
+            <element>planned_end_date</element>
             <position>3</position>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-06-02 10:45:43</sys_created_on>
-            <sys_id>6c6229264f4bb20062b50fbf0310c740</sys_id>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-06-09 15:26:49</sys_created_on>
+            <sys_id>22d5aab04f5bbe003fb88e401310c77e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Planning" display_value="Planning" name="x_novrp_pls_service_request" sys_domain="global" view="Default view">5e4c60164fcb72003fb88e401310c797</sys_ui_section>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-02 10:45:43</sys_updated_on>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-06-09 15:26:49</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>estimated_cost_dollars</element>
             <position>4</position>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-06-02 10:45:43</sys_created_on>
-            <sys_id>ec6229264f4bb20062b50fbf0310c740</sys_id>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-06-09 15:26:49</sys_created_on>
+            <sys_id>a2d5aab04f5bbe003fb88e401310c77e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Planning" display_value="Planning" name="x_novrp_pls_service_request" sys_domain="global" view="Default view">5e4c60164fcb72003fb88e401310c797</sys_ui_section>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-02 10:45:43</sys_updated_on>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-06-09 15:26:49</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>resource_plan_cost</element>
             <position>5</position>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-06-02 10:45:43</sys_created_on>
-            <sys_id>606229264f4bb20062b50fbf0310c741</sys_id>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-06-09 15:26:49</sys_created_on>
+            <sys_id>26d5aab04f5bbe003fb88e401310c77e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Planning" display_value="Planning" name="x_novrp_pls_service_request" sys_domain="global" view="Default view">5e4c60164fcb72003fb88e401310c797</sys_ui_section>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-02 10:45:43</sys_updated_on>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-06-09 15:26:49</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
             <position>6</position>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-06-02 10:45:43</sys_created_on>
-            <sys_id>e06229264f4bb20062b50fbf0310c741</sys_id>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-06-09 15:26:49</sys_created_on>
+            <sys_id>a6d5aab04f5bbe003fb88e401310c77e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Planning" display_value="Planning" name="x_novrp_pls_service_request" sys_domain="global" view="Default view">5e4c60164fcb72003fb88e401310c797</sys_ui_section>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-02 10:45:43</sys_updated_on>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-06-09 15:26:49</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>actual_start_date</element>
             <position>7</position>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-06-02 10:45:43</sys_created_on>
-            <sys_id>646229264f4bb20062b50fbf0310c741</sys_id>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-06-09 15:26:49</sys_created_on>
+            <sys_id>2ad5aab04f5bbe003fb88e401310c77e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Planning" display_value="Planning" name="x_novrp_pls_service_request" sys_domain="global" view="Default view">5e4c60164fcb72003fb88e401310c797</sys_ui_section>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-02 10:45:43</sys_updated_on>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-06-09 15:26:49</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>actual_efforts_hours</element>
             <position>8</position>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-06-02 10:45:43</sys_created_on>
-            <sys_id>e46229264f4bb20062b50fbf0310c741</sys_id>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-06-09 15:26:49</sys_created_on>
+            <sys_id>aad5aab04f5bbe003fb88e401310c77e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Planning" display_value="Planning" name="x_novrp_pls_service_request" sys_domain="global" view="Default view">5e4c60164fcb72003fb88e401310c797</sys_ui_section>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-02 10:45:43</sys_updated_on>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-06-09 15:26:49</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>actual_end_date</element>
             <position>9</position>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-06-02 10:45:43</sys_created_on>
-            <sys_id>686229264f4bb20062b50fbf0310c741</sys_id>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-06-09 15:26:49</sys_created_on>
+            <sys_id>2ed5aab04f5bbe003fb88e401310c77e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Planning" display_value="Planning" name="x_novrp_pls_service_request" sys_domain="global" view="Default view">5e4c60164fcb72003fb88e401310c797</sys_ui_section>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-02 10:45:43</sys_updated_on>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-06-09 15:26:49</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>actual_cost</element>
             <position>10</position>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-06-02 10:45:43</sys_created_on>
-            <sys_id>e86229264f4bb20062b50fbf0310c741</sys_id>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-06-09 15:26:49</sys_created_on>
+            <sys_id>aed5aab04f5bbe003fb88e401310c77e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Planning" display_value="Planning" name="x_novrp_pls_service_request" sys_domain="global" view="Default view">5e4c60164fcb72003fb88e401310c797</sys_ui_section>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-02 10:45:43</sys_updated_on>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-06-09 15:26:49</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.end_split</element>
             <position>11</position>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-06-02 10:45:43</sys_created_on>
-            <sys_id>6c6229264f4bb20062b50fbf0310c741</sys_id>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-06-09 15:26:49</sys_created_on>
+            <sys_id>22d5aab04f5bbe003fb88e401310c77f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Planning" display_value="Planning" name="x_novrp_pls_service_request" sys_domain="global" view="Default view">5e4c60164fcb72003fb88e401310c797</sys_ui_section>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-02 10:45:43</sys_updated_on>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-06-09 15:26:49</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>

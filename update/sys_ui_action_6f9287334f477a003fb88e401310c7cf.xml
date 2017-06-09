@@ -52,18 +52,18 @@ function generateTasks(request){
 	}
 	
 	var currentMilestone = "";
-	var start = request.estimated_start_date;
+	var start = request.planned_start_date;
 	
 	while(glideTask.next()){
 		var glideServiceRequestTask = createTask(request, glideTask, start);
-		start =  glideServiceRequestTask.estimated_end_date;
+		start =  glideServiceRequestTask.planned_end_date;
 	}
 }
 
 function createTask(top_task, template, start){
 	var dateTimeHelper = new DateTimeHelper();
 	var end = dateTimeHelper.calculateEndDate(
-		top_task.estimated_start_date,
+		top_task.planned_start_date,
 		template.getValue("estimated_efforts_hours"));
 													
 	var glideServiceRequestTask = new GlideRecord("x_novrp_pls_sr_task");
@@ -71,8 +71,8 @@ function createTask(top_task, template, start){
 	glideServiceRequestTask.top_task = top_task.getUniqueValue();
 	glideServiceRequestTask.milestone = template.getValue("milestone");
 	glideServiceRequestTask.order = template.getValue("order");
-	glideServiceRequestTask.estimated_start_date = start;
-	glideServiceRequestTask.estimated_end_date = end;
+	glideServiceRequestTask.planned_start_date = start;
+	glideServiceRequestTask.planned_end_date = end;
 	glideServiceRequestTask.estimated_efforts_hours = template.getValue("estimated_efforts_hours");
 	glideServiceRequestTask.short_description = template.getValue("description");
 	glideServiceRequestTask.assignment_group = template.getValue("assignment_group");
@@ -91,7 +91,7 @@ function createTask(top_task, template, start){
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>6f9287334f477a003fb88e401310c7cf</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>Generate Tasks</sys_name>
         <sys_overrides/>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
@@ -99,8 +99,8 @@ function createTask(top_task, template, start){
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_ui_action_6f9287334f477a003fb88e401310c7cf</sys_update_name>
-        <sys_updated_by>paul.galmot</sys_updated_by>
-        <sys_updated_on>2017-06-08 11:17:48</sys_updated_on>
+        <sys_updated_by>GALMOPA1</sys_updated_by>
+        <sys_updated_on>2017-06-09 15:20:26</sys_updated_on>
         <table>x_novrp_pls_service_request</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
