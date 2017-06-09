@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="x_novrp_pls_task" label="Service Request" max_length="40" name="x_novrp_pls_service_request" sizeclass="1" type="collection">
+        <element label="Subservice" max_length="32" name="catalog_item" reference="x_novrp_pls_catalog_item" reference_qual="active=true^sys_class_name=x_novrp_pls_subservice^EQ" reference_qual_condition="active=true^sys_class_name=x_novrp_pls_subservice^EQ" type="reference"/>
+        <element label="Practice" max_length="32" name="practice" reference="x_novrp_pls_practice" type="reference"/>
+        <element label="Service" max_length="32" name="service" reference="x_novrp_pls_service" type="reference"/>
+        <element label="Service Group" max_length="32" name="service_group" reference="x_novrp_pls_service_group" type="reference"/>
+    </element>
+</database>

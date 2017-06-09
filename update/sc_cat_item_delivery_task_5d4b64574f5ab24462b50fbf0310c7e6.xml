@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sc_cat_item_delivery_task">
+    <sc_cat_item_delivery_task action="INSERT_OR_UPDATE">
+        <assigned_to/>
+        <condition/>
+        <condition_script/>
+        <delivery_plan/>
+        <delivery_time>1970-01-01 10:00:00</delivery_time>
+        <generation_script/>
+        <group display_value="Amsterdam" name="Amsterdam">91c71af70f4031000350bd5be1050efa</group>
+        <instructions/>
+        <name>Analysis</name>
+        <order>100</order>
+        <short_description>Start analysis</short_description>
+        <sla/>
+        <sys_class_name>sc_cat_item_delivery_task</sys_class_name>
+        <sys_created_by>paul.galmot</sys_created_by>
+        <sys_created_on>2017-04-28 07:53:39</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>5d4b64574f5ab24462b50fbf0310c7e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Analysis</sys_name>
+        <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
+        <sys_update_name>sc_cat_item_delivery_task_5d4b64574f5ab24462b50fbf0310c7e6</sys_update_name>
+        <sys_updated_by>paul.galmot</sys_updated_by>
+        <sys_updated_on>2017-04-28 07:53:39</sys_updated_on>
+        <work_notes/>
+    </sc_cat_item_delivery_task>
+</record_update>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="sys_user_group" version="2" view="resource_manager">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>name</element>
+            <list_id display_value="sys_user_group" element="NULL" name="sys_user_group" parent="NULL" relationship="NULL" sys_domain="global" view="9a8f99f2eb01010060bbafcef106fe77">fd109dd09301020064f572edb67ffb03</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2015-06-30 11:00:26</sys_created_on>
+            <sys_id>b1109dd09301020064f572edb67ffb04</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2015-06-30 11:00:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>description</element>
+            <list_id display_value="sys_user_group" element="NULL" name="sys_user_group" parent="NULL" relationship="NULL" sys_domain="global" view="9a8f99f2eb01010060bbafcef106fe77">fd109dd09301020064f572edb67ffb03</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2015-06-30 11:00:26</sys_created_on>
+            <sys_id>f1109dd09301020064f572edb67ffb04</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2015-06-30 11:00:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>average_daily_fte</element>
+            <list_id display_value="sys_user_group" element="NULL" name="sys_user_group" parent="NULL" relationship="NULL" sys_domain="global" view="9a8f99f2eb01010060bbafcef106fe77">fd109dd09301020064f572edb67ffb03</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2015-06-30 11:00:26</sys_created_on>
+            <sys_id>35109dd09301020064f572edb67ffb04</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2015-06-30 11:00:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>active</element>
+            <list_id display_value="sys_user_group" element="NULL" name="sys_user_group" parent="NULL" relationship="NULL" sys_domain="global" view="9a8f99f2eb01010060bbafcef106fe77">fd109dd09301020064f572edb67ffb03</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2015-06-30 11:00:26</sys_created_on>
+            <sys_id>75109dd09301020064f572edb67ffb04</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2015-06-30 11:00:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>manager</element>
+            <list_id display_value="sys_user_group" element="NULL" name="sys_user_group" parent="NULL" relationship="NULL" sys_domain="global" view="9a8f99f2eb01010060bbafcef106fe77">fd109dd09301020064f572edb67ffb03</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2015-06-30 11:00:26</sys_created_on>
+            <sys_id>b5109dd09301020064f572edb67ffb04</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2015-06-30 11:00:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>parent</element>
+            <list_id display_value="sys_user_group" element="NULL" name="sys_user_group" parent="NULL" relationship="NULL" sys_domain="global" view="9a8f99f2eb01010060bbafcef106fe77">fd109dd09301020064f572edb67ffb03</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2015-06-30 11:00:26</sys_created_on>
+            <sys_id>f5109dd09301020064f572edb67ffb04</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2015-06-30 11:00:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_updated_on</element>
+            <list_id display_value="sys_user_group" element="NULL" name="sys_user_group" parent="NULL" relationship="NULL" sys_domain="global" view="9a8f99f2eb01010060bbafcef106fe77">fd109dd09301020064f572edb67ffb03</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2015-06-30 11:00:26</sys_created_on>
+            <sys_id>39109dd09301020064f572edb67ffb04</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2015-06-30 11:00:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>sys_user_group</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-06-07 09:40:02</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>17438b084fdbba003fb88e401310c7b1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sys_user_group</sys_name>
+            <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
+            <sys_update_name>sys_ui_list_sys_user_group_resource_manager</sys_update_name>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-06-07 09:40:02</sys_updated_on>
+            <sys_user display_value="Paul Galmot">7b8c0fd34feaea40b734260f0310c71e</sys_user>
+            <view display_value="Resource Manager" name="resource_manager">9a8f99f2eb01010060bbafcef106fe77</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

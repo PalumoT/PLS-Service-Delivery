@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>generate_activities</action_name>
+        <active>true</active>
+        <client>true</client>
+        <comments/>
+        <condition/>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <hint/>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <name>Generate Tasks</name>
+        <onclick>generateActivities()</onclick>
+        <order>100</order>
+        <script><![CDATA[//Client-side 'onclick' function
+function generateActivities(){
+	
+	//Call the UI Action and skip the 'onclick' function
+	gsftSubmit(null, g_form.getFormElement(), 'generate_activities'); //MUST call the 'Action name' set in this UI Action
+}
+
+//Code that runs without 'onclick'
+//Ensure call to server-side function with no browser errors
+if(typeof window == 'undefined'){
+	runBusRuleCode();
+}
+
+//Server-side function
+function runBusRuleCode(){
+	generateTasks(current);
+	action.setRedirectURL(current);
+}
+
+function generateTasks(request){
+	var dateTimeHelper = new DateTimeHelper();
+	var glideTask = new GlideRecord("x_novrp_pls_task_configuration");
+	glideTask.addQuery("catalog_item", request.getValue("catalog_item"));
+	glideTask.orderBy("order");
+	glideTask.query();
+
+	if(!glideTask.hasNext()){
+		gs.addInfoMessage("No task configured for the subservice " + request.getDisplayValue("subservice"));
+	}
+	
+	var currentMilestone = "";
+	var start = request.estimated_start_date;
+	
+	while(glideTask.next()){
+		var glideServiceRequestTask = createTask(request, glideTask, start);
+		start =  glideServiceRequestTask.estimated_end_date;
+	}
+}
+
+function createTask(top_task, template, start){
+	var dateTimeHelper = new DateTimeHelper();
+	var end = dateTimeHelper.calculateEndDate(
+		top_task.estimated_start_date,
+		template.getValue("estimated_efforts_hours"));
+													
+	var glideServiceRequestTask = new GlideRecord("x_novrp_pls_sr_task");
+	glideServiceRequestTask.newRecord();
+	glideServiceRequestTask.top_task = top_task.getUniqueValue();
+	glideServiceRequestTask.milestone = template.getValue("milestone");
+	glideServiceRequestTask.order = template.getValue("order");
+	glideServiceRequestTask.estimated_start_date = start;
+	glideServiceRequestTask.estimated_end_date = end;
+	glideServiceRequestTask.estimated_efforts_hours = template.getValue("estimated_efforts_hours");
+	glideServiceRequestTask.short_description = template.getValue("description");
+	glideServiceRequestTask.assignment_group = template.getValue("assignment_group");
+	glideServiceRequestTask.insert();
+
+	return glideServiceRequestTask;
+}	]]></script>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>paul.galmot</sys_created_by>
+        <sys_created_on>2017-06-06 15:00:42</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6f9287334f477a003fb88e401310c7cf</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Generate Tasks</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
+        <sys_update_name>sys_ui_action_6f9287334f477a003fb88e401310c7cf</sys_update_name>
+        <sys_updated_by>paul.galmot</sys_updated_by>
+        <sys_updated_on>2017-06-08 11:17:48</sys_updated_on>
+        <table>x_novrp_pls_service_request</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

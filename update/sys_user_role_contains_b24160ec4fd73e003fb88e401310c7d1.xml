@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_user_role_contains">
+    <sys_user_role_contains action="INSERT_OR_UPDATE">
+        <contains display_value="x_novrp_pls.catalog_item_price_user" name="x_novrp_pls.catalog_item_price_user">32d86afb4f837a003fb88e401310c713</contains>
+        <role display_value="x_novrp_pls.admin" name="x_novrp_pls.admin">27849f8c4f1fba003fb88e401310c7f9</role>
+        <sys_class_name>sys_user_role_contains</sys_class_name>
+        <sys_created_by>paul.galmot</sys_created_by>
+        <sys_created_on>2017-06-08 11:09:11</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>b24160ec4fd73e003fb88e401310c7d1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_novrp_pls.catalog_item_price_user.x_novrp_pls.admin</sys_name>
+        <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
+        <sys_update_name>sys_user_role_contains_b24160ec4fd73e003fb88e401310c7d1</sys_update_name>
+        <sys_updated_by>paul.galmot</sys_updated_by>
+        <sys_updated_on>2017-06-08 11:09:11</sys_updated_on>
+    </sys_user_role_contains>
+</record_update>

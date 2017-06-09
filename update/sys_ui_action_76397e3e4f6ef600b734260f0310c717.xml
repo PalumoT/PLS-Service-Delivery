@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>generate_resource_plan</action_name>
+        <active>true</active>
+        <client>true</client>
+        <comments/>
+        <condition>!current.catalog_item.nil() &amp;&amp; current.state == 1;</condition>
+        <form_action>true</form_action>
+        <form_button>false</form_button>
+        <form_context_menu>false</form_context_menu>
+        <form_link>true</form_link>
+        <hint/>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <name>Generate Resource Plan</name>
+        <onclick>generateResourcePlan()</onclick>
+        <order>100</order>
+        <script><![CDATA[//Client-side 'onclick' function
+function generateResourcePlan(){
+	var answer = true;
+	
+	if(!g_form.getValue("estimated_start_date")){
+		answer = false;
+		g_form.showFieldMsg("estimated_start_date", "Mandatory field", 'error');
+	}
+	
+	if(!g_form.getValue("estimated_end_date")){
+		answer = false;
+		g_form.showFieldMsg("estimated_end_date", "Mandatory field", 'error');
+	}
+	
+	if(!g_form.getValue("estimated_efforts_hours")){
+		answer = false;
+		g_form.showFieldMsg("estimated_efforts_hours", "Mandatory field", 'error');
+	}
+	
+	if(!answer){
+		return false;
+	}
+	
+	//Call the UI Action and skip the 'onclick' function
+	gsftSubmit(null, g_form.getFormElement(), 'generate_resource_plan'); //MUST call the 'Action name' set in this UI Action
+}
+
+//Code that runs without 'onclick'
+//Ensure call to server-side function with no browser errors
+if(typeof window == 'undefined'){
+	runBusRuleCode();
+}
+
+//Server-side function
+function runBusRuleCode(){
+	var cost = 0;
+	var deliverable = current.catalog_item;
+	var milestones = getMilestones(deliverable);
+	var message = "";
+	var total = 0;
+	var dateTimeHelper = new DateTimeHelper();
+	
+	if(milestones.length == 0){
+		gs.addInfoMessage("No milestone defined for the selected subservice");
+	}
+	
+	for(var i=0; i<milestones.length; i++){
+		var milestone = milestones[i];
+		var result = getTasks(deliverable, milestone);
+		var start = dateTimeHelper.calculateEndDate(current.estimated_start_date, total);
+		var end = dateTimeHelper.calculateEndDate(start, result.hours);
+		
+		message += "Milestone " + milestone + " => " + result.hours + "<br/>";
+		message += "Period " + start + " => " + end + "<br/>";
+		message += "Total hours " + total + "<br/>";
+
+		for(var j=0; j<result.tasks.length; j++){
+			var ressource = result.tasks[j];
+			
+			//message += ressource.group.name + " => " + ressource.hours + "<br/>";
+			var plan = createResourcePlan(milestone, ressource, start, end);
+			cost += parseFloat(plan.planned_cost.getReferenceValue());
+		}
+		
+		total += result.hours;
+	}
+	
+	gs.info("Cost " + cost);
+	current.resource_plan_cost = cost;
+	current.estimated_efforts_hours = total;
+	current.update();
+	
+	//gs.addInfoMessage(message);
+	action.setRedirectURL(current);
+}
+
+function createResourcePlan(milestone, ressourceGroup, start, end){
+	end = new GlideDateTime(end);
+	start = new GlideDateTime(start);
+	
+	if(end.compareTo(start) == -1){
+		gs.addInfoMessage("End date " + end +  " is greater than start date " +
+						  start +  " for milestone " + milestone);
+		return;
+	}
+	
+	var glideResourcePlan = new GlideRecord("x_novrp_pls_resource_plan");
+	glideResourcePlan.addQuery("group_resource", ressourceGroup.group.sys_id);
+	glideResourcePlan.addQuery("milestone", milestone);
+	glideResourcePlan.addQuery("task", current.getUniqueValue());
+	glideResourcePlan.query();
+	
+	if(glideResourcePlan.next()){		
+		return glideResourcePlan;
+	}
+	
+	glideResourcePlan.newRecord();
+	glideResourcePlan.milestone = milestone;
+	glideResourcePlan.group_resource = ressourceGroup.group.sys_id;
+	glideResourcePlan.planned_hours = ressourceGroup.hours;
+	glideResourcePlan.members_preference = 3;
+	glideResourcePlan.start_date = start;
+	glideResourcePlan.end_date = end;
+	glideResourcePlan.task = current.getUniqueValue();
+	glideResourcePlan.insert();
+	
+	return glideResourcePlan;
+}
+
+function getMilestones(deliverable){
+	var milestones = [];
+	var glideMilestone = new GlideRecord("x_novrp_pls_catalog_item_task");
+	glideMilestone.addQuery("catalog_item", deliverable);
+	glideMilestone.orderBy("order");
+	glideMilestone.query();
+	
+	if(!glideMilestone.hasNext()){
+		return milestones;
+	}
+	
+	var total = 0;
+	
+	while(glideMilestone.next()){
+		var milestone = glideMilestone.getValue("milestone");
+		if(milestones.indexOf(milestone) === -1){
+			milestones.push(milestone);
+		}
+	}
+	
+	return milestones;
+}
+
+function getTasks(catalogItem, milestone){
+	var tasks = [];
+	var total = 0;
+	
+	var glideDeliveryTask = new GlideAggregate("x_novrp_pls_catalog_item_task");
+	glideDeliveryTask.addQuery("catalog_item", catalogItem);
+	glideDeliveryTask.addQuery("milestone", milestone);
+	glideDeliveryTask.addAggregate("SUM", "estimated_efforts_hours");
+	glideDeliveryTask.addAggregate("SUM", "order");
+	glideDeliveryTask.orderByAggregate("SUM","order");
+	glideDeliveryTask.groupBy("assignment_group");
+	glideDeliveryTask.query();
+
+	while(glideDeliveryTask.next()){
+		if(glideDeliveryTask.getAggregate("SUM", "estimated_efforts_hours")){
+			tasks.unshift({
+				"group":
+				{
+					"sys_id": glideDeliveryTask.getValue("assignment_group"),
+					"name": glideDeliveryTask.getDisplayValue("assignment_group")
+				},
+				"hours": glideDeliveryTask.getAggregate("SUM", "estimated_efforts_hours"),
+				"aggregatedHours": total
+			});
+
+			total += parseFloat(glideDeliveryTask.getAggregate("SUM", "estimated_efforts_hours"));	
+		}
+	}
+	
+	return {"tasks": tasks, "hours": total};
+}]]></script>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>paul.galmot</sys_created_by>
+        <sys_created_on>2017-05-09 15:12:14</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>76397e3e4f6ef600b734260f0310c717</sys_id>
+        <sys_mod_count>119</sys_mod_count>
+        <sys_name>Generate Resource Plan</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
+        <sys_update_name>sys_ui_action_76397e3e4f6ef600b734260f0310c717</sys_update_name>
+        <sys_updated_by>paul.galmot</sys_updated_by>
+        <sys_updated_on>2017-06-08 11:16:05</sys_updated_on>
+        <table>x_novrp_pls_service_request</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

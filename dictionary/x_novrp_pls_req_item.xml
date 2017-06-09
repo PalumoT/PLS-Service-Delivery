@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element max_length="40" name="x_novrp_pls_req_item" sizeclass="3" type="collection">
+        <element label="Deliverable" mandatory="true" max_length="32" name="deliverable" reference="x_novrp_pls_catalog_item" reference_qual="javascript: new RequestedItemHelper().filterDeliverables(current.demand.services);" type="reference" use_reference_qualifier="advanced"/>
+        <element default="0" label="Estimated efforts (hours)" max_length="20" name="estimated_efforts_hours" type="decimal"/>
+        <element label="Estimated end date" max_length="40" name="estimated_end_date" type="glide_date"/>
+        <element label="Estimated price" max_length="20" name="estimated_price" read_only="true" type="price"/>
+        <element label="Estimated start date" max_length="40" name="estimated_start_date" type="glide_date"/>
+        <element label="Practice" max_length="32" name="practice" reference="x_novrp_pls_practice" type="reference"/>
+        <element attributes="tree_picker=true" label="Service" max_length="32" name="service" reference="x_novrp_pls_service" reference_qual="javascript:&quot;sys_id=&quot; + current.demand.services;" type="reference" use_reference_qualifier="advanced"/>
+        <element label="Service Group" max_length="32" name="service_group" reference="x_novrp_pls_service_group" type="reference"/>
+        <element attributes="icons=WorkflowIconsSCR" label="Stage" max_length="80" name="stage" read_only="true" type="workflow"/>
+    </element>
+</database>

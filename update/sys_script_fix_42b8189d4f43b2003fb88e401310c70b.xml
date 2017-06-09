@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <before>false</before>
+        <description/>
+        <flush_cache>false</flush_cache>
+        <name>Generate Resource plan</name>
+        <run_once>true</run_once>
+        <script><![CDATA[var aggregate = getAggregatedValue();
+gs.info(aggregate.estimated_cost_dollars);
+
+function getAggregatedValue(){
+	var aggregate = {
+		estimated_efforts_hours: 0,
+		actual_efforts_hours: 0,
+		resource_plan_cost: 0,
+		estimated_cost_dollars: 0
+	};
+
+	var glideTask = new GlideAggregate("x_novrp_pls_task");
+	glideTask.addAggregate("SUM", "estimated_efforts_hours");
+	glideTask.addAggregate("SUM", "actual_efforts_hours");
+	glideTask.addAggregate("SUM", "resource_plan_cost");
+	glideTask.addAggregate("SUM", "estimated_cost_dollars");
+	glideTask.setGroup(false);
+	glideTask.query();
+
+	if(glideTask.next()){
+		aggregate.estimated_efforts_hours = glideTask.getAggregate("SUM", "estimated_efforts_hours");
+		aggregate.actual_efforts_hours = glideTask.getAggregate("SUM", "actual_efforts_hours");
+		aggregate.resource_plan_cost = glideTask.getAggregate("SUM", "resource_plan_cost");
+		aggregate.estimated_cost_dollars = glideTask.getAggregate("SUM", "estimated_cost_dollars");
+	}
+
+	return aggregate;
+}
+]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>paul.galmot</sys_created_by>
+        <sys_created_on>2017-05-29 08:11:28</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>42b8189d4f43b2003fb88e401310c70b</sys_id>
+        <sys_mod_count>55</sys_mod_count>
+        <sys_name>Generate Resource plan</sys_name>
+        <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
+        <sys_update_name>sys_script_fix_42b8189d4f43b2003fb88e401310c70b</sys_update_name>
+        <sys_updated_by>GALMOPA1</sys_updated_by>
+        <sys_updated_on>2017-06-09 14:54:09</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+</record_update>

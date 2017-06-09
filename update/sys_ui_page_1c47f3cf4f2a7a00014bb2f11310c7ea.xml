@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script/>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_novrp_pls_multiple_insert.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	<g2:evaluate var="jvar_sysId" expression="RP.getParameterValue('sysparm_sysId')" />
+	<g2:evaluate var="jvar_tableName" expression="RP.getParameterValue('sysparm_tableName')" />
+	
+	<g:ui_form class="form-inline">
+		<input type="hidden" id="task_table" name="task_table" value="${sysparm_tableName}" class="form-control"/>
+		<input type="hidden" id="task_sys_id" name="task_sys_id" value="${sysparm_sysId}" class="form-control"/>
+
+		<div class="form-group">
+			<label class="col-md-9">${gs.getMessage('How many time do you want to copy the current record ?')}</label>
+			<div class="col-md-3">
+				<input type="text" id="counter" name="counter" value="${sysparm_counter}" class="form-control text-center"/>	
+			</div>
+		</div>
+		<footer class="modal-footer">
+			<span id = 'info_message' ></span>
+			<button id="copy_button" class="btn btn-primary" type="submit">
+				${gs.getMessage('Copy Record')}
+			</button>
+		</footer>
+	</g:ui_form>
+</j:jelly>]]></html>
+        <name>multiple_insert</name>
+        <processing_script><![CDATA[copyRecord(task_table, task_sys_id);
+response.sendRedirect("x_novrp_pls_service_request_list.do");
+
+function copyRecord(table, sys_id){
+	gs.info(table);
+	if(counter < 1){
+		gs.addErrorMessage("Please insert a value greater than 0");
+		return;
+	}
+	
+	var info = "";
+	var glideTask = new GlideRecord(table);
+	
+	if(!glideTask.get(sys_id)){
+		gs.addErrorMessage("The current record does not exist anymore");
+	}
+	
+	var fields = getFields(table);
+	for(var i=0; i<counter; i++){
+		var glideCopiedTask = new GlideRecord(table);
+		glideCopiedTask.newRecord();
+		
+		for(var j=0; j<fields.length; j++){
+			var field = fields[j];
+			glideCopiedTask.setValue(field, glideTask.getValue(field));
+		}
+		
+		var sysId = glideCopiedTask.insert();
+		info += "<a href='" + glideCopiedTask.getLink() + 
+			"'>" + glideCopiedTask.getValue("number") + "</a>, ";
+	}
+	
+	gs.addInfoMessage("New record inserted: " + info);
+}
+
+function getFields(table){
+	var arrayUtil = [];
+	var record = new GlideRecord("sys_dictionary");
+	record.addEncodedQuery("name=" + table + "^internal_type!=collection^ORinternal_type=NULL^element!=sys_id");
+	record.query();
+	
+	while(record.next()){
+		arrayUtil.push(record.getValue("element"));
+	}
+	
+	return arrayUtil;
+}]]></processing_script>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>paul.galmot</sys_created_by>
+        <sys_created_on>2017-05-10 14:27:38</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>1c47f3cf4f2a7a00014bb2f11310c7ea</sys_id>
+        <sys_mod_count>37</sys_mod_count>
+        <sys_name>multiple_insert</sys_name>
+        <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
+        <sys_update_name>sys_ui_page_1c47f3cf4f2a7a00014bb2f11310c7ea</sys_update_name>
+        <sys_updated_by>paul.galmot</sys_updated_by>
+        <sys_updated_on>2017-06-02 12:10:18</sys_updated_on>
+    </sys_ui_page>
+</record_update>

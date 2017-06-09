@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="" section_id="6d868f314f43760062b50fbf0310c70c" sys_domain="global" table="x_novrp_pls_business_unit" version="3" view="pre_sla">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-05-31 10:08:53</sys_created_on>
+            <sys_id>65c64b714f43760062b50fbf0310c7be</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_business_unit" sys_domain="global" view="0403c2be4f6af600b734260f0310c721">6d868f314f43760062b50fbf0310c70c</sys_ui_section>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-05-31 10:08:53</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>name</element>
+            <position>1</position>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-05-31 10:08:53</sys_created_on>
+            <sys_id>e5c64b714f43760062b50fbf0310c7be</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_business_unit" sys_domain="global" view="0403c2be4f6af600b734260f0310c721">6d868f314f43760062b50fbf0310c70c</sys_ui_section>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-05-31 10:08:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>2</position>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-05-31 10:08:53</sys_created_on>
+            <sys_id>69c64b714f43760062b50fbf0310c7be</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_business_unit" sys_domain="global" view="0403c2be4f6af600b734260f0310c721">6d868f314f43760062b50fbf0310c70c</sys_ui_section>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-05-31 10:08:53</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>division</element>
+            <position>3</position>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-05-31 10:08:53</sys_created_on>
+            <sys_id>e9c64b714f43760062b50fbf0310c7be</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_business_unit" sys_domain="global" view="0403c2be4f6af600b734260f0310c721">6d868f314f43760062b50fbf0310c70c</sys_ui_section>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-05-31 10:08:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>4</position>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-05-31 10:08:53</sys_created_on>
+            <sys_id>6dc64b714f43760062b50fbf0310c7be</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_business_unit" sys_domain="global" view="0403c2be4f6af600b734260f0310c721">6d868f314f43760062b50fbf0310c70c</sys_ui_section>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-05-31 10:08:53</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>active</element>
+            <position>5</position>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-05-31 10:08:53</sys_created_on>
+            <sys_id>edc64b714f43760062b50fbf0310c7be</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_business_unit" sys_domain="global" view="0403c2be4f6af600b734260f0310c721">6d868f314f43760062b50fbf0310c70c</sys_ui_section>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-05-31 10:08:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_novrp_pls_business_unit</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-05-31 10:07:47</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6d868f314f43760062b50fbf0310c70c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_novrp_pls_business_unit</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
+            <sys_update_name>sys_ui_section_6d868f314f43760062b50fbf0310c70c</sys_update_name>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-05-31 10:07:47</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Pre SLA" name="pre_sla">0403c2be4f6af600b734260f0310c721</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

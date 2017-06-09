@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Region Country" max_length="40" name="x_novrp_pls_region_country" type="collection">
+        <element label="Country" max_length="32" name="country" reference="x_novrp_pls_country" type="reference"/>
+        <element label="Region" max_length="32" name="region" reference="x_novrp_pls_region" type="reference"/>
+        <index name="index">
+            <element name="country"/>
+        </index>
+        <index name="index2">
+            <element name="region"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="task" label="Task" max_length="40" name="x_novrp_pls_task" sizeclass="3" type="collection">
+        <element default="0" label="Actual Cost" max_length="20" name="actual_cost" type="decimal"/>
+        <element default="0" label="Actual Efforts (Hours)" max_length="20" name="actual_efforts_hours" type="decimal"/>
+        <element label="Actual End Date" max_length="40" name="actual_end_date" type="glide_date"/>
+        <element label="Actual Start Date" max_length="40" name="actual_start_date" type="glide_date"/>
+        <element label="Estimated Cost (Dollars)" max_length="20" name="estimated_cost_dollars" type="decimal"/>
+        <element label="Estimated Efforts (Hours)" max_length="20" name="estimated_efforts_hours" type="decimal"/>
+        <element label="Estimated End Date" max_length="40" name="estimated_end_date" read_only="true" type="glide_date"/>
+        <element label="Estimated Start Date" max_length="40" name="estimated_start_date" type="glide_date"/>
+        <element label="Has Subtasks" max_length="40" name="has_subtasks" read_only="true" type="boolean"/>
+        <element default="0" label="Percent Complete" max_length="40" name="percent_complete" read_only="true" type="percent_complete"/>
+        <element label="Planned End Date" max_length="40" name="planned_end_date" type="glide_date"/>
+        <element label="Planned Start Date" max_length="40" name="planned_start_date" type="glide_date"/>
+        <element label="Resource Plan Cost" max_length="20" name="resource_plan_cost" read_only="true" type="price"/>
+        <element label="Top Task" max_length="32" name="top_task" reference="x_novrp_pls_task" reference_qual="javascript: &quot;sys_id!=&quot; + current.sys_id;" type="reference" use_reference_qualifier="advanced"/>
+    </element>
+</database>

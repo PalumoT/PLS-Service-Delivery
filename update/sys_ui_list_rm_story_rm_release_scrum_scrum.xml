@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="rm_release_scrum" relationship="" sys_domain="global" table="rm_story" version="2" view="scrum">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="rm_story" element="NULL" name="rm_story" parent="rm_release_scrum" relationship="NULL" sys_domain="global" view="7d1ba14e7f00000122b0bf6a282d2247">1349a8666fe59600fbdd82eeae3ee449</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>cindy.seeley</sys_created_by>
+            <sys_created_on>2016-02-16 00:39:49</sys_created_on>
+            <sys_id>d349a8666fe59600fbdd82eeae3ee449</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>cindy.seeley</sys_updated_by>
+            <sys_updated_on>2016-02-16 00:39:49</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>short_description</element>
+            <list_id display_value="rm_story" element="NULL" name="rm_story" parent="rm_release_scrum" relationship="NULL" sys_domain="global" view="7d1ba14e7f00000122b0bf6a282d2247">1349a8666fe59600fbdd82eeae3ee449</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>cindy.seeley</sys_created_by>
+            <sys_created_on>2016-02-16 00:39:49</sys_created_on>
+            <sys_id>1749a8666fe59600fbdd82eeae3ee449</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>cindy.seeley</sys_updated_by>
+            <sys_updated_on>2016-02-16 00:39:49</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>priority</element>
+            <list_id display_value="rm_story" element="NULL" name="rm_story" parent="rm_release_scrum" relationship="NULL" sys_domain="global" view="7d1ba14e7f00000122b0bf6a282d2247">1349a8666fe59600fbdd82eeae3ee449</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>cindy.seeley</sys_created_by>
+            <sys_created_on>2016-02-16 00:39:49</sys_created_on>
+            <sys_id>5749a8666fe59600fbdd82eeae3ee449</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>cindy.seeley</sys_updated_by>
+            <sys_updated_on>2016-02-16 00:39:49</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>opened_by</element>
+            <list_id display_value="rm_story" element="NULL" name="rm_story" parent="rm_release_scrum" relationship="NULL" sys_domain="global" view="7d1ba14e7f00000122b0bf6a282d2247">1349a8666fe59600fbdd82eeae3ee449</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>cindy.seeley</sys_created_by>
+            <sys_created_on>2016-02-16 00:39:49</sys_created_on>
+            <sys_id>9749a8666fe59600fbdd82eeae3ee449</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>cindy.seeley</sys_updated_by>
+            <sys_updated_on>2016-02-16 00:39:49</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>state</element>
+            <list_id display_value="rm_story" element="NULL" name="rm_story" parent="rm_release_scrum" relationship="NULL" sys_domain="global" view="7d1ba14e7f00000122b0bf6a282d2247">1349a8666fe59600fbdd82eeae3ee449</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>cindy.seeley</sys_created_by>
+            <sys_created_on>2016-02-16 00:39:49</sys_created_on>
+            <sys_id>d749a8666fe59600fbdd82eeae3ee449</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>cindy.seeley</sys_updated_by>
+            <sys_updated_on>2016-02-16 00:39:49</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sprint</element>
+            <list_id display_value="rm_story" element="NULL" name="rm_story" parent="rm_release_scrum" relationship="NULL" sys_domain="global" view="7d1ba14e7f00000122b0bf6a282d2247">1349a8666fe59600fbdd82eeae3ee449</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>cindy.seeley</sys_created_by>
+            <sys_created_on>2016-02-16 00:39:49</sys_created_on>
+            <sys_id>1b49a8666fe59600fbdd82eeae3ee449</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>cindy.seeley</sys_updated_by>
+            <sys_updated_on>2016-02-16 00:39:49</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>theme</element>
+            <list_id display_value="rm_story" element="NULL" name="rm_story" parent="rm_release_scrum" relationship="NULL" sys_domain="global" view="7d1ba14e7f00000122b0bf6a282d2247">1349a8666fe59600fbdd82eeae3ee449</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>cindy.seeley</sys_created_by>
+            <sys_created_on>2016-02-16 00:39:49</sys_created_on>
+            <sys_id>5b49a8666fe59600fbdd82eeae3ee449</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>cindy.seeley</sys_updated_by>
+            <sys_updated_on>2016-02-16 00:39:49</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>blocked</element>
+            <list_id display_value="rm_story" element="NULL" name="rm_story" parent="rm_release_scrum" relationship="NULL" sys_domain="global" view="7d1ba14e7f00000122b0bf6a282d2247">1349a8666fe59600fbdd82eeae3ee449</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>cindy.seeley</sys_created_by>
+            <sys_created_on>2016-02-16 00:39:49</sys_created_on>
+            <sys_id>9b49a8666fe59600fbdd82eeae3ee449</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>cindy.seeley</sys_updated_by>
+            <sys_updated_on>2016-02-16 00:39:49</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>blocked_reason</element>
+            <list_id display_value="rm_story" element="NULL" name="rm_story" parent="rm_release_scrum" relationship="NULL" sys_domain="global" view="7d1ba14e7f00000122b0bf6a282d2247">1349a8666fe59600fbdd82eeae3ee449</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>cindy.seeley</sys_created_by>
+            <sys_created_on>2016-02-16 00:39:49</sys_created_on>
+            <sys_id>db49a8666fe59600fbdd82eeae3ee449</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>cindy.seeley</sys_updated_by>
+            <sys_updated_on>2016-02-16 00:39:49</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>rm_story</name>
+            <parent>rm_release_scrum</parent>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-05-15 14:36:59</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b4ba69bc4f763240014bb2f11310c734</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>rm_story</sys_name>
+            <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
+            <sys_update_name>sys_ui_list_rm_story_rm_release_scrum_scrum</sys_update_name>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-05-15 14:36:59</sys_updated_on>
+            <sys_user display_value="Paul Galmot">7b8c0fd34feaea40b734260f0310c71e</sys_user>
+            <view display_value="Scrum" name="scrum">7d1ba14e7f00000122b0bf6a282d2247</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

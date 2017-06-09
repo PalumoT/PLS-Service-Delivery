@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="x_novrp_pls_task" label="Demand" max_length="40" name="x_novrp_pls_demand" sizeclass="1" type="collection">
+        <element label="Brand" max_length="32" name="brand" reference="x_novrp_pls_brand" reference_qual="javascript:&quot;franchise=&quot; + current.franchise;" type="reference" use_reference_qualifier="advanced"/>
+        <element label="Business Unit" max_length="32" name="business_unit" reference="x_novrp_pls_business_unit" type="reference"/>
+        <element label="Country" mandatory="true" max_length="32" name="country" reference="x_novrp_pls_country" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element label="Customer" max_length="32" name="customer" reference="x_novrp_pls_customer" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element label="Division" mandatory="true" max_length="32" name="division" reference="x_novrp_pls_division" type="reference"/>
+        <element label="Franchise" max_length="32" name="franchise" reference="x_novrp_pls_franchise" reference_qual="javascript:&quot;business_unit=&quot; + current.business_unit;" type="reference" use_reference_qualifier="advanced"/>
+        <element label="Link to SLA" max_length="1024" name="link_to_sla" type="url"/>
+        <element label="Practices" max_length="4000" name="practices" reference="x_novrp_pls_practice" type="glide_list"/>
+        <element choice="1" label="Probability" max_length="40" name="probability" type="choice">
+            <choice>
+                <element label="High" sequence="0" value="High"/>
+                <element label="Medium" sequence="1" value="Medium"/>
+                <element label="Low" sequence="2" value="Low"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Proposal Description" max_length="4000" name="proposal_description" type="string"/>
+        <element label="Region" mandatory="true" max_length="32" name="region" reference="x_novrp_pls_region" type="reference"/>
+        <element label="Requested End Date" max_length="40" name="requested_end_date" type="glide_date"/>
+        <element label="Requested Start Date" max_length="40" name="requested_start_date" type="glide_date"/>
+        <element label="Services" max_length="4000" name="services" reference="x_novrp_pls_service" type="glide_list"/>
+        <element label="Service(s) Requested" max_length="4000" name="services_requested" reference="x_novrp_pls_service" type="glide_list"/>
+        <element label="Service Groups" max_length="4000" name="service_groups" reference="x_novrp_pls_service_group" type="glide_list"/>
+        <element label="Service Group Leads" max_length="4000" name="service_group_leads" reference="sys_user" type="glide_list"/>
+        <element label="Service Request Owners" max_length="4000" name="service_request_owners" reference="sys_user" reference_qual="javascript: new x_novrp_pls.DemandHelper().getUsersFromGroup(gs.getProperty(&quot;x_novrp_pls.group.service_group_users&quot;));" type="glide_list" use_reference_qualifier="advanced"/>
+        <element label="SLA Amount" max_length="15" name="sla_amount" type="decimal"/>
+        <element label="SLA ID" max_length="80" name="sla_id" type="string"/>
+        <element choice="1" label="SLA Status" max_length="40" name="sla_status" type="choice">
+            <choice>
+                <element label="Not Started" sequence="0" value="Not Started"/>
+                <element label="SLA Agreed" sequence="1" value="SLA Agreed"/>
+                <element label="SLA Signed" sequence="2" value="SLA Signed"/>
+            </choice>
+        </element>
+    </element>
+</database>

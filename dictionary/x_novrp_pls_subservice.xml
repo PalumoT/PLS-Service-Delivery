@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="x_novrp_pls_catalog_item" label="Subservice" max_length="40" name="x_novrp_pls_subservice" type="collection">
+        <element choice="1" label="Pricing Type" max_length="40" name="pricing_type" type="choice">
+            <choice>
+                <element label="Standard price" sequence="1" value="standard"/>
+                <element label="FTE Basis Work" sequence="2" value="fte"/>
+                <element label="Manual" sequence="3" value="manual"/>
+            </choice>
+        </element>
+    </element>
+</database>

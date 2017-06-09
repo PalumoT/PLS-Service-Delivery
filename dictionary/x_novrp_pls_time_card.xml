@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="time_card" label="Time Card" max_length="40" name="x_novrp_pls_time_card" type="collection"/>
+</database>

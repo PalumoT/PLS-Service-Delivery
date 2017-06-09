@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>catalog_pls</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>GALMOPA1</sys_created_by>
+        <sys_created_on>2017-05-22 10:50:56</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>351a74834f3aba40014bb2f11310c757</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PLS View</sys_name>
+        <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
+        <sys_update_name>sys_ui_view_351a74834f3aba40014bb2f11310c757</sys_update_name>
+        <sys_updated_by>GALMOPA1</sys_updated_by>
+        <sys_updated_on>2017-05-22 10:50:56</sys_updated_on>
+        <title>PLS View</title>
+        <user/>
+    </sys_ui_view>
+</record_update>

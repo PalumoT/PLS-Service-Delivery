@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_novrp_pls.DateTimeHelper</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>DateTimeHelper</name>
+        <script><![CDATA[var DateTimeHelper = Class.create();
+DateTimeHelper.prototype = {
+	initialize: function() {
+	},
+	
+	/*
+	 * Calculate the end date given a start date and number of hours.
+	 *
+	 * @param from An instance of GlideDateTime
+	 *        to   An instance of GlideDateTime
+	*/
+	calculateEndDate: function(from, hours){
+		var dc = new global.DurationCalculator();
+		dc.setStartDateTime(from);
+		this._addSchedule(dc);
+		
+		if(dc.calcDuration(hours * 3600)){
+			return dc.getEndDateTime();
+		}
+
+		return "";
+	},
+	
+	/*
+	 * Calculate the working time between two specific dates.
+	 *
+	 * @param from An instance of GlideDateTime
+	 *        to   An instance of GlideDateTime
+	*/
+	calculateTotalAllocated: function(from, to){
+		var calculator = new global.DurationCalculator();
+		this._addSchedule(calculator);
+		
+		return calculator.calcScheduleDuration(from, to);
+	},
+	
+	/*
+	 * Add a specific schedule to the DurationCalculator object.
+	 *
+	 * @param durationCalculator An instance of DurationCalculator
+	*/
+	_addSchedule: function(durationCalculator) {
+		//  Load the "8-5 weekdays" schedule into our duration calculator.
+		var scheduleName = "090eecae0a0a0b260077e1dfa71da828";
+		var grSched = new GlideRecord('cmn_schedule');
+		
+		if (!grSched.get(scheduleName)) {
+			gs.error('*** Could not find schedule ***');
+			return;
+		}
+		durationCalculator.setSchedule(grSched.getUniqueValue(), "GMT");
+	},
+	
+	type: 'DateTimeHelper'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>paul.galmot</sys_created_by>
+        <sys_created_on>2017-05-05 12:42:59</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>9670b1e54f2ab200014bb2f11310c7a8</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>DateTimeHelper</sys_name>
+        <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
+        <sys_update_name>sys_script_include_9670b1e54f2ab200014bb2f11310c7a8</sys_update_name>
+        <sys_updated_by>paul.galmot</sys_updated_by>
+        <sys_updated_on>2017-06-01 14:08:21</sys_updated_on>
+    </sys_script_include>
+</record_update>

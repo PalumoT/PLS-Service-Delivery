@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="Proposal Details" section_id="4ec5d9e04f5f3e003fb88e401310c771" sys_domain="global" table="x_novrp_pls_demand" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-06-08 15:01:49</sys_created_on>
+            <sys_id>6e8619e44f5f3e003fb88e401310c760</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Proposal Details" display_value="Proposal Details" name="x_novrp_pls_demand" sys_domain="global" view="Default view">4ec5d9e04f5f3e003fb88e401310c771</sys_ui_section>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-06-08 15:01:49</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>estimated_start_date</element>
+            <position>1</position>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-06-08 15:01:49</sys_created_on>
+            <sys_id>a68619e44f5f3e003fb88e401310c761</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Proposal Details" display_value="Proposal Details" name="x_novrp_pls_demand" sys_domain="global" view="Default view">4ec5d9e04f5f3e003fb88e401310c771</sys_ui_section>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-06-08 15:01:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>estimated_cost_dollars</element>
+            <position>2</position>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-06-08 15:01:49</sys_created_on>
+            <sys_id>2a8619e44f5f3e003fb88e401310c761</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Proposal Details" display_value="Proposal Details" name="x_novrp_pls_demand" sys_domain="global" view="Default view">4ec5d9e04f5f3e003fb88e401310c771</sys_ui_section>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-06-08 15:01:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-06-08 15:01:49</sys_created_on>
+            <sys_id>aa8619e44f5f3e003fb88e401310c761</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Proposal Details" display_value="Proposal Details" name="x_novrp_pls_demand" sys_domain="global" view="Default view">4ec5d9e04f5f3e003fb88e401310c771</sys_ui_section>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-06-08 15:01:49</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>estimated_end_date</element>
+            <position>4</position>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-06-08 15:01:49</sys_created_on>
+            <sys_id>2e8619e44f5f3e003fb88e401310c761</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Proposal Details" display_value="Proposal Details" name="x_novrp_pls_demand" sys_domain="global" view="Default view">4ec5d9e04f5f3e003fb88e401310c771</sys_ui_section>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-06-08 15:01:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>5</position>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-06-08 15:01:49</sys_created_on>
+            <sys_id>ae8619e44f5f3e003fb88e401310c761</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Proposal Details" display_value="Proposal Details" name="x_novrp_pls_demand" sys_domain="global" view="Default view">4ec5d9e04f5f3e003fb88e401310c771</sys_ui_section>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-06-08 15:01:49</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>proposal_description</element>
+            <position>6</position>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-06-08 15:01:49</sys_created_on>
+            <sys_id>228619e44f5f3e003fb88e401310c762</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Proposal Details" display_value="Proposal Details" name="x_novrp_pls_demand" sys_domain="global" view="Default view">4ec5d9e04f5f3e003fb88e401310c771</sys_ui_section>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-06-08 15:01:49</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Proposal Details</caption>
+            <header>false</header>
+            <name>x_novrp_pls_demand</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-06-08 14:58:30</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4ec5d9e04f5f3e003fb88e401310c771</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Proposal Details</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
+            <sys_update_name>sys_ui_section_4ec5d9e04f5f3e003fb88e401310c771</sys_update_name>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-06-08 14:58:30</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="Imp Tmpl X Novrp Pls Catalog Item Task" max_length="40" name="u_imp_tmpl_x_novrp_pls_catalog_item_task" type="collection">
+        <element attributes="import_attribute_name=Assignment Group,edge_encryption_enabled=true" label="Assignment Group" max_length="32" name="u_assignment_group" type="string"/>
+        <element attributes="import_attribute_name=Catalog Item,edge_encryption_enabled=true" label="Catalog Item" max_length="32" name="u_catalog_item" type="string"/>
+        <element attributes="import_attribute_name=Estimated efforts (hours)" label="Estimated efforts (hours)" max_length="20" name="u_estimated_efforts__hours_" type="integer"/>
+        <element attributes="import_attribute_name=Milestone,edge_encryption_enabled=true" label="Milestone" max_length="40" name="u_milestone" type="string"/>
+        <element attributes="import_attribute_name=Order" label="Order" max_length="40" name="u_order" type="integer"/>
+        <element attributes="import_attribute_name=Short Description,edge_encryption_enabled=true" label="Short Description" max_length="40" name="u_short_description" type="string"/>
+    </element>
+</database>

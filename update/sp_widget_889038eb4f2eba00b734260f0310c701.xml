@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <client_script><![CDATA[function($scope) {
+	var chartOptions = $scope.data.chartData;
+	
+	$scope.chartOptions = {
+    chart: {
+        type: 'column'
+    },
+    title: {
+        text: 'Forecast vs Actuals'
+    },
+    subtitle: {
+        text: 'Based on delivery tasks'
+    },
+    xAxis: {
+        categories: chartOptions.categories,
+        crosshair: true
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: 'Time Worked'
+        }
+    },
+    tooltip: {
+        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+            '<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
+        footerFormat: '</table>',
+        shared: true,
+        useHTML: true
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0
+        }
+    },
+		credits:{
+			enabled: false
+		},
+    series: chartOptions.series
+	}
+	$('#highchart').highcharts($scope.chartOptions);
+	
+	console.log(chartOptions);
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>pls_-_forecast_vs_actuals</id>
+        <internal>false</internal>
+        <link/>
+        <name>PLS - Forecast vs Actuals</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	data.chartData = {
+		categories:[],
+		series:[
+			{
+				"name": "Forecast",
+				"data": []
+			},
+			{
+				"name": "Actuals",
+				"data": []
+			}
+		]
+	};
+	
+	var glideRecord = new GlideAggregate("x_novrp_pls_delivery_task");
+	glideRecord.addNotNullQuery("requested_item");
+	glideRecord.addAggregate("SUM", "estimated_efforts_hours");
+	glideRecord.addAggregate("SUM", "actual_efforts_hours");
+	glideRecord.groupBy("assignment_group");
+	glideRecord.query();
+
+	while(glideRecord.next()){
+		var forecast = glideRecord.getAggregate("SUM", "estimated_efforts_hours");
+		var actual = glideRecord.getAggregate("SUM", "actual_efforts_hours");
+		
+		data.chartData.categories.push(glideRecord.getDisplayValue("assignment_group"));
+		data.chartData.series[0].data.push(parseFloat(forecast))
+		data.chartData.series[1].data.push(parseFloat(actual))
+	}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>paul.galmot</sys_created_by>
+        <sys_created_on>2017-05-11 13:10:34</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>889038eb4f2eba00b734260f0310c701</sys_id>
+        <sys_mod_count>57</sys_mod_count>
+        <sys_name>PLS - Forecast vs Actuals</sys_name>
+        <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
+        <sys_update_name>sp_widget_889038eb4f2eba00b734260f0310c701</sys_update_name>
+        <sys_updated_by>paul.galmot</sys_updated_by>
+        <sys_updated_on>2017-05-11 14:08:16</sys_updated_on>
+        <template><![CDATA[<div>
+  <h3>
+   Resource Management
+  </h3>
+  <div id="highchart"></div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

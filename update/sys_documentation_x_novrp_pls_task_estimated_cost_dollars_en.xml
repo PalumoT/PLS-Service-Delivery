@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="estimated_cost_dollars" label="Estimated Cost (Dollars)" language="en" table="x_novrp_pls_task">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>estimated_cost_dollars</element>
+            <help/>
+            <hint/>
+            <label>Estimated Cost (Dollars)</label>
+            <language>en</language>
+            <name>x_novrp_pls_task</name>
+            <plural>Estimated Cost (Dollars)</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-06-01 11:35:15</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_id>5c24e4924f8b72003fb88e401310c71c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Estimated Cost (Dollars)</sys_name>
+            <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
+            <sys_update_name>sys_documentation_x_novrp_pls_task_estimated_cost_dollars_en</sys_update_name>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-06-01 11:35:15</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

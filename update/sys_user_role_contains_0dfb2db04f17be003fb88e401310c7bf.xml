@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_user_role_contains">
+    <sys_user_role_contains action="INSERT_OR_UPDATE">
+        <contains display_value="x_novrp_pls.task_user" name="x_novrp_pls.task_user">9a3237c64f4772003fb88e401310c769</contains>
+        <role display_value="x_novrp_pls.demand_user" name="x_novrp_pls.demand_user">d19d45c74fda724462b50fbf0310c7cc</role>
+        <sys_class_name>sys_user_role_contains</sys_class_name>
+        <sys_created_by>GALMOPA1</sys_created_by>
+        <sys_created_on>2017-06-09 11:13:52</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>0dfb2db04f17be003fb88e401310c7bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_novrp_pls.task_user.x_novrp_pls.demand_user</sys_name>
+        <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
+        <sys_update_name>sys_user_role_contains_0dfb2db04f17be003fb88e401310c7bf</sys_update_name>
+        <sys_updated_by>GALMOPA1</sys_updated_by>
+        <sys_updated_on>2017-06-09 11:13:52</sys_updated_on>
+    </sys_user_role_contains>
+</record_update>
