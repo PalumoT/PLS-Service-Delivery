@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element label="Catalog Item Task" max_length="40" name="x_novrp_pls_catalog_item_task" type="collection">
-        <element label="Assignment Group" max_length="32" name="assignment_group" reference="sys_user_group" type="reference"/>
+        <element label="Assignment Group" max_length="32" name="assignment_group" reference="sys_user_group" reference_qual="typeLIKEe81e87444f1fba003fb88e401310c76b^EQ" reference_qual_condition="typeLIKEe81e87444f1fba003fb88e401310c76b^EQ" type="reference"/>
         <element label="Catalog Item" max_length="32" name="catalog_item" reference="x_novrp_pls_catalog_item" type="reference"/>
         <element label="Estimated efforts (hours)" max_length="20" name="estimated_efforts_hours" type="decimal"/>
         <element label="Milestone" max_length="40" name="milestone" type="string"/>

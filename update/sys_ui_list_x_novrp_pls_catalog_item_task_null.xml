@@ -3,93 +3,93 @@
     <sys_ui_list parent="" relationship="" sys_domain="global" table="x_novrp_pls_catalog_item_task" version="2" view="">
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>assignment_group</element>
-            <list_id display_value="x_novrp_pls_catalog_item_task" element="NULL" name="x_novrp_pls_catalog_item_task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">5542bc6c4f5b3e003fb88e401310c77b</list_id>
+            <element>order</element>
+            <list_id display_value="x_novrp_pls_catalog_item_task" element="NULL" name="x_novrp_pls_catalog_item_task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b20ba5714f5bf2403fb88e401310c7f4</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-06-08 12:23:21</sys_created_on>
-            <sys_id>dd42bc6c4f5b3e003fb88e401310c77b</sys_id>
+            <sys_created_by>VUNGAHA1</sys_created_by>
+            <sys_created_on>2017-06-12 13:43:48</sys_created_on>
+            <sys_id>3a0ba5714f5bf2403fb88e401310c7f4</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-08 12:23:21</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>catalog_item</element>
-            <list_id display_value="x_novrp_pls_catalog_item_task" element="NULL" name="x_novrp_pls_catalog_item_task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">5542bc6c4f5b3e003fb88e401310c77b</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>1</position>
-            <sum>false</sum>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-06-08 12:23:21</sys_created_on>
-            <sys_id>5542bc6c4f5b3e003fb88e401310c77c</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-08 12:23:21</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>estimated_efforts_hours</element>
-            <list_id display_value="x_novrp_pls_catalog_item_task" element="NULL" name="x_novrp_pls_catalog_item_task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">5542bc6c4f5b3e003fb88e401310c77b</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>2</position>
-            <sum>false</sum>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-06-08 12:23:21</sys_created_on>
-            <sys_id>d542bc6c4f5b3e003fb88e401310c77c</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-08 12:23:21</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>milestone</element>
-            <list_id display_value="x_novrp_pls_catalog_item_task" element="NULL" name="x_novrp_pls_catalog_item_task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">5542bc6c4f5b3e003fb88e401310c77b</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>3</position>
-            <sum>false</sum>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-06-08 12:23:21</sys_created_on>
-            <sys_id>5942bc6c4f5b3e003fb88e401310c77c</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-08 12:23:21</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>order</element>
-            <list_id display_value="x_novrp_pls_catalog_item_task" element="NULL" name="x_novrp_pls_catalog_item_task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">5542bc6c4f5b3e003fb88e401310c77b</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>4</position>
-            <sum>false</sum>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-06-08 12:23:21</sys_created_on>
-            <sys_id>d942bc6c4f5b3e003fb88e401310c77c</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-08 12:23:21</sys_updated_on>
+            <sys_updated_by>VUNGAHA1</sys_updated_by>
+            <sys_updated_on>2017-06-12 13:43:48</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>short_description</element>
-            <list_id display_value="x_novrp_pls_catalog_item_task" element="NULL" name="x_novrp_pls_catalog_item_task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">5542bc6c4f5b3e003fb88e401310c77b</list_id>
+            <list_id display_value="x_novrp_pls_catalog_item_task" element="NULL" name="x_novrp_pls_catalog_item_task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b20ba5714f5bf2403fb88e401310c7f4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>VUNGAHA1</sys_created_by>
+            <sys_created_on>2017-06-12 13:43:48</sys_created_on>
+            <sys_id>ba0ba5714f5bf2403fb88e401310c7f4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>VUNGAHA1</sys_updated_by>
+            <sys_updated_on>2017-06-12 13:43:48</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>assignment_group</element>
+            <list_id display_value="x_novrp_pls_catalog_item_task" element="NULL" name="x_novrp_pls_catalog_item_task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b20ba5714f5bf2403fb88e401310c7f4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>VUNGAHA1</sys_created_by>
+            <sys_created_on>2017-06-12 13:43:48</sys_created_on>
+            <sys_id>3e0ba5714f5bf2403fb88e401310c7f4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>VUNGAHA1</sys_updated_by>
+            <sys_updated_on>2017-06-12 13:43:48</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>catalog_item</element>
+            <list_id display_value="x_novrp_pls_catalog_item_task" element="NULL" name="x_novrp_pls_catalog_item_task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b20ba5714f5bf2403fb88e401310c7f4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>VUNGAHA1</sys_created_by>
+            <sys_created_on>2017-06-12 13:43:48</sys_created_on>
+            <sys_id>be0ba5714f5bf2403fb88e401310c7f4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>VUNGAHA1</sys_updated_by>
+            <sys_updated_on>2017-06-12 13:43:48</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>estimated_efforts_hours</element>
+            <list_id display_value="x_novrp_pls_catalog_item_task" element="NULL" name="x_novrp_pls_catalog_item_task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b20ba5714f5bf2403fb88e401310c7f4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>VUNGAHA1</sys_created_by>
+            <sys_created_on>2017-06-12 13:43:48</sys_created_on>
+            <sys_id>320ba5714f5bf2403fb88e401310c7f5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>VUNGAHA1</sys_updated_by>
+            <sys_updated_on>2017-06-12 13:43:48</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>milestone</element>
+            <list_id display_value="x_novrp_pls_catalog_item_task" element="NULL" name="x_novrp_pls_catalog_item_task" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b20ba5714f5bf2403fb88e401310c7f4</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>5</position>
             <sum>false</sum>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-06-08 12:23:21</sys_created_on>
-            <sys_id>5d42bc6c4f5b3e003fb88e401310c77c</sys_id>
+            <sys_created_by>VUNGAHA1</sys_created_by>
+            <sys_created_on>2017-06-12 13:43:48</sys_created_on>
+            <sys_id>b20ba5714f5bf2403fb88e401310c7f5</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-08 12:23:21</sys_updated_on>
+            <sys_updated_by>VUNGAHA1</sys_updated_by>
+            <sys_updated_on>2017-06-12 13:43:48</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -102,12 +102,12 @@
             <relationship/>
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-06-08 12:23:21</sys_created_on>
+            <sys_created_by>VUNGAHA1</sys_created_by>
+            <sys_created_on>2017-06-12 13:43:48</sys_created_on>
             <sys_customer_update>true</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>5542bc6c4f5b3e003fb88e401310c77b</sys_id>
+            <sys_id>b20ba5714f5bf2403fb88e401310c7f4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_novrp_pls_catalog_item_task</sys_name>
             <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
@@ -115,8 +115,8 @@
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
             <sys_update_name>sys_ui_list_x_novrp_pls_catalog_item_task_null</sys_update_name>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-08 12:23:21</sys_updated_on>
+            <sys_updated_by>VUNGAHA1</sys_updated_by>
+            <sys_updated_on>2017-06-12 13:43:48</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

@@ -16,12 +16,12 @@
 	}
 	
 	if(newValue == ""){
-		g_form.setValue("demand_owner", "");
+		g_form.setValue("assigned_to", "");
 		return;
 	}
 	
 	g_form.getReference("region", function(data){
-		g_form.setValue("demand_owner", data.regional_account_director);
+		g_form.setValue("assigned_to", data.regional_account_director);
 	});
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
@@ -31,7 +31,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>24f011fc4f53be003fb88e401310c7bb</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>NVS - Autofill from region</sys_name>
         <sys_overrides/>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
@@ -39,8 +39,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_script_client_24f011fc4f53be003fb88e401310c7bb</sys_update_name>
-        <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-06-09 09:17:11</sys_updated_on>
+        <sys_updated_by>paul.galmot</sys_updated_by>
+        <sys_updated_on>2017-06-12 13:08:07</sys_updated_on>
         <table>x_novrp_pls_demand</table>
         <type>onChange</type>
         <ui_type>0</ui_type>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="PLS - Service Delivery Management">b76845434fda724462b50fbf0310c71a</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>DIRECT</link_type>
+        <map_page/>
+        <mobile_title>Import Service Request</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name/>
+        <order>330</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query>import_template_upload.do?sysparm_referring_url=x_novrp_pls_service_request_list.do&amp;sysparm_target=x_novrp_pls_service_request&amp;sysparm_rows=2</query>
+        <report/>
+        <roles>x_novrp_pls.service_request_user</roles>
+        <survey/>
+        <survey_overwrite>true</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>paul.galmot</sys_created_by>
+        <sys_created_on>2017-06-14 08:51:13</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>dc4b76124f5f764062b50fbf0310c71d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Import Service Request</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
+        <sys_update_name>sys_app_module_dc4b76124f5f764062b50fbf0310c71d</sys_update_name>
+        <sys_updated_by>paul.galmot</sys_updated_by>
+        <sys_updated_on>2017-06-14 08:51:13</sys_updated_on>
+        <timeline_page/>
+        <title>Import Service Request</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

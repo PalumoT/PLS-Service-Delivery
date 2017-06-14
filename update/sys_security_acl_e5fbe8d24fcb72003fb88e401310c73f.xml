@@ -4,7 +4,9 @@
         <active>true</active>
         <admin_overrides>true</admin_overrides>
         <advanced>false</advanced>
-        <condition/>
+        <condition table="x_novrp_pls_service_request">top_task.stateNOT IN3,4,7^EQ<item endquery="false" field="top_task.state" goto="false" newquery="false" operator="NOT IN" or="false" value="3,4,7"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
         <description>Default access control on x_novrp_pls_service_request</description>
         <name>x_novrp_pls_service_request</name>
         <operation display_value="write">write</operation>
@@ -14,7 +16,7 @@
         <sys_created_on>2017-06-01 12:09:28</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>e5fbe8d24fcb72003fb88e401310c73f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>x_novrp_pls_service_request</sys_name>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
         <sys_policy/>
@@ -22,7 +24,7 @@
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_security_acl_e5fbe8d24fcb72003fb88e401310c73f</sys_update_name>
         <sys_updated_by>paul.galmot</sys_updated_by>
-        <sys_updated_on>2017-06-01 12:09:28</sys_updated_on>
+        <sys_updated_on>2017-06-14 09:06:45</sys_updated_on>
         <type display_value="record">record</type>
     </sys_security_acl>
 </record_update>

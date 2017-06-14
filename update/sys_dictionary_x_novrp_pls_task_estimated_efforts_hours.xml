@@ -18,7 +18,7 @@
         <column_label>Estimated Efforts (Hours)</column_label>
         <comments/>
         <create_roles/>
-        <default_value/>
+        <default_value>0</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -54,7 +54,7 @@
         <sys_created_on>2017-06-01 09:31:43</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>8fb7041a4fc772003fb88e401310c7c5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Estimated Efforts (Hours)</sys_name>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
         <sys_policy/>
@@ -62,7 +62,7 @@
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_dictionary_x_novrp_pls_task_estimated_efforts_hours</sys_update_name>
         <sys_updated_by>paul.galmot</sys_updated_by>
-        <sys_updated_on>2017-06-01 09:31:43</sys_updated_on>
+        <sys_updated_on>2017-06-12 15:07:35</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

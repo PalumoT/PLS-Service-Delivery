@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_novrp_pls_task</collection>
+        <condition>current.state.changesTo(7);</condition>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_novrp_pls_task">has_subtasks=true^EQ<item endquery="false" field="has_subtasks" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>NVS - Close subtask</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	var comments = "";
+	var glideTask = new GlideRecord("x_novrp_pls_task");
+	glideTask.addQuery("top_task", current.getUniqueValue());
+	glideTask.addQuery("state", "!=", 7);
+	glideTask.query();
+	
+	while(glideTask.next()){
+		glideTask.setValue("state", 7);
+		glideTask.setValue("actual_end_date", new GlideDateTime());
+		glideTask.update();
+	}
+	
+	var total = glideTask.getRowCount();
+	
+	if(total == 1){
+		gs.addInfoMessage("1 sub task has been completed");
+	}else{
+		gs.addInfoMessage(total + " sub tasks have been completed");
+	}
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>VUNGAHA1</sys_created_by>
+        <sys_created_on>2017-06-12 14:10:32</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b9dfa5b54f5bf2403fb88e401310c7b1</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>NVS - Close subtask</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
+        <sys_update_name>sys_script_b9dfa5b54f5bf2403fb88e401310c7b1</sys_update_name>
+        <sys_updated_by>paul.galmot</sys_updated_by>
+        <sys_updated_on>2017-06-13 09:05:47</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=b9dfa5b54f5bf2403fb88e401310c7b1"/>
+</record_update>

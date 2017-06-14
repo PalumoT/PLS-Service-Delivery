@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="reason_for_closing" table="x_novrp_pls_demand" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason_for_closing</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Cancelled by customer</label>
+            <language>en</language>
+            <name>x_novrp_pls_demand</name>
+            <sequence>1</sequence>
+            <sys_class_name>sys_choice</sys_class_name>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-06-12 13:16:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>67b46d754f1bf2403fb88e401310c75b</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-06-12 13:17:27</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason_for_closing</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Run by customer resource</label>
+            <language>en</language>
+            <name>x_novrp_pls_demand</name>
+            <sequence>2</sequence>
+            <sys_class_name>sys_choice</sys_class_name>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-06-12 13:16:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7bd4a1b54f1bf2403fb88e401310c7bf</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-06-12 13:17:29</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason_for_closing</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Awarded to 3rd party vendor</label>
+            <language>en</language>
+            <name>x_novrp_pls_demand</name>
+            <sequence>3</sequence>
+            <sys_class_name>sys_choice</sys_class_name>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-06-12 13:17:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>89e421b54f1bf2403fb88e401310c7bc</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-06-12 13:17:31</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason_for_closing</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Acquired</label>
+            <language>en</language>
+            <name>x_novrp_pls_demand</name>
+            <sequence>4</sequence>
+            <sys_class_name>sys_choice</sys_class_name>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-06-13 16:41:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c43d934a4fd776403fb88e401310c7d7</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-06-13 16:41:13</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>reason_for_closing</element>
+            <name>x_novrp_pls_demand</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-06-12 13:16:50</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>b3d42d754f1bf2403fb88e401310c726</sys_id>
+            <sys_mod_count>18</sys_mod_count>
+            <sys_name>reason_for_closing</sys_name>
+            <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
+            <sys_update_name>sys_choice_x_novrp_pls_demand_reason_for_closing</sys_update_name>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-06-13 16:41:13</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

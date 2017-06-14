@@ -5,7 +5,7 @@
         <active>true</active>
         <client>true</client>
         <comments/>
-        <condition/>
+        <condition>current.canWrite();</condition>
         <form_action>true</form_action>
         <form_button>false</form_button>
         <form_context_menu>false</form_context_menu>
@@ -18,7 +18,7 @@
         <list_context_menu>false</list_context_menu>
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
-        <name>Multiple insert</name>
+        <name>Copy current record</name>
         <onclick>openDialog()</onclick>
         <order>100</order>
         <script><![CDATA[function openDialog(){
@@ -26,12 +26,12 @@
 	gel('sys_uniqueValue').value : rowSysId;
 	
 	var dialog = new GlideModal('x_novrp_pls_multiple_insert');
-	var msg = new GwtMessage().getMessage('Multiple insert');
+	var msg = new GwtMessage().getMessage('Copy record');
 	
 	dialog.setTitle(msg);
 	dialog.setPreference('sysparm_sysId', sysId);
 	dialog.setPreference('sysparm_tableName', g_form.getTableName());
-	dialog.setPreference('sysparm_counter', 10);
+	dialog.setPreference('sysparm_counter', 1);
 	dialog.setSize(400, 300);
 	dialog.render();
 }]]></script>
@@ -46,8 +46,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b375bf8b4f2a7a00014bb2f11310c772</sys_id>
-        <sys_mod_count>17</sys_mod_count>
-        <sys_name>Multiple insert</sys_name>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>Copy current record</sys_name>
         <sys_overrides/>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
         <sys_policy/>
@@ -55,8 +55,8 @@
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_ui_action_b375bf8b4f2a7a00014bb2f11310c772</sys_update_name>
         <sys_updated_by>paul.galmot</sys_updated_by>
-        <sys_updated_on>2017-06-01 14:01:54</sys_updated_on>
-        <table>x_novrp_pls_service_request</table>
+        <sys_updated_on>2017-06-14 08:39:10</sys_updated_on>
+        <table>x_novrp_pls_task</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
     </sys_ui_action>

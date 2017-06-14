@@ -54,7 +54,7 @@
         <sys_created_on>2017-06-01 11:35:14</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>5eb3a0524f8b72003fb88e401310c7fe</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Estimated Cost (Dollars)</sys_name>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
         <sys_policy/>
@@ -62,7 +62,7 @@
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_dictionary_x_novrp_pls_task_estimated_cost_dollars</sys_update_name>
         <sys_updated_by>paul.galmot</sys_updated_by>
-        <sys_updated_on>2017-06-01 11:35:14</sys_updated_on>
+        <sys_updated_on>2017-06-13 15:16:17</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

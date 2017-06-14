@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="number_of_scope_change" label="Number of scope change" language="en" table="x_novrp_pls_service_request">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>number_of_scope_change</element>
+            <help/>
+            <hint/>
+            <label>Number of scope change</label>
+            <language>en</language>
+            <name>x_novrp_pls_service_request</name>
+            <plural>Number of scope changes</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-06-12 12:09:15</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_id>6965113d4f97f2403fb88e401310c7a0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Number of scope change</sys_name>
+            <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
+            <sys_update_name>sys_documentation_x_novrp_pls_service_request_number_of_scope_change_en</sys_update_name>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-06-12 12:09:15</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

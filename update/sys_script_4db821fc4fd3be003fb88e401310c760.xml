@@ -13,7 +13,7 @@
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
         <collection>x_novrp_pls_demand</collection>
-        <condition/>
+        <condition>gs.getProperty("x_novrp_pls.test") == "false"  ||  !gs.getUser().hasRole("admin")</condition>
         <description/>
         <execute_function>false</execute_function>
         <filter_condition/>
@@ -29,14 +29,10 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-
-	if(gs.getUser().hasRole("x_novrp_pls.demand_user")){
-		current.addEncodedQuery("sn_brm_caller_name=" + gs.getUserID()
-								+ "^NQdemand_owner=" + gs.getUserID());
-	}
+	var encodedQuery = new x_novrp_pls.demand_helper().getEncodedFilter();
 	
-	if(gs.getUser().hasRole("x_novrp_pls.service_request_user")){
-		current.addQuery("service_request_owners", "LIKE", gs.getUserID());
+	if(encodedQuery != ""){
+		current.addEncodedQuery(encodedQuery);
 	}
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -46,7 +42,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>4db821fc4fd3be003fb88e401310c760</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>46</sys_mod_count>
         <sys_name>NVS - Security Rules On Demand</sys_name>
         <sys_overrides/>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
@@ -55,7 +51,7 @@
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_script_4db821fc4fd3be003fb88e401310c760</sys_update_name>
         <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-06-09 15:33:54</sys_updated_on>
+        <sys_updated_on>2017-06-14 10:35:48</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

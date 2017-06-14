@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update>
-    <sys_documentation element="sn_brm_caller_name" label="Requester" language="en" table="x_novrp_pls_demand">
+    <sys_documentation element="sn_brm_caller_name" label="Demand Submitter" language="en" table="x_novrp_pls_demand">
         <sys_documentation action="INSERT_OR_UPDATE">
             <element>sn_brm_caller_name</element>
             <help/>
             <hint/>
-            <label>Requester</label>
+            <label>Demand Submitter</label>
             <language>en</language>
             <name>x_novrp_pls_demand</name>
-            <plural>Requesters</plural>
+            <plural>Demand Submitters</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>paul.galmot</sys_created_by>
             <sys_created_on>2017-06-08 13:04:22</sys_created_on>
             <sys_customer_update>true</sys_customer_update>
             <sys_id>739b3c684f9b3e003fb88e401310c795</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_name>Requester</sys_name>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Demand Submitter</sys_name>
             <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
             <sys_policy/>
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
             <sys_update_name>sys_documentation_x_novrp_pls_demand_sn_brm_caller_name_en</sys_update_name>
             <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-08 13:04:22</sys_updated_on>
+            <sys_updated_on>2017-06-12 14:48:44</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

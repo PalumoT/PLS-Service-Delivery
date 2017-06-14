@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_novrp_pls.demand_helper</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>demand_helper</name>
+        <script><![CDATA[var demand_helper = Class.create();
+demand_helper.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	
+	filterDemands: function(){
+		var encodedQuery = this.getEncodedFilter();
+		var result = "sys_idIN";
+		var glideDemand = new GlideRecord("x_novrp_pls_demand");
+		glideDemand.addEncodedQuery(encodedQuery);
+		glideDemand.query();
+		
+		while(glideDemand.next()){
+			result += glideDemand.getUniqueValue();
+		}
+		
+		return "sys_class_name=x_novrp_pls_demand^" + result;
+	},
+	
+	getEncodedFilter:function(){
+		var encodedQuery = "";
+		
+		if(gs.getUser().hasRole("x_novrp_pls.demand_user") &&
+		   !gs.getUser().hasRole("x_novrp_pls.demand_manager") ){
+			encodedQuery = "sn_brm_caller_name=" + gs.getUserID() + "^NQdemand_owner=" + gs.getUserID();
+		}
+
+		if(gs.getUser().hasRole("x_novrp_pls.service_request_user")){
+			if(encodedQuery != ""){
+				encodedQuery += "^NQ";
+			}
+			encodedQuery += "service_request_ownersLIKE" + gs.getUserID();
+		}
+
+		return encodedQuery;
+	},
+	
+	getRegion: function(){
+		var glideRegion = new GlideRecord("x_novrp_pls_mapping_region");
+		glideRegion.addQuery("country", this.getParameter("sysparm_country"));
+		glideRegion.addQuery("business_unit", this.getParameter("sysparm_business_unit"));
+		glideRegion.query();
+		
+		if(glideRegion.next()){
+			return glideRegion.getValue("region");
+		}
+		
+		return "NULL";
+	},
+											  
+    type: 'demand_helper'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>paul.galmot</sys_created_by>
+        <sys_created_on>2017-06-13 14:11:42</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>377afa8a4f1776403fb88e401310c74f</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>demand_helper</sys_name>
+        <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
+        <sys_update_name>sys_script_include_377afa8a4f1776403fb88e401310c74f</sys_update_name>
+        <sys_updated_by>paul.galmot</sys_updated_by>
+        <sys_updated_on>2017-06-14 09:49:51</sys_updated_on>
+    </sys_script_include>
+</record_update>

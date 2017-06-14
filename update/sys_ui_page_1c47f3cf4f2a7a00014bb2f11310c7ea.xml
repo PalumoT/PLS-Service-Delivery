@@ -31,7 +31,7 @@
 </j:jelly>]]></html>
         <name>multiple_insert</name>
         <processing_script><![CDATA[copyRecord(task_table, task_sys_id);
-response.sendRedirect("x_novrp_pls_service_request_list.do");
+response.sendRedirect(task_table + "_list.do");
 
 function copyRecord(table, sys_id){
 	gs.info(table);
@@ -59,7 +59,11 @@ function copyRecord(table, sys_id){
 		
 		var sysId = glideCopiedTask.insert();
 		info += "<a href='" + glideCopiedTask.getLink() + 
-			"'>" + glideCopiedTask.getValue("number") + "</a>, ";
+			"'>" + glideCopiedTask.getValue("number") + "</a> ";
+		
+		if(i != counter -1){
+			info += ",";
+		}
 	}
 	
 	gs.addInfoMessage("New record inserted: " + info);
@@ -82,7 +86,7 @@ function getFields(table){
         <sys_created_on>2017-05-10 14:27:38</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>1c47f3cf4f2a7a00014bb2f11310c7ea</sys_id>
-        <sys_mod_count>37</sys_mod_count>
+        <sys_mod_count>40</sys_mod_count>
         <sys_name>multiple_insert</sys_name>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
         <sys_policy/>
@@ -90,6 +94,6 @@ function getFields(table){
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_ui_page_1c47f3cf4f2a7a00014bb2f11310c7ea</sys_update_name>
         <sys_updated_by>paul.galmot</sys_updated_by>
-        <sys_updated_on>2017-06-02 12:10:18</sys_updated_on>
+        <sys_updated_on>2017-06-14 08:41:39</sys_updated_on>
     </sys_ui_page>
 </record_update>

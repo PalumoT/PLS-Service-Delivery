@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="reason_for_closing" label="Reason for closing" language="en" table="x_novrp_pls_demand">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>reason_for_closing</element>
+            <help/>
+            <hint/>
+            <label>Reason for closing</label>
+            <language>en</language>
+            <name>x_novrp_pls_demand</name>
+            <plural>Reason for closings</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-06-12 13:16:01</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_id>bba4ad754f1bf2403fb88e401310c7ee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Reason for closing</sys_name>
+            <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
+            <sys_update_name>sys_documentation_x_novrp_pls_demand_reason_for_closing_en</sys_update_name>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-06-12 13:16:01</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

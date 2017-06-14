@@ -4,92 +4,122 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>number</element>
-            <list_id display_value="x_novrp_pls_demand" element="NULL" name="x_novrp_pls_demand" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">454b92f04f1bbe003fb88e401310c743</list_id>
+            <list_id display_value="x_novrp_pls_demand" element="NULL" name="x_novrp_pls_demand" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">8bca3a124f5f764062b50fbf0310c7ea</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
-            <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-06-09 14:40:34</sys_created_on>
-            <sys_id>cd4b92f04f1bbe003fb88e401310c743</sys_id>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-06-14 08:49:14</sys_created_on>
+            <sys_id>03ca3a124f5f764062b50fbf0310c7eb</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-06-09 14:40:34</sys_updated_on>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-06-14 08:49:14</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>short_description</element>
-            <list_id display_value="x_novrp_pls_demand" element="NULL" name="x_novrp_pls_demand" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">454b92f04f1bbe003fb88e401310c743</list_id>
+            <list_id display_value="x_novrp_pls_demand" element="NULL" name="x_novrp_pls_demand" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">8bca3a124f5f764062b50fbf0310c7ea</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
-            <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-06-09 14:40:34</sys_created_on>
-            <sys_id>454b92f04f1bbe003fb88e401310c744</sys_id>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-06-14 08:49:14</sys_created_on>
+            <sys_id>83ca3a124f5f764062b50fbf0310c7eb</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-06-09 14:40:34</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>percent_complete</element>
-            <list_id display_value="x_novrp_pls_demand" element="NULL" name="x_novrp_pls_demand" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">454b92f04f1bbe003fb88e401310c743</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>2</position>
-            <sum>false</sum>
-            <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-06-09 14:40:34</sys_created_on>
-            <sys_id>c54b92f04f1bbe003fb88e401310c744</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-06-09 14:40:34</sys_updated_on>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-06-14 08:49:14</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>assigned_to</element>
-            <list_id display_value="x_novrp_pls_demand" element="NULL" name="x_novrp_pls_demand" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">454b92f04f1bbe003fb88e401310c743</list_id>
+            <list_id display_value="x_novrp_pls_demand" element="NULL" name="x_novrp_pls_demand" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">8bca3a124f5f764062b50fbf0310c7ea</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
-            <position>3</position>
+            <position>2</position>
             <sum>false</sum>
-            <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-06-09 14:40:34</sys_created_on>
-            <sys_id>494b92f04f1bbe003fb88e401310c744</sys_id>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-06-14 08:49:14</sys_created_on>
+            <sys_id>07ca3a124f5f764062b50fbf0310c7eb</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-06-09 14:40:34</sys_updated_on>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-06-14 08:49:14</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>customer</element>
-            <list_id display_value="x_novrp_pls_demand" element="NULL" name="x_novrp_pls_demand" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">454b92f04f1bbe003fb88e401310c743</list_id>
+            <list_id display_value="x_novrp_pls_demand" element="NULL" name="x_novrp_pls_demand" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">8bca3a124f5f764062b50fbf0310c7ea</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-06-14 08:49:14</sys_created_on>
+            <sys_id>87ca3a124f5f764062b50fbf0310c7eb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-06-14 08:49:14</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>service_request_owners</element>
+            <list_id display_value="x_novrp_pls_demand" element="NULL" name="x_novrp_pls_demand" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">8bca3a124f5f764062b50fbf0310c7ea</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
             <sum>false</sum>
-            <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-06-09 14:40:34</sys_created_on>
-            <sys_id>c94b92f04f1bbe003fb88e401310c744</sys_id>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-06-14 08:49:14</sys_created_on>
+            <sys_id>0bca3a124f5f764062b50fbf0310c7eb</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-06-09 14:40:34</sys_updated_on>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-06-14 08:49:14</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>state</element>
-            <list_id display_value="x_novrp_pls_demand" element="NULL" name="x_novrp_pls_demand" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">454b92f04f1bbe003fb88e401310c743</list_id>
+            <element>requested_start_date</element>
+            <list_id display_value="x_novrp_pls_demand" element="NULL" name="x_novrp_pls_demand" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">8bca3a124f5f764062b50fbf0310c7ea</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>5</position>
             <sum>false</sum>
-            <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-06-09 14:40:34</sys_created_on>
-            <sys_id>4d4b92f04f1bbe003fb88e401310c744</sys_id>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-06-14 08:49:14</sys_created_on>
+            <sys_id>8bca3a124f5f764062b50fbf0310c7eb</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-06-09 14:40:34</sys_updated_on>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-06-14 08:49:14</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>requested_end_date</element>
+            <list_id display_value="x_novrp_pls_demand" element="NULL" name="x_novrp_pls_demand" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">8bca3a124f5f764062b50fbf0310c7ea</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-06-14 08:49:14</sys_created_on>
+            <sys_id>0fca3a124f5f764062b50fbf0310c7eb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-06-14 08:49:14</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>country</element>
+            <list_id display_value="x_novrp_pls_demand" element="NULL" name="x_novrp_pls_demand" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">8bca3a124f5f764062b50fbf0310c7ea</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-06-14 08:49:14</sys_created_on>
+            <sys_id>8fca3a124f5f764062b50fbf0310c7eb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-06-14 08:49:14</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -103,11 +133,11 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-06-01 12:21:58</sys_created_on>
+            <sys_created_on>2017-06-14 08:49:14</sys_created_on>
             <sys_customer_update>true</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>f0de64964fcb72003fb88e401310c7ee</sys_id>
+            <sys_id>8bca3a124f5f764062b50fbf0310c7ea</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_novrp_pls_demand</sys_name>
             <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
@@ -116,8 +146,8 @@
             <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
             <sys_update_name>sys_ui_list_x_novrp_pls_demand_null</sys_update_name>
             <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-01 12:21:58</sys_updated_on>
-            <sys_user display_value="Paul Galmot">7b8c0fd34feaea40b734260f0310c71e</sys_user>
+            <sys_updated_on>2017-06-14 08:49:14</sys_updated_on>
+            <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>
         </sys_ui_list>

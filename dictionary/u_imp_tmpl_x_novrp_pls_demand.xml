@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="Imp Tmpl X Novrp Pls Demand" max_length="40" name="u_imp_tmpl_x_novrp_pls_demand" type="collection">
+        <element attributes="import_attribute_name=Demand Title,edge_encryption_enabled=true" label="Demand Title" max_length="40" name="u_demand_title" type="string"/>
+        <element attributes="import_attribute_name=Demand Value (Dollars)" label="Demand Value (Dollars)" max_length="40" name="u_demand_value__dollars_" type="integer"/>
+        <element attributes="import_attribute_name=Number,edge_encryption_enabled=true" label="Number" max_length="40" name="u_number" type="string"/>
+    </element>
+</database>

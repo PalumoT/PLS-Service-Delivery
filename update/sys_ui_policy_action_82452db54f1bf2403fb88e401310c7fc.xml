@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <disabled>ignore</disabled>
+        <field>reason_for_closing</field>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>paul.galmot</sys_created_by>
+        <sys_created_on>2017-06-12 13:18:49</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>82452db54f1bf2403fb88e401310c7fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>reason_for_closing</sys_name>
+        <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
+        <sys_update_name>sys_ui_policy_action_82452db54f1bf2403fb88e401310c7fc</sys_update_name>
+        <sys_updated_by>paul.galmot</sys_updated_by>
+        <sys_updated_on>2017-06-12 13:18:49</sys_updated_on>
+        <table>x_novrp_pls_demand</table>
+        <ui_policy display_value="NVS - Closing demand">1835a9b54f1bf2403fb88e401310c7dc</ui_policy>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+</record_update>

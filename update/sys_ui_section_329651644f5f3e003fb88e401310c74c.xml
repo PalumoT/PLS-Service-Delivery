@@ -4,154 +4,154 @@
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.begin_split</element>
             <position>0</position>
-            <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-06-09 15:26:10</sys_created_on>
-            <sys_id>41b52a704f5bbe003fb88e401310c7ee</sys_id>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-06-12 15:02:18</sys_created_on>
+            <sys_id>600d79394f9bf2403fb88e401310c73a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Financial Details" display_value="Financial Details" name="x_novrp_pls_demand" sys_domain="global" view="Default view">329651644f5f3e003fb88e401310c74c</sys_ui_section>
-            <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-06-09 15:26:10</sys_updated_on>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-06-12 15:02:18</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>customer</element>
             <position>1</position>
-            <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-06-09 15:26:10</sys_created_on>
-            <sys_id>c5b52a704f5bbe003fb88e401310c7ee</sys_id>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-06-12 15:02:18</sys_created_on>
+            <sys_id>e00d79394f9bf2403fb88e401310c73a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Financial Details" display_value="Financial Details" name="x_novrp_pls_demand" sys_domain="global" view="Default view">329651644f5f3e003fb88e401310c74c</sys_ui_section>
-            <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-06-09 15:26:10</sys_updated_on>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-06-12 15:02:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>estimated_efforts_hours</element>
             <position>2</position>
-            <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-06-09 15:26:10</sys_created_on>
-            <sys_id>49b52a704f5bbe003fb88e401310c7ee</sys_id>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-06-12 15:02:18</sys_created_on>
+            <sys_id>640d79394f9bf2403fb88e401310c73a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Financial Details" display_value="Financial Details" name="x_novrp_pls_demand" sys_domain="global" view="Default view">329651644f5f3e003fb88e401310c74c</sys_ui_section>
-            <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-06-09 15:26:10</sys_updated_on>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-06-12 15:02:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>actual_efforts_hours</element>
             <position>3</position>
-            <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-06-09 15:26:10</sys_created_on>
-            <sys_id>c9b52a704f5bbe003fb88e401310c7ee</sys_id>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-06-12 15:02:18</sys_created_on>
+            <sys_id>e40d79394f9bf2403fb88e401310c73a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Financial Details" display_value="Financial Details" name="x_novrp_pls_demand" sys_domain="global" view="Default view">329651644f5f3e003fb88e401310c74c</sys_ui_section>
-            <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-06-09 15:26:10</sys_updated_on>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-06-12 15:02:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
             <position>4</position>
-            <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-06-09 15:26:10</sys_created_on>
-            <sys_id>4db52a704f5bbe003fb88e401310c7ee</sys_id>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-06-12 15:02:18</sys_created_on>
+            <sys_id>680d79394f9bf2403fb88e401310c73a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Financial Details" display_value="Financial Details" name="x_novrp_pls_demand" sys_domain="global" view="Default view">329651644f5f3e003fb88e401310c74c</sys_ui_section>
-            <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-06-09 15:26:10</sys_updated_on>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-06-12 15:02:18</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>sla_id</element>
             <position>5</position>
-            <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-06-09 15:26:10</sys_created_on>
-            <sys_id>cdb52a704f5bbe003fb88e401310c7ee</sys_id>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-06-12 15:02:18</sys_created_on>
+            <sys_id>e80d79394f9bf2403fb88e401310c73a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Financial Details" display_value="Financial Details" name="x_novrp_pls_demand" sys_domain="global" view="Default view">329651644f5f3e003fb88e401310c74c</sys_ui_section>
-            <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-06-09 15:26:10</sys_updated_on>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-06-12 15:02:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>sla_amount</element>
+            <element>sla_amount_dollars</element>
             <position>6</position>
-            <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-06-09 15:26:10</sys_created_on>
-            <sys_id>41b52a704f5bbe003fb88e401310c7ef</sys_id>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-06-12 15:02:18</sys_created_on>
+            <sys_id>6c0d79394f9bf2403fb88e401310c73a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Financial Details" display_value="Financial Details" name="x_novrp_pls_demand" sys_domain="global" view="Default view">329651644f5f3e003fb88e401310c74c</sys_ui_section>
-            <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-06-09 15:26:10</sys_updated_on>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-06-12 15:02:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>sla_status</element>
             <position>7</position>
-            <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-06-09 15:26:10</sys_created_on>
-            <sys_id>c1b52a704f5bbe003fb88e401310c7ef</sys_id>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-06-12 15:02:18</sys_created_on>
+            <sys_id>ec0d79394f9bf2403fb88e401310c73a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Financial Details" display_value="Financial Details" name="x_novrp_pls_demand" sys_domain="global" view="Default view">329651644f5f3e003fb88e401310c74c</sys_ui_section>
-            <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-06-09 15:26:10</sys_updated_on>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-06-12 15:02:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.end_split</element>
             <position>8</position>
-            <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-06-09 15:26:10</sys_created_on>
-            <sys_id>45b52a704f5bbe003fb88e401310c7ef</sys_id>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-06-12 15:02:18</sys_created_on>
+            <sys_id>600d79394f9bf2403fb88e401310c73b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Financial Details" display_value="Financial Details" name="x_novrp_pls_demand" sys_domain="global" view="Default view">329651644f5f3e003fb88e401310c74c</sys_ui_section>
-            <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-06-09 15:26:10</sys_updated_on>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-06-12 15:02:18</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>link_to_sla</element>
             <position>9</position>
-            <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-06-09 15:26:10</sys_created_on>
-            <sys_id>c5b52a704f5bbe003fb88e401310c7ef</sys_id>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-06-12 15:02:18</sys_created_on>
+            <sys_id>e00d79394f9bf2403fb88e401310c73b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Financial Details" display_value="Financial Details" name="x_novrp_pls_demand" sys_domain="global" view="Default view">329651644f5f3e003fb88e401310c74c</sys_ui_section>
-            <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-06-09 15:26:10</sys_updated_on>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-06-12 15:02:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>comments</element>
+            <element>financial_comments</element>
             <position>10</position>
-            <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-06-09 15:26:10</sys_created_on>
-            <sys_id>49b52a704f5bbe003fb88e401310c7ef</sys_id>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-06-12 15:02:18</sys_created_on>
+            <sys_id>640d79394f9bf2403fb88e401310c73b</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Financial Details" display_value="Financial Details" name="x_novrp_pls_demand" sys_domain="global" view="Default view">329651644f5f3e003fb88e401310c74c</sys_ui_section>
-            <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-06-09 15:26:10</sys_updated_on>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-06-12 15:02:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

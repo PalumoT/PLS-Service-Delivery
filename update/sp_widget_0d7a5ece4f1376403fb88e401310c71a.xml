@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <client_script><![CDATA[function($scope, $rootScope, spUtil, RPService, spPreference, i18n) {
+    var c = this;
+    i18n.loadMessage(c.data.filterWarningMsgKey, c.data.filterWarningMsg);
+    var maxPlans = 100;
+    $scope.selectedPlans = [];
+    $scope.query = c.data.userFilterQuery;
+	$scope.data.selectAll = false;
+    $scope.togglePlanSelect = toggleSelectedPlan;
+	$scope.toggleSelectAll = toggleSelectAll;
+    c.data.showFilterWarning = false;
+	c.data.noOfRequestedPlansDisplayed = 0;
+
+    $scope.$on('pps:snfilter_updated', queryUpdated);
+    $scope.$on('ppsrp:plan_state_changed', refreshList);
+    
+    function queryUpdated(e, query, table) {
+        spPreference.set(c.data.filterPreferenceKey, query);
+        $scope.query = query;
+        refreshList(true);
+    }
+    
+    function refreshList() {
+		$scope.data.selectAll = false;
+        RPService.getPlans($scope.query, maxPlans).then(setResourcePlans);
+    }
+    
+    function setResourcePlans(response) {
+        $scope.selectedPlans = [];
+        var plans = response.data.result;
+        $scope.plans = plans;
+        var totalPlans = response.headers('X-Total-Count');
+        c.data.showFilterWarning = totalPlans > plans.length;
+        if (c.data.showFilterWarning)
+            c.data.filterWarningMsg = i18n.getMessage('Showing top {0} of {1} resource plans. Use filter to reduce number of plans shown').withValues([maxPlans, totalPlans]);
+
+		c.data.noOfRequestedPlansDisplayed = 0;
+		$scope.plans.forEach(function(plan) {
+			if (plan.state.value == 2)
+				c.data.noOfRequestedPlansDisplayed++;
+		});
+        triggerChartRefresh();
+    }
+    
+    function toggleSelectedPlan(plan) {
+        if (plan.state.value != 2)
+            return;
+        plan.selected = false || !plan.selected;
+        if (plan.selected)
+            $scope.selectedPlans.push(plan);
+        else {
+            $scope.selectedPlans = $scope.plans.filter(function(plan) {
+                return plan.selected;
+            });
+        }
+		refreshSelectAllState();
+        triggerChartRefresh();
+    }
+	
+	function toggleSelectAll() {
+		if ($scope.data.selectAll)
+			selectAll();
+		else
+			unSelectAll();
+		triggerChartRefresh();
+	}
+
+	function setSelectAllState(selected) {
+		if ($scope.data.selectAll != selected)
+			$scope.data.selectAll = selected;
+	}
+	
+	function refreshSelectAllState() {
+		var noOfSelectedPlans = $scope.selectedPlans.length;
+		var allSelected = noOfSelectedPlans == c.data.noOfRequestedPlansDisplayed;
+		setSelectAllState(allSelected);
+	}
+	
+	function unSelectAll() {
+		$scope.selectedPlans.forEach(function(plan) {
+			plan.selected = false;
+		});
+		$scope.selectedPlans = [];
+	}
+
+	function selectAll() {
+		$scope.plans.forEach(function(plan) {
+			if (!plan.selected && plan.state.value == 2) {
+				plan.selected = true;
+				$scope.selectedPlans.push(plan);
+			}
+		});
+	}
+    
+    function triggerChartRefresh() {
+        $rootScope.$broadcast('ppsrp:plan_selection_changed', $scope.selectedPlans);
+    }
+
+    $scope.openResourcePlanForm = function(event, plan) {
+        event.preventDefault();
+        event.stopPropagation();
+        spUtil.get('widget-modal', {embeddedWidgetId: 'pps-sn-form', embeddedWidgetOptions: {table: 'resource_plan', sysId: plan.sys_id.value}}).then(function(response) {
+            var formModal = response;
+            formModal.options.afterClose = function() {
+                refreshPlan(plan);
+            };
+            c.formModal = response;
+        }); 
+    };
+
+    $scope.openTaskForm = function(event, plan) {
+        event.preventDefault();
+        event.stopPropagation();
+        $scope.taskPlan = plan;
+        RPService.getTaskData(plan.task.value).then(openTaskDialog);
+    };
+
+    function openTaskDialog(response) {
+        var task = response.data;
+        if(task && task.sys_id && task.table) {
+            spUtil.get('widget-modal', {embeddedWidgetId: 'pps-sn-form', embeddedWidgetOptions: {table: task.table, sysId: task.sys_id}}).then(function(response) {
+                var formModal = response;
+                formModal.options.afterClose = function() {
+                    refreshPlan($scope.taskPlan);
+                };
+                c.formModal = response;
+            });    
+        }
+    }
+    
+    function refreshPlan(plan) {
+        var encodedQuery = 'sys_id=' + plan.sys_id.value;
+        RPService.getPlans(encodedQuery, maxPlans).then(function(response) {
+            var modifiedPlan = response.data.result[0];
+            modifiedPlan.selected = plan.selected;
+            if (plan.state.value != 2)
+                modifiedPlan.selected = false;
+            var index = 0;
+            $scope.plans.forEach(function(p, i) {
+                if (p.sys_id.value == plan.sys_id.value)
+                    index = i;
+            });
+            if (index >= 0) {
+                var needsChartRefresh = modifiedPlan.selected || (plan.selected && !modifiedPlan.selected);
+                $scope.plans[index] = modifiedPlan;
+                if (needsChartRefresh)
+                    triggerChartRefresh();
+            }
+        });
+    }
+    
+    $scope.$on('sp.widget-modal.closed', clearModal);
+    
+    function clearModal() {
+        c.formModal = null;
+    }
+    
+    refreshList();
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.panel {&#13;
+  height: calc(100vh - 90px);&#13;
+  margin-bottom: 0px;&#13;
+}&#13;
+&#13;
+.panel .panel-heading {&#13;
+  background-color: #ffffff;&#13;
+  border-bottom: 0px;&#13;
+}&#13;
+&#13;
+.title {&#13;
+  font-size: 16px;&#13;
+}&#13;
+&#13;
+.requested-filter-container {&#13;
+  background-color: #e7e9eb;&#13;
+  border-width: 1px 0 1px 0;&#13;
+  border-color: #bdc0c4;&#13;
+  border-style: solid;&#13;
+  flex: 0 1 auto;&#13;
+}&#13;
+&#13;
+.requested-filter {&#13;
+  margin: 10px 10px 10px 12px;&#13;
+}&#13;
+&#13;
+.filter-warning {&#13;
+  padding-top: 4px;&#13;
+}&#13;
+&#13;
+.filter-cards {&#13;
+  display: flex;&#13;
+  flex-direction: column;&#13;
+  height: calc(100vh - 135px);&#13;
+}&#13;
+&#13;
+.panel-body {&#13;
+  overflow: auto;&#13;
+  flex: 1 1 auto;&#13;
+}&#13;
+&#13;
+.card-default {&#13;
+  padding: 10px;&#13;
+  margin-bottom: 12px;&#13;
+  border-width: 1px 1px 1px 5px;&#13;
+  border-style: solid;&#13;
+  border-radius: 4px;&#13;
+}&#13;
+&#13;
+.card-default:hover {&#13;
+  background-color: #f7f7f7;&#13;
+}&#13;
+&#13;
+.card-default .title {&#13;
+  font-size: 16px;&#13;
+  color: #000000;&#13;
+}&#13;
+&#13;
+.card-default .task {&#13;
+  padding-top: 8px;&#13;
+  font-size: 13px;&#13;
+  color: #828890;&#13;
+}&#13;
+&#13;
+.card-default .additional-info {&#13;
+  padding-top: 12px;&#13;
+  font-size: 12px;&#13;
+}&#13;
+&#13;
+.card-default .additional-info .right{&#13;
+  float: right;&#13;
+}&#13;
+&#13;
+.card-default .additional-info .circle {&#13;
+  font-size: 5px;&#13;
+  vertical-align: middle;&#13;
+}&#13;
+&#13;
+.card-not-selected {&#13;
+  border-color: #bdc0c4;&#13;
+}&#13;
+&#13;
+.card-selected {&#13;
+  border-color: #278efc;&#13;
+}&#13;
+&#13;
+.selectable-card {&#13;
+  background-color: #ffffff;&#13;
+  cursor: pointer;&#13;
+}&#13;
+&#13;
+.non-selectable-card {&#13;
+  background-color: #e6e8ea;&#13;
+  cursor: default;&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>pls_resource_plans_requested</id>
+        <internal>false</internal>
+        <link/>
+        <name>PLS Resource Plans - Requested</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	data.defaultQuery = "state=2";
+	data.filterPreferenceKey = "rm.portal.requested_plans.filter";
+	var userEncodedQuery = gs.getUser().getPreference(data.filterPreferenceKey);
+	
+	var urlQuery = $sp.getParameter("query");
+	
+	if(urlQuery){
+		userEncodedQuery = urlQuery;
+	}
+	
+	data.userFilterQuery = userEncodedQuery ? userEncodedQuery : data.defaultQuery;
+	var widgetOptions = {
+		title: gs.getMessage('Resource Plans Filter'),
+		filterOptions : {
+			table: "resource_plan",
+			config: {
+				sets: true,
+				dotWalking: true,
+				saveFilter: false,
+				loadFilter: false,
+				sortFilter: false,
+				runFilter: false,
+				closeFilter: false,
+				clearFilter: false,
+				outputType : "encoded_query",
+				encodedQuery: data.userFilterQuery
+			}
+		}
+	};
+	data.selectAllMsg = gs.getMessage('Select All');
+	data.unSelectAllMsg = gs.getMessage('Unselect All');
+	data.toggleSelectText = data.selectAllMsg;
+	data.filterWidget = $sp.getWidget("pps-filter", widgetOptions);
+	data.filterWarningMsgKey = 'Showing top {0} of {1} resource plans. Use filter to reduce number of plans shown';
+	data.filterWarningMsg = gs.getMessage('Showing top {0} of {1} resource plans. Use filter to reduce number of plans shown');
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>paul.galmot</sys_created_by>
+        <sys_created_on>2017-06-13 11:49:26</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>0d7a5ece4f1376403fb88e401310c71a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>PLS Resource Plans - Requested</sys_name>
+        <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
+        <sys_update_name>sp_widget_0d7a5ece4f1376403fb88e401310c71a</sys_update_name>
+        <sys_updated_by>paul.galmot</sys_updated_by>
+        <sys_updated_on>2017-06-13 12:07:28</sys_updated_on>
+        <template><![CDATA[<div class="panel panel-default b">
+    <div class="panel-heading">
+        <span class="title">${Resource Plans}</span>
+      	<label class="pull-right">${Select All &nbsp;}<input type="checkbox" ng-model="data.selectAll" ng-change="toggleSelectAll()"></label>
+        <span style="clear:both"></span>
+    </div>
+    <div class="filter-cards">
+        <div class="requested-filter-container">
+            <div class="requested-filter">
+                <span class="fa fa-exclamation-circle pull-right filter-warning" ng-if="data.showFilterWarning" uib-tooltip="{{data.filterWarningMsg}}" tooltip-placement="left">
+            </span>
+                <sp-widget widget="data.filterWidget"> </sp-widget>
+                <div style="clear:both"></div>
+            </div>
+        </div>
+        <div class="panel-body">
+            <div ng-repeat="plan in plans track by plan.sys_id.value">
+                <div uib-tooltip="${Resource plan should be in Requested state in order to confirm}" tooltip-enable="plan.state.value != 2" id='{{::plan.sys_id.value}}' ng-class="{'card-default' : plan.state, 'selectable-card' : plan.state.value == 2, 'non-selectable-card': plan.state.value != 2, 'card-selected': plan.selected, 'card-not-selected': !plan.selected}" ng-click="togglePlanSelect(plan)">
+                    <div class="title">
+                        {{plan.short_description.display_value}}
+                    </div>
+                    <div class="task">
+                        <span uib-tooltip="{{plan['task.short_description'].display_value}}">
+                        <a href="javascript:void(0)" ng-click="openTaskForm($event, plan)">{{plan.task.display_value}}</a>
+                    </span><span>&nbsp;|&nbsp;{{ plan['task.priority'].display_value }}</span>
+                    </div>
+                    <div class="additional-info">
+                        <span><a href="javascript:void(0)" ng-click="openResourcePlanForm($event, plan)">{{plan.number.display_value}}</a></span>
+                        <span class="right">
+                        {{plan.resource_type.value == 'user' ? plan.user_resource.display_value : plan.group_resource.display_value}}&nbsp;<i class="fa fa-circle circle" aria-hidden="true"></i>&nbsp;{{plan.planned_hours.display_value}} ${ hours}
+                    </span>
+                    </div>
+                </div>
+            </div>
+            <sp-widget widget="c.formModal" ng-if="c.formModal"></sp-widget>
+        </div>
+    </div>
+</div>
+]]></template>
+    </sp_widget>
+</record_update>

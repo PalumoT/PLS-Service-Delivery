@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Scope change" max_length="40" name="x_novrp_pls_scope_change" type="collection">
+        <element label="Reason" max_length="4000" name="reason" type="string"/>
+        <element label="Service Request" max_length="32" name="service_request" reference="x_novrp_pls_service_request" type="reference"/>
+        <index name="index">
+            <element name="service_request"/>
+        </index>
+    </element>
+</database>
