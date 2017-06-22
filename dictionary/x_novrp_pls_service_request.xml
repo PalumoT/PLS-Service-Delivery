@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element extends="x_novrp_pls_task" label="Service Request" max_length="40" name="x_novrp_pls_service_request" sizeclass="3" type="collection">
-        <element label="Actual close date" max_length="40" name="actual_close_date" type="glide_date"/>
+    <element audit="true" extends="x_novrp_pls_task" label="Service Request" max_length="40" name="x_novrp_pls_service_request" sizeclass="43" type="collection">
+        <element label="Actual Close Date" max_length="40" name="actual_close_date" type="glide_date"/>
         <element label="Subservice" mandatory="true" max_length="32" name="catalog_item" reference="x_novrp_pls_catalog_item" reference_qual="javascript: new x_novrp_pls.sr_helper().filterCatalogItems(current);" type="reference" use_reference_qualifier="advanced"/>
         <element label="Delivery Accuracy Level (percentage)" max_length="20" name="delivery_accuracy_level_percentage" type="decimal"/>
         <element choice="1" label="Is the deliverable accurate?" max_length="40" name="is_the_deliverable_accurate" type="choice">

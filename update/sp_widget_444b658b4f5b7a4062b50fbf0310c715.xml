@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <client_script><![CDATA[function($scope, $rootScope, spUtil, RPService, RMHeatMapService, RMBarChartService, spPreference, $interpolate) {
+    var c = this;
+    
+    $scope.showConfirm = false;
+    $scope.query = c.data.userFilterQuery;
+    var maxPlans = 100;
+	$scope.data.activeRequests = 0;
+
+    var confirmModalCtrl;
+    $scope.confirmDialogOpts = {
+        okTxt: c.data.okMsg,
+        cancelTxt: c.data.cancelMsg,
+        afterOpen: function(ctrl){
+            confirmModalCtrl = ctrl;
+        },
+        afterClose : function(){
+            $scope.showConfirm = false;
+            confirmModalCtrl = null;
+        }
+    };
+    
+    $scope.$watch('data.timeScale', function(newVal, oldVal) {
+        if (oldVal != newVal) {
+            spPreference.set('rm.workbench.config.timeScale', newVal);
+            refreshChart();
+        }
+    });
+    
+    $scope.$watch('data.heatmapGroupType', function(newVal, oldVal) {
+        if (oldVal != newVal) {
+            spPreference.set('rm.portal.config.heatmapGroupType', newVal);
+            refreshChart();
+        }
+    });
+    
+    c.data.chartType = 'bar';
+    $scope.chart = '';
+    $scope.toggleChart = toggleChart;
+    c.data.showHeatmapGroupType = false;
+    $scope.$on('ppsrp:plan_selection_changed', onPlanSelectionChange);
+
+    $scope.toggleHeatMapType = function() {
+        refreshChart();
+    };
+    
+    function toggleChart(type) {
+        c.data.chartType = type;
+        c.data.showHeatmapGroupType = type == 'heatmap';
+        refreshChart();
+    }
+    
+    $scope.confirm = function() {
+        var title = c.data.confirmTitleMsg;
+        var text = interpolate(c.data.confirmMsg);
+        showConfirmDialog(title, text, confirm);
+    };
+
+    $scope.reject = function() {
+        var title = c.data.rejectTitleMsg;
+        var text = interpolate(c.data.rejectMsg);
+        showConfirmDialog(title, text, reject);
+    };
+    
+    $scope.confirmAndAllocate  = function() {
+        var title = c.data.confirmAndAllocateTitleMsg;
+        var text = interpolate(c.data.confirmAndAllocateMsg);
+        showConfirmDialog(title, text, confirmAndAllocate);
+    };
+    
+    function showConfirmDialog(title, text, okCallback) {
+        text = text + '<br/><br/>';
+        $scope.selectedPlans.forEach(function(plan) {
+            text = text + plan.short_description.display_value + '<br/><br/>';
+        });
+        $scope.confirmDialogOpts.title = title;
+        $scope.confirmDialogOpts.text = text;
+        $scope.confirmDialogOpts.ok = okCallback;
+        $scope.showConfirm = true;
+    }
+    
+    function confirm() {
+        RPService.confirmPlans($scope.selectedPlanIds).then(function(response) {
+            var text = interpolate(c.data.confirmedMsg);
+            closeModalAndTriggerReload(text);
+        });
+    }
+    
+    function reject() {
+        RPService.rejectPlans($scope.selectedPlanIds).then(function(response) {
+            var text = interpolate(c.data.rejectedMsg);
+            closeModalAndTriggerReload(text);
+        });
+    }
+    
+    function confirmAndAllocate() {
+        RPService.confirmAndAllocatePlans($scope.selectedPlanIds).then(function(response) {
+            var text = interpolate(c.data.confirmedAndAllocatedMsg);
+            closeModalAndTriggerReload(text);
+        });
+    }
+    
+    function closeModalAndTriggerReload(infoMessage) {
+        confirmModalCtrl.close();
+        spUtil.addInfoMessage(infoMessage);
+        $scope.selectedPlanIds = [];
+        $scope.selectedPlans = [];
+        refreshChart();
+        $rootScope.$broadcast('ppsrp:plan_state_changed');
+    }
+    
+    function onPlanSelectionChange(e, selectedPlans) {
+        $scope.selectedPlans = selectedPlans;
+        var selectedPlanIds = [];
+        selectedPlans.forEach(function(plan) {
+            selectedPlanIds.push(plan.sys_id.value);
+        });
+        $scope.selectedPlanIds = selectedPlanIds;
+        refreshChart();
+    }
+    
+    function refreshChart() {
+		$scope.chartOptions = null;
+        if ($scope.selectedPlans.length == 0)
+            return;
+
+        $scope.data.loading = true;
+		$scope.data.activeRequests++;
+        
+        var timeScaleLabel = c.data.timeScale == 'm' ? c.data.timeScaleMonthlyLabel : c.data.timeScaleWeeklyLabel;
+        RPService.getResourceChartData(c.data.chartType, 'forecasted_utilization', c.data.heatmapGroupType, c.data.timeScale, $scope.selectedPlanIds).then(function(response) {
+			if ($scope.data.activeRequests > 1) {
+				$scope.chartOptions = null;
+				decrementActiveRequests();
+				return;
+			}
+			if ($scope.selectedPlans.length == 0) {
+				decrementActiveRequests();
+				$scope.data.loading = false;
+				return;
+			}
+			
+            var chartOptions;
+            if (c.data.chartType == 'heatmap')
+                chartOptions = RMHeatMapService.getChartOptions(response.data, 'forecasted_utilization', '', timeScaleLabel, heatmapDrilldown);
+            else if (c.data.chartType == 'bar')
+                chartOptions = RMBarChartService.getChartOptions(response.data, '', timeScaleLabel, barChartDrilldown);
+            $scope.chartOptions = chartOptions;
+			decrementActiveRequests();
+        }, function() {
+			decrementActiveRequests();
+		});
+    }
+	
+	function decrementActiveRequests() {
+		$scope.data.activeRequests--;
+		if ($scope.data.activeRequests <= 0)
+			$scope.data.loading = false;
+	}
+    
+    function barChartDrilldown(state, startDate, endDate) {
+        var queryString;
+        
+        if (state == 'requested')
+            queryString = "sys_idIN" + $scope.selectedPlanIds.join(',') + "^GROUPBYtask";
+        else {
+            var bookingType = state == 'allocated' ? '1' : '2';
+            queryString = "sys_idINjavascript:rmPortalWorkbenchFilter('" +
+                    startDate + "','" + 
+                    endDate + "','" + 
+                    bookingType + "','plans','" + 
+                    $scope.selectedPlanIds.join(',') +
+                    "')" + "^GROUPBYtask";
+        }
+        spUtil.get('widget-modal', {embeddedWidgetId: 'pps-sn-list', embeddedWidgetOptions: {table: 'resource_plan', queryString: queryString, view: 'resource_workbench'}}).then(function(response) {
+            c.drilldownModal = response;
+        });
+    }
+    
+    function heatmapDrilldown(startDate, endDate, resourceType, resourceId) {
+        var bookingType = "1,2";
+        var queryString = "sys_idINjavascript:rmPortalWorkbenchFilter('" + 
+            startDate + "','" +
+            endDate + "','" +
+            bookingType + "','" +
+            resourceType + "','" +
+            $scope.selectedPlanIds.join(',') + "','" +
+            resourceId +
+            "')" + "^GROUPBYtask";
+        spUtil.get('widget-modal', {embeddedWidgetId: 'pps-sn-list', embeddedWidgetOptions: {table: 'resource_plan', queryString: queryString, view: 'resource_workbench'}}).then(function(response) {
+                    c.drilldownModal = response;
+                });
+    }
+    
+    $scope.$on('sp.widget-modal.closed', clearModal);
+    
+    function clearModal() {
+        c.drilldownModal = null;
+    }
+    
+    function interpolate(message) {
+        var textExp = $interpolate(message);
+        var text = textExp($scope);
+        return text;
+    }
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.popover {&#13;
+  z-index: 900;&#13;
+}&#13;
+.panel {&#13;
+  height: calc(100vh - 90px);&#13;
+  margin-bottom: 0px;&#13;
+}&#13;
+&#13;
+.panel .panel-heading {&#13;
+  background-color: #ffffff;&#13;
+  border-bottom: 0px;&#13;
+}&#13;
+&#13;
+.panel .panel-heading .title {&#13;
+  font-size: 24px;&#13;
+  align-items: center;&#13;
+  display: flex;&#13;
+}&#13;
+&#13;
+.panel-body {&#13;
+  height: calc(100% - 54px);&#13;
+  display: flex;&#13;
+  flex-direction: column;&#13;
+}&#13;
+&#13;
+.settings {&#13;
+  margin-left: 12px;&#13;
+}&#13;
+&#13;
+.settings-icon {&#13;
+  margin: 0 auto;&#13;
+}&#13;
+&#13;
+.selected-plans-count {&#13;
+  margin-left: 12px;&#13;
+  -webkit-border-radius: 16px;&#13;
+  -moz-border-radius: 16px;&#13;
+  border-radius: 16px;&#13;
+  background-color: #428bca;&#13;
+  color: #ffffff;&#13;
+  font-size: 12px;&#13;
+  height: inherit;&#13;
+  padding: 4px 12px;&#13;
+  vertical-align: middle;&#13;
+}&#13;
+&#13;
+.chart-container {&#13;
+  width: 100%;&#13;
+  overflow: auto;&#13;
+  flex: 1 1 auto;&#13;
+}&#13;
+&#13;
+.chart-container .chart-area {&#13;
+  margin: 0 auto;&#13;
+}&#13;
+&#13;
+.no-data {&#13;
+  text-align: center;&#13;
+  padding-top: 100px;&#13;
+  font-size: 16px;&#13;
+}&#13;
+&#13;
+.chart-toggle {&#13;
+  margin-top: 12px;&#13;
+  display: flex;&#13;
+  justify-content: center;&#13;
+}&#13;
+&#13;
+.sn-segmented-control {&#13;
+    list-style: none;&#13;
+    display: -webkit-box;&#13;
+    display: -moz-box;&#13;
+    display: -ms-flexbox;&#13;
+    display: -webkit-flex;&#13;
+    display: flex;&#13;
+    font-size: 14px;&#13;
+    cursor: pointer;&#13;
+}&#13;
+&#13;
+.sn-segmented-control li {&#13;
+  	padding: 0 15px;&#13;
+    height: 34px;&#13;
+  	line-height: 34px;&#13;
+    margin: 0;&#13;
+    background-color: rgba(255,255,255,0.45);&#13;
+    border: 1px solid #afb5b9;&#13;
+    border-right-width: 0;&#13;
+  	color: #000000;&#13;
+}&#13;
+&#13;
+.sn-segmented-control li:hover {&#13;
+    box-shadow: rgba(0,0,0,0.25) 0 .265rem .975rem -.265rem;&#13;
+}&#13;
+&#13;
+.sn-segmented-control li:active {&#13;
+    box-shadow: rgba(0,0,0,0.25) 0 1px 3px inset;&#13;
+}&#13;
+&#13;
+.sn-segmented-control li.sn-state-selected {&#13;
+    background-color: #bddcfc;&#13;
+    border-color: #278efc;&#13;
+    border-right-width: 1px;&#13;
+}&#13;
+&#13;
+.sn-segmented-control li.sn-state-selected + li {&#13;
+    border-left-width: 0;&#13;
+}&#13;
+&#13;
+.sn-segmented-control li:first-child {&#13;
+    border-top-left-radius: .265rem;&#13;
+    border-bottom-left-radius: .265rem;&#13;
+}&#13;
+&#13;
+.sn-segmented-control li:last-child {&#13;
+    border-right-width: 1px;&#13;
+    border-top-right-radius: .265rem;&#13;
+    border-bottom-right-radius: .265rem;&#13;
+}&#13;
+&#13;
+.settings-option {&#13;
+  margin-bottom: 20px;&#13;
+}&#13;
+&#13;
+.settings-option .select2 {&#13;
+  height: 30px;&#13;
+  width: 120px;&#13;
+}&#13;
+&#13;
+.loader {&#13;
+  position: absolute;&#13;
+  top: 0;&#13;
+  left: 0;&#13;
+  width: 100%;&#13;
+  height: 100%;&#13;
+  color: #81878e;&#13;
+  font-size: 20px;&#13;
+  background-color : #ffffff;&#13;
+  z-index: 999;&#13;
+&#13;
+  .loader-content {&#13;
+    position: absolute;&#13;
+    width: 100%;&#13;
+    text-align: center;&#13;
+    top: 50%;&#13;
+    display: block;&#13;
+    transform: translateY(-50%);&#13;
+    i {&#13;
+      font-size: inherit;&#13;
+    }&#13;
+  }&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>pls_resource_availability_requested</id>
+        <internal>false</internal>
+        <link><![CDATA[function(scope, element, attrs, controllers) {
+	scope.$watch('chartOptions', function() {
+		if (scope.chartOptions) {
+			$('#chartArea').highcharts(scope.chartOptions);
+			scope.chart = $('#chartArea').highcharts();
+		}
+	});
+}]]></link>
+        <name>PLS Resource Availability - Requested</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+    var user = gs.getUser();
+    
+	data.hasResourceManagerRole = gs.getUser().hasRole("resource_manager");
+    data.defaultQuery = "state=2";
+	data.filterPreferenceKey = "rm.portal.requested_plans.filter";
+	var userEncodedQuery = gs.getUser().getPreference(data.filterPreferenceKey);
+	data.userFilterQuery = userEncodedQuery ? userEncodedQuery : data.defaultQuery;
+
+    data.timeScale = user.getPreference('rm.workbench.config.timeScale');
+    if (!data.timeScale)
+        data.timeScale = 'm';
+    data.heatmapGroupType = user.getPreference('rm.portal.config.heatmapGroupType');
+    if (!data.heatmapGroupType)
+        data.heatmapGroupType = 'resource';
+    
+    data.utilizationChartTitle = gs.getMessage('% Utilization');
+    data.overviewChartTitle = gs.getMessage('Overview');
+    data.timeScaleMonthlyLabel = gs.getMessage('Months');
+    data.timeScaleWeeklyLabel = gs.getMessage('Weeks');
+    
+    // Messages
+    data.rejectMsg = gs.getMessage("Are you sure you want to proceed with rejecting the following {{selectedPlanIds.length}} resource plans?");
+    data.confirmMsg = gs.getMessage("Are you sure you want to proceed with confirming resources for the following {{selectedPlanIds.length}} resource plans?");
+    data.confirmAndAllocateMsg = gs.getMessage("Are you sure you want to proceed with confirming and also allocating resources for the following {{selectedPlanIds.length}} resource plans?");
+    data.confirmedMsg = gs.getMessage("{{selectedPlanIds.length}} resource plan(s) have been confirmed");
+    data.rejectedMsg = gs.getMessage("{{selectedPlanIds.length}} resource plan(s) have been rejected");
+    data.confirmedAndAllocatedMsg = gs.getMessage("{{selectedPlanIds.length}} resource plan(s) have been confirmed and allocated");
+    data.confirmTitleMsg = gs.getMessage("Confirm Selected Plans");
+    data.rejectTitleMsg = gs.getMessage("Reject Selected Plans");
+    data.confirmAndAllocateTitleMsg = gs.getMessage("Confirm and Allocate Selected Plans");
+    data.okMsg = gs.getMessage("OK");
+    data.cancelMsg = gs.getMessage("Cancel");
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>GALMOPA1</sys_created_by>
+        <sys_created_on>2017-06-16 10:57:07</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>444b658b4f5b7a4062b50fbf0310c715</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>PLS Resource Availability - Requested</sys_name>
+        <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
+        <sys_update_name>sp_widget_444b658b4f5b7a4062b50fbf0310c715</sys_update_name>
+        <sys_updated_by>GALMOPA1</sys_updated_by>
+        <sys_updated_on>2017-06-16 10:59:39</sys_updated_on>
+        <template><![CDATA[<now-message key="Capacity" value="${Capacity}"></now-message>
+<now-message key="Resource" value="${Resource}"></now-message>
+<now-message key="Work Hours" value="${Work Hours}"></now-message>
+
+<div class="panel panel-default b">
+    <div class="panel-heading">
+      	<div style="display: inline-block;">
+          <span class="title">${Resource Forecast}
+              <span ng-if="selectedPlanIds && selectedPlanIds.length > 0" class="selected-plans-count">{{selectedPlanIds.length}} ${ selected}</span>
+          </span>  
+      	</div>
+        <span class="pull-right" ng-if="selectedPlanIds && selectedPlanIds.length > 0">
+            <span class="btn-group" ng-if="c.data.hasResourceManagerRole">
+                <a href="javascript:void(0)" ng-click="confirm()" class="btn btn-primary">${Confirm}</a>
+                <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="fa fa-caret-down" aria-hidden="true"></span></a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="javascript:void(0)" ng-click="confirmAndAllocate()">${Confirm and Allocate}</a></li>
+                    <li><a href="javascript:void(0)" ng-click="reject()">${Reject}</a></li>
+                </ul>
+            </span>
+          	<span class="settings">
+            	<a uib-popover-template="'ppsrpPortalSettings'" popover-placement="bottom-right" popover-trigger="outsideClick" class="panel-button dropdown-toggle settings-icon" type="button">
+                  <span class="sr-only">${Settings}</span>
+                  <i class="fa fa-sliders"></i>
+              	</a>
+          	</span>
+        </span>
+        <div style="clear:both;"></div>
+    </div>
+    <div class="panel-body">
+        <pw-confirm-dialog data="confirmDialogOpts" ng-if="showConfirm"></pw-confirm-dialog>
+      <div style="flex: 0 1 auto;">
+        <div class="chart-toggle" ng-if="selectedPlanIds && selectedPlanIds.length > 0">
+            <ul class="sn-segmented-control pull-left">
+                <li ng-class="{'sn-state-selected': data.chartType == 'bar'}" ng-click="toggleChart('bar')">${Overview}</li>
+                <li ng-class="{'sn-state-selected': data.chartType == 'heatmap'}" ng-click="toggleChart('heatmap')">${% Utilization}</li>
+            </ul>
+        </div>
+      </div>
+        <div class="chart-container">
+            <div id="chartArea" ng-if="chartOptions"></div>
+            <div class="no-data">
+                <span ng-if="!selectedPlanIds || selectedPlanIds.length <= 0" id="empty">${Select a plan on the left to view forecast}</span>
+				<span ng-if="data.chartType == 'heatmap' && data.heatmapGroupType == 'role' && chartOptions == null && selectedPlanIds.length > 0" id="noData">
+                  ${Selected resource plan(s) do not have a role requested} <br/>
+                  ${Change utilization type to Group in Settings}
+              	</span>
+            </div>
+        </div>
+        <sp-widget widget="c.drilldownModal" ng-if="c.drilldownModal"></sp-widget>
+    </div>
+    <div class="loader" ng-if="data.loading">
+      <div class="loader-content">
+        <fa name="spinner" spin="true"></fa>
+        <p>${Loading...}</p>
+      </div>
+    </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

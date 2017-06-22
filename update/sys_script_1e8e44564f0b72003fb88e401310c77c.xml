@@ -12,17 +12,18 @@
         <advanced>true</advanced>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
-        <collection>x_novrp_pls_task</collection>
+        <collection>x_novrp_pls_service_request</collection>
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="x_novrp_pls_task">top_taskISNOTEMPTY^estimated_efforts_hoursVALCHANGES^ORplanned_start_dateVALCHANGES^ORplanned_end_dateVALCHANGES^ORestimated_cost_dollarsVALCHANGES^ORresource_plan_costVALCHANGESjavascript:global.getCurrencyFilter('x_novrp_pls_task','resource_plan_cost', 'USD;USD')^ORpercent_completeVALCHANGES^EQ<item endquery="false" field="top_task" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+        <filter_condition table="x_novrp_pls_service_request">top_taskISNOTEMPTY^estimated_efforts_hoursVALCHANGES^ORplanned_start_dateVALCHANGES^ORplanned_end_dateVALCHANGES^ORestimated_cost_dollarsVALCHANGES^ORresource_plan_costVALCHANGESjavascript:global.getCurrencyFilter('x_novrp_pls_service_request','resource_plan_cost', 'USD;USD')^ORpercent_completeVALCHANGES^state=1^EQ<item endquery="false" field="top_task" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
             <item endquery="false" field="estimated_efforts_hours" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
             <item endquery="false" field="planned_start_date" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
             <item endquery="false" field="planned_end_date" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
             <item endquery="false" field="estimated_cost_dollars" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
-            <item endquery="false" field="resource_plan_cost" goto="false" newquery="false" operator="VALCHANGES" or="true" value="javascript:global.getCurrencyFilter('x_novrp_pls_task','resource_plan_cost', 'USD;USD')"/>
+            <item endquery="false" field="resource_plan_cost" goto="false" newquery="false" operator="VALCHANGES" or="true" value="javascript:global.getCurrencyFilter('x_novrp_pls_service_request','resource_plan_cost', 'USD;USD')"/>
             <item endquery="false" field="percent_complete" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
+            <item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="1"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
         <is_rest>false</is_rest>
@@ -43,7 +44,6 @@
 	
 	var aggregate = getAggregatedValue(glideTopTask.getUniqueValue());
 	glideTopTask.estimated_efforts_hours = aggregate.estimated_efforts_hours;
-	glideTopTask.actual_efforts_hours = aggregate.actual_efforts_hours;
 	glideTopTask.estimated_cost_dollars = aggregate.estimated_cost_dollars;
 	glideTopTask.update();
 	
@@ -61,6 +61,7 @@
 		
 		var glideTask = new GlideAggregate("x_novrp_pls_task");
 		glideTask.addQuery("top_task", topTask);
+		glideTask.addQuery("state", "!=", "6");
 		glideTask.addAggregate("SUM", "estimated_efforts_hours");
 		glideTask.addAggregate("SUM", "actual_efforts_hours");
 		glideTask.addAggregate("SUM", "resource_plan_cost");
@@ -85,6 +86,7 @@
 		
 		var glideTask = new GlideRecord("x_novrp_pls_task");
 		glideTask.addQuery("top_task", topTask);
+		glideTask.addQuery("state", "!=", "6");
 		glideTask.orderBy("planned_start_date");
 		glideTask.query();
 		
@@ -102,6 +104,7 @@
 		
 		var glideTask = new GlideRecord("x_novrp_pls_task");
 		glideTask.addQuery("top_task", topTask);
+		glideTask.addQuery("state", "!=", "6");
 		glideTask.orderByDesc("planned_end_date");
 		glideTask.query();
 		
@@ -119,7 +122,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1e8e44564f0b72003fb88e401310c77c</sys_id>
-        <sys_mod_count>35</sys_mod_count>
+        <sys_mod_count>38</sys_mod_count>
         <sys_name>NVS - Update Parent Estimated</sys_name>
         <sys_overrides/>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
@@ -128,7 +131,7 @@
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_script_1e8e44564f0b72003fb88e401310c77c</sys_update_name>
         <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-06-09 15:12:52</sys_updated_on>
+        <sys_updated_on>2017-06-16 09:33:06</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

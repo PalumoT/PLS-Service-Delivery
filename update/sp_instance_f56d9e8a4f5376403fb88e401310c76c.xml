@@ -11,21 +11,21 @@
         <short_description/>
         <size>md</size>
         <sp_column display_value="2">d54d1e8a4f5376403fb88e401310c711</sp_column>
-        <sp_widget display_value="Resource Availability - Requested">56d6bf549301220064f572edb67ffbfc</sp_widget>
+        <sp_widget display_value="PLS Resource Availability - Requested">444b658b4f5b7a4062b50fbf0310c715</sp_widget>
         <sys_class_name>sp_instance</sys_class_name>
         <sys_created_by>paul.galmot</sys_created_by>
         <sys_created_on>2017-06-13 12:02:19</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>f56d9e8a4f5376403fb88e401310c76c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sp_instance_f56d9e8a4f5376403fb88e401310c76c</sys_update_name>
-        <sys_updated_by>paul.galmot</sys_updated_by>
-        <sys_updated_on>2017-06-13 12:02:19</sys_updated_on>
+        <sys_updated_by>GALMOPA1</sys_updated_by>
+        <sys_updated_on>2017-06-16 10:57:47</sys_updated_on>
         <title/>
         <url/>
         <widget_parameters/>

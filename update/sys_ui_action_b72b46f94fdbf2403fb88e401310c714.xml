@@ -5,7 +5,7 @@
         <active>true</active>
         <client>true</client>
         <comments/>
-        <condition>current.canWrite() &amp;&amp;  ["1", "7"].indexOf(current.state.toString()) == -1;</condition>
+        <condition>current.canWrite() &amp;&amp;  ["1", "6", "7"].indexOf(current.state.toString()) == -1;</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_context_menu>false</form_context_menu>
@@ -20,9 +20,12 @@
         <list_save_with_form_button>false</list_save_with_form_button>
         <name>Complete</name>
         <onclick>completeServiceRequest()</onclick>
-        <order>100</order>
+        <order>500</order>
         <script><![CDATA[function completeServiceRequest(){
 	var cancel = false;
+	
+	g_form.hideAllFieldMsgs('error');	
+	
 	if(g_form.getValue("is_the_deliverable_accurate") == ""){
 		g_form.setMandatory("is_the_deliverable_accurate", true);
 		g_form.showFieldMsg("is_the_deliverable_accurate",
@@ -40,6 +43,13 @@
 	}
 	
 	if(cancel){
+		g_tabs2Sections.setActive(0);
+		return false;
+	}
+	
+	if(g_form.getValue("delivery_accuracy_level_percentage") == 0 && 
+	   !confirm("Are you sure you want the level of accuracy for the current service request is correct?"))
+	{
 		return false;
 	}
 	
@@ -72,7 +82,7 @@ function runBusRuleCode(){
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b72b46f94fdbf2403fb88e401310c714</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_name>Complete</sys_name>
         <sys_overrides/>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
@@ -80,8 +90,8 @@ function runBusRuleCode(){
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_ui_action_b72b46f94fdbf2403fb88e401310c714</sys_update_name>
-        <sys_updated_by>paul.galmot</sys_updated_by>
-        <sys_updated_on>2017-06-13 08:41:40</sys_updated_on>
+        <sys_updated_by>GALMOPA1</sys_updated_by>
+        <sys_updated_on>2017-06-15 14:27:43</sys_updated_on>
         <table>x_novrp_pls_service_request</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

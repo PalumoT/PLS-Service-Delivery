@@ -43,6 +43,20 @@
             <sys_user/>
             <type/>
         </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>service_group_owners</element>
+            <position>3</position>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-06-19 08:58:44</sys_created_on>
+            <sys_id>dfec600c4fa7be4062b50fbf0310c73a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_service_group" sys_domain="global" view="Default view">f854a16e4faab600014bb2f11310c7d1</sys_ui_section>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-06-19 08:58:44</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>
             <header>false</header>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sysevent_script_action">
+    <sysevent_script_action action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition_script>current.top_task.sla_status!="sla_signed"</condition_script>
+        <description/>
+        <event_name>x_novrp_pls.sr.nc.trigger_script</event_name>
+        <name>NVS - Schedule next reminder</name>
+        <order>100</order>
+        <script><![CDATA[gs.eventQueue("x_novrp_pls.sr.nc.trigger_email",
+			  current,
+			  gs.getUserID(),
+			  gs.getUserName());
+
+var event = "x_novrp_pls.sr.nc.trigger_script";
+var glideEvent = new GlideRecord("sysevent");
+glideEvent.addEncodedQuery("name=" + event +
+						   "^table=x_novrp_pls_service_request^" + 
+						   "instance=" + current.getUniqueValue());
+glideEvent.query();
+
+if(glideEvent.getRowCount() < 3){
+	var days = gs.getProperty("x_novrp_pls.sr.nc.reminder.next");
+	var reminder = new GlideDateTime();
+	reminder.addDaysUTC(days);
+
+	gs.eventQueueScheduled(event,
+						   current,
+						   gs.getUserID(),
+						   gs.getUserName(),
+						   reminder);
+}]]></script>
+        <synchronous>false</synchronous>
+        <sys_class_name>sysevent_script_action</sys_class_name>
+        <sys_created_by>GALMOPA1</sys_created_by>
+        <sys_created_on>2017-06-20 10:42:23</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fbcd8e504f27328062b50fbf0310c7b9</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>NVS - Schedule next reminder</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
+        <sys_update_name>sysevent_script_action_fbcd8e504f27328062b50fbf0310c7b9</sys_update_name>
+        <sys_updated_by>GALMOPA1</sys_updated_by>
+        <sys_updated_on>2017-06-21 16:33:53</sys_updated_on>
+    </sysevent_script_action>
+</record_update>

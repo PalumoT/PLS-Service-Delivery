@@ -7,7 +7,7 @@
         <element label="Actual Start Date" max_length="40" name="actual_start_date" type="glide_date"/>
         <element label="Estimated Cost (Dollars)" max_length="20" name="estimated_cost_dollars" type="decimal"/>
         <element default="0" label="Estimated Efforts (Hours)" max_length="20" name="estimated_efforts_hours" type="decimal"/>
-        <element label="Estimated End Date" max_length="40" name="estimated_end_date" read_only="true" type="glide_date"/>
+        <element label="Estimated End Date" max_length="40" name="estimated_end_date" type="glide_date"/>
         <element label="Estimated Start Date" max_length="40" name="estimated_start_date" type="glide_date"/>
         <element label="Has Subtasks" max_length="40" name="has_subtasks" read_only="true" type="boolean"/>
         <element default="0" label="Percent Complete" max_length="40" name="percent_complete" read_only="true" type="percent_complete"/>

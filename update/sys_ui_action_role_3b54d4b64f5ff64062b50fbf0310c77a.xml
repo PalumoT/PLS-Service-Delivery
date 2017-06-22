@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_action_role">
+    <sys_ui_action_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_ui_action_role</sys_class_name>
+        <sys_created_by>GALMOPA1</sys_created_by>
+        <sys_created_on>2017-06-15 09:59:16</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>3b54d4b64f5ff64062b50fbf0310c77a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Reopen demand.x_novrp_pls.demand_manager</sys_name>
+        <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
+        <sys_ui_action display_value="Reopen demand">7182b5794f5bf2403fb88e401310c71b</sys_ui_action>
+        <sys_update_name>sys_ui_action_role_3b54d4b64f5ff64062b50fbf0310c77a</sys_update_name>
+        <sys_updated_by>GALMOPA1</sys_updated_by>
+        <sys_updated_on>2017-06-15 09:59:16</sys_updated_on>
+        <sys_user_role display_value="x_novrp_pls.demand_manager" name="x_novrp_pls.demand_manager">f45dacf14f93f2403fb88e401310c763</sys_user_role>
+    </sys_ui_action_role>
+</record_update>

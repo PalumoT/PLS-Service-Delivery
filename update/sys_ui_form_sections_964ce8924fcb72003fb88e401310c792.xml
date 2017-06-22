@@ -29,6 +29,20 @@
             <sys_updated_by>paul.galmot</sys_updated_by>
             <sys_updated_on>2017-06-01 12:10:52</sys_updated_on>
         </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-06-15 11:46:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>281de4324f133a4062b50fbf0310c7d1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_novrp_pls_service_request" name="x_novrp_pls_service_request" sys_domain="global" view="Default view">964ce8924fcb72003fb88e401310c792</sys_ui_form>
+            <sys_ui_section caption="Activity Log" display_value="Activity Log" name="x_novrp_pls_service_request" sys_domain="global" view="Default view">2c1de4324f133a4062b50fbf0310c7ce</sys_ui_section>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-06-15 11:46:58</sys_updated_on>
+        </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_novrp_pls_service_request</name>
             <roles/>

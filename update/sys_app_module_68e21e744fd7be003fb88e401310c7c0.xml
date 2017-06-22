@@ -19,7 +19,7 @@
         <override_menu_roles>false</override_menu_roles>
         <query>import_template_upload.do?sysparm_referring_url=x_novrp_pls_demand_list.do&amp;sysparm_target=x_novrp_pls_demand&amp;sysparm_rows=2</query>
         <report/>
-        <roles>x_novrp_pls.demand_user</roles>
+        <roles>x_novrp_pls.admin</roles>
         <survey/>
         <survey_overwrite>true</survey_overwrite>
         <sys_class_name>sys_app_module</sys_class_name>
@@ -29,7 +29,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>68e21e744fd7be003fb88e401310c7c0</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Import Demand</sys_name>
         <sys_overrides/>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
@@ -37,8 +37,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_app_module_68e21e744fd7be003fb88e401310c7c0</sys_update_name>
-        <sys_updated_by>paul.galmot</sys_updated_by>
-        <sys_updated_on>2017-06-13 13:36:17</sys_updated_on>
+        <sys_updated_by>GALMOPA1</sys_updated_by>
+        <sys_updated_on>2017-06-21 08:09:26</sys_updated_on>
         <timeline_page/>
         <title>Import Demand</title>
         <uncancelable>false</uncancelable>

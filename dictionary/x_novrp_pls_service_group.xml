@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element extends="x_novrp_pls_catalog_item" label="Service Group" max_length="40" name="x_novrp_pls_service_group" type="collection"/>
+    <element extends="x_novrp_pls_catalog_item" label="Service Group" max_length="40" name="x_novrp_pls_service_group" type="collection">
+        <element label="Service Group Owners" max_length="4000" name="service_group_owners" reference="sys_user" reference_qual="javascript: new task_helper().getUserFromGroup(gs.getProperty(&quot;x_novrp_pls.group.user&quot;));" type="glide_list" use_reference_qualifier="advanced"/>
+    </element>
 </database>

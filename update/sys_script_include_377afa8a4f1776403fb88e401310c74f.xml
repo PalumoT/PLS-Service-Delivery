@@ -9,67 +9,136 @@
         <name>demand_helper</name>
         <script><![CDATA[var demand_helper = Class.create();
 demand_helper.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
-	
+
 	filterDemands: function(){
 		var encodedQuery = this.getEncodedFilter();
 		var result = "sys_idIN";
 		var glideDemand = new GlideRecord("x_novrp_pls_demand");
 		glideDemand.addEncodedQuery(encodedQuery);
 		glideDemand.query();
-		
+
 		while(glideDemand.next()){
 			result += glideDemand.getUniqueValue();
 		}
-		
+
 		return "sys_class_name=x_novrp_pls_demand^" + result;
 	},
-	
+
+	getServiceRequestOwners: function(){
+		var demand = current;
+
+		var serviceGroupIds = current.getValue("service_groups");
+
+		if(!serviceGroupIds){
+			return new task_helper().getUserFromGroup(gs.getProperty("x_novrp_pls.group.user"));
+		}
+
+		var result = "sys_idIN";
+		var users = [];
+
+		serviceGroupIds = serviceGroupIds.split(",");
+
+		for(var j=0; j<serviceGroupIds.length; j++){
+			var serviceGroupId = serviceGroupIds[j];
+			var glideServiceGroup = new GlideRecord("x_novrp_pls_service_group");
+
+			if(glideServiceGroup.get(serviceGroupId) && glideServiceGroup.getValue("service_group_owners")){
+				var owners = glideServiceGroup.getValue("service_group_owners").split(",");
+
+				for(var i=0; i<owners.length; i++){
+					var owner = owners[i];
+					if(users.indexOf(owner) == -1){
+						users.push(owner);
+					}
+				}
+			}
+		}
+
+		return result + users.join(",");
+	},
+
+	getServicesFilter: function(){
+		var demand = current;
+
+		if(demand.service_groups == ""){
+			return "";
+		}
+
+		var serviceGroups = demand.service_groups.split(",");
+		var services = [];
+		var result = "sys_idIN";
+
+		for(var i=0; i<serviceGroups.length; i++){
+			var serviceGroup = serviceGroups[i];
+			var glideService = new GlideRecord("x_novrp_pls_service");
+			glideService.addQuery("parent", serviceGroup);
+			glideService.query();
+
+			while(glideService.next() && services.indexOf(glideService.getUniqueValue())){
+				services.push(glideService.getUniqueValue());
+			}	
+		}
+		return result + services.join(",");
+	},
+
+	getCatalogItem: function(sysId){
+		if(sysId == undefined){
+			return null;
+		}
+
+		var glideCatalogItem = new GlideRecord("x_novrp_pls_catalog_item");
+		return glideCatalogItem.get(sysId);
+	},
+
 	getEncodedFilter:function(){
 		var encodedQuery = "";
-		
-		if(gs.getUser().hasRole("x_novrp_pls.demand_user") &&
-		   !gs.getUser().hasRole("x_novrp_pls.demand_manager") ){
-			encodedQuery = "sn_brm_caller_name=" + gs.getUserID() + "^NQdemand_owner=" + gs.getUserID();
+
+		if(gs.getUser().hasRole("x_novrp_pls.demand_manager")){
+			return "";
+		}
+
+		if(gs.getUser().hasRole("x_novrp_pls.demand_user")){
+			encodedQuery = "sn_brm_caller_name=" + gs.getUserID() + "^ORassigned_to=" + gs.getUserID();
 		}
 
 		if(gs.getUser().hasRole("x_novrp_pls.service_request_user")){
 			if(encodedQuery != ""){
-				encodedQuery += "^NQ";
+				encodedQuery += "^OR";
 			}
 			encodedQuery += "service_request_ownersLIKE" + gs.getUserID();
 		}
 
 		return encodedQuery;
 	},
-	
+
 	getRegion: function(){
 		var glideRegion = new GlideRecord("x_novrp_pls_mapping_region");
 		glideRegion.addQuery("country", this.getParameter("sysparm_country"));
 		glideRegion.addQuery("business_unit", this.getParameter("sysparm_business_unit"));
 		glideRegion.query();
-		
+
 		if(glideRegion.next()){
 			return glideRegion.getValue("region");
 		}
-		
+
 		return "NULL";
 	},
-											  
-    type: 'demand_helper'
+
+	type: 'demand_helper'
 });]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>paul.galmot</sys_created_by>
         <sys_created_on>2017-06-13 14:11:42</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>377afa8a4f1776403fb88e401310c74f</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_name>demand_helper</sys_name>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
         <sys_policy>read</sys_policy>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_script_include_377afa8a4f1776403fb88e401310c74f</sys_update_name>
-        <sys_updated_by>paul.galmot</sys_updated_by>
-        <sys_updated_on>2017-06-14 09:49:51</sys_updated_on>
+        <sys_updated_by>GALMOPA1</sys_updated_by>
+        <sys_updated_on>2017-06-20 08:26:30</sys_updated_on>
     </sys_script_include>
 </record_update>

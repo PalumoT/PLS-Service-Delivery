@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="incident" label="Issue" max_length="40" name="x_novrp_pls_issue" type="collection"/>
+</database>

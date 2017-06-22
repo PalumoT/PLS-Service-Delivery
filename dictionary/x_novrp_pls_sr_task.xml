@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element extends="x_novrp_pls_task" label="Service Request Task" max_length="40" name="x_novrp_pls_sr_task" sizeclass="96" type="collection">
+    <element extends="x_novrp_pls_task" label="Service Request Task" max_length="40" name="x_novrp_pls_sr_task" sizeclass="546" type="collection">
         <element label="Milestone" max_length="40" name="milestone" type="string"/>
     </element>
 </database>

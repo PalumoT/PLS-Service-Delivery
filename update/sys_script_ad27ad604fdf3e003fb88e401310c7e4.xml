@@ -31,7 +31,7 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-	var practices = "";
+	var practices = [];
 	var serviceGroups = current.service_groups.toString().split(",");	
 	
 	for(var i=0; i<serviceGroups.length; i++){
@@ -39,13 +39,13 @@
 		
 		if(glideServiceGroup.get(serviceGroups[i])){
 			var parent =  glideServiceGroup.getValue("parent");
-			if(practices.indexOf(parent) == -1){
-				practices += parent + ",";
+			if(parent && practices.indexOf(parent) == -1){
+				practices.push(parent);
 			}
 		}
 	}
 	
-	current.practices = practices;
+	current.practices = practices.join(",");
 
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -55,7 +55,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ad27ad604fdf3e003fb88e401310c7e4</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>NVS - Autofill Practices</sys_name>
         <sys_overrides/>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
@@ -63,8 +63,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_script_ad27ad604fdf3e003fb88e401310c7e4</sys_update_name>
-        <sys_updated_by>paul.galmot</sys_updated_by>
-        <sys_updated_on>2017-06-08 16:18:25</sys_updated_on>
+        <sys_updated_by>GALMOPA1</sys_updated_by>
+        <sys_updated_on>2017-06-19 10:50:30</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

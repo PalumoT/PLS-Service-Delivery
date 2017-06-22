@@ -12,11 +12,11 @@
         <advanced>true</advanced>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
-        <collection>x_novrp_pls_task</collection>
-        <condition>current.state.changesTo(7);</condition>
+        <collection>x_novrp_pls_service_request</collection>
+        <condition>current.state.changesTo(6);</condition>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="x_novrp_pls_task">has_subtasks=true^EQ<item endquery="false" field="has_subtasks" goto="false" newquery="false" operator="=" or="false" value="true"/>
+        <filter_condition table="x_novrp_pls_service_request">has_subtasks=true^EQ<item endquery="false" field="has_subtasks" goto="false" newquery="false" operator="=" or="false" value="true"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
         <is_rest>false</is_rest>
@@ -33,13 +33,13 @@
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 
 	var comments = "";
-	var glideTask = new GlideRecord("x_novrp_pls_task");
+	var glideTask = new GlideRecord("x_novrp_pls_sr_task");
 	glideTask.addQuery("top_task", current.getUniqueValue());
 	glideTask.addQuery("state", "!=", 7);
 	glideTask.query();
 	
 	while(glideTask.next()){
-		glideTask.setValue("state", 7);
+		glideTask.setValue("state", 6);
 		glideTask.setValue("actual_end_date", new GlideDateTime());
 		glideTask.update();
 	}
@@ -47,9 +47,9 @@
 	var total = glideTask.getRowCount();
 	
 	if(total == 1){
-		gs.addInfoMessage("1 sub task has been completed");
+		gs.addInfoMessage("1 sub task has been cancelled");
 	}else{
-		gs.addInfoMessage(total + " sub tasks have been completed");
+		gs.addInfoMessage(total + " sub tasks have been cancelled");
 	}
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -59,7 +59,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b9dfa5b54f5bf2403fb88e401310c7b1</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>NVS - Close subtask</sys_name>
         <sys_overrides/>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
@@ -67,8 +67,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_script_b9dfa5b54f5bf2403fb88e401310c7b1</sys_update_name>
-        <sys_updated_by>paul.galmot</sys_updated_by>
-        <sys_updated_on>2017-06-13 09:05:47</sys_updated_on>
+        <sys_updated_by>GALMOPA1</sys_updated_by>
+        <sys_updated_on>2017-06-15 12:28:58</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

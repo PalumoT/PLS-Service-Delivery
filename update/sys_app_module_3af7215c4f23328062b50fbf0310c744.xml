@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application/>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter table="sys_user_grmember">group=5ba5c9a44fdb3e003fb88e401310c78a^EQ<item display_table="sys_user_group" display_value="Demand Submitter" endquery="false" field="group" goto="false" newquery="false" operator="=" or="false" value="5ba5c9a44fdb3e003fb88e401310c78a"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>DIRECT</link_type>
+        <map_page/>
+        <mobile_title>Demand Submitter</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>sys_user_grmember</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query>sys_m2m_template.do%3Fsys_is_list%3Dtrue%26sys_is_related_list%3Dtrue%26sys_target%3Dsys_user_grmember%26sysparm_checked_items%3D%26sysparm_ck%3Df01265904f23328062b50fbf0310c7c8d4045ebadcbdddeea93e4a8b9b18c6004c1f02cd%26sysparm_collection%3Dsys_user_group%26sysparm_collectionID%3D5ba5c9a44fdb3e003fb88e401310c78a%26sysparm_collection_key%3Dgroup%26sysparm_collection_label%3DGroup%2BMembers%26sysparm_collection_related_field%3Duser%26sysparm_collection_related_file%3Dsys_user%26sysparm_collection_relationship%3D%26sysparm_fixed_query%3D%26sysparm_group_sort%3D%26sysparm_list_css%3D%26sysparm_m2m_ref%3Dsys_user_grmember%26sysparm_query%3D%26sysparm_referring_url%3Dsys_user_group.do%253fsys_id%253d5ba5c9a44fdb3e003fb88e401310c78a%254099%2540sysparm_record_rows%253d14%254099%2540sysparm_view%253dresource_manager%254099%2540sysparm_record_target%253dsys_user_group%254099%2540sysparm_record_list%253dtypeCONTAINSe81e87444f1fba003fb88e401310c76b%25255EORDERBYDESCsys_created_on%254099%2540sysparm_record_row%253d5%26sysparm_stack%3Dno%26sysparm_target%3D%26sysparm_view%3Dresource_manager</query>
+        <report/>
+        <roles/>
+        <survey/>
+        <survey_overwrite>true</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>GALMOPA1</sys_created_by>
+        <sys_created_on>2017-06-20 07:56:05</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3af7215c4f23328062b50fbf0310c744</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Demand Submitter</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
+        <sys_update_name>sys_app_module_3af7215c4f23328062b50fbf0310c744</sys_update_name>
+        <sys_updated_by>GALMOPA1</sys_updated_by>
+        <sys_updated_on>2017-06-20 08:00:56</sys_updated_on>
+        <timeline_page/>
+        <title>Demand Submitter</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

@@ -39,15 +39,9 @@
 		cancel = true;
 	}
 	
-	if(g_form.getValue("estimated_cost_dollars") == ""){
-		g_form.setMandatory("estimated_cost_dollars", true);
-		g_form.showFieldMsg("estimated_cost_dollars", "Please select a value for the demand value", 'error');
-		cancel = true;
-	}
-	
-	if(g_form.getValue("proposal_description") == ""){
-		g_form.setMandatory("proposal_description", true);
-		g_form.showFieldMsg("proposal_description", "Please provide some details", 'error');
+	if(g_form.getValue("demand_value_dollars") == ""){
+		g_form.setMandatory("demand_value_dollars", true);
+		g_form.showFieldMsg("demand_value_dollars", "Please enter a value for the demand value", 'error');
 		cancel = true;
 	}
 	
@@ -82,7 +76,7 @@ function runBusRuleCode(){
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>50db68714f93f2403fb88e401310c7fd</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_name>Move to Proposal Submitted</sys_name>
         <sys_overrides/>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
@@ -90,8 +84,8 @@ function runBusRuleCode(){
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_ui_action_50db68714f93f2403fb88e401310c7fd</sys_update_name>
-        <sys_updated_by>paul.galmot</sys_updated_by>
-        <sys_updated_on>2017-06-13 13:55:33</sys_updated_on>
+        <sys_updated_by>GALMOPA1</sys_updated_by>
+        <sys_updated_on>2017-06-20 12:55:01</sys_updated_on>
         <table>x_novrp_pls_demand</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

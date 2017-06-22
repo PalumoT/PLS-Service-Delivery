@@ -10,17 +10,36 @@
         <script><![CDATA[var sr_helper = Class.create();
 sr_helper.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 	
+	getRequestedStartDate: function(){
+		var demand = this.getParameter("sysparm_demand");
+		var glideDemand = new GlideRecord("x_novrp_pls_demand");
+
+		if(!glideDemand.get(demand)){
+			return "";
+		}
+
+		var json = new global.JSON();
+		var response = {
+			"start_date": glideDemand.getValue("requested_start_date"),
+			"end_date": glideDemand.getValue("requested_end_date")
+		};
+
+		return json.encode(response);
+	},
+	
 	filterCatalogItems: function(serviceRequest){
-		var encodedQuery = "active=true^sys_class_name=" + gs.getProperty("x_novrp_pls.ref_catalog_item");
+		var encodedQuery = "active=true^sys_class_name=" +
+			gs.getProperty("x_novrp_pls.ref_catalog_item");
+		
 		var demand = serviceRequest.top_task.getRefRecord();
 		
-		gs.info(demand);
-		
-		if(demand != "" && demand.services_requested != ""){
-			encodedQuery += "^parentIN" + demand.services_requested;
+		if(demand != ""){
+			if(demand.services_requested != ""){
+				encodedQuery += "^parentIN" + demand.services_requested;
+			}else if(demand.service_groups != ""){
+				encodedQuery += "^parent.parentIN" + demand.service_groups;
+			}	
 		}
-		
-		gs.info(encodedQuery);
 		
 		var result = "sys_idIN";
 		
@@ -29,7 +48,7 @@ sr_helper.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 		glideDemand.query();
 		
 		while(glideDemand.next()){	
-			result += glideDemand.getUniqueValue();
+			result += glideDemand.getUniqueValue() + ",";
 		}
 		
 		return result;
@@ -77,14 +96,14 @@ sr_helper.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_on>2017-06-14 09:32:17</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>71a447964f9f764062b50fbf0310c7f2</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>46</sys_mod_count>
         <sys_name>sr_helper</sys_name>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
         <sys_policy>read</sys_policy>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_script_include_71a447964f9f764062b50fbf0310c7f2</sys_update_name>
-        <sys_updated_by>paul.galmot</sys_updated_by>
-        <sys_updated_on>2017-06-14 09:53:03</sys_updated_on>
+        <sys_updated_by>GALMOPA1</sys_updated_by>
+        <sys_updated_on>2017-06-21 13:40:33</sys_updated_on>
     </sys_script_include>
 </record_update>

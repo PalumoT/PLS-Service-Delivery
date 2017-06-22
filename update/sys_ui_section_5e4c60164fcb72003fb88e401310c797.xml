@@ -4,238 +4,224 @@
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.begin_split</element>
             <position>0</position>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-06-13 08:35:54</sys_created_on>
-            <sys_id>1a2e69064f5f36403fb88e401310c7e8</sys_id>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-06-16 08:09:44</sys_created_on>
+            <sys_id>9cf40d434f977a4062b50fbf0310c76c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Details" display_value="Details" name="x_novrp_pls_service_request" sys_domain="global" view="Default view">5e4c60164fcb72003fb88e401310c797</sys_ui_section>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-13 08:35:54</sys_updated_on>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-06-16 08:09:44</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>planned_start_date</element>
             <position>1</position>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-06-13 08:35:54</sys_created_on>
-            <sys_id>9a2e69064f5f36403fb88e401310c7e8</sys_id>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-06-16 08:09:44</sys_created_on>
+            <sys_id>14f40d434f977a4062b50fbf0310c76d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Details" display_value="Details" name="x_novrp_pls_service_request" sys_domain="global" view="Default view">5e4c60164fcb72003fb88e401310c797</sys_ui_section>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-13 08:35:54</sys_updated_on>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-06-16 08:09:44</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>estimated_efforts_hours</element>
             <position>2</position>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-06-13 08:35:54</sys_created_on>
-            <sys_id>1e2e69064f5f36403fb88e401310c7e8</sys_id>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-06-16 08:09:44</sys_created_on>
+            <sys_id>94f40d434f977a4062b50fbf0310c76d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Details" display_value="Details" name="x_novrp_pls_service_request" sys_domain="global" view="Default view">5e4c60164fcb72003fb88e401310c797</sys_ui_section>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-13 08:35:54</sys_updated_on>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-06-16 08:09:44</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>planned_end_date</element>
             <position>3</position>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-06-13 08:35:54</sys_created_on>
-            <sys_id>9e2e69064f5f36403fb88e401310c7e8</sys_id>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-06-16 08:09:44</sys_created_on>
+            <sys_id>18f40d434f977a4062b50fbf0310c76d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Details" display_value="Details" name="x_novrp_pls_service_request" sys_domain="global" view="Default view">5e4c60164fcb72003fb88e401310c797</sys_ui_section>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-13 08:35:54</sys_updated_on>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-06-16 08:09:44</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>estimated_cost_dollars</element>
             <position>4</position>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-06-13 08:35:54</sys_created_on>
-            <sys_id>122e69064f5f36403fb88e401310c7e9</sys_id>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-06-16 08:09:44</sys_created_on>
+            <sys_id>98f40d434f977a4062b50fbf0310c76d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Details" display_value="Details" name="x_novrp_pls_service_request" sys_domain="global" view="Default view">5e4c60164fcb72003fb88e401310c797</sys_ui_section>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-13 08:35:54</sys_updated_on>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-06-16 08:09:44</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>resource_plan_cost</element>
             <position>5</position>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-06-13 08:35:54</sys_created_on>
-            <sys_id>922e69064f5f36403fb88e401310c7e9</sys_id>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-06-16 08:09:44</sys_created_on>
+            <sys_id>1cf40d434f977a4062b50fbf0310c76d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Details" display_value="Details" name="x_novrp_pls_service_request" sys_domain="global" view="Default view">5e4c60164fcb72003fb88e401310c797</sys_ui_section>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-13 08:35:54</sys_updated_on>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-06-16 08:09:44</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>actual_close_date</element>
+            <element>lead_location</element>
             <position>6</position>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-06-13 08:35:54</sys_created_on>
-            <sys_id>162e69064f5f36403fb88e401310c7e9</sys_id>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-06-16 08:09:44</sys_created_on>
+            <sys_id>9cf40d434f977a4062b50fbf0310c76d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Details" display_value="Details" name="x_novrp_pls_service_request" sys_domain="global" view="Default view">5e4c60164fcb72003fb88e401310c797</sys_ui_section>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-13 08:35:54</sys_updated_on>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-06-16 08:09:44</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>number_of_scope_change</element>
             <position>7</position>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-06-13 08:35:54</sys_created_on>
-            <sys_id>962e69064f5f36403fb88e401310c7e9</sys_id>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-06-16 08:09:44</sys_created_on>
+            <sys_id>10f40d434f977a4062b50fbf0310c76e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Details" display_value="Details" name="x_novrp_pls_service_request" sys_domain="global" view="Default view">5e4c60164fcb72003fb88e401310c797</sys_ui_section>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-13 08:35:54</sys_updated_on>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-06-16 08:09:44</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
             <position>8</position>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-06-13 08:35:54</sys_created_on>
-            <sys_id>1a2e69064f5f36403fb88e401310c7e9</sys_id>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-06-16 08:09:44</sys_created_on>
+            <sys_id>90f40d434f977a4062b50fbf0310c76e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Details" display_value="Details" name="x_novrp_pls_service_request" sys_domain="global" view="Default view">5e4c60164fcb72003fb88e401310c797</sys_ui_section>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-13 08:35:54</sys_updated_on>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-06-16 08:09:44</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>actual_start_date</element>
             <position>9</position>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-06-13 08:35:54</sys_created_on>
-            <sys_id>9a2e69064f5f36403fb88e401310c7e9</sys_id>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-06-16 08:09:44</sys_created_on>
+            <sys_id>14f40d434f977a4062b50fbf0310c76e</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Details" display_value="Details" name="x_novrp_pls_service_request" sys_domain="global" view="Default view">5e4c60164fcb72003fb88e401310c797</sys_ui_section>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-13 08:35:54</sys_updated_on>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-06-16 08:09:44</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>actual_efforts_hours</element>
             <position>10</position>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-06-13 08:35:54</sys_created_on>
-            <sys_id>1e2e69064f5f36403fb88e401310c7e9</sys_id>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-06-16 08:09:44</sys_created_on>
+            <sys_id>98f409c34f977a4062b50fbf0310c7ff</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Details" display_value="Details" name="x_novrp_pls_service_request" sys_domain="global" view="Default view">5e4c60164fcb72003fb88e401310c797</sys_ui_section>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-13 08:35:54</sys_updated_on>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-06-16 08:09:44</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>actual_end_date</element>
             <position>11</position>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-06-13 08:35:54</sys_created_on>
-            <sys_id>9e2e69064f5f36403fb88e401310c7e9</sys_id>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-06-16 08:09:44</sys_created_on>
+            <sys_id>1cf409c34f977a4062b50fbf0310c7ff</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Details" display_value="Details" name="x_novrp_pls_service_request" sys_domain="global" view="Default view">5e4c60164fcb72003fb88e401310c797</sys_ui_section>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-13 08:35:54</sys_updated_on>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-06-16 08:09:44</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>actual_cost</element>
+            <element>actual_close_date</element>
             <position>12</position>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-06-13 08:35:54</sys_created_on>
-            <sys_id>122e69064f5f36403fb88e401310c7ea</sys_id>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-06-16 08:09:44</sys_created_on>
+            <sys_id>9cf409c34f977a4062b50fbf0310c7ff</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Details" display_value="Details" name="x_novrp_pls_service_request" sys_domain="global" view="Default view">5e4c60164fcb72003fb88e401310c797</sys_ui_section>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-13 08:35:54</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>lead_location</element>
-            <position>13</position>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-06-13 08:35:54</sys_created_on>
-            <sys_id>922e69064f5f36403fb88e401310c7ea</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Details" display_value="Details" name="x_novrp_pls_service_request" sys_domain="global" view="Default view">5e4c60164fcb72003fb88e401310c797</sys_ui_section>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-13 08:35:54</sys_updated_on>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-06-16 08:09:44</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>is_the_deliverable_accurate</element>
-            <position>14</position>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-06-13 08:35:54</sys_created_on>
-            <sys_id>162e69064f5f36403fb88e401310c7ea</sys_id>
+            <position>13</position>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-06-16 08:09:44</sys_created_on>
+            <sys_id>10f449c34f977a4062b50fbf0310c700</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Details" display_value="Details" name="x_novrp_pls_service_request" sys_domain="global" view="Default view">5e4c60164fcb72003fb88e401310c797</sys_ui_section>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-13 08:35:54</sys_updated_on>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-06-16 08:09:44</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>delivery_accuracy_level_percentage</element>
-            <position>15</position>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-06-13 08:35:54</sys_created_on>
-            <sys_id>962e69064f5f36403fb88e401310c7ea</sys_id>
+            <position>14</position>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-06-16 08:09:44</sys_created_on>
+            <sys_id>90f449c34f977a4062b50fbf0310c700</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Details" display_value="Details" name="x_novrp_pls_service_request" sys_domain="global" view="Default view">5e4c60164fcb72003fb88e401310c797</sys_ui_section>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-13 08:35:54</sys_updated_on>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-06-16 08:09:44</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.end_split</element>
-            <position>16</position>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-06-13 08:35:54</sys_created_on>
-            <sys_id>1a2e69064f5f36403fb88e401310c7ea</sys_id>
+            <position>15</position>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-06-16 08:09:44</sys_created_on>
+            <sys_id>14f449c34f977a4062b50fbf0310c700</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Details" display_value="Details" name="x_novrp_pls_service_request" sys_domain="global" view="Default view">5e4c60164fcb72003fb88e401310c797</sys_ui_section>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-13 08:35:54</sys_updated_on>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-06-16 08:09:44</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>

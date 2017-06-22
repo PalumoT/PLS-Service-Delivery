@@ -102,12 +102,12 @@
             <relationship/>
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-06-08 12:34:02</sys_created_on>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-06-15 15:06:36</sys_created_on>
             <sys_customer_update>true</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>b5b43c604f9b3e003fb88e401310c77f</sys_id>
+            <sys_id>f0cad9fa4f173a4062b50fbf0310c7bd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>rm_story</sys_name>
             <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
@@ -115,9 +115,9 @@
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
             <sys_update_name>sys_ui_list_rm_story_scrum</sys_update_name>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-08 12:34:02</sys_updated_on>
-            <sys_user display_value="Paul Galmot">7b8c0fd34feaea40b734260f0310c71e</sys_user>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-06-15 15:06:36</sys_updated_on>
+            <sys_user display_value="Mr Paul Galmot">19f571514f66a6009c6fb2f11310c744</sys_user>
             <view display_value="Scrum" name="scrum">7d1ba14e7f00000122b0bf6a282d2247</view>
             <view_name/>
         </sys_ui_list>
