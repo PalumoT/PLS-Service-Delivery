@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element audit="true" extends="x_novrp_pls_task" label="Service Request" max_length="40" name="x_novrp_pls_service_request" sizeclass="43" type="collection">
+    <element audit="true" extends="x_novrp_pls_task" label="Service Request" max_length="40" name="x_novrp_pls_service_request" sizeclass="56" type="collection">
         <element label="Actual Close Date" max_length="40" name="actual_close_date" type="glide_date"/>
+        <element label="Brand" max_length="32" name="brand" reference="x_novrp_pls_brand" type="reference"/>
         <element label="Subservice" mandatory="true" max_length="32" name="catalog_item" reference="x_novrp_pls_catalog_item" reference_qual="javascript: new x_novrp_pls.sr_helper().filterCatalogItems(current);" type="reference" use_reference_qualifier="advanced"/>
         <element label="Delivery Accuracy Level (percentage)" max_length="20" name="delivery_accuracy_level_percentage" type="decimal"/>
+        <element label="Franchise" max_length="32" name="franchise" reference="x_novrp_pls_franchise" type="reference"/>
         <element choice="1" label="Is the deliverable accurate?" max_length="40" name="is_the_deliverable_accurate" type="choice">
             <choice>
                 <element label="Yes" sequence="1" value="yes"/>
@@ -13,6 +15,7 @@
         <element label="Lead Location" max_length="32" name="lead_location" reference="cmn_location" reference_qual="company=36f1db574fa97e403fb88e401310c7ea^EQ" reference_qual_condition="company=36f1db574fa97e403fb88e401310c7ea^EQ" type="reference"/>
         <element default="0" label="Number of scope change" max_length="40" name="number_of_scope_change" read_only="true" type="integer"/>
         <element label="Practice" max_length="32" name="practice" reference="x_novrp_pls_practice" type="reference"/>
+        <element label="Requester" max_length="32" name="requester" reference="sys_user" type="reference"/>
         <element label="Service" max_length="32" name="service" reference="x_novrp_pls_service" type="reference"/>
         <element label="Service Group" max_length="32" name="service_group" reference="x_novrp_pls_service_group" type="reference"/>
     </element>

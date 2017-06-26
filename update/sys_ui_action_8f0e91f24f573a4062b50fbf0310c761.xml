@@ -5,7 +5,7 @@
         <active>true</active>
         <client>true</client>
         <comments/>
-        <condition>current.assigned_to == gs.getUserID() &amp;&amp; current.state == 7;</condition>
+        <condition>(current.assigned_to == gs.getUserID() || gs.hasRole("x_novrp_pls.service_request_manager") )&amp;&amp; current.state == 7 &amp;&amp; !current.has_subtasks;</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_context_menu>false</form_context_menu>
@@ -54,7 +54,7 @@ function runBusRuleCode(){
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8f0e91f24f573a4062b50fbf0310c761</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Reopen</sys_name>
         <sys_overrides/>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
@@ -63,7 +63,7 @@ function runBusRuleCode(){
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_ui_action_8f0e91f24f573a4062b50fbf0310c761</sys_update_name>
         <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-06-20 17:29:28</sys_updated_on>
+        <sys_updated_on>2017-06-22 23:47:26</sys_updated_on>
         <table>x_novrp_pls_sr_task</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

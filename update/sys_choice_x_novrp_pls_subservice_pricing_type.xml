@@ -6,7 +6,7 @@
             <element>pricing_type</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Standard price</label>
+            <label>Fixed</label>
             <language>en</language>
             <name>x_novrp_pls_subservice</name>
             <sequence>1</sequence>
@@ -16,9 +16,9 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>6dc912bb4f437a003fb88e401310c79b</sys_id>
-            <sys_mod_count>2</sys_mod_count>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-06 12:00:41</sys_updated_on>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-06-23 00:09:37</sys_updated_on>
             <value>standard</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -26,7 +26,7 @@
             <element>pricing_type</element>
             <hint/>
             <inactive>false</inactive>
-            <label>FTE Basis Work</label>
+            <label>Standard Project</label>
             <language>en</language>
             <name>x_novrp_pls_subservice</name>
             <sequence>2</sequence>
@@ -36,9 +36,9 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>3fc9d2bb4f437a003fb88e401310c7b2</sys_id>
-            <sys_mod_count>2</sys_mod_count>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-06 12:00:44</sys_updated_on>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-06-23 00:09:52</sys_updated_on>
             <value>fte</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
@@ -46,7 +46,7 @@
             <element>pricing_type</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Manual</label>
+            <label>Solution</label>
             <language>en</language>
             <name>x_novrp_pls_subservice</name>
             <sequence>3</sequence>
@@ -56,9 +56,9 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>07d956bb4f437a003fb88e401310c7f7</sys_id>
-            <sys_mod_count>2</sys_mod_count>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-06 12:00:47</sys_updated_on>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-06-23 00:10:21</sys_updated_on>
             <value>manual</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
@@ -69,15 +69,15 @@
             <sys_created_on>2017-06-06 12:00:16</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_id>63c956bb4f437a003fb88e401310c7ee</sys_id>
-            <sys_mod_count>9</sys_mod_count>
+            <sys_mod_count>13</sys_mod_count>
             <sys_name>pricing_type</sys_name>
             <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
             <sys_policy/>
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
             <sys_update_name>sys_choice_x_novrp_pls_subservice_pricing_type</sys_update_name>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-06 12:00:47</sys_updated_on>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-06-23 00:10:21</sys_updated_on>
         </sys_choice_set>
     </sys_choice>
 </record_update>

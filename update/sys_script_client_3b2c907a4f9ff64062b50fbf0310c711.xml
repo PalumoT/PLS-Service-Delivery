@@ -16,12 +16,16 @@
 	}
 	
 	var glideAjax = new GlideAjax("x_novrp_pls.sr_helper");
-	glideAjax.addParam("sysparm_name", "getRequestedStartDate");
+	glideAjax.addParam("sysparm_name", "getFieldsFromDemand");
 	glideAjax.addParam("sysparm_demand", g_form.getValue("top_task"));
 	glideAjax.getXMLAnswer(function(answer){
 		var data = JSON.parse(answer);
 		g_form.setValue("planned_start_date", data.start_date);
 		g_form.setValue("planned_end_date", data.end_date);
+		g_form.setValue("franchise", data.franchise);
+		g_form.setValue("brand", data.brand);
+		g_form.setValue("requester", data.requester);
+		
 	});
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
@@ -31,7 +35,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3b2c907a4f9ff64062b50fbf0310c711</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>NVS - Get Requested Start Date</sys_name>
         <sys_overrides/>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
@@ -40,7 +44,7 @@
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_script_client_3b2c907a4f9ff64062b50fbf0310c711</sys_update_name>
         <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-06-15 11:03:50</sys_updated_on>
+        <sys_updated_on>2017-06-22 15:08:22</sys_updated_on>
         <table>x_novrp_pls_service_request</table>
         <type>onLoad</type>
         <ui_type>0</ui_type>

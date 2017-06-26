@@ -16,12 +16,13 @@
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="x_novrp_pls_service_request">stateCHANGESTO2^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="2"/>
+        <filter_condition table="x_novrp_pls_service_request">stateCHANGESTO2^stateCHANGESFROM1^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="2"/>
+            <item endquery="false" field="state" goto="false" newquery="false" operator="CHANGESFROM" or="false" value="1"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
         <is_rest>false</is_rest>
         <message/>
-        <name>NVS - Create Task</name>
+        <name>NVS - Create  Service Request Tasks</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -41,31 +42,40 @@
 		var tasks = getActivities("catalog_item=" + request.catalog_item);
 		var start = request.getValue("planned_start_date");
 		
-		for(var i=0; i<tasks.length; i++){
-			var task = tasks[i];
-			task.planned_start_date = start;
-			
-			var parent = createTask(request.getUniqueValue(), task);
-			
-			if(task.subtasks.length > 0){
-				for(var j=0; j<task.subtasks.length; j++){
-					var subtask = task.subtasks[j];
-					subtask.planned_start_date = start;
-					
-					var glideActivity = createTask(parent.getUniqueValue(), subtask);
-					
-					parent.estimated_efforts_hours += parseInt(glideActivity.getValue("estimated_efforts_hours"));
-					start = glideActivity.getValue("planned_end_date");
-				}
-				
-				parent.planned_end_date = start;
-				gs.info("update parent with new end date");
-				parent.update();
-			}
-			start = parent.getValue("planned_end_date");
+		if(tasks.length == 0){
+			gs.addInfoMessage("No task configured for the item " +
+							  request.getDisplayValue("catalog_item"));
 		}
 		
-		gs.info("go to next task");
+		processTasks(start, current.getUniqueValue(), tasks);
+	}
+	
+	function processTasks(start, parent, tasks){
+		if(!parent || !tasks){
+			return;
+		}
+		
+		var estimated_efforts = 0;
+		
+		for(var j=0; j<tasks.length; j++){
+			var task = tasks[j];
+			task.planned_start_date = start;
+
+			var glideActivity = createTask(parent, task);
+			
+			if(task.subtasks.length > 0){
+				var result = processTasks(start, glideActivity.getUniqueValue(), task.subtasks);
+				glideActivity.setValue("estimated_efforts_hours", result.efforts);
+				glideActivity.setValue("planned_end_date", result.start);
+				glideActivity.update();
+			}
+			
+			estimated_efforts +=
+				parseInt(glideActivity.getValue("estimated_efforts_hours"));
+			start = glideActivity.getValue("planned_end_date");
+		}
+		
+		return {"start": start, "efforts": estimated_efforts};
 	}
 	
 	function getActivities(encodedQuery){
@@ -89,6 +99,7 @@
 			
 			if(glideTask.getValue("subtasks") > 0){
 				var subtasks = getActivities("top_task=" + glideTask.getUniqueValue());
+				gs.info("subtasks :" + subtasks.length);
 				activity.subtasks = subtasks;
 			}else{
 				activity.estimated_efforts_hours = glideTask.getValue("estimated_efforts_hours");
@@ -133,8 +144,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f5093b284f27b28062b50fbf0310c7ee</sys_id>
-        <sys_mod_count>11</sys_mod_count>
-        <sys_name>NVS - Create Task</sys_name>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>NVS - Create  Service Request Tasks</sys_name>
         <sys_overrides/>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
         <sys_policy/>
@@ -142,7 +153,7 @@
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_script_f5093b284f27b28062b50fbf0310c7ee</sys_update_name>
         <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-06-21 14:04:14</sys_updated_on>
+        <sys_updated_on>2017-06-22 13:26:41</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

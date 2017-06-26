@@ -10,7 +10,7 @@
         <script><![CDATA[var sr_helper = Class.create();
 sr_helper.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 	
-	getRequestedStartDate: function(){
+	getFieldsFromDemand: function(){
 		var demand = this.getParameter("sysparm_demand");
 		var glideDemand = new GlideRecord("x_novrp_pls_demand");
 
@@ -21,7 +21,10 @@ sr_helper.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 		var json = new global.JSON();
 		var response = {
 			"start_date": glideDemand.getValue("requested_start_date"),
-			"end_date": glideDemand.getValue("requested_end_date")
+			"end_date": glideDemand.getValue("requested_end_date"),
+			"requester": glideDemand.getValue("requester"),
+			"franchise": glideDemand.getValue("franchise"),
+			"brand": glideDemand.getValue("brand")
 		};
 
 		return json.encode(response);
@@ -96,7 +99,7 @@ sr_helper.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_on>2017-06-14 09:32:17</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>71a447964f9f764062b50fbf0310c7f2</sys_id>
-        <sys_mod_count>46</sys_mod_count>
+        <sys_mod_count>47</sys_mod_count>
         <sys_name>sr_helper</sys_name>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
         <sys_policy>read</sys_policy>
@@ -104,6 +107,6 @@ sr_helper.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_script_include_71a447964f9f764062b50fbf0310c7f2</sys_update_name>
         <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-06-21 13:40:33</sys_updated_on>
+        <sys_updated_on>2017-06-22 15:07:20</sys_updated_on>
     </sys_script_include>
 </record_update>

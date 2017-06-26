@@ -87,12 +87,12 @@
             <relationship/>
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-06-08 12:28:57</sys_created_on>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-06-22 14:22:25</sys_created_on>
             <sys_customer_update>true</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>9f83bcec4f5b3e003fb88e401310c7ad</sys_id>
+            <sys_id>bdc319414f27368062b50fbf0310c7da</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_novrp_pls_catalog_item_task</sys_name>
             <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
@@ -100,9 +100,9 @@
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
             <sys_update_name>sys_ui_list_x_novrp_pls_catalog_item_task_x_novrp_pls_subservice_null</sys_update_name>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-08 12:28:57</sys_updated_on>
-            <sys_user/>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-06-22 14:22:25</sys_updated_on>
+            <sys_user display_value="Mr Paul Galmot">19f571514f66a6009c6fb2f11310c744</sys_user>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>
         </sys_ui_list>

@@ -51,6 +51,11 @@
 	var percent = completed / total;
 	var parent = current.top_task.getRefRecord();
 	parent.percent_complete = percent * 100;
+	
+	if(parent.percent_complete == 100){
+		parent.state = 7;
+	}
+	
 	parent.update();
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
@@ -60,7 +65,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c2826f104f2f328062b50fbf0310c796</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>NVS - Update Percent On Task Completed</sys_name>
         <sys_overrides/>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
@@ -69,7 +74,7 @@
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_script_c2826f104f2f328062b50fbf0310c796</sys_update_name>
         <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-06-21 08:28:55</sys_updated_on>
+        <sys_updated_on>2017-06-22 10:42:17</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

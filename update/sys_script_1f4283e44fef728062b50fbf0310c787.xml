@@ -8,7 +8,7 @@
         <action_query>false</action_query>
         <action_update>true</action_update>
         <active>true</active>
-        <add_message>false</add_message>
+        <add_message>true</add_message>
         <advanced>true</advanced>
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
@@ -16,12 +16,12 @@
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="x_novrp_pls_service_request">stateCHANGESTO5^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="5"/>
+        <filter_condition table="x_novrp_pls_service_request">stateCHANGESTO2^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="2"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
         <is_rest>false</is_rest>
-        <message/>
-        <name>NVS - Set Task on hold</name>
+        <message><![CDATA[<p>change back to  in progress</p>]]></message>
+        <name>NVS - Set Task In Progress</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -30,14 +30,26 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-	var glideTask = new GlideRecord("x_novrp_pls_sr_task");
-	glideTask.addQuery("state", 2);
-	glideTask.addQuery("top_task", current.getUniqueValue());
-	glideTask.query();
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {	
+	setTaskInProgress("top_task=" + current.getUniqueValue());
 	
-	glideTask.setValue("state", 3);
-	glideTask.updateMultiple();
+	function setTaskInProgress(encodedQuery){
+		var glideTask = new GlideRecord("x_novrp_pls_sr_task");
+		glideTask.addQuery("state", 3);
+		glideTask.addEncodedQuery(encodedQuery);
+		glideTask.query();
+		
+		gs.addInfoMessage("Count " + glideTask.getRowCount()); 
+
+		while(glideTask.next()){
+			glideTask.setValue("state", 2);
+			glideTask.update();
+			
+			if(glideTask.getValue("has_subtasks")){
+				setTaskOnHold("top_task=" + glideTask.getUniqueValue());
+			}
+		}
+	}
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>GALMOPA1</sys_created_by>
@@ -46,8 +58,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1f4283e44fef728062b50fbf0310c787</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>NVS - Set Task on hold</sys_name>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>NVS - Set Task In Progress</sys_name>
         <sys_overrides/>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
         <sys_policy/>
@@ -55,7 +67,7 @@
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_script_1f4283e44fef728062b50fbf0310c787</sys_update_name>
         <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-06-21 09:20:51</sys_updated_on>
+        <sys_updated_on>2017-06-23 00:03:06</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

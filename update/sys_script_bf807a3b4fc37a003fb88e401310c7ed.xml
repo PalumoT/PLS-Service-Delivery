@@ -43,7 +43,7 @@
 	if(priceType == "standard"){
 		current.estimated_cost_dollars = getPrice(subservice);
 	}else if(priceType == "fte"){
-		
+		current.estimated_cost_dollars = subservice.estimated_price_dollars;
 	}
 	
 	function getPrice(subservice){
@@ -69,7 +69,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>bf807a3b4fc37a003fb88e401310c7ed</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>NVS - Calculate Estimated Price</sys_name>
         <sys_overrides/>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
@@ -77,8 +77,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_script_bf807a3b4fc37a003fb88e401310c7ed</sys_update_name>
-        <sys_updated_by>paul.galmot</sys_updated_by>
-        <sys_updated_on>2017-06-06 13:54:07</sys_updated_on>
+        <sys_updated_by>GALMOPA1</sys_updated_by>
+        <sys_updated_on>2017-06-23 00:09:11</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

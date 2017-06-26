@@ -22,7 +22,7 @@
         </filter_condition>
         <is_rest>false</is_rest>
         <message/>
-        <name>NVS - SRT Update Parent Actuals</name>
+        <name>NVS - Update Parent Actuals</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -67,8 +67,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7db76a1c4fa7328062b50fbf0310c786</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name>NVS - SRT Update Parent Actuals</sys_name>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>NVS - Update Parent Actuals</sys_name>
         <sys_overrides/>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
         <sys_policy/>
@@ -76,7 +76,7 @@
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_script_7db76a1c4fa7328062b50fbf0310c786</sys_update_name>
         <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-06-21 08:23:43</sys_updated_on>
+        <sys_updated_on>2017-06-22 09:57:41</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>
