@@ -12,7 +12,7 @@
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>GALMOPA1</sys_created_by>
             <sys_created_on>2017-06-09 11:15:54</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_id>015c6df04f17be003fb88e401310c780</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Service Request Owner</sys_name>

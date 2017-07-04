@@ -309,7 +309,7 @@
         <sys_class_name>sp_widget</sys_class_name>
         <sys_created_by>paul.galmot</sys_created_by>
         <sys_created_on>2017-06-13 11:49:26</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>0d7a5ece4f1376403fb88e401310c71a</sys_id>
         <sys_mod_count>3</sys_mod_count>
         <sys_name>PLS Resource Plans - Requested</sys_name>

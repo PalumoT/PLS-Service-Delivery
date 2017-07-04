@@ -7,7 +7,7 @@
         <sys_class_name>sys_scope_privilege</sys_class_name>
         <sys_created_by>paul.galmot</sys_created_by>
         <sys_created_on>2017-05-10 14:55:42</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>160fb3c74f6a7a00014bb2f11310c75e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>sys_dictionary</sys_name>

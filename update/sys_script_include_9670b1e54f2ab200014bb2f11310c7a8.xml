@@ -65,7 +65,7 @@ DateTimeHelper.prototype = {
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>paul.galmot</sys_created_by>
         <sys_created_on>2017-05-05 12:42:59</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>9670b1e54f2ab200014bb2f11310c7a8</sys_id>
         <sys_mod_count>4</sys_mod_count>
         <sys_name>DateTimeHelper</sys_name>

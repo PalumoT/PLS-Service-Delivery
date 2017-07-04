@@ -4,7 +4,7 @@
         <sys_class_name>sys_security_acl_role</sys_class_name>
         <sys_created_by>GALMOPA1</sys_created_by>
         <sys_created_on>2017-06-22 22:06:33</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>48dd3a454f2f368062b50fbf0310c7d1</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_novrp_pls_service_request.description.x_novrp_pls.service_request_manager</sys_name>

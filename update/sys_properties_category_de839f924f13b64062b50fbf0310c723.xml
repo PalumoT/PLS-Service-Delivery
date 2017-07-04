@@ -5,7 +5,7 @@
         <sys_class_name>sys_properties_category</sys_class_name>
         <sys_created_by>GALMOPA1</sys_created_by>
         <sys_created_on>2017-06-14 10:37:28</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>de839f924f13b64062b50fbf0310c723</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>PLS</sys_name>

@@ -7,7 +7,7 @@
         <sys_class_name>sys_ui_policy_action</sys_class_name>
         <sys_created_by>GALMOPA1</sys_created_by>
         <sys_created_on>2017-06-15 08:37:52</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>eec108364fdbf64062b50fbf0310c7b9</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>delivery_accuracy_level_percentage</sys_name>

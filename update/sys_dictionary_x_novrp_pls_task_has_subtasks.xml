@@ -52,7 +52,7 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>paul.galmot</sys_created_by>
         <sys_created_on>2017-06-01 10:43:23</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>00d71c124f4b72003fb88e401310c77b</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>Has Subtasks</sys_name>

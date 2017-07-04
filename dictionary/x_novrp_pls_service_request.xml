@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element audit="true" extends="x_novrp_pls_task" label="Service Request" max_length="40" name="x_novrp_pls_service_request" sizeclass="56" type="collection">
+    <element audit="true" extends="x_novrp_pls_task" label="Service Request" max_length="40" name="x_novrp_pls_service_request" sizeclass="62" type="collection">
         <element label="Actual Close Date" max_length="40" name="actual_close_date" type="glide_date"/>
         <element label="Brand" max_length="32" name="brand" reference="x_novrp_pls_brand" type="reference"/>
         <element label="Subservice" mandatory="true" max_length="32" name="catalog_item" reference="x_novrp_pls_catalog_item" reference_qual="javascript: new x_novrp_pls.sr_helper().filterCatalogItems(current);" type="reference" use_reference_qualifier="advanced"/>

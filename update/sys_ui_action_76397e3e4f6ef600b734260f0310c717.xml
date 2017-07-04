@@ -176,7 +176,7 @@ function getSubtasks(task){
         <sys_class_name>sys_ui_action</sys_class_name>
         <sys_created_by>paul.galmot</sys_created_by>
         <sys_created_on>2017-05-09 15:12:14</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>76397e3e4f6ef600b734260f0310c717</sys_id>

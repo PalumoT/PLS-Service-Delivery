@@ -4,7 +4,7 @@
         <sys_class_name>sys_security_acl_role</sys_class_name>
         <sys_created_by>paul.galmot</sys_created_by>
         <sys_created_on>2017-06-01 11:53:26</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>fe4828da4f8b72003fb88e401310c7b3</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_novrp_pls_demand.x_novrp_pls.demand_user</sys_name>

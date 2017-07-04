@@ -52,7 +52,7 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>paul.galmot</sys_created_by>
         <sys_created_on>2017-06-08 11:06:43</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>c9402c6c4fd73e003fb88e401310c74b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Estimated efforts (hours)</sys_name>

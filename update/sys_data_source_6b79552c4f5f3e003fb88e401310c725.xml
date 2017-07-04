@@ -42,7 +42,7 @@
         <sys_class_name>sys_data_source</sys_class_name>
         <sys_created_by>paul.galmot</sys_created_by>
         <sys_created_on>2017-06-08 15:14:43</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>6b79552c4f5f3e003fb88e401310c725</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>x_novrp_pls_country.xlsx (Uploaded)</sys_name>

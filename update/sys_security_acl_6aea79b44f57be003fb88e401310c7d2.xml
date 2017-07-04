@@ -12,7 +12,7 @@
         <sys_class_name>sys_security_acl</sys_class_name>
         <sys_created_by>GALMOPA1</sys_created_by>
         <sys_created_on>2017-06-09 12:19:13</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>6aea79b44f57be003fb88e401310c7d2</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_novrp_pls_service_request.practice</sys_name>

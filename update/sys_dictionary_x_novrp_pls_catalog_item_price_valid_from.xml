@@ -52,7 +52,7 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>paul.galmot</sys_created_by>
         <sys_created_on>2017-06-06 13:06:02</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>b6a826fb4f837a003fb88e401310c717</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Valid From</sys_name>

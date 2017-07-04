@@ -21,7 +21,7 @@
         <sys_class_name>sys_db_object</sys_class_name>
         <sys_created_by>paul.galmot</sys_created_by>
         <sys_created_on>2017-06-12 12:06:51</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>d7a45db94f97f2403fb88e401310c76d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Scope change</sys_name>

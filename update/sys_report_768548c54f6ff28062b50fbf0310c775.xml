@@ -86,7 +86,7 @@
         <sys_class_name>sys_report</sys_class_name>
         <sys_created_by>GALMOPA1</sys_created_by>
         <sys_created_on>2017-06-22 08:40:36</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>768548c54f6ff28062b50fbf0310c775</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name>PLS Service Request By Delivery Date</sys_name>

@@ -11,7 +11,7 @@
         <sys_class_name>sys_properties</sys_class_name>
         <sys_created_by>paul.galmot</sys_created_by>
         <sys_created_on>2017-06-02 09:55:32</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>89c69d664f0bb20062b50fbf0310c7cf</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name>x_novrp_pls.ref_catalog_item</sys_name>

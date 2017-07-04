@@ -46,13 +46,13 @@
         <reference_qual/>
         <reference_qual_condition/>
         <reference_type/>
-        <sizeclass>631</sizeclass>
+        <sizeclass>652</sizeclass>
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>paul.galmot</sys_created_by>
         <sys_created_on>2017-06-06 14:39:33</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>054e727f4f077a003fb88e401310c79d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_novrp_pls_sr_task</sys_name>

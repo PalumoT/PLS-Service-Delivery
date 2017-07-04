@@ -7,7 +7,7 @@
         <sys_class_name>sys_ui_policy_action</sys_class_name>
         <sys_created_by>GALMOPA1</sys_created_by>
         <sys_created_on>2017-06-15 08:41:53</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>59b244b64fdbf64062b50fbf0310c79a</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>estimated_cost_dollars</sys_name>

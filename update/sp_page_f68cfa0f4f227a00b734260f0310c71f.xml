@@ -10,7 +10,7 @@
         <sys_class_name>sp_page</sys_class_name>
         <sys_created_by>paul.galmot</sys_created_by>
         <sys_created_on>2017-05-10 10:05:11</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>f68cfa0f4f227a00b734260f0310c71f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>pls_resource_availability</sys_name>

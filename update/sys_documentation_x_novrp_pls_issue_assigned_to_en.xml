@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="assigned_to" label="Issue Log Owner" language="en" table="x_novrp_pls_issue">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>assigned_to</element>
+            <help/>
+            <hint/>
+            <label>Issue Log Owner</label>
+            <language>en</language>
+            <name>x_novrp_pls_issue</name>
+            <plural>Issue Log Owners</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-07-03 10:47:06</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_id>84fb81204ffbb6c062b50fbf0310c76d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Issue Log Owner</sys_name>
+            <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
+            <sys_update_name>sys_documentation_x_novrp_pls_issue_assigned_to_en</sys_update_name>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-07-03 10:47:06</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

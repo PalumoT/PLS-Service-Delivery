@@ -52,7 +52,7 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>paul.galmot</sys_created_by>
         <sys_created_on>2017-06-12 12:03:32</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>abe355794f97f2403fb88e401310c793</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>Actual Close Date</sys_name>

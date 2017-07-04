@@ -12,7 +12,7 @@
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>paul.galmot</sys_created_by>
             <sys_created_on>2017-06-12 12:06:52</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_id>36d4ddb94f97f2403fb88e401310c76c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Scope change</sys_name>

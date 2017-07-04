@@ -39,7 +39,7 @@ function getAggregatedValue(){
         <sys_class_name>sys_script_fix</sys_class_name>
         <sys_created_by>paul.galmot</sys_created_by>
         <sys_created_on>2017-05-29 08:11:28</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>42b8189d4f43b2003fb88e401310c70b</sys_id>
         <sys_mod_count>55</sys_mod_count>
         <sys_name>Generate Resource plan</sys_name>

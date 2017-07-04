@@ -134,7 +134,7 @@
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>GALMOPA1</sys_created_by>
             <sys_created_on>2017-05-22 11:40:12</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>e355c9834f7aba40014bb2f11310c7f4</sys_id>

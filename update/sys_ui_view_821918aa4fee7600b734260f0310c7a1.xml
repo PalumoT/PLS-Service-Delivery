@@ -8,7 +8,7 @@
         <sys_class_name>sys_ui_view</sys_class_name>
         <sys_created_by>paul.galmot</sys_created_by>
         <sys_created_on>2017-05-08 08:54:06</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>821918aa4fee7600b734260f0310c7a1</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Sys_popup,resource_workbench</sys_name>

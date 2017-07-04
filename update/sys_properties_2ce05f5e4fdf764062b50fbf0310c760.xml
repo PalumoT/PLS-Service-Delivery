@@ -11,7 +11,7 @@
         <sys_class_name>sys_properties</sys_class_name>
         <sys_created_by>GALMOPA1</sys_created_by>
         <sys_created_on>2017-06-14 10:26:18</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>2ce05f5e4fdf764062b50fbf0310c760</sys_id>
         <sys_mod_count>8</sys_mod_count>
         <sys_name>x_novrp_pls.test</sys_name>

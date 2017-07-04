@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="sn_brm_caller_name" label="Associate who flagged the issue" language="en" table="x_novrp_pls_issue">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>sn_brm_caller_name</element>
+            <help/>
+            <hint/>
+            <label>Associate who flagged the issue</label>
+            <language>en</language>
+            <name>x_novrp_pls_issue</name>
+            <plural>Associates who flagged the issue</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-07-04 14:34:54</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_id>45a90bb44f3f3ac062b50fbf0310c734</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Associate who flagged the issue</sys_name>
+            <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
+            <sys_update_name>sys_documentation_x_novrp_pls_issue_sn_brm_caller_name_en</sys_update_name>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-07-04 14:34:54</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

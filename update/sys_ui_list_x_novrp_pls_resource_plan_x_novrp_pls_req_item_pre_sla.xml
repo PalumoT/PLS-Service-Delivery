@@ -194,7 +194,7 @@
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>paul.galmot</sys_created_by>
             <sys_created_on>2017-05-29 07:59:02</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>b7d590d94f43b2003fb88e401310c700</sys_id>

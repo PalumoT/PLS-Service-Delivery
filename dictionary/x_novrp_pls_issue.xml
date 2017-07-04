@@ -1,4 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element extends="incident" label="Issue" max_length="40" name="x_novrp_pls_issue" type="collection"/>
+    <element extends="x_novrp_pls_incident" label="Issue" max_length="40" name="x_novrp_pls_issue" sizeclass="2" type="collection">
+        <element choice="1" label="Issue Criteria" mandatory="true" max_length="40" name="issue_criteria" type="choice">
+            <choice>
+                <element label="Collaboration / Communication" value="1"/>
+                <element label="Cross Domain" value="2"/>
+                <element label="Quality" value="3"/>
+                <element label="Responsiveness / Pro-activity" value="4"/>
+                <element label="Technical / Functional Knowledge" value="5"/>
+            </choice>
+        </element>
+        <element choice="1" label="Issue Source" mandatory="true" max_length="40" name="issue_source" type="choice">
+            <choice>
+                <element label="Flagged directly by cusotomer" value="1"/>
+                <element label="Raised as in internal concern" value="2"/>
+            </choice>
+        </element>
+        <element label="Escalation" max_length="32" name="related_escalation" reference="x_novrp_pls_escalation" reference_floats="true" type="reference"/>
+        <element choice="1" label="Support Required" mandatory="true" max_length="40" name="support_required" type="choice">
+            <choice/>
+        </element>
+    </element>
 </database>

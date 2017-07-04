@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update sys_domain="global" table="sys_ui_action">
     <sys_ui_action action="INSERT_OR_UPDATE">
-        <action_name/>
+        <action_name>close_sr_task</action_name>
         <active>true</active>
-        <client>false</client>
+        <client>true</client>
         <comments/>
-        <condition>current.canWrite() &amp;&amp; current.state != 1;</condition>
+        <condition>current.canWrite() &amp;&amp; current.state == 2;</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
         <form_context_menu>false</form_context_menu>
@@ -19,15 +19,49 @@
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <name>Close</name>
-        <onclick/>
+        <onclick>closeTask()</onclick>
         <order>500</order>
-        <script><![CDATA[current.state = 7;
-current.percent_complete = 100;
-current.estimated_efforts_hours = current.actual_efforts_hours;
-current.actual_end_date = new GlideDate();
-current.update();
+        <script><![CDATA[function closeTask(){
+	if(g_form.getValue("actual_efforts_hours") == "" || 
+	   g_form.getValue("actual_efforts_hours") == 0)
+	{
+		g_form.showFieldMsg("actual_efforts_hours",
+							"Please specify the time spent on this task",
+						   'error');
+		return false;
+	}
+	
+	if(!confirm("Are you sure you want to close the task?")){
+		return false;
+	}
+	
+	gsftSubmit(null, g_form.getFormElement(), 'close_sr_task');
+}
 
-current.setRedirectURL(current.top_task);]]></script>
+//Code that runs without 'onclick'
+//Ensure call to server-side function with no browser errors
+if(typeof window == 'undefined'){
+	runScript();
+}
+
+function runScript(){
+	var glideTimecard = new GlideRecord("x_novrp_pls_time_card");
+	glideTimecard.addQuery("user", gs.getUserID());
+	glideTimecard.addQuery("task", current.getUniqueValue());
+	glideTimecard.query();
+	
+	if(!glideTimecard.hasNext()){
+		gs.addErrorMessage("You cannot close a task without any timecard");
+		current.setAbortAction(true);
+	}else{
+		current.state = 7;
+		current.percent_complete = 100;
+		current.actual_end_date = new GlideDate();
+		current.update();
+
+		current.setRedirectURL(current.top_task);
+	}
+}]]></script>
         <show_insert>true</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -39,7 +73,7 @@ current.setRedirectURL(current.top_task);]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>697a05364fd33a4062b50fbf0310c7ac</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>Close</sys_name>
         <sys_overrides/>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
@@ -48,7 +82,7 @@ current.setRedirectURL(current.top_task);]]></script>
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_ui_action_697a05364fd33a4062b50fbf0310c7ac</sys_update_name>
         <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-06-20 17:13:41</sys_updated_on>
+        <sys_updated_on>2017-07-04 12:59:31</sys_updated_on>
         <table>x_novrp_pls_sr_task</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

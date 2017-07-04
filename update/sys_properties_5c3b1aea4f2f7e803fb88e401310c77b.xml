@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_novrp_pls.issue.reminder.first</name>
+        <read_roles/>
+        <suffix>issue.reminder.first</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>GALMOPA1</sys_created_by>
+        <sys_created_on>2017-06-27 11:25:29</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>5c3b1aea4f2f7e803fb88e401310c77b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_novrp_pls.issue.reminder.first</sys_name>
+        <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
+        <sys_update_name>sys_properties_5c3b1aea4f2f7e803fb88e401310c77b</sys_update_name>
+        <sys_updated_by>GALMOPA1</sys_updated_by>
+        <sys_updated_on>2017-06-27 11:25:29</sys_updated_on>
+        <type>integer</type>
+        <value>10</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=5c3b1aea4f2f7e803fb88e401310c77b"/>
+</record_update>

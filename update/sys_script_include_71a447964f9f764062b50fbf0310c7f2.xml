@@ -13,11 +13,11 @@ sr_helper.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 	getFieldsFromDemand: function(){
 		var demand = this.getParameter("sysparm_demand");
 		var glideDemand = new GlideRecord("x_novrp_pls_demand");
-
+		
 		if(!glideDemand.get(demand)){
 			return "";
 		}
-
+		
 		var json = new global.JSON();
 		var response = {
 			"start_date": glideDemand.getValue("requested_start_date"),
@@ -26,12 +26,12 @@ sr_helper.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 			"franchise": glideDemand.getValue("franchise"),
 			"brand": glideDemand.getValue("brand")
 		};
-
+		
 		return json.encode(response);
 	},
 	
 	filterCatalogItems: function(serviceRequest){
-		var encodedQuery = "active=true^sys_class_name=" +
+		var encodedQuery = "active=true^sys_class_name=" + 
 			gs.getProperty("x_novrp_pls.ref_catalog_item");
 		
 		var demand = serviceRequest.top_task.getRefRecord();
@@ -41,7 +41,7 @@ sr_helper.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 				encodedQuery += "^parentIN" + demand.services_requested;
 			}else if(demand.service_groups != ""){
 				encodedQuery += "^parent.parentIN" + demand.service_groups;
-			}	
+			}
 		}
 		
 		var result = "sys_idIN";
@@ -50,7 +50,7 @@ sr_helper.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 		glideDemand.addEncodedQuery(encodedQuery);
 		glideDemand.query();
 		
-		while(glideDemand.next()){	
+		while(glideDemand.next()){
 			result += glideDemand.getUniqueValue() + ",";
 		}
 		
@@ -61,45 +61,86 @@ sr_helper.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 		var encodedQuery = "";
 		
 		if(gs.getUser().hasRole("x_novrp_pls.demand_user") &&
-		   !gs.getUser().hasRole("x_novrp_pls.demand_manager") ){
+			!gs.getUser().hasRole("x_novrp_pls.demand_manager") ){
 			encodedQuery = "sn_brm_caller_name=" + gs.getUserID() + "^NQdemand_owner=" + gs.getUserID();
 		}
-
+		
 		if(gs.getUser().hasRole("x_novrp_pls.service_request_user")){
 			if(encodedQuery != ""){
 				encodedQuery += "^NQ";
 			}
 			encodedQuery += "service_request_ownersLIKE" + gs.getUserID();
 		}
-
+		
 		return encodedQuery;
 	},
 	
 	getRegion: function(){
-		gs.info("Get region for country " + this.getParameter("sysparm_country") + " and region " + 
-			   this.getParameter("sysparm_business_unit"));
-		
 		var glideRegion = new GlideRecord("x_novrp_pls_mapping_region");
 		glideRegion.addQuery("country", this.getParameter("sysparm_country"));
 		glideRegion.addQuery("business_unit", this.getParameter("sysparm_business_unit"));
 		glideRegion.query();
 		
 		if(glideRegion.next()){
-			gs.info("found " + glideRegion.getDisplayValue());
 			return glideRegion.getValue("region");
 		}
 		
 		return "NULL";
 	},
-											  
-    type: 'sr_helper'
+	
+	getFieldsForIncident: function(){
+		try{
+			var sys_id = this.getParameter("sysparm_service_request");
+			var glideServiceRequest = new GlideRecord("x_novrp_pls_service_request");
+			
+			if(!glideServiceRequest.get(sys_id)){
+				throw "No service request matching id " + sys_id;
+			}
+			
+			var demand = {
+				"customer": "NULL",
+				"country": "NULL",
+				"region": "NULL",
+				"division": "NULL",
+				"function": "NULL"
+			};
+			
+			if(!glideServiceRequest.top_task.nil()){
+				var glideDemand = glideServiceRequest.top_task.getRefRecord();
+				
+				demand.country = glideDemand.getValue("country");
+				demand.region = glideDemand.getValue("region");
+				demand.division = glideDemand.getValue("division");
+				demand["function"] = glideDemand.getValue("function");
+				demand.customer = glideDemand.getDisplayValue("requestor");
+			}
+			
+			var response = {
+				"service_group": glideServiceRequest.getValue("service_group"),
+				"practice": glideServiceRequest.getValue("practice"),
+				"customer_name": glideServiceRequest.getValue("requester"),
+				"demand": demand
+			};
+			
+			var json = new global.JSON();
+			return json.encode(response);
+		}catch(exception){
+			var json = new global.JSON();
+			return json.encode({
+				"success": false,
+				"error": exception.getMessage()
+			});
+		}
+	},
+	
+	type: 'sr_helper'
 });]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>paul.galmot</sys_created_by>
         <sys_created_on>2017-06-14 09:32:17</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>71a447964f9f764062b50fbf0310c7f2</sys_id>
-        <sys_mod_count>47</sys_mod_count>
+        <sys_mod_count>65</sys_mod_count>
         <sys_name>sr_helper</sys_name>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
         <sys_policy>read</sys_policy>
@@ -107,6 +148,6 @@ sr_helper.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_script_include_71a447964f9f764062b50fbf0310c7f2</sys_update_name>
         <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-06-22 15:07:20</sys_updated_on>
+        <sys_updated_on>2017-07-04 14:46:04</sys_updated_on>
     </sys_script_include>
 </record_update>

@@ -7,7 +7,7 @@
         <sys_class_name>sys_scope_privilege</sys_class_name>
         <sys_created_by>paul.galmot</sys_created_by>
         <sys_created_on>2017-05-10 10:05:48</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>b3acfe4f4f227a00b734260f0310c77d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Glide API: string utilities</sys_name>

@@ -7,7 +7,7 @@
         <sys_class_name>sys_scope_privilege</sys_class_name>
         <sys_created_by>paul.galmot</sys_created_by>
         <sys_created_on>2017-05-09 15:14:44</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>efc9b27e4f6ef600b734260f0310c7c7</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>resource_plan</sys_name>

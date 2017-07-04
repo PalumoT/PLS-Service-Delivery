@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element extends="incident" label="Escalation" max_length="40" name="x_novrp_pls_escalation" type="collection"/>
+    <element extends="x_novrp_pls_incident" label="Escalation" max_length="40" name="x_novrp_pls_escalation" sizeclass="1" type="collection">
+        <element choice="1" label="Escalation Received By" mandatory="true" max_length="40" name="escalation_received_by" type="choice">
+            <choice>
+                <element label="BSE" value="4"/>
+                <element label="Function Head" value="2"/>
+                <element label="Global Head of Quality" value="7"/>
+                <element label="Global Practice Head" value="6"/>
+                <element label="PLS Country Head" value="8"/>
+                <element label="PLS Head" value="9"/>
+                <element label="Practice Head" value="5"/>
+                <element label="RAD / RAM" value="3"/>
+                <element label="Team Lead" value="1"/>
+            </choice>
+        </element>
+        <element label="Who have been INFORMED of the Resolution?" max_length="4000" name="who_have_been_informed_of_the_resolution" type="string"/>
+        <element label="Who is INVOLVED in the Resolution?" max_length="4000" name="who_is_involved_in_the_resolution" type="string"/>
+    </element>
 </database>

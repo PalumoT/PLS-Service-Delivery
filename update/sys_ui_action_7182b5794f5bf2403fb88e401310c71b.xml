@@ -32,7 +32,7 @@ action.setRedirectURL(current);]]></script>
         <sys_class_name>sys_ui_action</sys_class_name>
         <sys_created_by>VUNGAHA1</sys_created_by>
         <sys_created_on>2017-06-12 14:18:02</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7182b5794f5bf2403fb88e401310c71b</sys_id>

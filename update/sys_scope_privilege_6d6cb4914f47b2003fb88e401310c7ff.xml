@@ -7,7 +7,7 @@
         <sys_class_name>sys_scope_privilege</sys_class_name>
         <sys_created_by>paul.galmot</sys_created_by>
         <sys_created_on>2017-05-29 10:47:21</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>6d6cb4914f47b2003fb88e401310c7ff</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>cmn_schedule</sys_name>

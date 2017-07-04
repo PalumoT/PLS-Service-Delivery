@@ -13,7 +13,7 @@
         <sys_class_name>sys_user_role</sys_class_name>
         <sys_created_by>paul.galmot</sys_created_by>
         <sys_created_on>2017-05-30 09:00:11</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>d17d29e94f0bf20062b50fbf0310c710</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_novrp_pls.region_country_user</sys_name>

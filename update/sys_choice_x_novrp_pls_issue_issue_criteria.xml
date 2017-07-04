@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="issue_criteria" table="x_novrp_pls_issue" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>issue_criteria</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Collaboration / Communication</label>
+            <language>en</language>
+            <name>x_novrp_pls_issue</name>
+            <sequence/>
+            <sys_class_name>sys_choice</sys_class_name>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-07-03 10:52:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e21d05204ffbb6c062b50fbf0310c729</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-07-03 10:53:28</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>issue_criteria</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Cross Domain</label>
+            <language>en</language>
+            <name>x_novrp_pls_issue</name>
+            <sequence/>
+            <sys_class_name>sys_choice</sys_class_name>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-07-03 10:52:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>523d85a04ffbb6c062b50fbf0310c78a</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-07-03 10:53:30</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>issue_criteria</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Quality</label>
+            <language>en</language>
+            <name>x_novrp_pls_issue</name>
+            <sequence/>
+            <sys_class_name>sys_choice</sys_class_name>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-07-03 10:51:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7e0d85604ffbb6c062b50fbf0310c71b</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-07-03 10:53:32</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>issue_criteria</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Responsiveness / Pro-activity</label>
+            <language>en</language>
+            <name>x_novrp_pls_issue</name>
+            <sequence/>
+            <sys_class_name>sys_choice</sys_class_name>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-07-03 10:52:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b52dcd604ffbb6c062b50fbf0310c752</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-07-03 10:53:34</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>issue_criteria</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Technical / Functional Knowledge</label>
+            <language>en</language>
+            <name>x_novrp_pls_issue</name>
+            <sequence/>
+            <sys_class_name>sys_choice</sys_class_name>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-07-03 10:52:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>483d05a04ffbb6c062b50fbf0310c76f</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-07-03 10:53:36</sys_updated_on>
+            <value>5</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>issue_criteria</element>
+            <name>x_novrp_pls_issue</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-07-03 10:51:59</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>2a1d45a04ffbb6c062b50fbf0310c721</sys_id>
+            <sys_mod_count>12</sys_mod_count>
+            <sys_name>issue_criteria</sys_name>
+            <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
+            <sys_update_name>sys_choice_x_novrp_pls_issue_issue_criteria</sys_update_name>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-07-03 10:53:36</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

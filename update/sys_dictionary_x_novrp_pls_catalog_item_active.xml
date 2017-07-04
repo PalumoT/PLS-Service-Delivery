@@ -52,7 +52,7 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>GALMOPA1</sys_created_by>
         <sys_created_on>2017-06-09 12:12:08</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>2739b1344f57be003fb88e401310c74a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Active</sys_name>

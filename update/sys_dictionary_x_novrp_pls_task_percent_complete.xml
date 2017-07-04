@@ -52,7 +52,7 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>paul.galmot</sys_created_by>
         <sys_created_on>2017-06-01 09:41:54</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>a2a9405e4fc772003fb88e401310c78f</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name>Percent Complete</sys_name>

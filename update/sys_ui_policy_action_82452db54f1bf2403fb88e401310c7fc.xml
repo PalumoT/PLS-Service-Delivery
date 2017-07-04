@@ -7,7 +7,7 @@
         <sys_class_name>sys_ui_policy_action</sys_class_name>
         <sys_created_by>paul.galmot</sys_created_by>
         <sys_created_on>2017-06-12 13:18:49</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>82452db54f1bf2403fb88e401310c7fc</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>reason_for_closing</sys_name>
