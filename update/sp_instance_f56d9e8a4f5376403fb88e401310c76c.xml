@@ -11,7 +11,7 @@
         <short_description/>
         <size>md</size>
         <sp_column display_value="2">d54d1e8a4f5376403fb88e401310c711</sp_column>
-        <sp_widget display_value="PLS Resource Availability - Requested">444b658b4f5b7a4062b50fbf0310c715</sp_widget>
+        <sp_widget display_value="NVS - PLS Resource Availability">444b658b4f5b7a4062b50fbf0310c715</sp_widget>
         <sys_class_name>sp_instance</sys_class_name>
         <sys_created_by>paul.galmot</sys_created_by>
         <sys_created_on>2017-06-13 12:02:19</sys_created_on>

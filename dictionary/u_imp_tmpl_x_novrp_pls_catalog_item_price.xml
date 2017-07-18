@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="Imp Tmpl X Novrp Pls Catalog Item Price" max_length="40" name="u_imp_tmpl_x_novrp_pls_catalog_item_price" sizeclass="6291" type="collection">
+        <element attributes="import_attribute_name=Catalog Item,edge_encryption_enabled=true" label="Catalog Item" max_length="32" name="u_catalog_item" type="string"/>
+        <element attributes="import_attribute_name=Price (USD),edge_encryption_enabled=true" label="Price (USD)" max_length="20" name="u_price__usd_" type="string"/>
+        <element attributes="import_attribute_name=Valid From" label="Valid From" max_length="40" name="u_valid_from" type="glide_date"/>
+        <element attributes="import_attribute_name=Valid To" label="Valid To" max_length="40" name="u_valid_to" type="glide_date"/>
+    </element>
+</database>

@@ -43,7 +43,7 @@
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
-        <reference_qual/>
+        <reference_qual>javascript:"parent=" + current.practice;</reference_qual>
         <reference_qual_condition/>
         <reference_type/>
         <sizeclass/>
@@ -54,7 +54,7 @@
         <sys_created_on>2017-07-03 09:26:13</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>f218f4a44f3bb6c062b50fbf0310c732</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Service Group</sys_name>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
         <sys_policy/>
@@ -62,13 +62,13 @@
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_dictionary_x_novrp_pls_incident_service_group</sys_update_name>
         <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-07-03 10:48:19</sys_updated_on>
+        <sys_updated_on>2017-07-05 12:12:56</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
         <use_dependent_field>false</use_dependent_field>
         <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
+        <use_reference_qualifier>advanced</use_reference_qualifier>
         <virtual>false</virtual>
         <widget/>
         <write_roles/>

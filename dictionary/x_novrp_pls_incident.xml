@@ -3,18 +3,20 @@
     <element extends="task" label="Incident" max_length="40" name="x_novrp_pls_incident" type="collection">
         <element label="Action Plan" max_length="4000" name="action_plan" type="string"/>
         <element label="Country" mandatory="true" max_length="32" name="country" reference="x_novrp_pls_country" type="reference"/>
-        <element label="Customer Name" mandatory="true" max_length="32" name="customer_name" reference="sys_user" type="reference"/>
+        <element choice="1" label="Customer Name" mandatory="true" max_length="32" name="customer_name" reference="sys_user" type="reference">
+            <choice/>
+        </element>
         <element label="Division" mandatory="true" max_length="32" name="division" reference="x_novrp_pls_division" type="reference"/>
         <element label="Final Resolution &amp; Rationale" max_length="4000" name="final_resolution" type="string"/>
         <element label="Function" mandatory="true" max_length="32" name="function" reference="x_novrp_pls_function" type="reference"/>
-        <element label="Global Service Lead" mandatory="true" max_length="32" name="global_service_lead" reference="sys_user" type="reference"/>
+        <element label="Global Service Lead" mandatory="true" max_length="32" name="global_service_lead" reference="sys_user" reference_qual="javascript: new x_novrp_pls.incident_helper().getServiceGroupOwners();" type="reference" use_reference_qualifier="advanced"/>
         <element choice="1" label="Potential Compliance Risk" mandatory="true" max_length="40" name="potential_compliance_risk" type="choice">
             <choice>
                 <element label="No" value="no"/>
                 <element label="Yes" value="yes"/>
             </choice>
         </element>
-        <element choice="1" label="Potential GxP Risk" mandatory="true" max_length="40" name="potential_gxp_risk" type="choice">
+        <element choice="1" label="Potential GxP Risk " mandatory="true" max_length="40" name="potential_gxp_risk" type="choice">
             <choice>
                 <element label="No" value="no"/>
                 <element label="Yes" value="yes"/>
@@ -22,8 +24,8 @@
         </element>
         <element label="Practice" mandatory="true" max_length="32" name="practice" reference="x_novrp_pls_practice" type="reference"/>
         <element label="Region" mandatory="true" max_length="32" name="region" reference="x_novrp_pls_region" type="reference"/>
-        <element label="Service Group" mandatory="true" max_length="32" name="service_group" reference="x_novrp_pls_service_group" type="reference"/>
+        <element label="Service Group" mandatory="true" max_length="32" name="service_group" reference="x_novrp_pls_service_group" reference_qual="javascript:&quot;parent=&quot; + current.practice;" type="reference" use_reference_qualifier="advanced"/>
         <element label="Service Request" max_length="32" name="service_request" reference="x_novrp_pls_service_request" type="reference"/>
-        <element label="Your site" mandatory="true" max_length="32" name="site" reference="cmn_location" type="reference"/>
+        <element label="Your site" mandatory="true" max_length="32" name="site" reference="x_novrp_pls_location" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
     </element>
 </database>

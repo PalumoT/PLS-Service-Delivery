@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element label="Catalog Item Task" max_length="40" name="x_novrp_pls_catalog_item_task" type="collection">
+        <element label="APQC Code" max_length="40" name="apqc_code" type="string"/>
         <element label="Assignment Group" max_length="32" name="assignment_group" reference="sys_user_group" reference_qual="typeLIKEe81e87444f1fba003fb88e401310c76b^EQ" reference_qual_condition="typeLIKEe81e87444f1fba003fb88e401310c76b^EQ" type="reference"/>
         <element label="Catalog Item" max_length="32" name="catalog_item" reference="x_novrp_pls_catalog_item" type="reference"/>
         <element label="Estimated efforts (hours)" max_length="20" name="estimated_efforts_hours" type="decimal"/>
         <element label="Estimated Price (Dollars)" max_length="15" name="estimated_price_dollars" type="decimal"/>
-        <element label="Order" max_length="40" name="order" type="integer"/>
-        <element display="true" label="Short Description" max_length="180" name="short_description" type="string"/>
+        <element label="Order" mandatory="true" max_length="40" name="order" type="integer"/>
+        <element display="true" label="Short Description" mandatory="true" max_length="180" name="short_description" type="string"/>
         <element default="0" label="Subtasks" max_length="40" name="subtasks" type="integer"/>
         <element label="Top Task" max_length="32" name="top_task" reference="x_novrp_pls_catalog_item_task" reference_qual="javascript:&quot;sys_id!=&quot; + current.sys_id;" type="reference" use_reference_qualifier="advanced"/>
         <index name="index">

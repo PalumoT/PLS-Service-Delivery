@@ -3,33 +3,48 @@
     <sys_ui_list parent="" relationship="" sys_domain="global" table="x_novrp_pls_function" version="2" view="">
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>name</element>
-            <list_id display_value="x_novrp_pls_function" element="NULL" name="x_novrp_pls_function" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">046a87f54f43760062b50fbf0310c749</list_id>
+            <element>id</element>
+            <list_id display_value="x_novrp_pls_function" element="NULL" name="x_novrp_pls_function" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b84b71cd4fcccf0462b50fbf0310c7de</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-05-31 10:24:37</sys_created_on>
-            <sys_id>886a03394f43760062b50fbf0310c796</sys_id>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-07-17 13:46:19</sys_created_on>
+            <sys_id>304b71cd4fcccf0462b50fbf0310c7df</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-05-31 10:24:37</sys_updated_on>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-07-17 13:46:19</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
-            <element>active</element>
-            <list_id display_value="x_novrp_pls_function" element="NULL" name="x_novrp_pls_function" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">046a87f54f43760062b50fbf0310c749</list_id>
+            <element>name</element>
+            <list_id display_value="x_novrp_pls_function" element="NULL" name="x_novrp_pls_function" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b84b71cd4fcccf0462b50fbf0310c7de</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-05-31 10:24:37</sys_created_on>
-            <sys_id>006a03394f43760062b50fbf0310c797</sys_id>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-07-17 13:46:19</sys_created_on>
+            <sys_id>b04b71cd4fcccf0462b50fbf0310c7df</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-05-31 10:24:37</sys_updated_on>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-07-17 13:46:19</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>active</element>
+            <list_id display_value="x_novrp_pls_function" element="NULL" name="x_novrp_pls_function" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">b84b71cd4fcccf0462b50fbf0310c7de</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-07-17 13:46:19</sys_created_on>
+            <sys_id>344b71cd4fcccf0462b50fbf0310c7df</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-07-17 13:46:19</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -42,12 +57,12 @@
             <relationship/>
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-05-31 10:24:37</sys_created_on>
-            <sys_customer_update>false</sys_customer_update>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-07-17 13:46:19</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>046a87f54f43760062b50fbf0310c749</sys_id>
+            <sys_id>b84b71cd4fcccf0462b50fbf0310c7de</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_novrp_pls_function</sys_name>
             <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
@@ -55,8 +70,8 @@
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
             <sys_update_name>sys_ui_list_x_novrp_pls_function_null</sys_update_name>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-05-31 10:24:37</sys_updated_on>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-07-17 13:46:19</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

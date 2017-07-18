@@ -167,7 +167,7 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>b5e648d64fc772003fb88e401310c776</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_name>Planning</sys_name>
             <sys_overrides/>
             <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
@@ -176,7 +176,7 @@
             <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
             <sys_update_name>sys_ui_section_b5e648d64fc772003fb88e401310c776</sys_update_name>
             <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-01 09:27:33</sys_updated_on>
+            <sys_updated_on>2017-07-10 17:14:33</sys_updated_on>
             <sys_user/>
             <title>false</title>
             <view display_value="Default view" name="NULL">Default view</view>

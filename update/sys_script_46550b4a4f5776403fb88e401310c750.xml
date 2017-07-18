@@ -14,7 +14,7 @@
         <client_callable>false</client_callable>
         <collection>x_novrp_pls_demand</collection>
         <condition/>
-        <description/>
+        <description>This BR set the field "Demand Owner" based on the region and the business unit</description>
         <execute_function>false</execute_function>
         <filter_condition table="x_novrp_pls_demand">business_unitISNOTEMPTY^countryISNOTEMPTY^EQ<item endquery="false" field="business_unit" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
             <item endquery="false" field="country" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
@@ -52,11 +52,11 @@
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>paul.galmot</sys_created_by>
         <sys_created_on>2017-06-13 14:59:13</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>46550b4a4f5776403fb88e401310c750</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>NVS - Set Demand Owner</sys_name>
         <sys_overrides/>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
@@ -64,8 +64,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_script_46550b4a4f5776403fb88e401310c750</sys_update_name>
-        <sys_updated_by>paul.galmot</sys_updated_by>
-        <sys_updated_on>2017-06-13 15:09:14</sys_updated_on>
+        <sys_updated_by>GALMOPA1</sys_updated_by>
+        <sys_updated_on>2017-07-13 12:15:05</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

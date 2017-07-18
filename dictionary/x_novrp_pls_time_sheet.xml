@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="time_sheet" label="Time Sheet" max_length="40" name="x_novrp_pls_time_sheet" type="collection"/>
+</database>

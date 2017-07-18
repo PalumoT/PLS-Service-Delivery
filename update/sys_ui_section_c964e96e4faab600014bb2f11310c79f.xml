@@ -4,42 +4,56 @@
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>id</element>
             <position>0</position>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-05-08 14:23:05</sys_created_on>
-            <sys_id>8564e96e4faab600014bb2f11310c7a0</sys_id>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-07-17 13:53:38</sys_created_on>
+            <sys_id>8cfcb1c14f00034462b50fbf0310c7b8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_service" sys_domain="global" view="Default view">c964e96e4faab600014bb2f11310c79f</sys_ui_section>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-05-08 14:23:05</sys_updated_on>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-07-17 13:53:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>name</element>
             <position>1</position>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-05-08 14:23:05</sys_created_on>
-            <sys_id>0964e96e4faab600014bb2f11310c7a0</sys_id>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-07-17 13:53:38</sys_created_on>
+            <sys_id>00fcb1c14f00034462b50fbf0310c7b9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_service" sys_domain="global" view="Default view">c964e96e4faab600014bb2f11310c79f</sys_ui_section>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-05-08 14:23:05</sys_updated_on>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-07-17 13:53:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>parent</element>
             <position>2</position>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-05-08 14:23:05</sys_created_on>
-            <sys_id>8964e96e4faab600014bb2f11310c7a0</sys_id>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-07-17 13:53:38</sys_created_on>
+            <sys_id>80fcb1c14f00034462b50fbf0310c7b9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_service" sys_domain="global" view="Default view">c964e96e4faab600014bb2f11310c79f</sys_ui_section>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-05-08 14:23:05</sys_updated_on>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-07-17 13:53:38</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>active</element>
+            <position>3</position>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-07-17 13:53:38</sys_created_on>
+            <sys_id>04fcb1c14f00034462b50fbf0310c7b9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_service" sys_domain="global" view="Default view">c964e96e4faab600014bb2f11310c79f</sys_ui_section>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-07-17 13:53:38</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -55,7 +69,7 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>c964e96e4faab600014bb2f11310c79f</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>2</sys_mod_count>
             <sys_name>x_novrp_pls_service</sys_name>
             <sys_overrides/>
             <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
@@ -63,8 +77,8 @@
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
             <sys_update_name>sys_ui_section_c964e96e4faab600014bb2f11310c79f</sys_update_name>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-05-08 14:23:05</sys_updated_on>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-07-17 13:53:38</sys_updated_on>
             <sys_user/>
             <title>true</title>
             <view display_value="Default view" name="NULL">Default view</view>

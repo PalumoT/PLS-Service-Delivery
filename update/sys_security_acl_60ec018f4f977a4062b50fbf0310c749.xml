@@ -17,7 +17,7 @@ function getWriteAccess(serviceRequest){
 	
 	var item = serviceRequest.catalog_item;
 	
-	if(["standard", "fte"].indexOf(item.pricing_type) == -1){
+	if(["standard", "fte"].indexOf(item.pricing_type.toString()) > -1){
 		return false;
 	}
 	
@@ -26,9 +26,9 @@ function getWriteAccess(serviceRequest){
         <sys_class_name>sys_security_acl</sys_class_name>
         <sys_created_by>GALMOPA1</sys_created_by>
         <sys_created_on>2017-06-16 08:50:12</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_id>60ec018f4f977a4062b50fbf0310c749</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>x_novrp_pls_service_request.estimated_cost_dollars</sys_name>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
         <sys_policy/>
@@ -36,7 +36,7 @@ function getWriteAccess(serviceRequest){
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_security_acl_60ec018f4f977a4062b50fbf0310c749</sys_update_name>
         <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-06-26 12:47:35</sys_updated_on>
+        <sys_updated_on>2017-07-06 17:07:56</sys_updated_on>
         <type display_value="record">record</type>
     </sys_security_acl>
 </record_update>

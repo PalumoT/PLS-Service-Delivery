@@ -4,7 +4,7 @@
         <active>true</active>
         <applies_extended>true</applies_extended>
         <condition/>
-        <description/>
+        <description>Copy data from the sr when the field "Created From Issue" is empty</description>
         <field>service_request</field>
         <global>true</global>
         <messages/>
@@ -15,29 +15,31 @@
 		return;
 	}
 	
-	var glideAjax = new GlideAjax("x_novrp_pls.sr_helper");
-	glideAjax.addParam("sysparm_name", "getFieldsForIncident");
-	glideAjax.addParam("sysparm_service_request", newValue);
-	glideAjax.getXMLAnswer(function(response){
-		var data = response.evalJSON();
-		
-		if(data.success == "false"){
-			g_form.addErrorMessage(data.error);
-		}
-		
-		g_form.setValue("service_group", data.service_group);
-		g_form.setValue("practice", data.practice);
-		g_form.setValue("customer_name", data.customer_name);
-		
-		if(data.demand != undefined){
-			var demand = data.demand;
+	if(g_form.getValue("created_from_issue") == "" && g_form.getValue("service_request") != ""){
+		var glideAjax = new GlideAjax("x_novrp_pls.sr_helper");
+		glideAjax.addParam("sysparm_name", "getFieldsForIncident");
+		glideAjax.addParam("sysparm_service_request", g_form.getValue("service_request"));
+		glideAjax.getXMLAnswer(function(response){
+			var data = response.evalJSON();
+			console.log(data);
+			if(data.success == "false"){
+				g_form.addErrorMessage(data.error);
+			}
 			
-			g_form.setValue("country", demand.country);
-			g_form.setValue("region", demand.region);
-			g_form.setValue("division", demand.division);
-			g_form.setValue("function", demand['function']);
-		}
-	});
+			g_form.setValue("service_group", data.service_group);
+			g_form.setValue("practice", data.practice);
+			g_form.setValue("customer_name", data.customer_name);
+			
+			if(data.demand != undefined){
+				var demand = data.demand;
+				
+				g_form.setValue("country", demand.country);
+				g_form.setValue("region", demand.region);
+				g_form.setValue("division", demand.division);
+				g_form.setValue("function", demand['function']);
+			}
+		});
+	}
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>GALMOPA1</sys_created_by>
@@ -46,7 +48,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8b391d244f3fb6c062b50fbf0310c7f3</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>NVS - Change data from SR</sys_name>
         <sys_overrides/>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
@@ -55,7 +57,7 @@
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_script_client_8b391d244f3fb6c062b50fbf0310c7f3</sys_update_name>
         <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-07-04 14:45:53</sys_updated_on>
+        <sys_updated_on>2017-07-13 13:49:20</sys_updated_on>
         <table>x_novrp_pls_incident</table>
         <type>onChange</type>
         <ui_type>0</ui_type>

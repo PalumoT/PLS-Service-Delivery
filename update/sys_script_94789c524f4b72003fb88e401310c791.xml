@@ -14,7 +14,7 @@
         <client_callable>false</client_callable>
         <collection>x_novrp_pls_task</collection>
         <condition>current.action == "insert" || current.top_task.changes();</condition>
-        <description/>
+        <description>This BR update the field "Subtasks" when a subtask is created or updated</description>
         <execute_function>false</execute_function>
         <filter_condition/>
         <is_rest>false</is_rest>
@@ -43,11 +43,11 @@
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>paul.galmot</sys_created_by>
         <sys_created_on>2017-06-01 10:52:33</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>94789c524f4b72003fb88e401310c791</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>NVS - Update Has subtasks flag</sys_name>
         <sys_overrides/>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
@@ -56,7 +56,7 @@
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_script_94789c524f4b72003fb88e401310c791</sys_update_name>
         <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-06-20 14:18:03</sys_updated_on>
+        <sys_updated_on>2017-07-13 11:48:41</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

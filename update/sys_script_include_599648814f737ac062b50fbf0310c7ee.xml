@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_novrp_pls.TimeSheet</api_name>
+        <client_callable>false</client_callable>
+        <description>Extend oob script</description>
+        <name>TimeSheet</name>
+        <script><![CDATA[var TimeSheet = Class.create();
+TimeSheet.prototype = {
+	initialize: function(sysId) {
+		this.sysId = sysId;
+		this.gr = this.getGlideRecord();
+		//roll up fields map from time_card to time_sheet
+		this.rollupFieldsMap = {
+			monday: "monday",
+			tuesday: "tuesday",
+			wednesday: "wednesday",
+			thursday: "thursday",
+			friday: "friday",
+			saturday: "saturday",
+			sunday: "sunday",
+			total: "total_hours"
+		};
+	},
+	
+	rollupStateFromTimeCards: function() {
+		var countByState = {};
+		var timeSheetState;
+		var timeCards = new GlideAggregate("time_card");
+		timeCards.addQuery("time_sheet", this.sysId);
+		timeCards.addAggregate("COUNT", "state");
+		timeCards.groupBy("state");
+		timeCards.query();
+		while (timeCards.next()) {
+			countByState[timeCards.getValue("state")] = parseInt(timeCards.getAggregate("COUNT", "state"));
+		}
+
+		timeSheetState = "Pending";
+		
+		if(countByState["Pending"] > 0)
+			timeSheetState = "Pending";
+		else if(countByState["Rejected"] > 0)
+			timeSheetState = "Rejected";
+		else if (countByState["Submitted"] > 0)
+			timeSheetState = "Submitted";
+		else if (countByState["Approved"] > 0)
+			timeSheetState = "Approved";
+		else if (countByState["Processed"] > 0)
+			timeSheetState = "Processed";
+
+		var timeSheetGR = this.getGlideRecord();
+		timeSheetGR.setValue("state", timeSheetState);
+		return timeSheetGR.update();
+	},
+	
+	recalculateHoursFields: function(fields) {
+		var index;
+		var timeCards = new GlideAggregate("time_card");
+		timeCards.addQuery("time_sheet", this.sysId);
+		for (index in fields) {
+			timeCards.addAggregate("SUM", fields[index]);
+		}
+		timeCards.setGroup(false);
+		timeCards.query();
+		if (timeCards.next()) {
+			for (index in fields) {
+				this.gr.setValue(this.rollupFieldsMap[fields[index]], timeCards.getAggregate("SUM", fields[index]));
+			}
+			this.gr.update();
+		}
+	},
+	
+	recalculateAllHoursFields: function() {
+		var allFields = Object.keys(this.rollupFieldsMap);
+		this.recalculateHoursFields(allFields);
+	},
+	
+	submitTimeCards: function() {
+		return this.updateTimeCards({
+			state: "Submitted"
+		}, {
+			state: "Pending,Rejected"
+		});
+	},
+	
+	approveTimeCards: function() {
+		return this.updateTimeCards({
+			state: "Approved"
+		}, {
+			state: "Submitted"
+		});
+	},
+	
+	rejectTimeCards: function() {
+		return this.updateTimeCards({
+			state: "Rejected"
+		}, {
+			state: "Submitted"
+		});
+	},
+	
+	updateTimeCards: function(fieldValueMap, filterMap) {
+		var timeCards = this.getTimeCards(filterMap);
+		var field, successCount = 0;
+		while (timeCards.next()) {
+			for (field in fieldValueMap) {
+				timeCards.setValue(field, fieldValueMap[field]);
+			}
+			if (timeCards.update())
+				successCount++;
+		}
+		return successCount;
+	},
+	
+	getTimeCards: function(filterMap) {
+		var timeCards = new GlideRecord("time_card");
+		timeCards.addQuery("time_sheet", this.sysId);
+		if (filterMap) {
+			for (var filter in filterMap) {
+				timeCards.addQuery(filter, "IN", filterMap[filter]);
+			}
+		}
+		timeCards.query();
+		return timeCards;
+	},
+	
+	getTaskIds: function() {
+		var gr = this.getTimeCards();
+		var taskIds = [];
+		while (gr.next())
+			taskIds.push(gr.getValue('task'));
+		
+		return taskIds;
+	},
+	
+	getTimeCardsToCopy: function(taskClosedAfter) {
+		var currentTimeSheetTaskIds = this.getTaskIds();
+		// Get all planned tasks of the time sheet that have been closed after the given GlideDate or still active
+		var plannedTasks = new GlideRecord('planned_task');
+		plannedTasks.addQuery('sys_id', 'IN', currentTimeSheetTaskIds);
+		plannedTasks.addNotNullQuery('work_start');
+		var sq = plannedTasks.addNullQuery('work_end');
+		sq.addOrCondition('work_end', '>=', TimeCardUtil.getWeekStartsOnDateTimeForUser(taskClosedAfter, this.gr.getValue('user')));
+		plannedTasks.query();
+		
+		var tasksToCopy = [];
+		while (plannedTasks.next()) {
+			tasksToCopy.push(plannedTasks.getValue('sys_id'));
+		}
+
+		var timeCards = new GlideRecord('time_card');
+		timeCards.addQuery('time_sheet', this.sysId);
+		sq = timeCards.addNullQuery('task'); // all non-task related time cards
+		sq.addOrCondition('task', 'IN', tasksToCopy); // or all active task time cards
+		timeCards.query();
+		return timeCards;
+	},
+	
+	copyFromPreviousTimeSheet: function(previousTimeSheetId, copyTime){
+		if(global.JSUtil.nil(previousTimeSheetId))
+			return;
+		var previousTimeSheet = new TimeSheet(previousTimeSheetId);
+		var timeCardsToCopy = previousTimeSheet.getTimeCardsToCopy(this.gr.getValue('week_starts_on'));
+		
+		var currentTimeSheetTasks = this.getTaskIds();
+		var arrayUtil = new ArrayUtil();
+		while(timeCardsToCopy.next()){
+			var taskId = timeCardsToCopy.getValue('task');
+			// Skip if time card already exists for task
+			if (global.JSUtil.notNil(taskId) && arrayUtil.contains(currentTimeSheetTasks, taskId))
+				continue;
+			this.copyTimeCard(timeCardsToCopy, copyTime);
+		}
+	},
+	
+	copyTimeCard: function(timeCard, copyTime){
+		var newTimeCard = new GlideRecord('time_card');
+		newTimeCard.initialize();
+		var fieldsToCopy = ['category', 'comments','task', 'resource_plan'];
+		if (copyTime)
+			fieldsToCopy.push('monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday');
+		newTimeCard.setValue('time_sheet', this.sysId);
+		newTimeCard.setValue('week_starts_on', this.gr.getValue('week_starts_on'));
+		for(var i=0; i< fieldsToCopy.length; i++){
+			newTimeCard[fieldsToCopy[i]] = timeCard.getValue(fieldsToCopy[i]);
+		}
+		newTimeCard.insert();
+	},
+	
+	getGlideRecord: function() {
+		var gr = new GlideRecord("time_sheet");
+		gr.get(this.sysId);
+		return gr;
+	},
+	
+	validateMaxHours: function() {
+		var daysOfWeek = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
+		var exceedingMaxHours = false;
+		var maxHoursPerDay = parseFloat(gs.getProperty('com.snc.time_sheet.max_hours_per_day', '-1'));
+		var maxHoursPerWeek = parseFloat(gs.getProperty('com.snc.time_sheet.max_hours_per_week', '-1'));
+		
+		if (maxHoursPerDay < 0 || maxHoursPerDay > 24)
+			maxHoursPerDay = 24;
+		
+		var exceedingDays = [];
+		for (i = 0; i < daysOfWeek.length; ++i) {
+			if (parseFloat(this.gr.getValue(daysOfWeek[i])) > maxHoursPerDay) {
+				exceedingDays.push(this.gr.getElement([daysOfWeek[i]]).getLabel());
+				exceedingMaxHours = true;
+			}			
+		}
+		if (exceedingMaxHours) {
+			gs.addErrorMessage(gs.getMessage('Maximum hours per day cannot exceed {0} hours. The following days have exceeded maximum hours - {1}', [maxHoursPerDay, exceedingDays.join(',')]));
+		}
+		
+		if (maxHoursPerWeek > 0 && parseFloat(this.gr.getValue('total_hours')) > maxHoursPerWeek) {
+			gs.addErrorMessage(gs.getMessage('Maximum hours per week cannot exceed {0} hours', maxHoursPerWeek));
+			exceedingMaxHours = true;
+		}
+
+		return exceedingMaxHours;
+	},
+	
+	validateMinHours: function() {
+		var minHoursPerWeek = 37.5;
+		var exceedingMinHours = true;
+		
+		if(parseFloat(this.gr.getValue("total_hours")) < minHoursPerWeek){
+			exceedingMinHours = false;
+		}
+
+		return exceedingMinHours;
+	},
+	
+	exceedMaxHours: function() {
+		var maxHoursPerWeek = 40;
+		var exceedingMaxHours = false;
+		
+		if(parseFloat(this.gr.getValue("total_hours")) > maxHoursPerWeek){
+			exceedingMaxHours = true;
+		}
+
+		return exceedingMaxHours;
+	},
+	
+	deleteTimeCards: function() {
+		var timeCards = this.getTimeCards();
+		while (timeCards.next())
+			timeCards.deleteRecord();
+	},
+	
+	type: 'TimeSheet'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>GALMOPA1</sys_created_by>
+        <sys_created_on>2017-07-04 19:00:50</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>599648814f737ac062b50fbf0310c7ee</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>TimeSheet</sys_name>
+        <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
+        <sys_update_name>sys_script_include_599648814f737ac062b50fbf0310c7ee</sys_update_name>
+        <sys_updated_by>GALMOPA1</sys_updated_by>
+        <sys_updated_on>2017-07-13 13:26:09</sys_updated_on>
+    </sys_script_include>
+</record_update>

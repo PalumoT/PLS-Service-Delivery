@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element label="Catalog Item Price" max_length="40" name="x_novrp_pls_catalog_item_price" type="collection">
-        <element label="Catalog Item" max_length="32" name="catalog_item" reference="x_novrp_pls_catalog_item" type="reference"/>
+        <element label="Catalog Item" max_length="32" name="catalog_item" reference="x_novrp_pls_subservice" reference_qual="javascript: &quot;sys_class_name=&quot; + gs.getProperty(&quot;x_novrp_pls.ref_catalog_item&quot;);" type="reference" use_reference_qualifier="advanced"/>
         <element label="Price (USD)" max_length="20" name="price_usd" type="decimal"/>
         <element label="Valid From" max_length="40" name="valid_from" type="glide_date"/>
         <element label="Valid To" max_length="40" name="valid_to" type="glide_date"/>

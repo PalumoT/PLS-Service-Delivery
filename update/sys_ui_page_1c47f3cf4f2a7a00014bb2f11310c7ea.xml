@@ -70,30 +70,61 @@ function copyRecord(table, sys_id){
 }
 
 function getFields(table){
-	var arrayUtil = [];
+	var tables = getTables(table);
+	var fields = [];
 	var record = new GlideRecord("sys_dictionary");
-	record.addEncodedQuery("name=" + table + "^internal_type!=collection^ORinternal_type=NULL^element!=sys_id");
+	var encodedQuery = "";
+	
+	for(var i=0; i<tables.length; i++){
+		encodedQuery += "name=" + tables[i];
+		if(tables.length >= 1 && i < tables.length){
+			encodedQuery += "^OR";
+		}
+	}
+	
+	encodedQuery += "^internal_type!=collection^ORinternal_type=NULL^element!=sys_id^read_only!=true";
+	
+	record.addEncodedQuery(encodedQuery);
 	record.query();
 	
 	while(record.next()){
-		arrayUtil.push(record.getValue("element"));
+		fields.push(record.getValue("element"));
 	}
 	
-	return arrayUtil;
+	return fields;
+}
+
+function getTables(table){
+	var result = [];
+	var glideTable = new GlideRecord("sys_db_object");
+	
+	if(!glideTable.get("name", table)){
+		gs.addErrorMessage("Table " + table + " does not exist");
+		return "";
+	}
+	
+	result.push(glideTable.getValue("name"));
+	
+	while(!glideTable.super_class.nil()){
+		glideTable = glideTable.super_class.getRefRecord();
+		result.push(glideTable.getValue("name"));
+	}
+	
+	return result;
 }]]></processing_script>
         <sys_class_name>sys_ui_page</sys_class_name>
         <sys_created_by>paul.galmot</sys_created_by>
         <sys_created_on>2017-05-10 14:27:38</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_id>1c47f3cf4f2a7a00014bb2f11310c7ea</sys_id>
-        <sys_mod_count>40</sys_mod_count>
+        <sys_mod_count>43</sys_mod_count>
         <sys_name>multiple_insert</sys_name>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_ui_page_1c47f3cf4f2a7a00014bb2f11310c7ea</sys_update_name>
-        <sys_updated_by>paul.galmot</sys_updated_by>
-        <sys_updated_on>2017-06-14 08:41:39</sys_updated_on>
+        <sys_updated_by>GALMOPA1</sys_updated_by>
+        <sys_updated_on>2017-07-13 09:29:46</sys_updated_on>
     </sys_ui_page>
 </record_update>

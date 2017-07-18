@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_novrp_pls.TimeSheetFactory</api_name>
+        <client_callable>false</client_callable>
+        <description>Extend oob script</description>
+        <name>TimeSheetFactory</name>
+        <script><![CDATA[var TimeSheetFactory = Class.create();
+TimeSheetFactory.prototype = {
+	initialize: function() {
+	},
+	
+	getTimeSheet: function(userId, weekStartsOn) {
+		if (!userId)
+			userId = gs.getUserID();
+		
+		if (weekStartsOn == "")
+			weekStartsOn = TimeCardUtil.getStartOfCurrentWeek();
+		
+		var sysId;
+		var gr = new GlideRecord("x_novrp_pls_time_sheet");
+		gr.addQuery("week_starts_on", weekStartsOn);
+		gr.addQuery("user", userId);
+		gr.query();
+		
+		if (gr.next())
+			sysId = gr.getUniqueValue();
+		else {
+			gr = new GlideRecord("x_novrp_pls_time_sheet");
+			gr.setValue("week_starts_on", weekStartsOn);
+			gr.setValue("user", userId);
+			sysId = gr.insert();
+		}
+		
+		return sysId;
+	},
+	
+	type: 'TimeSheetFactory'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>GALMOPA1</sys_created_by>
+        <sys_created_on>2017-07-07 13:51:39</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>299c9a794f7bbec062b50fbf0310c78b</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>TimeSheetFactory</sys_name>
+        <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
+        <sys_update_name>sys_script_include_299c9a794f7bbec062b50fbf0310c78b</sys_update_name>
+        <sys_updated_by>GALMOPA1</sys_updated_by>
+        <sys_updated_on>2017-07-13 13:26:13</sys_updated_on>
+    </sys_script_include>
+</record_update>

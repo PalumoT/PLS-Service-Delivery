@@ -3,9 +3,8 @@
     <sp_widget action="INSERT_OR_UPDATE">
         <client_script><![CDATA[function($scope, spUtil,  $uibModal, $location) {
 	var c = this;
-
-	$('[data-toggle="popover"]').popover()
-	
+	$scope.loading = false;
+	$('[data-toggle="popover"]').popover();
 	$scope.requests = $scope.data.requests;
 	
 	$scope.timesheet = {
@@ -57,20 +56,27 @@
 		
 		for(var i=0; i<52; i++){
 			var date = new Date();
-			date.setDate(date.getDate() - 7*i);
+			date.setMonth(0);
+			date.setDate(1 + 7*i);
 			
 			while(date.getDay() != 0){
-				date.setDate(date.getDate() - 1);
+				date.setDate(date.getDate() + 1);
+			}
+			
+			if(date > new Date()){
+				break;
 			}
 			
 			var value = date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate();
+			var submitted = isTimesheetSubmitted(date);
 			var beginning = getMonthName(date.getMonth()) + " " + date.getDate();
 			date.setDate(date.getDate() + 6);
 			var end = getMonthName(date.getMonth()) + " " + date.getDate();
-			
-			options.push({
+					
+			options.unshift({
 				value: value,
-				label: "Week " + (52 - i) + " (" + beginning + " - " + end + ")"
+				label: "Week " + (i + 1) + " (" + beginning + " - " + end + ")",
+				submitted: submitted
 			});
 		}
 		
@@ -80,6 +86,22 @@
 	$scope.form = $scope.data.form;
 	$scope.config.date.selected = $scope.config.date.options[0];
 	
+	function isTimesheetSubmitted(start){
+		var date = new Date(start);
+		var timesheets = $scope.data.timesheets;
+		
+		for(var i=0; i<timesheets.length; i++){	
+			if(timesheets[i].week_starts_on.year == date.getFullYear() &&
+				timesheets[i].week_starts_on.month == date.getMonth() + 1 &&
+				timesheets[i].week_starts_on.day == date.getDate())
+			{
+				return timesheets[i].state == "Submitted";
+			}
+		}
+		
+		return false;
+	}
+	
 	function getMonthName(index){
 		var names = ["Jan", "Feb", "March", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 		
@@ -87,12 +109,17 @@
 	}
 	
 	c.canCreate = function(){
+		if($scope.config.date.selected.submitted){
+			return false;
+		}
+		
 		var limit = new Date($scope.data.limit.year + "-"  +
 												$scope.data.limit.month + "-01");
-		var selectedWeek = new Date($scope.config.date.selected.value);
-		console.log("Limit is " + limit + " but current week is " + 
-								selectedWeek);
 		
+		limit.setMonth(limit.getMonth() + 1);
+		
+		var selectedWeek = new Date($scope.config.date.selected.value);
+		console.log(limit);
 		if(limit > selectedWeek){
 			return false;
 		}
@@ -206,13 +233,23 @@
 	}
 
 	c.addTimecard = function(form){
+		if(form.fields[0].value == ""){
+			alert("Please select a category !");
+			return;
+		}
+		
 		form.fields[2].value = $scope.config.date.selected.value;
+		console.log(form.fields);
 		$scope.data.timecard = form.fields;
 		$scope.data.action = "addTimecard";
+		$scope.loading = true;
+		
 		$scope.server.update().then(
-			function(response){				
+			function(response){
 				$scope.requests = response.requests;
+				$scope.timecards = response.timecards;
 				form.visible = true;
+				$scope.loading = false;
 		},function(error){
 			console.log(error);
 		});
@@ -221,10 +258,12 @@
 	c.submitTimecards = function(){
 		$scope.data.action = "submitTimecards";
 		$scope.data.week_starts_on = $scope.config.date.selected.value;
-		
+		$scope.loading = true;
 		$scope.server.update().then(
 			function(response){
+				$scope.config.date.selected.submitted = response.submitted;
 				$scope.requests = response.requests;
+				$scope.loading = false;
 		},function(error){
 			console.log(error);
 		});
@@ -250,13 +289,13 @@
 
 	$scope.rows = [];
 	$scope.days = [
-		{label: "Sunday", name: "sunday", number: 0},
+		{label: "Sunday", name: "sunday", number: 0, className: "grey"},
 		{label: "Monday", name: "monday", number: 1},
 		{label: "Tuesday", name: "tuesday", number: 2},
 		{label: "Wednesday", name: "wednesday", number: 3},
 		{label: "Thursday", name: "thursday", number: 4},
 		{label: "Friday", name: "friday", number: 5},
-		{label: "Saturday", name: "saturday", number: 6}
+		{label: "Saturday", name: "saturday", number: 6, className: "grey"}
 	];
 
 	$scope.tasks = $scope.data.tasks;
@@ -267,7 +306,42 @@
 }]]></client_script>
         <controller_as>c</controller_as>
         <css>.first-col{
-	width: 250px
+  width: 250px
+}
+
+.container{
+  background-color:white;
+}
+
+.loader-container{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.content {
+  position: relative;
+  color: #ffdc34;
+  z-index: 5;
+  margin-top: 100px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  text-align: center
+}
+.background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: Black;
+  z-index: 1;
+  /* These three lines are for transparency in all browsers. */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  opacity: .5;
 }
 
 .inner-table{
@@ -285,6 +359,10 @@ th{
 
 .glyphicon{
   cursor:pointer;
+}
+
+.grey{
+  background-color: #fed613;
 }</css>
         <data_table>sp_instance</data_table>
         <demo_data/>
@@ -295,7 +373,7 @@ th{
         <id>pls_timesheet</id>
         <internal>false</internal>
         <link/>
-        <name>PLS - Timesheet</name>
+        <name>NVS - PLS Timesheet</name>
         <option_schema/>
         <public>false</public>
         <roles/>
@@ -304,24 +382,26 @@ th{
 		if(input.action == "addTimecard"){
 			createTimecard(input.timecard);	
 		}
-		
+
 		if(input.action == "submitTimecards"){
-			submitTimecards(input.week_starts_on);
+			data.submitted = submitTimecards(input.week_starts_on);
 		}
-	}
+	}	
 
 	var requests = [];
 	var tasks = [];
 	var limitSubmission = new x_novrp_pls.timecard_helper().getLimit(new GlideDateTime());
-	
+	data.timesheets = [];
+
 	limitSubmission = new GlideDateTime(limitSubmission);
 	limitSubmission.setMonthUTC(limitSubmission.getMonthUTC() - 2);
 	limitSubmission.setDayOfMonthUTC(1);
+
 	data.limit = {
 		year: limitSubmission.getYearLocalTime(),
 		month: limitSubmission.getMonthLocalTime()
 	}
-	
+
 	var glideTask = new GlideRecord("x_novrp_pls_sr_task");
 	glideTask.addQuery("state", "IN", "2,3,7");
 	glideTask.addQuery("assigned_to", gs.getUserID());
@@ -361,7 +441,7 @@ th{
 			"sys_id": glideTask.getUniqueValue(),
 			"short_description": glideTask.getValue("short_description"),
 			"assigned_to": glideTask.getDisplayValue("assigned_to"),
-			"timecards": getTimeCards("task=" + glideTask.getUniqueValue()),
+			"timecards": getTimeCards("task=" + glideTask.getUniqueValue() + "^user=" + gs.getUserID()),
 			"state": glideTask.getDisplayValue("state"),
 			"form": getForm('project_work', glideTask)
 		};
@@ -370,8 +450,18 @@ th{
 	}
 
 	data.requests = requests;
-	data.timecards = getTimeCards("category!=project_work");
+	data.timecards = getTimeCards("category!=project_work^user=" + gs.getUserID());
 	data.form = getForm("", null);
+	data.canSelectNonBillable = getCountryOfWork() !="MX" && getCountryOfWork() != "CZ";
+	
+	function getCountryOfWork(){
+		var user = new GlideRecord("sys_user");
+		if(!user.get(gs.getUserID())){
+			return false;
+		}
+		
+		return user.getValue("u_country");	
+	}
 	
 	function getTimeCards(encodedQuery){
 		var result = [];
@@ -383,11 +473,30 @@ th{
 		while(glideTimeCard.next()){
 			var form = $sp.getForm("x_novrp_pls_time_card", glideTimeCard.getUniqueValue());
 			var start = new GlideDateTime(glideTimeCard.week_starts_on);
+			var glideTimesheet = glideTimeCard.time_sheet.getRefRecord();
+			var timesheet = searchById(data.timesheets, glideTimesheet.getUniqueValue());
+
+			if(!timesheet){
+				var date = new GlideDateTime(glideTimesheet.getValue("week_starts_on"));
+				data.timesheets.push({
+					"sys_id": glideTimesheet.getUniqueValue(),
+					"state": glideTimesheet.getValue("state"),
+					"week_starts_on": {
+						"year": date.getYearUTC(),
+						"month": date.getMonthLocalTime(),
+						"day": date.getDayOfMonthLocalTime()
+					}
+				});
+			}
 
 			result.push({
 				"sys_id": glideTimeCard.getUniqueValue(),
 				"table": "x_novrp_pls_time_card",
 				"fields": form._fields,
+				"timesheet": {
+					"sys_id": glideTimesheet.getUniqueValue(),
+					"state": glideTimesheet.getValue("state")
+				},
 				"week_start":{
 					"year": start.getYearUTC(),
 					"month": start.getMonthUTC() -1,
@@ -398,7 +507,17 @@ th{
 
 		return result;
 	}
+	
+	function getDeadline(weekStartsOn){
+		var helper = new x_novrp_pls.timecard_helper();
+		var deadline = helper.getLimit(weekStartsOn);
 
+		return {
+			year: deadline.getYearLocalTime(),
+			month: deadline.getMonthLocalTime()
+		}	
+	}
+	
 	function searchById(records, sys_id){
 		for(var i=0; i<records.length; i++){
 			if(records[i].sys_id == sys_id){
@@ -504,42 +623,73 @@ th{
 			]
 		}
 	}
-	
+
 	function submitTimecards(week_starts_on){
-		var glideAggregate = new GlideAggregate("x_novrp_pls_time_card");
-		glideAggregate.addQuery("user", gs.getUserID());
-		glideAggregate.addQuery("week_starts_on", week_starts_on);
-		glideAggregate.addAggregate("SUM", "total");
-		glideAggregate.setGroup(false);
-		glideAggregate.query();
-		
-		if(!glideAggregate.next() || 
-			 glideAggregate.getAggregate("SUM", "total") < 37.5)
-		{
-			gs.addErrorMessage("You cannot submit weeks if you have less than 37.5 hours in total");
-			return;
+		var glideTimesheet = new GlideRecord("time_sheet");
+		glideTimesheet.addQuery("user", gs.getUserID());
+		glideTimesheet.addQuery("week_starts_on", week_starts_on);
+		glideTimesheet.query();
+
+		if(!glideTimesheet.next()){
+			gs.addInfoMessage("Cannot find a timesheet for the current week");
+			return false;
+		}
+
+		if(glideTimesheet.getValue("total_hours") < 37.5){
+			gs.addInfoMessage("The total hours is lower than the minimum required");
+			return false;
+		}
+
+		var timesheetHelper = new x_novrp_pls.TimeSheet(glideTimesheet.getUniqueValue());
+		var exceedingMinHours = timesheetHelper.validateMinHours();
+
+		if (!exceedingMinHours) {
+			return false;
 		}
 		
-		gs.addInfoMessage(glideAggregate.getAggregate("SUM", "total") + " hours submitted");
-		/*var glideRecord = new GlideRecord("x_novrp_pls_time_card");
-		glideRecord.addQuery("user", gs.getUserID());
-		glideRecord.addQuery("week_starts_on", week_starts_on);
-		glideRecord.query();
+		var countryOfWork = getCountryOfWork();
 		
-		glideRecord.setValue("state", "Submitted");
-		glideRecord.updateMultiple();*/
+		if((countryOfWork == "MX" || countryOfWork == "CZ") &&
+			 timesheetHelper.exceedMaxHours())
+		{
+			gs.addErrorMessage("You cannot submit more than 40 hours per week");
+			return false;
+		}
+		
+		var count = timesheetHelper.submitTimeCards();
+		if(count > 0){
+			gs.addInfoMessage(glideTimesheet.getValue("total_hours") + " hours submitted");	
+		}
+		
+		return true;
 	}
 
 	function createTimecard(timecard){
 		var glideTimecard = new GlideRecord('x_novrp_pls_time_card');
-		glideTimecard.newRecord();
-
-		for(var i=0; i<timecard.length; i++){
-			glideTimecard.setValue(timecard[i].name, timecard[i].value)
-			timecard[i].value = null;
+		glideTimecard.addQuery("user", gs.getUserID());
+		glideTimecard.addQuery("category", timecard[0].value);
+		if(timecard[1].value){
+			glideTimecard.addQuery("task", timecard[1].value)	
+		}
+		glideTimecard.addQuery("week_starts_on", timecard[2].value)
+		glideTimecard.query();
+		
+		if(!glideTimecard.next()){
+			glideTimecard.newRecord();
+			for(var i=0; i<timecard.length; i++){
+				glideTimecard.setValue(timecard[i].name, timecard[i].value)
+				timecard[i].value = null;
+			}
+		}else{
+			for(var j=3; j<timecard.length; j++){
+				var hours = parseFloat(glideTimecard.getValue(timecard[j].name))				
+				hours += timecard[j].value;
+				glideTimecard.setValue(timecard[j].name, hours);
+				timecard[j].value = null;
+			}
 		}
 
-		var sys_id = glideTimecard.insert();
+		var sys_id = glideTimecard.update();
 	}
 })();]]></script>
         <servicenow>false</servicenow>
@@ -548,263 +698,275 @@ th{
         <sys_created_on>2017-06-27 13:37:06</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>72593e6a4fef7e803fb88e401310c72f</sys_id>
-        <sys_mod_count>938</sys_mod_count>
-        <sys_name>PLS - Timesheet</sys_name>
+        <sys_mod_count>1110</sys_mod_count>
+        <sys_name>NVS - PLS Timesheet</sys_name>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sp_widget_72593e6a4fef7e803fb88e401310c72f</sys_update_name>
         <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-07-04 13:01:13</sys_updated_on>
-        <template><![CDATA[<div style="background-color:white">
-  <h3 style="margin-bottom:20px">
-    My Timesheet
-    <div class="form-inline pull-right">
-      <select ng-options="option as option.label for option in config.date.options
-                          track by option.value"
-              ng-model="config.date.selected"
-              ng-change="timecards = []"
-              class="form-control">
-      </select>
-      <div class="btn-group" role="group">
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Action <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu">
-          <li><a href="#" ng-click="c.toggleTable(config.task)">Toggle Task</a></li>
-          <li><a href="#" ng-click="config.timesheet.toggle()">Toggle Timesheet</a></li>
-          <li role="separator" class="divider"></li>
-          <li><a href="#" ng-click="c.submitTimecards()">Submit</a></li>
-          <li role="separator" class="divider"></li>
-          <li><a href="#" ng-click="c.navigate('id=pls_timecard')">Switch view</a></li>
-        </ul>
-      </div>
+        <sys_updated_on>2017-07-13 14:45:12</sys_updated_on>
+        <template><![CDATA[<div class="container">
+  <div class="loader-container"
+       ng-if="loading">
+    <div class="content">
+      <h1>
+        Loading...
+      </h1>
     </div>
-  </h3>
-  <table class="table table-bordered table-hover">
-    <thead>
-      <tr>
-        <th></th>
-        <th ng-repeat="day in days"
-            class="text-center"
-            style="text-transform: capitalize;">
-          <div>
-            {{ day.label }}
-          </div>
-          <em>{{ c.buildDate(day.number) | date }}</em>
-        </th>
-        <th class="text-center">Total</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr style="border-bottom: 2px solid darkgrey;">
-        <td>
-          Total Hours
-        </td>
-        <td ng-repeat="day in days"
-            class="text-center">
-          {{ c.sumDay(day) + c.sumNonBillableHours(day) }} hrs
-        </td>
-        <td class="text-center">
-          {{ timesheet.total() + nonBillableTimesheet.total() }} hrs
-        </td>
-      </tr>
-      <tr>
-        <td>Total Service Request</td>
-        <td ng-repeat="day in days"
-            class="text-center">
-          {{ c.sumDay(day) }} hrs
-        </td>
-        <td class="text-center">
-          {{ timesheet.total() }} hrs
-        </td>
-      </tr>
-      <tr ng-repeat="timecard in data.timecards"
-          ng-if="c.isCurrentWeek(timecard.week_start)"
-          ng-init="nonBillableCategories.push(timecard.fields['category'].displayValue)">
-        <td>{{ timecard.fields["category"].displayValue }}</td>
-        <td ng-repeat="day in days"
-            class="text-center">
-          <sp-editable-field block="false"
-                             table="{{ timecard.table }}"
-                             editable-by-user="true"
-                             table-id="timecard.sys_id"
-                             field-model="timecard.fields[day.name]">
-          </sp-editable-field>
-        </td>
-        <td class="text-center">
-          {{ c.sumWeekDays(timecard) }} hrs
-        </td>
-      </tr>
-      <tr class="new-record"
-          ng-init="form = data.form"
-          ng-if="c.canCreate()">
-        <td ng-repeat="field in form.fields|filter: {visible: true}" colspan="{{ field.colspan }}">
-          <span ng-switch="field.type">
-            <span ng-switch-when="choice">
-              <select class="form-control" ng-model="field.value">
-                <option ng-repeat="option in field.options" value="{{ option.value }}"
-                        ng-if="option.value != 'project_work'">
-                  {{ option.label }}
-                </option>
-              </select>
-            </span>
-            <span ng-switch-when="reference">
-              <sn-record-picker field="field"
-                                table="field.table"
-                                display-field="field.displayValue"
-                                default-query="field.encoded_query"
-                                value-field="field.value_field"
-                                search-fields="field.displayValue"
-                                page-size="10">
-              </sn-record-picker>
-            </span>
-            <span ng-switch-when="integer">
-              <input type="number"
-                     ng-change="c.checkNumber(field)"
-                     min="{{ field.min }}"
-                     max="{{ field.max }}"
-                     class="form-control text-center"
-                     ng-model="field.value">
-            </span>
-            <span ng-switch-default
-                  ng-init="field.value = config.date.selected.value">
-              <input type="text"
-                     class="form-control text-center"
-                     ng-model="field.value">
-            </span>
-          </span>
-        </td>
-        <td class="text-center">
-          <button class="btn btn-primary" ng-click="c.addTimecard(form)">
-            Save
+    <div class="background"></div>
+  </div>
+  <div style="margin:20px">
+    <h3>
+      My Timesheet <span ng-if="config.date.selected.submitted">(Submitted)</span>
+      <div class="form-inline pull-right">
+        <select ng-options="option as option.label for option in config.date.options
+                            track by option.value"
+                ng-model="config.date.selected"
+                ng-change="timecards = []"
+                class="form-control">
+        </select>
+        <div class="btn-group" role="group">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Action <span class="caret"></span>
           </button>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <table class="table table-bordered">
-    <tbody ng-repeat="request in requests">
-      <tr>
-        <td colspan="{{days.length + 1}}">
-          <div>
-            {{ request.number }} - {{ request.short_description }}
-          </div>
-          <table class="table inner-table"
-                 ng-show="config.task.visible">
-            <tbody>
-              <tr ng-repeat="task in request.tasks">
-                <td colspan="{{days.length + 1}}">
-                  {{ task.short_description }}
-                  <span class="pull-right">
-                    <span ng-if="!c.validTimecard(task.timecards)"
-                          class="glyphicon glyphicon-warning-sign"
-                          style="color:red"
-                          uib-popover="Your need to fill up the timesheet for task {{ task.number }}"
-                          popover-title="Timesheet missing"
-                          popover-append-to-body='true'>
+          <ul class="dropdown-menu">
+            <li><a href="#" ng-click="c.toggleTable(config.task)">Toggle Task</a></li>
+            <li><a href="#" ng-click="config.timesheet.toggle()">Toggle Timesheet</a></li>
+            <li ng-if="!config.date.selected.submitted" role="separator" class="divider"></li>
+            <li ng-if="!config.date.selected.submitted"><a href="#" ng-click="c.submitTimecards()">Submit</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#" ng-click="c.navigate('id=pls_timecard')">Switch view</a></li>
+          </ul>
+        </div>
+      </div>
+    </h3>
+    <table class="table table-bordered table-hover">
+      <thead>
+        <tr>
+          <th></th>
+          <th ng-repeat="day in days"
+              class="text-center {{ day.className }}"
+              style="text-transform: capitalize;">
+            <div>
+              {{ day.label }}
+            </div>
+            <em>{{ c.buildDate(day.number) | date }}</em>
+          </th>
+          <th class="text-center">Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border-bottom: 2px solid darkgrey;">
+          <td>
+            Total Hours
+          </td>
+          <td ng-repeat="day in days"
+              class="text-center {{ day.className }}">
+            {{ c.sumDay(day) + c.sumNonBillableHours(day) }} hrs
+          </td>
+          <td class="text-center">
+            {{ timesheet.total() + nonBillableTimesheet.total() }} hrs
+          </td>
+        </tr>
+        <tr>
+          <td>Total Service Request</td>
+          <td ng-repeat="day in days"
+              class="text-center {{ day.className }}">
+            {{ c.sumDay(day) }} hrs
+          </td>
+          <td class="text-center">
+            {{ timesheet.total() }} hrs
+          </td>
+        </tr>
+        <tr ng-repeat="timecard in data.timecards"
+            ng-if="c.isCurrentWeek(timecard.week_start)"
+            ng-init="nonBillableCategories.push(timecard.fields['category'].displayValue)">
+          <td>{{ timecard.fields["category"].displayValue }}</td>
+          <td ng-repeat="day in days"
+              class="text-center {{ day.className }}">
+            <sp-editable-field block="false"
+                               table="{{ timecard.table }}"
+                               editable-by-user="true"
+                               table-id="timecard.sys_id"
+                               field-model="timecard.fields[day.name]">
+            </sp-editable-field>
+          </td>
+          <td class="text-center">
+            {{ c.sumWeekDays(timecard) }} hrs
+          </td>
+        </tr>
+        <tr class="new-record"
+            ng-init="form = data.form"
+            ng-if="c.canCreate() && data.canSelectNonBillable">
+          <td ng-repeat="field in form.fields|filter: {visible: true}" colspan="{{ field.colspan }}">
+            <span ng-switch="field.type">
+              <span ng-switch-when="choice">
+                <select class="form-control" ng-model="field.value">
+                  <option ng-repeat="option in field.options" value="{{ option.value }}"
+                          ng-if="option.value != 'project_work'">
+                    {{ option.label }}
+                  </option>
+                </select>
+              </span>
+              <span ng-switch-when="reference">
+                <sn-record-picker field="field"
+                                  table="field.table"
+                                  display-field="field.displayValue"
+                                  default-query="field.encoded_query"
+                                  value-field="field.value_field"
+                                  search-fields="field.displayValue"
+                                  page-size="10">
+                </sn-record-picker>
+              </span>
+              <span ng-switch-when="integer">
+                <input type="number"
+                       ng-change="c.checkNumber(field)"
+                       min="{{ field.min }}"
+                       max="{{ field.max }}"
+                       class="form-control text-center"
+                       ng-model="field.value">
+              </span>
+              <span ng-switch-default
+                    ng-init="field.value = config.date.selected.value">
+                <input type="text"
+                       class="form-control text-center"
+                       ng-model="field.value">
+              </span>
+            </span>
+          </td>
+          <td class="text-center">
+            <button class="btn btn-primary" ng-click="c.addTimecard(form)">
+              Save
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="table table-bordered">
+      <tbody ng-repeat="request in requests">
+        <tr>
+          <td colspan="{{days.length + 1}}">
+            <div>
+              {{ request.number }} - {{ request.short_description }}
+            </div>
+            <table class="table inner-table"
+                   ng-show="config.task.visible">
+              <tbody>
+                <tr ng-repeat="task in request.tasks">
+                  <td colspan="{{days.length + 1}}">
+                    {{ task.short_description }}
+                    <span class="pull-right">
+                      <span ng-if="!c.validTimecard(task.timecards)"
+                            class="glyphicon glyphicon-warning-sign"
+                            style="color:red"
+                            uib-popover="Your need to fill up the timesheet for task {{ task.number }}"
+                            popover-title="Timesheet missing"
+                            popover-append-to-body='true'>
+                      </span>
+                      <span class="glyphicon glyphicon-eye-open"
+                            ng-show="!c.isFormVisible(task.sys_id)"
+                            ng-click="c.toggleForm(task.sys_id)">
+                      </span>
+                      <span class="glyphicon glyphicon-eye-close"
+                            ng-show="c.isFormVisible(task.sys_id)"
+                            ng-click="c.toggleForm(task.sys_id)">
+                      </span>
                     </span>
-                    <span class="glyphicon glyphicon-eye-open"
-                          ng-show="!c.isFormVisible(task.sys_id)"
-                          ng-click="c.toggleForm(task.sys_id)">
-                    </span>
-                    <span class="glyphicon glyphicon-eye-close"
-                          ng-show="c.isFormVisible(task.sys_id)"
-                          ng-click="c.toggleForm(task.sys_id)">
-                    </span>
-                  </span>
-                  <table class="table table-bordered inner-table"
-                         ng-show="c.isFormVisible(task.sys_id)">
-                    <thead>
-                      <tr>
-                        <th ng-repeat="day in days"
-                            class="text-center day"
-                            style="text-transform: capitalize;">
-                          <div>
-                            {{ day.label }}
-                          </div>
-                          <em>{{ c.buildDate(day.number) | date }}</em>
-                        </th>
-                        <th class="text-center day">Total</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr ng-repeat="timecard in task.timecards"
-                          ng-if="c.isCurrentWeek(timecard.week_start)">
-                        <td ng-repeat="day in days" class="text-center day">
-                          <sp-editable-field block="false"
-                                             table="{{ timecard.table }}"
-                                             editable-by-user="true"
-                                             table-id="timecard.sys_id"
-                                             field-model="timecard.fields[day.name]">
-                          </sp-editable-field> hrs
-                        </td>
-                        <td class="text-center day">
-                          {{ c.sumWeekDays(timecard) }} hrs
-                        </td>
-                      </tr>
-                      <tr ng-if="!c.validTimecard(task.timecards) && !c.canCreate()">
-                        <td colspan="8">
-                          <em>You cannot create a time card for this week</em>
-                        </td>
-                      </tr>
-                      <tr class="new-record"
-                          ng-if="!c.validTimecard(task.timecards) && c.canCreate()"
-                          ng-init="form = task.form"
-                          ng-show="c.isFormVisible(task.sys_id)">
-                        <td ng-repeat="field in form.fields|filter: {visible: true}" colspan="{{ field.colspan }}"
-                            ng-if="field.name != 'category'">
-                          <span ng-switch="field.type">
-                            <span ng-switch-when="choice">
-                              <select class="form-control" ng-model="field.value">
-                                <option ng-repeat="option in field.options" value="{{ option.value }}">
-                                  {{ option.label }}
-                                </option>
-                              </select>
+                    <table class="table table-bordered inner-table"
+                           ng-show="c.isFormVisible(task.sys_id)">
+                      <thead>
+                        <tr>
+                          <th ng-repeat="day in days"
+                              class="text-center day {{ day.className }}"
+                              style="text-transform: capitalize;">
+                            <div>
+                              {{ day.label }}
+                            </div>
+                            <em>{{ c.buildDate(day.number) | date }}</em>
+                          </th>
+                          <th class="text-center day">Total</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr ng-repeat="timecard in task.timecards"
+                            ng-if="c.isCurrentWeek(timecard.week_start)">
+                          <td ng-repeat="day in days" class="text-center day {{ day.className }}">
+                            <sp-editable-field block="false"
+                                               table="{{ timecard.table }}"
+                                               editable-by-user="true"
+                                               table-id="timecard.sys_id"
+                                               field-model="timecard.fields[day.name]">
+                            </sp-editable-field> hrs
+                          </td>
+                          <td class="text-center day">
+                            {{ c.sumWeekDays(timecard) }} hrs
+                          </td>
+                        </tr>
+                        <tr ng-if="!c.validTimecard(task.timecards) && !c.canCreate()">
+                          <td colspan="8">
+                            <em>You cannot create a time card for this week</em>
+                          </td>
+                        </tr>
+                        <tr class="new-record"
+                            ng-if="!c.validTimecard(task.timecards) && c.canCreate()"
+                            ng-init="form = task.form"
+                            ng-show="c.isFormVisible(task.sys_id)">
+                          <td ng-repeat="field in form.fields|filter: {visible: true}" colspan="{{ field.colspan }}"
+                              ng-if="field.name != 'category'">
+                            <span ng-switch="field.type">
+                              <span ng-switch-when="choice">
+                                <select class="form-control" ng-model="field.value">
+                                  <option ng-repeat="option in field.options" value="{{ option.value }}">
+                                    {{ option.label }}
+                                  </option>
+                                </select>
+                              </span>
+                              <span ng-switch-when="reference">
+                                <sn-record-picker field="field"
+                                                  table="field.table"
+                                                  display-field="field.displayValue"
+                                                  default-query="field.encoded_query"
+                                                  value-field="field.value_field"
+                                                  search-fields="field.displayValue"
+                                                  page-size="10">
+                                </sn-record-picker>
+                              </span>
+                              <span ng-switch-when="integer">
+                                <input type="number"
+                                       ng-change="c.checkNumber(field)"
+                                       min="{{ field.min }}"
+                                       max="{{ field.max }}"
+                                       class="form-control text-center"
+                                       ng-model="field.value">
+                              </span>
+                              <span ng-switch-default
+                                    ng-init="field.value = config.date.selected.value">
+                                <input type="text"
+                                       class="form-control text-center"
+                                       ng-model="field.value">
+                              </span>
                             </span>
-                            <span ng-switch-when="reference">
-                              <sn-record-picker field="field"
-                                                table="field.table"
-                                                display-field="field.displayValue"
-                                                default-query="field.encoded_query"
-                                                value-field="field.value_field"
-                                                search-fields="field.displayValue"
-                                                page-size="10">
-                              </sn-record-picker>
-                            </span>
-                            <span ng-switch-when="integer">
-                              <input type="number"
-                                     ng-change="c.checkNumber(field)"
-                                     min="{{ field.min }}"
-                                     max="{{ field.max }}"
-                                     class="form-control text-center"
-                                     ng-model="field.value">
-                            </span>
-                            <span ng-switch-default
-                                  ng-init="field.value = config.date.selected.value">
-                              <input type="text"
-                                     class="form-control text-center"
-                                     ng-model="field.value">
-                            </span>
-                          </span>
-                        </td>
-                        <td class="text-center">
-                          <button class="btn btn-primary" ng-click="c.addTimecard(form)">
-                            Save
-                          </button>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>]]></template>
+                          </td>
+                          <td class="text-center">
+                            <button class="btn btn-primary" ng-click="c.addTimecard(form)">
+                              Save
+                            </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>  
+</div>
+]]></template>
     </sp_widget>
 </record_update>

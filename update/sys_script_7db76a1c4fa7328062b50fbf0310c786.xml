@@ -14,7 +14,7 @@
         <client_callable>false</client_callable>
         <collection>x_novrp_pls_sr_task</collection>
         <condition/>
-        <description/>
+        <description>This BR updates the  actual values in the top task</description>
         <execute_function>false</execute_function>
         <filter_condition table="x_novrp_pls_sr_task">top_taskISNOTEMPTY^actual_efforts_hoursVALCHANGES^EQ<item endquery="false" field="top_task" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
             <item endquery="false" field="actual_efforts_hours" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
@@ -63,11 +63,11 @@
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>GALMOPA1</sys_created_by>
         <sys_created_on>2017-06-20 12:33:41</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7db76a1c4fa7328062b50fbf0310c786</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>NVS - Update Parent Actuals</sys_name>
         <sys_overrides/>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
@@ -76,7 +76,7 @@
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_script_7db76a1c4fa7328062b50fbf0310c786</sys_update_name>
         <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-06-22 09:57:41</sys_updated_on>
+        <sys_updated_on>2017-07-13 12:29:38</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

@@ -190,7 +190,7 @@
         <id>pls_timecard</id>
         <internal>false</internal>
         <link/>
-        <name>PLS Timecard</name>
+        <name>NVS - PLS Timecard</name>
         <option_schema/>
         <public>false</public>
         <roles/>
@@ -380,15 +380,15 @@
         <sys_created_on>2017-06-28 16:05:13</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>9ed464034f67be8062b50fbf0310c7d1</sys_id>
-        <sys_mod_count>384</sys_mod_count>
-        <sys_name>PLS Timecard</sys_name>
+        <sys_mod_count>385</sys_mod_count>
+        <sys_name>NVS - PLS Timecard</sys_name>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sp_widget_9ed464034f67be8062b50fbf0310c7d1</sys_update_name>
         <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-06-29 16:22:16</sys_updated_on>
+        <sys_updated_on>2017-07-13 14:45:16</sys_updated_on>
         <template><![CDATA[<div>
   <h3 style="margin-bottom:20px">
     My Timesheet

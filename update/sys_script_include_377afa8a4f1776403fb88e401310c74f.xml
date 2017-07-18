@@ -5,7 +5,7 @@
         <active>true</active>
         <api_name>x_novrp_pls.demand_helper</api_name>
         <client_callable>true</client_callable>
-        <description/>
+        <description>Helper for demand table</description>
         <name>demand_helper</name>
         <script><![CDATA[var demand_helper = Class.create();
 demand_helper.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
@@ -133,9 +133,9 @@ demand_helper.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>paul.galmot</sys_created_by>
         <sys_created_on>2017-06-13 14:11:42</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_id>377afa8a4f1776403fb88e401310c74f</sys_id>
-        <sys_mod_count>30</sys_mod_count>
+        <sys_mod_count>31</sys_mod_count>
         <sys_name>demand_helper</sys_name>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
         <sys_policy>read</sys_policy>
@@ -143,6 +143,6 @@ demand_helper.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_script_include_377afa8a4f1776403fb88e401310c74f</sys_update_name>
         <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-06-22 16:14:25</sys_updated_on>
+        <sys_updated_on>2017-07-13 13:24:38</sys_updated_on>
     </sys_script_include>
 </record_update>

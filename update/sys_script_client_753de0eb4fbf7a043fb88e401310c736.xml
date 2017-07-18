@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Copy data when escalation is created from an issue</description>
+        <field>created_from_issue</field>
+        <global>true</global>
+        <messages/>
+        <name>NVS - Copy Data from Issue</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+	if (isLoading || newValue === '') {
+		return;
+	}
+	
+	var fields = ["potential_gxp_risk", "potential_compliance_risk", "site", "practice",
+				  "service_group", "service_request", "global_service_lead", "customer_name",
+				  "division", "country", "region"];
+	
+	g_form.getReference("created_from_issue", function(data){
+		for(var i=0; i<fields.length; i++){
+			g_form.setValue(fields[i], data[fields[i]]);
+		}	
+	});
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>GALMOPA1</sys_created_by>
+        <sys_created_on>2017-07-12 16:18:25</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>753de0eb4fbf7a043fb88e401310c736</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>NVS - Copy Data from Issue</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
+        <sys_update_name>sys_script_client_753de0eb4fbf7a043fb88e401310c736</sys_update_name>
+        <sys_updated_by>GALMOPA1</sys_updated_by>
+        <sys_updated_on>2017-07-13 13:46:45</sys_updated_on>
+        <table>x_novrp_pls_escalation</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

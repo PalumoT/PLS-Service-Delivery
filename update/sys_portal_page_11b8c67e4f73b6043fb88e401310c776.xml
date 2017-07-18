@@ -1,0 +1,1799 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update node_type="sys_portal_page" unload_date="2017-07-18 13:25:17">
+    <sys_portal_page action="INSERT_OR_UPDATE">
+        <layout/>
+        <order/>
+        <read_roles>snc_internal</read_roles>
+        <roles/>
+        <selectable>false</selectable>
+        <sys_class_name>sys_portal_page</sys_class_name>
+        <sys_created_by>GALMOPA1</sys_created_by>
+        <sys_created_on>2017-07-10 14:58:44</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>11b8c67e4f73b6043fb88e401310c776</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PLS%20KPI</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
+        <sys_update_name>sys_portal_page_11b8c67e4f73b6043fb88e401310c776</sys_update_name>
+        <sys_updated_by>GALMOPA1</sys_updated_by>
+        <sys_updated_on>2017-07-10 14:58:44</sys_updated_on>
+        <title>PLS%20KPI</title>
+        <user/>
+        <view>PLS%20KPI</view>
+        <related_items_node>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone1</dropzone>
+                <offset>8</offset>
+                <page display_value="PLS%20KPI">11b8c67e4f73b6043fb88e401310c776</page>
+                <summary/>
+                <sys_created_by>GALMOPA1</sys_created_by>
+                <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                <sys_id>20c842be4f73b6043fb88e401310c7ba</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>GALMOPA1</sys_updated_by>
+                <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">20c842be4f73b6043fb88e401310c7ba</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>20c842be4f73b6043fb88e401310c7bc</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>bar</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>real_time</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">20c842be4f73b6043fb88e401310c7ba</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>24c842be4f73b6043fb88e401310c7bb</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">20c842be4f73b6043fb88e401310c7ba</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>24c842be4f73b6043fb88e401310c7bd</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>7c0effed4fe07e4062b50fbf0310c722</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title_align</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">20c842be4f73b6043fb88e401310c7ba</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>28c842be4f73b6043fb88e401310c7ba</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>left</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_title</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">20c842be4f73b6043fb88e401310c7ba</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>28c842be4f73b6043fb88e401310c7be</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">20c842be4f73b6043fb88e401310c7ba</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>2cc842be4f73b6043fb88e401310c7bc</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>NVS FRA Number of Tickets in Pending  (by Group) (Sub-category) by Aging Buckets  (D+1, D+2 - 5)</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">20c842be4f73b6043fb88e401310c7ba</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>2cc842be4f73b6043fb88e401310c7bd</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">20c842be4f73b6043fb88e401310c7ba</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>a0c842be4f73b6043fb88e401310c7ba</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>subscriber_widget</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">20c842be4f73b6043fb88e401310c7ba</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>a0c842be4f73b6043fb88e401310c7be</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">20c842be4f73b6043fb88e401310c7ba</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>a4c842be4f73b6043fb88e401310c7bc</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_border</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">20c842be4f73b6043fb88e401310c7ba</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>a8c842be4f73b6043fb88e401310c7bb</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>filter_indicator</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">20c842be4f73b6043fb88e401310c7ba</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>acc842be4f73b6043fb88e401310c7ba</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>publisher_widget</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">20c842be4f73b6043fb88e401310c7ba</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>acc842be4f73b6043fb88e401310c7be</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone1</dropzone>
+                <offset>10</offset>
+                <page display_value="PLS%20KPI">11b8c67e4f73b6043fb88e401310c776</page>
+                <summary/>
+                <sys_created_by>GALMOPA1</sys_created_by>
+                <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                <sys_id>24c842be4f73b6043fb88e401310c7c2</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>GALMOPA1</sys_updated_by>
+                <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">24c842be4f73b6043fb88e401310c7c2</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>20c842be4f73b6043fb88e401310c7c4</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>Country</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_publish</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">24c842be4f73b6043fb88e401310c7c2</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>24c842be4f73b6043fb88e401310c7c3</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>type</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">24c842be4f73b6043fb88e401310c7c2</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>28c842be4f73b6043fb88e401310c7c4</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>2</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">24c842be4f73b6043fb88e401310c7c2</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>a4c842be4f73b6043fb88e401310c7c2</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>d3355d394f30368062b50fbf0310c7a8</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>publisher_widget</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">24c842be4f73b6043fb88e401310c7c2</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>a8c842be4f73b6043fb88e401310c7c3</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">24c842be4f73b6043fb88e401310c7c2</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>acc842be4f73b6043fb88e401310c7c2</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>com.glideapp.home.RenderHomepagePublishers</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone1</dropzone>
+                <offset>14</offset>
+                <page display_value="PLS%20KPI">11b8c67e4f73b6043fb88e401310c776</page>
+                <summary/>
+                <sys_created_by>GALMOPA1</sys_created_by>
+                <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                <sys_id>28c842be4f73b6043fb88e401310c7d0</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>GALMOPA1</sys_updated_by>
+                <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">28c842be4f73b6043fb88e401310c7d0</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>24c842be4f73b6043fb88e401310c7d2</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">28c842be4f73b6043fb88e401310c7d0</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>28c842be4f73b6043fb88e401310c7d1</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">28c842be4f73b6043fb88e401310c7d0</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>a0c842be4f73b6043fb88e401310c7d1</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">28c842be4f73b6043fb88e401310c7d0</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>a8c842be4f73b6043fb88e401310c7d0</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>7c0effed4fe07e4062b50fbf0310c722</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">28c842be4f73b6043fb88e401310c7d0</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>a8c842be4f73b6043fb88e401310c7d2</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>NVS FRA Number of Tickets in Pending  (by Group) (Sub-category) by Aging Buckets  (D+1, D+2 - 5)</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">28c842be4f73b6043fb88e401310c7d0</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>acc842be4f73b6043fb88e401310c7d1</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>bar</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone1</dropzone>
+                <offset>4</offset>
+                <page display_value="PLS%20KPI">11b8c67e4f73b6043fb88e401310c776</page>
+                <summary/>
+                <sys_created_by>GALMOPA1</sys_created_by>
+                <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                <sys_id>2cc842be4f73b6043fb88e401310c7ab</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>GALMOPA1</sys_updated_by>
+                <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">2cc842be4f73b6043fb88e401310c7ab</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>24c842be4f73b6043fb88e401310c7ae</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>NVS FRA % of Requests Solved Within SLA</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">2cc842be4f73b6043fb88e401310c7ab</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>28c842be4f73b6043fb88e401310c7ad</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>pie</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">2cc842be4f73b6043fb88e401310c7ab</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>2cc842be4f73b6043fb88e401310c7ac</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_publish</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">2cc842be4f73b6043fb88e401310c7ab</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>a0c842be4f73b6043fb88e401310c7ad</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">2cc842be4f73b6043fb88e401310c7ab</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>a4c842be4f73b6043fb88e401310c7ac</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">2cc842be4f73b6043fb88e401310c7ab</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>acc842be4f73b6043fb88e401310c7ab</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>a8db805adbf4ee00b24472fc0f961920</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">2cc842be4f73b6043fb88e401310c7ab</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>acc842be4f73b6043fb88e401310c7ad</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone1</dropzone>
+                <offset>16</offset>
+                <page display_value="PLS%20KPI">11b8c67e4f73b6043fb88e401310c776</page>
+                <summary/>
+                <sys_created_by>GALMOPA1</sys_created_by>
+                <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                <sys_id>2cc842be4f73b6043fb88e401310c7d8</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>GALMOPA1</sys_updated_by>
+                <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">2cc842be4f73b6043fb88e401310c7d8</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>28c842be4f73b6043fb88e401310c7da</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">2cc842be4f73b6043fb88e401310c7d8</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>2cc842be4f73b6043fb88e401310c7d9</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">2cc842be4f73b6043fb88e401310c7d8</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>a0c842be4f73b6043fb88e401310c7da</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>list</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">2cc842be4f73b6043fb88e401310c7d8</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>a4c842be4f73b6043fb88e401310c7d9</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">2cc842be4f73b6043fb88e401310c7d8</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>acc842be4f73b6043fb88e401310c7d8</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>2d02c4994ffcb28062b50fbf0310c7a4</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">2cc842be4f73b6043fb88e401310c7d8</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>acc842be4f73b6043fb88e401310c7da</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value> NVS FRA Tickets which have been Re-opened</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone1</dropzone>
+                <offset>11</offset>
+                <page display_value="PLS%20KPI">11b8c67e4f73b6043fb88e401310c776</page>
+                <summary/>
+                <sys_created_by>GALMOPA1</sys_created_by>
+                <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                <sys_id>60c842be4f73b6043fb88e401310c7c5</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>GALMOPA1</sys_updated_by>
+                <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_publish</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">60c842be4f73b6043fb88e401310c7c5</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>60c842be4f73b6043fb88e401310c7c6</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>type</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">60c842be4f73b6043fb88e401310c7c5</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>64c842be4f73b6043fb88e401310c7c7</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>2</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">60c842be4f73b6043fb88e401310c7c5</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>6cc842be4f73b6043fb88e401310c7c6</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>Country</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">60c842be4f73b6043fb88e401310c7c5</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>e0c842be4f73b6043fb88e401310c7c5</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>d3355d394f30368062b50fbf0310c7a8</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>publisher_widget</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">60c842be4f73b6043fb88e401310c7c5</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>e4c842be4f73b6043fb88e401310c7c6</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">60c842be4f73b6043fb88e401310c7c5</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>e8c842be4f73b6043fb88e401310c7c5</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>com.glideapp.home.RenderHomepagePublishers</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone1</dropzone>
+                <offset>15</offset>
+                <page display_value="PLS%20KPI">11b8c67e4f73b6043fb88e401310c776</page>
+                <summary/>
+                <sys_created_by>GALMOPA1</sys_created_by>
+                <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                <sys_id>64c842be4f73b6043fb88e401310c7d3</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>GALMOPA1</sys_updated_by>
+                <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">64c842be4f73b6043fb88e401310c7d3</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>60c842be4f73b6043fb88e401310c7d6</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>All Incidents grouped by Business Tenant</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">64c842be4f73b6043fb88e401310c7d3</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>60c842be4f73b6043fb88e401310c7d7</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">64c842be4f73b6043fb88e401310c7d3</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>64c842be4f73b6043fb88e401310c7d5</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>bar</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>real_time</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">64c842be4f73b6043fb88e401310c7d3</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>68c842be4f73b6043fb88e401310c7d4</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">64c842be4f73b6043fb88e401310c7d3</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>68c842be4f73b6043fb88e401310c7d6</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>8e2ded8f470111002ee987e8dee49019</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title_align</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">64c842be4f73b6043fb88e401310c7d3</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>6cc842be4f73b6043fb88e401310c7d3</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>left</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_title</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">64c842be4f73b6043fb88e401310c7d3</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>6cc842be4f73b6043fb88e401310c7d7</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>filter_indicator</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">64c842be4f73b6043fb88e401310c7d3</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>e0c842be4f73b6043fb88e401310c7d4</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value/>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>publisher_widget</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">64c842be4f73b6043fb88e401310c7d3</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>e0c842be4f73b6043fb88e401310c7d8</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">64c842be4f73b6043fb88e401310c7d3</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>e4c842be4f73b6043fb88e401310c7d3</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>subscriber_widget</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">64c842be4f73b6043fb88e401310c7d3</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>e4c842be4f73b6043fb88e401310c7d7</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">64c842be4f73b6043fb88e401310c7d3</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>e8c842be4f73b6043fb88e401310c7d5</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_border</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">64c842be4f73b6043fb88e401310c7d3</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>ecc842be4f73b6043fb88e401310c7d4</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone1</dropzone>
+                <offset>0</offset>
+                <page display_value="PLS%20KPI">11b8c67e4f73b6043fb88e401310c776</page>
+                <summary/>
+                <sys_created_by>GALMOPA1</sys_created_by>
+                <sys_created_on>2017-07-10 14:58:56</sys_created_on>
+                <sys_id>9cc842be4f73b6043fb88e401310c79d</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>GALMOPA1</sys_updated_by>
+                <sys_updated_on>2017-07-10 14:58:56</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:56">9cc842be4f73b6043fb88e401310c79d</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:56</sys_created_on>
+                        <sys_id>10c842be4f73b6043fb88e401310c79e</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:56</sys_updated_on>
+                        <value>cf4f7c314f30368062b50fbf0310c76e</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>publisher_widget</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:56">9cc842be4f73b6043fb88e401310c79d</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:56</sys_created_on>
+                        <sys_id>14c842be4f73b6043fb88e401310c79f</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:56</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:56">9cc842be4f73b6043fb88e401310c79d</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:56</sys_created_on>
+                        <sys_id>18c842be4f73b6043fb88e401310c79e</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:56</sys_updated_on>
+                        <value>com.glideapp.home.RenderHomepagePublishers</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:56">9cc842be4f73b6043fb88e401310c79d</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:56</sys_created_on>
+                        <sys_id>98c842be4f73b6043fb88e401310c79f</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:56</sys_updated_on>
+                        <value>Date Range</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_publish</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:56">9cc842be4f73b6043fb88e401310c79d</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:56</sys_created_on>
+                        <sys_id>9cc842be4f73b6043fb88e401310c79e</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:56</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>type</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:56">9cc842be4f73b6043fb88e401310c79d</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:56</sys_created_on>
+                        <sys_id>a0c842be4f73b6043fb88e401310c7a0</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:56</sys_updated_on>
+                        <value>3</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone1</dropzone>
+                <offset>2</offset>
+                <page display_value="PLS%20KPI">11b8c67e4f73b6043fb88e401310c776</page>
+                <summary/>
+                <sys_created_by>GALMOPA1</sys_created_by>
+                <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                <sys_id>a0c842be4f73b6043fb88e401310c7a6</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>GALMOPA1</sys_updated_by>
+                <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">a0c842be4f73b6043fb88e401310c7a6</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:56</sys_created_on>
+                        <sys_id>24c842be4f73b6043fb88e401310c7a6</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:56</sys_updated_on>
+                        <value>afcf9b8e4ff8368062b50fbf0310c720</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>publisher_widget</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">a0c842be4f73b6043fb88e401310c7a6</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>28c842be4f73b6043fb88e401310c7a7</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">a0c842be4f73b6043fb88e401310c7a6</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>2cc842be4f73b6043fb88e401310c7a6</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>com.glideapp.home.RenderHomepagePublishers</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_publish</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">a0c842be4f73b6043fb88e401310c7a6</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>a0c842be4f73b6043fb88e401310c7a7</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>type</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">a0c842be4f73b6043fb88e401310c7a6</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>a4c842be4f73b6043fb88e401310c7a8</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>2</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">a0c842be4f73b6043fb88e401310c7a6</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>acc842be4f73b6043fb88e401310c7a7</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>Country</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone1</dropzone>
+                <offset>6</offset>
+                <page display_value="PLS%20KPI">11b8c67e4f73b6043fb88e401310c776</page>
+                <summary/>
+                <sys_created_by>GALMOPA1</sys_created_by>
+                <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                <sys_id>a4c842be4f73b6043fb88e401310c7b4</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>GALMOPA1</sys_updated_by>
+                <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">a4c842be4f73b6043fb88e401310c7b4</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>20c842be4f73b6043fb88e401310c7b5</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">a4c842be4f73b6043fb88e401310c7b4</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>28c842be4f73b6043fb88e401310c7b4</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>1a1e37c2dbf4ee00b24472fc0f961971</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">a4c842be4f73b6043fb88e401310c7b4</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>28c842be4f73b6043fb88e401310c7b6</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>NVS FRA Total Number Requests by Category/Sub-category</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">a4c842be4f73b6043fb88e401310c7b4</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>2cc842be4f73b6043fb88e401310c7b5</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>bar</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">a4c842be4f73b6043fb88e401310c7b4</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>a0c842be4f73b6043fb88e401310c7b6</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">a4c842be4f73b6043fb88e401310c7b4</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>a4c842be4f73b6043fb88e401310c7b5</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone1</dropzone>
+                <offset>12</offset>
+                <page display_value="PLS%20KPI">11b8c67e4f73b6043fb88e401310c776</page>
+                <summary/>
+                <sys_created_by>GALMOPA1</sys_created_by>
+                <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                <sys_id>acc842be4f73b6043fb88e401310c7c7</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>GALMOPA1</sys_updated_by>
+                <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">acc842be4f73b6043fb88e401310c7c7</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>20c842be4f73b6043fb88e401310c7c8</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>af49bf6d4fe07e4062b50fbf0310c790</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">acc842be4f73b6043fb88e401310c7c7</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>20c842be4f73b6043fb88e401310c7ca</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>NVS FRA Number of Tickets in Pending (by Group) by Aging Buckets for (D+1, D+2 - 5, D+6 - 10, D+10+)</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">acc842be4f73b6043fb88e401310c7c7</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>24c842be4f73b6043fb88e401310c7c9</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>bar</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">acc842be4f73b6043fb88e401310c7c7</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>28c842be4f73b6043fb88e401310c7c8</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">acc842be4f73b6043fb88e401310c7c7</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>a8c842be4f73b6043fb88e401310c7c9</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">acc842be4f73b6043fb88e401310c7c7</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>acc842be4f73b6043fb88e401310c7c8</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone1</dropzone>
+                <offset>7</offset>
+                <page display_value="PLS%20KPI">11b8c67e4f73b6043fb88e401310c776</page>
+                <summary/>
+                <sys_created_by>GALMOPA1</sys_created_by>
+                <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                <sys_id>e0c842be4f73b6043fb88e401310c7b7</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>GALMOPA1</sys_updated_by>
+                <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">e0c842be4f73b6043fb88e401310c7b7</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>64c842be4f73b6043fb88e401310c7b7</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>6b501b4e4ff4b6803fb88e401310c753</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>publisher_widget</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">e0c842be4f73b6043fb88e401310c7b7</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>68c842be4f73b6043fb88e401310c7b8</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">e0c842be4f73b6043fb88e401310c7b7</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>6cc842be4f73b6043fb88e401310c7b7</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>com.glideapp.home.RenderHomepagePublishers</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_publish</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">e0c842be4f73b6043fb88e401310c7b7</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>e0c842be4f73b6043fb88e401310c7b8</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>type</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">e0c842be4f73b6043fb88e401310c7b7</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>e4c842be4f73b6043fb88e401310c7b9</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>2</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">e0c842be4f73b6043fb88e401310c7b7</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>ecc842be4f73b6043fb88e401310c7b8</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>Country Proc</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone1</dropzone>
+                <offset>9</offset>
+                <page display_value="PLS%20KPI">11b8c67e4f73b6043fb88e401310c776</page>
+                <summary/>
+                <sys_created_by>GALMOPA1</sys_created_by>
+                <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                <sys_id>e4c842be4f73b6043fb88e401310c7bf</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>GALMOPA1</sys_updated_by>
+                <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">e4c842be4f73b6043fb88e401310c7bf</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>60c842be4f73b6043fb88e401310c7c0</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>com.glideapp.home.RenderHomepagePublishers</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">e4c842be4f73b6043fb88e401310c7bf</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>68c842be4f73b6043fb88e401310c7bf</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>ecb341394ff876803fb88e401310c7d2</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>publisher_widget</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">e4c842be4f73b6043fb88e401310c7bf</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>6cc842be4f73b6043fb88e401310c7c0</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">e4c842be4f73b6043fb88e401310c7bf</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>e0c842be4f73b6043fb88e401310c7c1</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>Country</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_publish</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">e4c842be4f73b6043fb88e401310c7bf</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>e4c842be4f73b6043fb88e401310c7c0</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>type</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">e4c842be4f73b6043fb88e401310c7bf</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>e8c842be4f73b6043fb88e401310c7c1</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>-1</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone1</dropzone>
+                <offset>1</offset>
+                <page display_value="PLS%20KPI">11b8c67e4f73b6043fb88e401310c776</page>
+                <summary/>
+                <sys_created_by>GALMOPA1</sys_created_by>
+                <sys_created_on>2017-07-10 14:58:56</sys_created_on>
+                <sys_id>e8c842be4f73b6043fb88e401310c7a0</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>GALMOPA1</sys_updated_by>
+                <sys_updated_on>2017-07-10 14:58:56</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:56">e8c842be4f73b6043fb88e401310c7a0</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:56</sys_created_on>
+                        <sys_id>60c842be4f73b6043fb88e401310c7a3</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:56</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_border</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:56">e8c842be4f73b6043fb88e401310c7a0</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:56</sys_created_on>
+                        <sys_id>64c842be4f73b6043fb88e401310c7a2</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:56</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>filter_indicator</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:56">e8c842be4f73b6043fb88e401310c7a0</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:56</sys_created_on>
+                        <sys_id>68c842be4f73b6043fb88e401310c7a1</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:56</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_title</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:56">e8c842be4f73b6043fb88e401310c7a0</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:56</sys_created_on>
+                        <sys_id>68c842be4f73b6043fb88e401310c7a5</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:56</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title_align</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:56">e8c842be4f73b6043fb88e401310c7a0</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:56</sys_created_on>
+                        <sys_id>6cc842be4f73b6043fb88e401310c7a0</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:56</sys_updated_on>
+                        <value>left</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>subscriber_widget</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:56">e8c842be4f73b6043fb88e401310c7a0</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:56</sys_created_on>
+                        <sys_id>6cc842be4f73b6043fb88e401310c7a4</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:56</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:56">e8c842be4f73b6043fb88e401310c7a0</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:56</sys_created_on>
+                        <sys_id>e0c842be4f73b6043fb88e401310c7a1</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:56</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>publisher_widget</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:56">e8c842be4f73b6043fb88e401310c7a0</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:56</sys_created_on>
+                        <sys_id>e0c842be4f73b6043fb88e401310c7a5</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:56</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:56">e8c842be4f73b6043fb88e401310c7a0</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:56</sys_created_on>
+                        <sys_id>e4c842be4f73b6043fb88e401310c7a3</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:56</sys_updated_on>
+                        <value>NVS FRA Number of Reopened Tickets by Employee</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:56">e8c842be4f73b6043fb88e401310c7a0</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:56</sys_created_on>
+                        <sys_id>e4c842be4f73b6043fb88e401310c7a4</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:56</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:56">e8c842be4f73b6043fb88e401310c7a0</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:56</sys_created_on>
+                        <sys_id>e8c842be4f73b6043fb88e401310c7a2</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:56</sys_updated_on>
+                        <value>single_score</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>real_time</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:56">e8c842be4f73b6043fb88e401310c7a0</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:56</sys_created_on>
+                        <sys_id>ecc842be4f73b6043fb88e401310c7a1</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:56</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:56">e8c842be4f73b6043fb88e401310c7a0</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:56</sys_created_on>
+                        <sys_id>ecc842be4f73b6043fb88e401310c7a3</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:56</sys_updated_on>
+                        <value>511ed0ca4fa0fe403fb88e401310c75e</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone1</dropzone>
+                <offset>13</offset>
+                <page display_value="PLS%20KPI">11b8c67e4f73b6043fb88e401310c776</page>
+                <summary/>
+                <sys_created_by>GALMOPA1</sys_created_by>
+                <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                <sys_id>e8c842be4f73b6043fb88e401310c7ca</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>GALMOPA1</sys_updated_by>
+                <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">e8c842be4f73b6043fb88e401310c7ca</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>60c842be4f73b6043fb88e401310c7cd</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_border</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">e8c842be4f73b6043fb88e401310c7ca</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>64c842be4f73b6043fb88e401310c7cc</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>filter_indicator</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">e8c842be4f73b6043fb88e401310c7ca</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>68c842be4f73b6043fb88e401310c7cb</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_title</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">e8c842be4f73b6043fb88e401310c7ca</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>68c842be4f73b6043fb88e401310c7cf</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">e8c842be4f73b6043fb88e401310c7ca</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>6cc842be4f73b6043fb88e401310c7ca</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>subscriber_widget</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">e8c842be4f73b6043fb88e401310c7ca</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>6cc842be4f73b6043fb88e401310c7ce</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title_align</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">e8c842be4f73b6043fb88e401310c7ca</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>e0c842be4f73b6043fb88e401310c7cb</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>left</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_publish</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">e8c842be4f73b6043fb88e401310c7ca</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>e0c842be4f73b6043fb88e401310c7cf</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">e8c842be4f73b6043fb88e401310c7ca</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>e4c842be4f73b6043fb88e401310c7cd</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>NVS FRA Total Number Requests by Root Cause</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">e8c842be4f73b6043fb88e401310c7ca</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>e4c842be4f73b6043fb88e401310c7ce</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">e8c842be4f73b6043fb88e401310c7ca</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>e8c842be4f73b6043fb88e401310c7cc</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>bar</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>real_time</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">e8c842be4f73b6043fb88e401310c7ca</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>ecc842be4f73b6043fb88e401310c7cb</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">e8c842be4f73b6043fb88e401310c7ca</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>ecc842be4f73b6043fb88e401310c7cd</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>e6e9dd6c4f6d2200b734260f0310c77d</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>publisher_widget</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">e8c842be4f73b6043fb88e401310c7ca</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>ecc842be4f73b6043fb88e401310c7cf</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone1</dropzone>
+                <offset>3</offset>
+                <page display_value="PLS%20KPI">11b8c67e4f73b6043fb88e401310c776</page>
+                <summary/>
+                <sys_created_by>GALMOPA1</sys_created_by>
+                <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                <sys_id>ecc842be4f73b6043fb88e401310c7a8</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>GALMOPA1</sys_updated_by>
+                <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">ecc842be4f73b6043fb88e401310c7a8</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>60c842be4f73b6043fb88e401310c7a9</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>7c0effed4fe07e4062b50fbf0310c722</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">ecc842be4f73b6043fb88e401310c7a8</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>60c842be4f73b6043fb88e401310c7ab</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>NVS FRA Number of Tickets in Pending  (by Group) (Sub-category) by Aging Buckets  (D+1, D+2 - 5)</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">ecc842be4f73b6043fb88e401310c7a8</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>64c842be4f73b6043fb88e401310c7aa</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>bar</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">ecc842be4f73b6043fb88e401310c7a8</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>68c842be4f73b6043fb88e401310c7a9</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">ecc842be4f73b6043fb88e401310c7a8</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>e8c842be4f73b6043fb88e401310c7aa</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">ecc842be4f73b6043fb88e401310c7a8</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>ecc842be4f73b6043fb88e401310c7a9</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone1</dropzone>
+                <offset>5</offset>
+                <page display_value="PLS%20KPI">11b8c67e4f73b6043fb88e401310c776</page>
+                <summary/>
+                <sys_created_by>GALMOPA1</sys_created_by>
+                <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                <sys_id>ecc842be4f73b6043fb88e401310c7ae</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>GALMOPA1</sys_updated_by>
+                <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">ecc842be4f73b6043fb88e401310c7ae</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>60c842be4f73b6043fb88e401310c7af</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>subscriber_widget</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">ecc842be4f73b6043fb88e401310c7ae</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>60c842be4f73b6043fb88e401310c7b3</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">ecc842be4f73b6043fb88e401310c7ae</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>64c842be4f73b6043fb88e401310c7b1</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_border</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">ecc842be4f73b6043fb88e401310c7ae</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>68c842be4f73b6043fb88e401310c7b0</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>filter_indicator</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">ecc842be4f73b6043fb88e401310c7ae</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>6cc842be4f73b6043fb88e401310c7af</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>publisher_widget</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">ecc842be4f73b6043fb88e401310c7ae</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>6cc842be4f73b6043fb88e401310c7b3</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>real_time</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">ecc842be4f73b6043fb88e401310c7ae</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>e0c842be4f73b6043fb88e401310c7b0</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">ecc842be4f73b6043fb88e401310c7ae</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>e0c842be4f73b6043fb88e401310c7b2</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>bf0542e54fb476803fb88e401310c7c3</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title_align</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">ecc842be4f73b6043fb88e401310c7ae</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>e4c842be4f73b6043fb88e401310c7af</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>left</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>show_title</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">ecc842be4f73b6043fb88e401310c7ae</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>e4c842be4f73b6043fb88e401310c7b3</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">ecc842be4f73b6043fb88e401310c7ae</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>e8c842be4f73b6043fb88e401310c7b1</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>#New Report</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">ecc842be4f73b6043fb88e401310c7ae</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>e8c842be4f73b6043fb88e401310c7b2</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 10/07/2017 15:58:57">ecc842be4f73b6043fb88e401310c7ae</portal_section>
+                        <sys_created_by>GALMOPA1</sys_created_by>
+                        <sys_created_on>2017-07-10 14:58:57</sys_created_on>
+                        <sys_id>ecc842be4f73b6043fb88e401310c7b0</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>GALMOPA1</sys_updated_by>
+                        <sys_updated_on>2017-07-10 14:58:57</sys_updated_on>
+                        <value>trend</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+        </related_items_node>
+    </sys_portal_page>
+</record_update>

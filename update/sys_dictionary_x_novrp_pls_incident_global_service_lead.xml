@@ -43,7 +43,7 @@
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
-        <reference_qual/>
+        <reference_qual>javascript: new x_novrp_pls.incident_helper().getServiceGroupOwners();</reference_qual>
         <reference_qual_condition/>
         <reference_type/>
         <sizeclass/>
@@ -54,7 +54,7 @@
         <sys_created_on>2017-07-03 09:26:15</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>1919b4e84f3bb6c062b50fbf0310c702</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Global Service Lead</sys_name>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
         <sys_policy/>
@@ -62,13 +62,13 @@
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_dictionary_x_novrp_pls_incident_global_service_lead</sys_update_name>
         <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-07-03 10:48:16</sys_updated_on>
+        <sys_updated_on>2017-07-05 13:06:47</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
         <use_dependent_field>false</use_dependent_field>
         <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
+        <use_reference_qualifier>advanced</use_reference_qualifier>
         <virtual>false</virtual>
         <widget/>
         <write_roles/>

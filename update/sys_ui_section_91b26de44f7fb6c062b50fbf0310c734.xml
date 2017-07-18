@@ -4,33 +4,33 @@
         <sys_ui_annotation action="INSERT_OR_UPDATE">
             <is_plain_text>false</is_plain_text>
             <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-07-04 15:25:36</sys_created_on>
-            <sys_id>2455573c4f7f3ac062b50fbf0310c708</sys_id>
+            <sys_created_on>2017-07-12 17:07:34</sys_created_on>
+            <sys_id>0c69bcef4fff7a043fb88e401310c7f8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-07-04 15:25:36</sys_updated_on>
+            <sys_updated_on>2017-07-12 17:07:34</sys_updated_on>
             <text>A general term used to include federal regulations promulgated by the health authorities in relation to development and manufacturing of drug products. Within Novartis, GxP encompasses GLP, GCP, and GMP. Good X Practice (FDA compliance; X can mean: Clinical, Laboratory, Manufacturing, Pharmaceutical, etc.)</text>
             <type display_value="Text">863e446c0fd30000b12e6903cfe012ce</type>
         </sys_ui_annotation>
         <sys_ui_annotation action="INSERT_OR_UPDATE">
             <is_plain_text>false</is_plain_text>
             <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-07-04 15:25:36</sys_created_on>
-            <sys_id>2c55573c4f7f3ac062b50fbf0310c708</sys_id>
+            <sys_created_on>2017-07-12 17:07:34</sys_created_on>
+            <sys_id>0069bcef4fff7a043fb88e401310c7f9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-07-04 15:25:36</sys_updated_on>
+            <sys_updated_on>2017-07-12 17:07:34</sys_updated_on>
             <text>Compliance Risk is defined as the risk of legal sanctions, material financial loss, or loss to reputation the Novartis may suffer as a result of its failure to comply with laws, Novartis Code of Conduct or other applicable Novartis policies (e.g. P3/NP4, Conflict of Interest, Anti-Bribery). For examples click &lt;a href="https://share.novartis.net/sites/GCS_Dublin_Site/Operational%20Excellence/_layouts/15/WopiFrame.aspx?sourcedoc=%7BA8DEE709-72D1-4560-8D04-344830D27DE0%7D&amp;file=PLS%20Compliance%20Issue%20and%20Escalation%20Checklist.docx&amp;action=default" target="_blank"&gt;here&lt;/a&gt;</text>
             <type display_value="Text">863e446c0fd30000b12e6903cfe012ce</type>
         </sys_ui_annotation>
         <sys_ui_annotation action="INSERT_OR_UPDATE">
             <is_plain_text>false</is_plain_text>
             <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-07-04 15:25:36</sys_created_on>
-            <sys_id>2055573c4f7f3ac062b50fbf0310c709</sys_id>
+            <sys_created_on>2017-07-12 17:07:34</sys_created_on>
+            <sys_id>0469bcef4fff7a043fb88e401310c7f9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-07-04 15:25:36</sys_updated_on>
+            <sys_updated_on>2017-07-12 17:07:34</sys_updated_on>
             <text>PLS Details&#13;
 </text>
             <type display_value="Section Separator">443e806c0fd30000b12e6903cfe01281</type>
@@ -38,11 +38,11 @@
         <sys_ui_annotation action="INSERT_OR_UPDATE">
             <is_plain_text>false</is_plain_text>
             <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-07-04 15:25:36</sys_created_on>
-            <sys_id>2455573c4f7f3ac062b50fbf0310c709</sys_id>
+            <sys_created_on>2017-07-12 17:07:34</sys_created_on>
+            <sys_id>0869bcef4fff7a043fb88e401310c7f9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-07-04 15:25:36</sys_updated_on>
+            <sys_updated_on>2017-07-12 17:07:34</sys_updated_on>
             <text>Customer Details</text>
             <type display_value="Section Separator">443e806c0fd30000b12e6903cfe01281</type>
         </sys_ui_annotation>
@@ -50,13 +50,13 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-07-04 15:25:36</sys_created_on>
-            <sys_id>e455573c4f7f3ac062b50fbf0310c709</sys_id>
+            <sys_created_on>2017-07-12 17:07:34</sys_created_on>
+            <sys_id>c869bcef4fff7a043fb88e401310c7f9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_escalation" sys_domain="global" view="Default view">91b26de44f7fb6c062b50fbf0310c734</sys_ui_section>
             <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-07-04 15:25:36</sys_updated_on>
+            <sys_updated_on>2017-07-12 17:07:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -64,13 +64,13 @@
             <element>assigned_to</element>
             <position>1</position>
             <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-07-04 15:25:36</sys_created_on>
-            <sys_id>6c55573c4f7f3ac062b50fbf0310c709</sys_id>
+            <sys_created_on>2017-07-12 17:07:34</sys_created_on>
+            <sys_id>4c69bcef4fff7a043fb88e401310c7f9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_escalation" sys_domain="global" view="Default view">91b26de44f7fb6c062b50fbf0310c734</sys_ui_section>
             <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-07-04 15:25:36</sys_updated_on>
+            <sys_updated_on>2017-07-12 17:07:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -78,167 +78,167 @@
             <element>sys_created_on</element>
             <position>2</position>
             <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-07-04 15:25:36</sys_created_on>
-            <sys_id>ec55573c4f7f3ac062b50fbf0310c709</sys_id>
+            <sys_created_on>2017-07-12 17:07:34</sys_created_on>
+            <sys_id>cc69bcef4fff7a043fb88e401310c7f9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_escalation" sys_domain="global" view="Default view">91b26de44f7fb6c062b50fbf0310c734</sys_ui_section>
             <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-07-04 15:25:36</sys_updated_on>
+            <sys_updated_on>2017-07-12 17:07:34</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>closed_at</element>
+            <position>3</position>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-07-12 17:07:34</sys_created_on>
+            <sys_id>4069bcef4fff7a043fb88e401310c7fa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_escalation" sys_domain="global" view="Default view">91b26de44f7fb6c062b50fbf0310c734</sys_ui_section>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-07-12 17:07:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>sn_brm_caller_name</element>
-            <position>3</position>
+            <position>4</position>
             <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-07-04 15:25:36</sys_created_on>
-            <sys_id>6055573c4f7f3ac062b50fbf0310c70a</sys_id>
+            <sys_created_on>2017-07-12 17:07:34</sys_created_on>
+            <sys_id>c069bcef4fff7a043fb88e401310c7fa</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_escalation" sys_domain="global" view="Default view">91b26de44f7fb6c062b50fbf0310c734</sys_ui_section>
             <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-07-04 15:25:36</sys_updated_on>
+            <sys_updated_on>2017-07-12 17:07:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>escalation_received_by</element>
-            <position>4</position>
+            <position>5</position>
             <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-07-04 15:25:36</sys_created_on>
-            <sys_id>e055573c4f7f3ac062b50fbf0310c70a</sys_id>
+            <sys_created_on>2017-07-12 17:07:34</sys_created_on>
+            <sys_id>4469bcef4fff7a043fb88e401310c7fa</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_escalation" sys_domain="global" view="Default view">91b26de44f7fb6c062b50fbf0310c734</sys_ui_section>
             <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-07-04 15:25:36</sys_updated_on>
+            <sys_updated_on>2017-07-12 17:07:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.split</element>
-            <position>5</position>
+            <position>6</position>
             <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-07-04 15:25:36</sys_created_on>
-            <sys_id>6455573c4f7f3ac062b50fbf0310c70a</sys_id>
+            <sys_created_on>2017-07-12 17:07:34</sys_created_on>
+            <sys_id>c469bcef4fff7a043fb88e401310c7fa</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_escalation" sys_domain="global" view="Default view">91b26de44f7fb6c062b50fbf0310c734</sys_ui_section>
             <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-07-04 15:25:36</sys_updated_on>
+            <sys_updated_on>2017-07-12 17:07:34</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>state</element>
-            <position>6</position>
+            <position>7</position>
             <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-07-04 15:25:36</sys_created_on>
-            <sys_id>e455573c4f7f3ac062b50fbf0310c70a</sys_id>
+            <sys_created_on>2017-07-12 17:07:34</sys_created_on>
+            <sys_id>4869bcef4fff7a043fb88e401310c7fa</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_escalation" sys_domain="global" view="Default view">91b26de44f7fb6c062b50fbf0310c734</sys_ui_section>
             <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-07-04 15:25:36</sys_updated_on>
+            <sys_updated_on>2017-07-12 17:07:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>potential_gxp_risk</element>
-            <position>7</position>
+            <position>8</position>
             <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-07-04 15:25:36</sys_created_on>
-            <sys_id>6855573c4f7f3ac062b50fbf0310c70a</sys_id>
+            <sys_created_on>2017-07-12 17:07:34</sys_created_on>
+            <sys_id>c869bcef4fff7a043fb88e401310c7fa</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_escalation" sys_domain="global" view="Default view">91b26de44f7fb6c062b50fbf0310c734</sys_ui_section>
             <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-07-04 15:25:36</sys_updated_on>
+            <sys_updated_on>2017-07-12 17:07:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>2455573c4f7f3ac062b50fbf0310c708</element>
-            <position>8</position>
+            <element>0c69bcef4fff7a043fb88e401310c7f8</element>
+            <position>9</position>
             <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-07-04 15:25:36</sys_created_on>
-            <sys_id>e855573c4f7f3ac062b50fbf0310c70a</sys_id>
+            <sys_created_on>2017-07-12 17:07:34</sys_created_on>
+            <sys_id>4c69bcef4fff7a043fb88e401310c7fa</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_escalation" sys_domain="global" view="Default view">91b26de44f7fb6c062b50fbf0310c734</sys_ui_section>
             <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-07-04 15:25:36</sys_updated_on>
+            <sys_updated_on>2017-07-12 17:07:34</sys_updated_on>
             <sys_user/>
             <type>annotation</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>potential_compliance_risk</element>
-            <position>9</position>
+            <position>10</position>
             <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-07-04 15:25:36</sys_created_on>
-            <sys_id>6c55573c4f7f3ac062b50fbf0310c70a</sys_id>
+            <sys_created_on>2017-07-12 17:07:34</sys_created_on>
+            <sys_id>cc69bcef4fff7a043fb88e401310c7fa</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_escalation" sys_domain="global" view="Default view">91b26de44f7fb6c062b50fbf0310c734</sys_ui_section>
             <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-07-04 15:25:36</sys_updated_on>
+            <sys_updated_on>2017-07-12 17:07:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>2c55573c4f7f3ac062b50fbf0310c708</element>
-            <position>10</position>
+            <element>0069bcef4fff7a043fb88e401310c7f9</element>
+            <position>11</position>
             <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-07-04 15:25:36</sys_created_on>
-            <sys_id>ec55573c4f7f3ac062b50fbf0310c70a</sys_id>
+            <sys_created_on>2017-07-12 17:07:34</sys_created_on>
+            <sys_id>4069bcef4fff7a043fb88e401310c7fb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_escalation" sys_domain="global" view="Default view">91b26de44f7fb6c062b50fbf0310c734</sys_ui_section>
             <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-07-04 15:25:36</sys_updated_on>
+            <sys_updated_on>2017-07-12 17:07:34</sys_updated_on>
             <sys_user/>
             <type>annotation</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.end_split</element>
-            <position>11</position>
+            <position>12</position>
             <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-07-04 15:25:36</sys_created_on>
-            <sys_id>6055573c4f7f3ac062b50fbf0310c70b</sys_id>
+            <sys_created_on>2017-07-12 17:07:34</sys_created_on>
+            <sys_id>c069bcef4fff7a043fb88e401310c7fb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_escalation" sys_domain="global" view="Default view">91b26de44f7fb6c062b50fbf0310c734</sys_ui_section>
             <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-07-04 15:25:36</sys_updated_on>
+            <sys_updated_on>2017-07-12 17:07:34</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>description</element>
-            <position>12</position>
-            <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-07-04 15:25:36</sys_created_on>
-            <sys_id>e055573c4f7f3ac062b50fbf0310c70b</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_escalation" sys_domain="global" view="Default view">91b26de44f7fb6c062b50fbf0310c734</sys_ui_section>
-            <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-07-04 15:25:36</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>comments</element>
             <position>13</position>
             <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-07-04 15:25:36</sys_created_on>
-            <sys_id>6455573c4f7f3ac062b50fbf0310c70b</sys_id>
+            <sys_created_on>2017-07-12 17:07:34</sys_created_on>
+            <sys_id>4469bcef4fff7a043fb88e401310c7fb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_escalation" sys_domain="global" view="Default view">91b26de44f7fb6c062b50fbf0310c734</sys_ui_section>
             <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-07-04 15:25:36</sys_updated_on>
+            <sys_updated_on>2017-07-12 17:07:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -246,13 +246,13 @@
             <element>action_plan</element>
             <position>14</position>
             <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-07-04 15:25:36</sys_created_on>
-            <sys_id>e455573c4f7f3ac062b50fbf0310c70b</sys_id>
+            <sys_created_on>2017-07-12 17:07:34</sys_created_on>
+            <sys_id>c469bcef4fff7a043fb88e401310c7fb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_escalation" sys_domain="global" view="Default view">91b26de44f7fb6c062b50fbf0310c734</sys_ui_section>
             <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-07-04 15:25:36</sys_updated_on>
+            <sys_updated_on>2017-07-12 17:07:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -260,13 +260,13 @@
             <element>who_is_involved_in_the_resolution</element>
             <position>15</position>
             <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-07-04 15:25:36</sys_created_on>
-            <sys_id>6855573c4f7f3ac062b50fbf0310c70b</sys_id>
+            <sys_created_on>2017-07-12 17:07:34</sys_created_on>
+            <sys_id>4869bcef4fff7a043fb88e401310c7fb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_escalation" sys_domain="global" view="Default view">91b26de44f7fb6c062b50fbf0310c734</sys_ui_section>
             <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-07-04 15:25:36</sys_updated_on>
+            <sys_updated_on>2017-07-12 17:07:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -274,13 +274,13 @@
             <element>who_have_been_informed_of_the_resolution</element>
             <position>16</position>
             <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-07-04 15:25:36</sys_created_on>
-            <sys_id>e855573c4f7f3ac062b50fbf0310c70b</sys_id>
+            <sys_created_on>2017-07-12 17:07:34</sys_created_on>
+            <sys_id>c869bcef4fff7a043fb88e401310c7fb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_escalation" sys_domain="global" view="Default view">91b26de44f7fb6c062b50fbf0310c734</sys_ui_section>
             <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-07-04 15:25:36</sys_updated_on>
+            <sys_updated_on>2017-07-12 17:07:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -288,27 +288,27 @@
             <element>final_resolution</element>
             <position>17</position>
             <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-07-04 15:25:36</sys_created_on>
-            <sys_id>6c55573c4f7f3ac062b50fbf0310c70b</sys_id>
+            <sys_created_on>2017-07-12 17:07:34</sys_created_on>
+            <sys_id>4c69bcef4fff7a043fb88e401310c7fb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_escalation" sys_domain="global" view="Default view">91b26de44f7fb6c062b50fbf0310c734</sys_ui_section>
             <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-07-04 15:25:36</sys_updated_on>
+            <sys_updated_on>2017-07-12 17:07:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>2055573c4f7f3ac062b50fbf0310c709</element>
+            <element>0469bcef4fff7a043fb88e401310c7f9</element>
             <position>18</position>
             <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-07-04 15:25:36</sys_created_on>
-            <sys_id>ec55573c4f7f3ac062b50fbf0310c70b</sys_id>
+            <sys_created_on>2017-07-12 17:07:34</sys_created_on>
+            <sys_id>cc69bcef4fff7a043fb88e401310c7fb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_escalation" sys_domain="global" view="Default view">91b26de44f7fb6c062b50fbf0310c734</sys_ui_section>
             <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-07-04 15:25:36</sys_updated_on>
+            <sys_updated_on>2017-07-12 17:07:34</sys_updated_on>
             <sys_user/>
             <type>annotation</type>
         </sys_ui_element>
@@ -316,13 +316,13 @@
             <element>.begin_split</element>
             <position>19</position>
             <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-07-04 15:25:36</sys_created_on>
-            <sys_id>6055573c4f7f3ac062b50fbf0310c70c</sys_id>
+            <sys_created_on>2017-07-12 17:07:34</sys_created_on>
+            <sys_id>4069bcef4fff7a043fb88e401310c7fc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_escalation" sys_domain="global" view="Default view">91b26de44f7fb6c062b50fbf0310c734</sys_ui_section>
             <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-07-04 15:25:36</sys_updated_on>
+            <sys_updated_on>2017-07-12 17:07:34</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
@@ -330,13 +330,13 @@
             <element>site</element>
             <position>20</position>
             <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-07-04 15:25:36</sys_created_on>
-            <sys_id>e055573c4f7f3ac062b50fbf0310c70c</sys_id>
+            <sys_created_on>2017-07-12 17:07:34</sys_created_on>
+            <sys_id>c069bcef4fff7a043fb88e401310c7fc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_escalation" sys_domain="global" view="Default view">91b26de44f7fb6c062b50fbf0310c734</sys_ui_section>
             <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-07-04 15:25:36</sys_updated_on>
+            <sys_updated_on>2017-07-12 17:07:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -344,13 +344,13 @@
             <element>practice</element>
             <position>21</position>
             <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-07-04 15:25:36</sys_created_on>
-            <sys_id>6455573c4f7f3ac062b50fbf0310c70c</sys_id>
+            <sys_created_on>2017-07-12 17:07:34</sys_created_on>
+            <sys_id>4469bcef4fff7a043fb88e401310c7fc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_escalation" sys_domain="global" view="Default view">91b26de44f7fb6c062b50fbf0310c734</sys_ui_section>
             <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-07-04 15:25:36</sys_updated_on>
+            <sys_updated_on>2017-07-12 17:07:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -358,13 +358,13 @@
             <element>service_group</element>
             <position>22</position>
             <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-07-04 15:25:36</sys_created_on>
-            <sys_id>e455573c4f7f3ac062b50fbf0310c70c</sys_id>
+            <sys_created_on>2017-07-12 17:07:34</sys_created_on>
+            <sys_id>c469bcef4fff7a043fb88e401310c7fc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_escalation" sys_domain="global" view="Default view">91b26de44f7fb6c062b50fbf0310c734</sys_ui_section>
             <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-07-04 15:25:36</sys_updated_on>
+            <sys_updated_on>2017-07-12 17:07:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -372,13 +372,13 @@
             <element>.split</element>
             <position>23</position>
             <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-07-04 15:25:36</sys_created_on>
-            <sys_id>6855573c4f7f3ac062b50fbf0310c70c</sys_id>
+            <sys_created_on>2017-07-12 17:07:34</sys_created_on>
+            <sys_id>4869bcef4fff7a043fb88e401310c7fc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_escalation" sys_domain="global" view="Default view">91b26de44f7fb6c062b50fbf0310c734</sys_ui_section>
             <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-07-04 15:25:36</sys_updated_on>
+            <sys_updated_on>2017-07-12 17:07:34</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -386,13 +386,13 @@
             <element>global_service_lead</element>
             <position>24</position>
             <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-07-04 15:25:36</sys_created_on>
-            <sys_id>e855573c4f7f3ac062b50fbf0310c70c</sys_id>
+            <sys_created_on>2017-07-12 17:07:34</sys_created_on>
+            <sys_id>c869bcef4fff7a043fb88e401310c7fc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_escalation" sys_domain="global" view="Default view">91b26de44f7fb6c062b50fbf0310c734</sys_ui_section>
             <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-07-04 15:25:36</sys_updated_on>
+            <sys_updated_on>2017-07-12 17:07:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -400,13 +400,13 @@
             <element>service_request</element>
             <position>25</position>
             <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-07-04 15:25:36</sys_created_on>
-            <sys_id>6c55573c4f7f3ac062b50fbf0310c70c</sys_id>
+            <sys_created_on>2017-07-12 17:07:34</sys_created_on>
+            <sys_id>4c69bcef4fff7a043fb88e401310c7fc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_escalation" sys_domain="global" view="Default view">91b26de44f7fb6c062b50fbf0310c734</sys_ui_section>
             <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-07-04 15:25:36</sys_updated_on>
+            <sys_updated_on>2017-07-12 17:07:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -414,27 +414,27 @@
             <element>.end_split</element>
             <position>26</position>
             <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-07-04 15:25:36</sys_created_on>
-            <sys_id>ec55573c4f7f3ac062b50fbf0310c70c</sys_id>
+            <sys_created_on>2017-07-12 17:07:34</sys_created_on>
+            <sys_id>cc69bcef4fff7a043fb88e401310c7fc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_escalation" sys_domain="global" view="Default view">91b26de44f7fb6c062b50fbf0310c734</sys_ui_section>
             <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-07-04 15:25:36</sys_updated_on>
+            <sys_updated_on>2017-07-12 17:07:34</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>2455573c4f7f3ac062b50fbf0310c709</element>
+            <element>0869bcef4fff7a043fb88e401310c7f9</element>
             <position>27</position>
             <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-07-04 15:25:36</sys_created_on>
-            <sys_id>6055573c4f7f3ac062b50fbf0310c70d</sys_id>
+            <sys_created_on>2017-07-12 17:07:34</sys_created_on>
+            <sys_id>4069bcef4fff7a043fb88e401310c7fd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_escalation" sys_domain="global" view="Default view">91b26de44f7fb6c062b50fbf0310c734</sys_ui_section>
             <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-07-04 15:25:36</sys_updated_on>
+            <sys_updated_on>2017-07-12 17:07:34</sys_updated_on>
             <sys_user/>
             <type>annotation</type>
         </sys_ui_element>
@@ -442,13 +442,13 @@
             <element>.begin_split</element>
             <position>28</position>
             <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-07-04 15:25:36</sys_created_on>
-            <sys_id>e055573c4f7f3ac062b50fbf0310c70d</sys_id>
+            <sys_created_on>2017-07-12 17:07:34</sys_created_on>
+            <sys_id>c069bcef4fff7a043fb88e401310c7fd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_escalation" sys_domain="global" view="Default view">91b26de44f7fb6c062b50fbf0310c734</sys_ui_section>
             <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-07-04 15:25:36</sys_updated_on>
+            <sys_updated_on>2017-07-12 17:07:34</sys_updated_on>
             <sys_user/>
             <type>.begin_split</type>
         </sys_ui_element>
@@ -456,13 +456,13 @@
             <element>customer_name</element>
             <position>29</position>
             <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-07-04 15:25:36</sys_created_on>
-            <sys_id>6455573c4f7f3ac062b50fbf0310c70d</sys_id>
+            <sys_created_on>2017-07-12 17:07:34</sys_created_on>
+            <sys_id>4469bcef4fff7a043fb88e401310c7fd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_escalation" sys_domain="global" view="Default view">91b26de44f7fb6c062b50fbf0310c734</sys_ui_section>
             <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-07-04 15:25:36</sys_updated_on>
+            <sys_updated_on>2017-07-12 17:07:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -470,13 +470,13 @@
             <element>division</element>
             <position>30</position>
             <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-07-04 15:25:36</sys_created_on>
-            <sys_id>e455573c4f7f3ac062b50fbf0310c70d</sys_id>
+            <sys_created_on>2017-07-12 17:07:34</sys_created_on>
+            <sys_id>c469bcef4fff7a043fb88e401310c7fd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_escalation" sys_domain="global" view="Default view">91b26de44f7fb6c062b50fbf0310c734</sys_ui_section>
             <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-07-04 15:25:36</sys_updated_on>
+            <sys_updated_on>2017-07-12 17:07:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -484,13 +484,13 @@
             <element>.split</element>
             <position>31</position>
             <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-07-04 15:25:36</sys_created_on>
-            <sys_id>6855573c4f7f3ac062b50fbf0310c70d</sys_id>
+            <sys_created_on>2017-07-12 17:07:34</sys_created_on>
+            <sys_id>4869bcef4fff7a043fb88e401310c7fd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_escalation" sys_domain="global" view="Default view">91b26de44f7fb6c062b50fbf0310c734</sys_ui_section>
             <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-07-04 15:25:36</sys_updated_on>
+            <sys_updated_on>2017-07-12 17:07:34</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -498,13 +498,13 @@
             <element>country</element>
             <position>32</position>
             <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-07-04 15:25:36</sys_created_on>
-            <sys_id>e855573c4f7f3ac062b50fbf0310c70d</sys_id>
+            <sys_created_on>2017-07-12 17:07:34</sys_created_on>
+            <sys_id>c869bcef4fff7a043fb88e401310c7fd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_escalation" sys_domain="global" view="Default view">91b26de44f7fb6c062b50fbf0310c734</sys_ui_section>
             <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-07-04 15:25:36</sys_updated_on>
+            <sys_updated_on>2017-07-12 17:07:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -512,13 +512,13 @@
             <element>region</element>
             <position>33</position>
             <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-07-04 15:25:36</sys_created_on>
-            <sys_id>6c55573c4f7f3ac062b50fbf0310c70d</sys_id>
+            <sys_created_on>2017-07-12 17:07:34</sys_created_on>
+            <sys_id>4c69bcef4fff7a043fb88e401310c7fd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_escalation" sys_domain="global" view="Default view">91b26de44f7fb6c062b50fbf0310c734</sys_ui_section>
             <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-07-04 15:25:36</sys_updated_on>
+            <sys_updated_on>2017-07-12 17:07:34</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -526,15 +526,29 @@
             <element>.end_split</element>
             <position>34</position>
             <sys_created_by>GALMOPA1</sys_created_by>
-            <sys_created_on>2017-07-04 15:25:36</sys_created_on>
-            <sys_id>ec55573c4f7f3ac062b50fbf0310c70d</sys_id>
+            <sys_created_on>2017-07-12 17:07:34</sys_created_on>
+            <sys_id>cc69bcef4fff7a043fb88e401310c7fd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_escalation" sys_domain="global" view="Default view">91b26de44f7fb6c062b50fbf0310c734</sys_ui_section>
             <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-07-04 15:25:36</sys_updated_on>
+            <sys_updated_on>2017-07-12 17:07:34</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>created_from_issue</element>
+            <position>35</position>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-07-12 17:07:34</sys_created_on>
+            <sys_id>4069bcef4fff7a043fb88e401310c7fe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_novrp_pls_escalation" sys_domain="global" view="Default view">91b26de44f7fb6c062b50fbf0310c734</sys_ui_section>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-07-12 17:07:34</sys_updated_on>
+            <sys_user/>
+            <type/>
         </sys_ui_element>
         <sys_ui_section action="INSERT_OR_UPDATE">
             <caption/>

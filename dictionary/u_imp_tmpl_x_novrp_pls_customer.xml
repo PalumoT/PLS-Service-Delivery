@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="Imp Tmpl X Novrp Pls Customer" max_length="40" name="u_imp_tmpl_x_novrp_pls_customer" type="collection">
+        <element attributes="import_attribute_name=Active,edge_encryption_enabled=true" label="Active" max_length="40" name="u_active" type="string"/>
+        <element attributes="import_attribute_name=Billing Code,edge_encryption_enabled=true" label="Billing Code" max_length="40" name="u_billing_code" type="string"/>
+        <element attributes="import_attribute_name=Business Unit,edge_encryption_enabled=true" label="Business Unit" max_length="32" name="u_business_unit" type="string"/>
+        <element attributes="import_attribute_name=Country,edge_encryption_enabled=true" label="Country" max_length="32" name="u_country" type="string"/>
+        <element attributes="import_attribute_name=Divison,edge_encryption_enabled=true" label="Divison" max_length="40" name="u_divison" type="string"/>
+        <element attributes="import_attribute_name=ID,edge_encryption_enabled=true" label="ID" max_length="40" name="u_id" type="string"/>
+        <element attributes="import_attribute_name=K,edge_encryption_enabled=true" label="K" max_length="40" name="u_k" type="string"/>
+        <element attributes="import_attribute_name=L,edge_encryption_enabled=true" label="L" max_length="40" name="u_l" type="string"/>
+        <element attributes="import_attribute_name=M,edge_encryption_enabled=true" label="M" max_length="40" name="u_m" type="string"/>
+        <element attributes="import_attribute_name=Name,edge_encryption_enabled=true" label="Name" max_length="40" name="u_name" type="string"/>
+        <element attributes="import_attribute_name=Region,edge_encryption_enabled=true" label="Region" max_length="32" name="u_region" type="string"/>
+        <element attributes="import_attribute_name=SAP Company Code,edge_encryption_enabled=true" label="SAP Company Code" max_length="40" name="u_sap_company_code" type="string"/>
+        <element attributes="import_attribute_name=SAP Company Name,edge_encryption_enabled=true" label="SAP Company Name" max_length="40" name="u_sap_company_name" type="string"/>
+    </element>
+</database>

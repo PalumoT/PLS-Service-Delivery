@@ -12,7 +12,7 @@
 	return '';  // return the calculated value
 
 })(current);]]></calculation>
-        <choice/>
+        <choice>1</choice>
         <choice_field/>
         <choice_table/>
         <column_label>Customer Name</column_label>
@@ -54,7 +54,7 @@
         <sys_created_on>2017-07-03 09:26:14</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>2598bca44f3bb6c062b50fbf0310c713</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Customer Name</sys_name>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
         <sys_policy/>
@@ -62,7 +62,7 @@
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_dictionary_x_novrp_pls_incident_customer_name</sys_update_name>
         <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-07-03 10:48:17</sys_updated_on>
+        <sys_updated_on>2017-07-07 12:18:26</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

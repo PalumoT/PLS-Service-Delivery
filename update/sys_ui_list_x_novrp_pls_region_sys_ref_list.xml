@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_novrp_pls_region" version="2" view="sys_ref_list">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>name</element>
+            <list_id display_value="x_novrp_pls_region" element="NULL" name="x_novrp_pls_region" parent="NULL" relationship="NULL" sys_domain="global" view="b16525014f111200c161df601310c75c">1d5c00b34f77fa043fb88e401310c712</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>LEEJO1H</sys_created_by>
+            <sys_created_on>2017-07-13 08:29:15</sys_created_on>
+            <sys_id>915c00b34f77fa043fb88e401310c713</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>LEEJO1H</sys_updated_by>
+            <sys_updated_on>2017-07-13 08:29:15</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_novrp_pls_region</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>LEEJO1H</sys_created_by>
+            <sys_created_on>2017-07-13 08:29:15</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1d5c00b34f77fa043fb88e401310c712</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_novrp_pls_region</sys_name>
+            <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
+            <sys_update_name>sys_ui_list_x_novrp_pls_region_sys_ref_list</sys_update_name>
+            <sys_updated_by>LEEJO1H</sys_updated_by>
+            <sys_updated_on>2017-07-13 08:29:15</sys_updated_on>
+            <sys_user/>
+            <view display_value="Reference List" name="sys_ref_list">b16525014f111200c161df601310c75c</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

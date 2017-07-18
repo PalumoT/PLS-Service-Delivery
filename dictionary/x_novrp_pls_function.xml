@@ -2,6 +2,7 @@
 <database>
     <element label="Function" max_length="40" name="x_novrp_pls_function" type="collection">
         <element label="Active" max_length="40" name="active" type="boolean"/>
-        <element label="Name" max_length="40" name="name" type="string"/>
+        <element label="ID" mandatory="true" max_length="40" name="id" type="string"/>
+        <element label="Name" mandatory="true" max_length="40" name="name" type="string"/>
     </element>
 </database>

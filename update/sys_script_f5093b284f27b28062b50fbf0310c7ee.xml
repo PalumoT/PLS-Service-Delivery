@@ -14,7 +14,7 @@
         <client_callable>false</client_callable>
         <collection>x_novrp_pls_service_request</collection>
         <condition/>
-        <description/>
+        <description>This BR  creates subtasks when state of a service request changes to "In Progress"</description>
         <execute_function>false</execute_function>
         <filter_condition table="x_novrp_pls_service_request">stateCHANGESTO2^stateCHANGESFROM1^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="2"/>
             <item endquery="false" field="state" goto="false" newquery="false" operator="CHANGESFROM" or="false" value="1"/>
@@ -140,11 +140,11 @@
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>GALMOPA1</sys_created_by>
         <sys_created_on>2017-06-21 13:08:32</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f5093b284f27b28062b50fbf0310c7ee</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_name>NVS - Create  Service Request Tasks</sys_name>
         <sys_overrides/>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
@@ -153,7 +153,7 @@
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_script_f5093b284f27b28062b50fbf0310c7ee</sys_update_name>
         <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-06-22 13:26:41</sys_updated_on>
+        <sys_updated_on>2017-07-13 12:26:50</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

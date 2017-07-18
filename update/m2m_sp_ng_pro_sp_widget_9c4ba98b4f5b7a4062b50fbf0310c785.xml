@@ -2,7 +2,7 @@
 <record_update table="m2m_sp_ng_pro_sp_widget">
     <m2m_sp_ng_pro_sp_widget action="INSERT_OR_UPDATE">
         <sp_angular_provider display_value="RPService">ae0a88e393b0220064f572edb67ffb49</sp_angular_provider>
-        <sp_widget display_value="PLS Resource Availability - Requested">444b658b4f5b7a4062b50fbf0310c715</sp_widget>
+        <sp_widget display_value="NVS - PLS Resource Availability">444b658b4f5b7a4062b50fbf0310c715</sp_widget>
         <sys_class_name>m2m_sp_ng_pro_sp_widget</sys_class_name>
         <sys_created_by>GALMOPA1</sys_created_by>
         <sys_created_on>2017-06-16 10:57:08</sys_created_on>

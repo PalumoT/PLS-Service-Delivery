@@ -5,7 +5,7 @@
         <active>true</active>
         <api_name>x_novrp_pls.sr_helper</api_name>
         <client_callable>true</client_callable>
-        <description/>
+        <description>Helper for service request table</description>
         <name>sr_helper</name>
         <script><![CDATA[var sr_helper = Class.create();
 sr_helper.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
@@ -34,24 +34,28 @@ sr_helper.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 		var encodedQuery = "active=true^sys_class_name=" + 
 			gs.getProperty("x_novrp_pls.ref_catalog_item");
 		
-		var demand = serviceRequest.top_task.getRefRecord();
-		
-		if(demand != ""){
-			if(demand.services_requested != ""){
-				encodedQuery += "^parentIN" + demand.services_requested;
-			}else if(demand.service_groups != ""){
-				encodedQuery += "^parent.parentIN" + demand.service_groups;
+		if(serviceRequest.getValue("state") == 1){
+			var demand = serviceRequest.top_task.getRefRecord();
+
+			if(demand != ""){
+				if(demand.services_requested != ""){
+					encodedQuery += "^parentIN" + demand.services_requested;
+				}else if(demand.service_groups != ""){
+					encodedQuery += "^parent.parentIN" + demand.service_groups;
+				}
 			}
+		}else if(serviceRequest.getValue("state") == 2){
+			encodedQuery += "^parentIN" + serviceRequest.catalog_item.parent;
 		}
 		
 		var result = "sys_idIN";
 		
-		var glideDemand = new GlideRecord("x_novrp_pls_catalog_item");
-		glideDemand.addEncodedQuery(encodedQuery);
-		glideDemand.query();
+		var glideCatalogItem = new GlideRecord("x_novrp_pls_catalog_item");
+		glideCatalogItem.addEncodedQuery(encodedQuery);
+		glideCatalogItem.query();
 		
-		while(glideDemand.next()){
-			result += glideDemand.getUniqueValue() + ",";
+		while(glideCatalogItem.next()){
+			result += glideCatalogItem.getUniqueValue() + ",";
 		}
 		
 		return result;
@@ -112,7 +116,6 @@ sr_helper.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 				demand.region = glideDemand.getValue("region");
 				demand.division = glideDemand.getValue("division");
 				demand["function"] = glideDemand.getValue("function");
-				demand.customer = glideDemand.getDisplayValue("requestor");
 			}
 			
 			var response = {
@@ -133,6 +136,22 @@ sr_helper.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 		}
 	},
 	
+	canWrite: function(record){
+		if(gs.hasRole("x_novrp_pls.service_request_manager")){
+			return true;
+		}
+		
+		var owners = record.service_group.service_group_owners;
+		
+		if(record.assigned_to == gs.getUserID() || 
+		   owners.indexOf(gs.getUserID()) > -1){
+			return true;
+		}
+		
+		return false;
+	},
+	
+	
 	type: 'sr_helper'
 });]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
@@ -140,7 +159,7 @@ sr_helper.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_on>2017-06-14 09:32:17</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>71a447964f9f764062b50fbf0310c7f2</sys_id>
-        <sys_mod_count>65</sys_mod_count>
+        <sys_mod_count>72</sys_mod_count>
         <sys_name>sr_helper</sys_name>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
         <sys_policy>read</sys_policy>
@@ -148,6 +167,6 @@ sr_helper.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_script_include_71a447964f9f764062b50fbf0310c7f2</sys_update_name>
         <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-07-04 14:46:04</sys_updated_on>
+        <sys_updated_on>2017-07-13 13:25:43</sys_updated_on>
     </sys_script_include>
 </record_update>

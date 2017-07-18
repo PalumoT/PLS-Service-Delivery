@@ -14,7 +14,7 @@
         <client_callable>false</client_callable>
         <collection>x_novrp_pls_sr_task</collection>
         <condition/>
-        <description/>
+        <description>This BR updates the field "Percent" when the field "State" changes</description>
         <execute_function>false</execute_function>
         <filter_condition table="x_novrp_pls_sr_task">top_taskISNOTEMPTY^stateVALCHANGES^EQ<item endquery="false" field="top_task" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
             <item endquery="false" field="state" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
@@ -61,11 +61,11 @@
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>GALMOPA1</sys_created_by>
         <sys_created_on>2017-06-20 16:55:11</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c2826f104f2f328062b50fbf0310c796</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>NVS - Update Percent On Task Completed</sys_name>
         <sys_overrides/>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
@@ -74,7 +74,7 @@
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_script_c2826f104f2f328062b50fbf0310c796</sys_update_name>
         <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-06-22 10:42:17</sys_updated_on>
+        <sys_updated_on>2017-07-13 12:30:29</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

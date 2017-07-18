@@ -109,7 +109,7 @@
             <sys_created_on>2017-06-01 12:53:03</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_id>40f5fc924f0f72003fb88e401310c780</sys_id>
-            <sys_mod_count>16</sys_mod_count>
+            <sys_mod_count>17</sys_mod_count>
             <sys_name>stage</sys_name>
             <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
             <sys_policy/>
@@ -117,7 +117,7 @@
             <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
             <sys_update_name>sys_choice_x_novrp_pls_demand_stage</sys_update_name>
             <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-01 13:00:56</sys_updated_on>
+            <sys_updated_on>2017-07-10 17:14:21</sys_updated_on>
         </sys_choice_set>
     </sys_choice>
 </record_update>

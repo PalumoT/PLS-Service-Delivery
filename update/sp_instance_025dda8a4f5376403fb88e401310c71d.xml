@@ -11,7 +11,7 @@
         <short_description/>
         <size>md</size>
         <sp_column display_value="1">454d1e8a4f5376403fb88e401310c70f</sp_column>
-        <sp_widget display_value="PLS Resource Plans - Requested">0d7a5ece4f1376403fb88e401310c71a</sp_widget>
+        <sp_widget display_value="NVS - PLS Resource Plans [Requested]">0d7a5ece4f1376403fb88e401310c71a</sp_widget>
         <sys_class_name>sp_instance</sys_class_name>
         <sys_created_by>paul.galmot</sys_created_by>
         <sys_created_on>2017-06-13 12:02:03</sys_created_on>

@@ -14,7 +14,7 @@
         <client_callable>false</client_callable>
         <collection>x_novrp_pls_demand</collection>
         <condition/>
-        <description/>
+        <description>This BR updates the field "Demand Owner" based on the Regional Account Director of the selected Region</description>
         <execute_function>false</execute_function>
         <filter_condition table="x_novrp_pls_demand">regionVALCHANGES^assigned_toISEMPTY^EQ<item endquery="false" field="region" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
             <item endquery="false" field="assigned_to" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
@@ -44,11 +44,11 @@
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>GALMOPA1</sys_created_by>
         <sys_created_on>2017-06-09 14:28:04</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8d18dabc4fd7be003fb88e401310c73d</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>NVS - Autofill Demand Owner</sys_name>
         <sys_overrides/>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
@@ -57,7 +57,7 @@
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_script_8d18dabc4fd7be003fb88e401310c73d</sys_update_name>
         <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-06-26 14:32:45</sys_updated_on>
+        <sys_updated_on>2017-07-13 12:17:04</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

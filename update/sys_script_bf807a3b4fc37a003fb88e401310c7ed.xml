@@ -14,7 +14,7 @@
         <client_callable>false</client_callable>
         <collection>x_novrp_pls_service_request</collection>
         <condition/>
-        <description/>
+        <description>This BR calculates the "Estimated Price (Dollars)" when subservice changes</description>
         <execute_function>false</execute_function>
         <filter_condition table="x_novrp_pls_service_request">catalog_itemVALCHANGES^ORplanned_start_dateVALCHANGES^EQ<item endquery="false" field="catalog_item" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
             <item endquery="false" field="planned_start_date" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
@@ -45,6 +45,7 @@
 		current.estimated_cost_dollars = getPrice(subservice);
 	}else if(priceType == "fte"){
 		current.estimated_cost_dollars = subservice.estimated_price_dollars;
+		current.estimated_efforts_hours = subservice.estimated_efforts_hours;
 	}
 	
 	function getPrice(subservice){
@@ -66,11 +67,11 @@
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>paul.galmot</sys_created_by>
         <sys_created_on>2017-06-06 13:47:50</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>bf807a3b4fc37a003fb88e401310c7ed</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>NVS - Calculate Estimated Price</sys_name>
         <sys_overrides/>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
@@ -79,7 +80,7 @@
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_script_bf807a3b4fc37a003fb88e401310c7ed</sys_update_name>
         <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-06-26 14:38:55</sys_updated_on>
+        <sys_updated_on>2017-07-13 12:25:02</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

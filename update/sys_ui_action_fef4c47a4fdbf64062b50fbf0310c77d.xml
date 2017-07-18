@@ -4,7 +4,7 @@
         <action_name/>
         <active>true</active>
         <client>false</client>
-        <comments/>
+        <comments>This action enables to move state to "Work In Progress"</comments>
         <condition>!current.has_subtasks &amp;&amp; current.canWrite() &amp;&amp; current.state == 1;</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
@@ -22,7 +22,10 @@
         <onclick/>
         <order>100</order>
         <script><![CDATA[current.state = 2;
-current.assigned_to = gs.getUserID();
+if(current.assigned_to == ""){
+	current.assigned_to = gs.getUserID();	
+}
+
 current.actual_start_date = new GlideDate();
 current.update();
 
@@ -34,11 +37,11 @@ action.setRedirectURL(current);]]></script>
         <sys_class_name>sys_ui_action</sys_class_name>
         <sys_created_by>GALMOPA1</sys_created_by>
         <sys_created_on>2017-06-15 08:52:32</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>fef4c47a4fdbf64062b50fbf0310c77d</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>Start Working</sys_name>
         <sys_overrides/>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
@@ -47,7 +50,7 @@ action.setRedirectURL(current);]]></script>
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_ui_action_fef4c47a4fdbf64062b50fbf0310c77d</sys_update_name>
         <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-06-22 09:50:58</sys_updated_on>
+        <sys_updated_on>2017-07-13 12:48:06</sys_updated_on>
         <table>x_novrp_pls_sr_task</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

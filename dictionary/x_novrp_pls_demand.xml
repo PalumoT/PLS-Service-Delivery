@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element audit="true" extends="x_novrp_pls_task" label="Demand" max_length="40" name="x_novrp_pls_demand" sizeclass="24" type="collection">
+    <element audit="true" extends="x_novrp_pls_task" label="Demand" max_length="40" name="x_novrp_pls_demand" sizeclass="50" type="collection">
         <element label="Brand" max_length="32" name="brand" reference="x_novrp_pls_brand" reference_qual="javascript:&quot;franchise=&quot; + current.franchise;" type="reference" use_reference_qualifier="advanced"/>
         <element label="Business Unit" mandatory="true" max_length="32" name="business_unit" reference="x_novrp_pls_business_unit" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
         <element label="Country" mandatory="true" max_length="32" name="country" reference="x_novrp_pls_country" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
         <element label="Customer" max_length="32" name="customer" reference="x_novrp_pls_customer" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
         <element label="Demand Value (Dollars)" max_length="20" name="demand_value_dollars" type="decimal"/>
-        <element label="Division" max_length="32" name="division" reference="x_novrp_pls_division" type="reference"/>
+        <element label="Division" max_length="32" name="division" reference="x_novrp_pls_division" reference_qual="inactive=true^EQ" reference_qual_condition="inactive=true^EQ" type="reference"/>
         <element label="Financial Comments" max_length="4000" name="financial_comments" type="string"/>
         <element label="Franchise" max_length="32" name="franchise" reference="x_novrp_pls_franchise" reference_qual="javascript:&quot;business_unit=&quot; + current.business_unit;" type="reference" use_reference_qualifier="advanced"/>
         <element label="Link to SLA" max_length="1024" name="link_to_sla" type="url"/>
@@ -27,7 +27,7 @@
                 <element label="Acquired" sequence="4" value="4"/>
             </choice>
         </element>
-        <element label="Region" max_length="32" name="region" reference="x_novrp_pls_region" type="reference"/>
+        <element label="Region" max_length="32" name="region" reference="x_novrp_pls_region" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
         <element label="Requested End Date" max_length="40" name="requested_end_date" type="glide_date"/>
         <element label="Requested Start Date" max_length="40" name="requested_start_date" type="glide_date"/>
         <element label="Requester" mandatory="true" max_length="32" name="requester" reference="sys_user" type="reference"/>

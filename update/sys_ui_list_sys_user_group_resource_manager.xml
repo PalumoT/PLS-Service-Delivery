@@ -117,12 +117,12 @@
             <relationship/>
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
-            <sys_created_by>paul.galmot</sys_created_by>
-            <sys_created_on>2017-06-07 09:40:02</sys_created_on>
-            <sys_customer_update>false</sys_customer_update>
+            <sys_created_by>GALMOPA1</sys_created_by>
+            <sys_created_on>2017-07-10 09:58:11</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>17438b084fdbba003fb88e401310c7b1</sys_id>
+            <sys_id>b6e3893e4ffb76043fb88e401310c72c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>sys_user_group</sys_name>
             <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
@@ -130,9 +130,9 @@
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
             <sys_update_name>sys_ui_list_sys_user_group_resource_manager</sys_update_name>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-06-07 09:40:02</sys_updated_on>
-            <sys_user display_value="Paul Galmot">7b8c0fd34feaea40b734260f0310c71e</sys_user>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-07-10 09:58:11</sys_updated_on>
+            <sys_user display_value="Mr Paul Galmot">19f571514f66a6009c6fb2f11310c744</sys_user>
             <view display_value="Resource Manager" name="resource_manager">9a8f99f2eb01010060bbafcef106fe77</view>
             <view_name/>
         </sys_ui_list>

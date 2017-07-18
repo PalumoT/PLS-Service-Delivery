@@ -4,7 +4,7 @@
         <action_name>close_sr_task</action_name>
         <active>true</active>
         <client>true</client>
-        <comments/>
+        <comments>This action enables to move state to "Close"</comments>
         <condition>current.canWrite() &amp;&amp; current.state == 2;</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
@@ -18,7 +18,7 @@
         <list_context_menu>false</list_context_menu>
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
-        <name>Close</name>
+        <name>Close Task</name>
         <onclick>closeTask()</onclick>
         <order>500</order>
         <script><![CDATA[function closeTask(){
@@ -73,8 +73,8 @@ function runScript(){
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>697a05364fd33a4062b50fbf0310c7ac</sys_id>
-        <sys_mod_count>12</sys_mod_count>
-        <sys_name>Close</sys_name>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>Close Task</sys_name>
         <sys_overrides/>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
         <sys_policy/>
@@ -82,7 +82,7 @@ function runScript(){
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_ui_action_697a05364fd33a4062b50fbf0310c7ac</sys_update_name>
         <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-07-04 12:59:31</sys_updated_on>
+        <sys_updated_on>2017-07-13 12:48:12</sys_updated_on>
         <table>x_novrp_pls_sr_task</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

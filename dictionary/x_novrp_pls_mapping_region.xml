@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element label="Mapping Region" max_length="40" name="x_novrp_pls_mapping_region" type="collection">
-        <element label="Business Unit" max_length="32" name="business_unit" reference="x_novrp_pls_business_unit" type="reference"/>
-        <element label="Country" max_length="32" name="country" reference="x_novrp_pls_country" type="reference"/>
-        <element display="true" label="Region" max_length="32" name="region" reference="x_novrp_pls_region" type="reference"/>
+        <element label="Business Unit" mandatory="true" max_length="32" name="business_unit" reference="x_novrp_pls_business_unit" type="reference"/>
+        <element label="Country" mandatory="true" max_length="32" name="country" reference="x_novrp_pls_country" type="reference"/>
+        <element display="true" label="Region" mandatory="true" max_length="32" name="region" reference="x_novrp_pls_region" type="reference"/>
         <index name="index">
             <element name="country"/>
         </index>

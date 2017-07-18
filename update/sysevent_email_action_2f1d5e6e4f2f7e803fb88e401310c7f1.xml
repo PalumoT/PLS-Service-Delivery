@@ -9,7 +9,7 @@
         <collection>x_novrp_pls_issue</collection>
         <condition/>
         <content_type>text/html</content_type>
-        <description/>
+        <description>This notification informs on remaining open issue</description>
         <event_name>x_novrp_pls.issue.trigger_email</event_name>
         <event_parm_1>false</event_parm_1>
         <event_parm_2>false</event_parm_2>
@@ -47,11 +47,11 @@
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>GALMOPA1</sys_created_by>
         <sys_created_on>2017-06-27 11:34:09</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2f1d5e6e4f2f7e803fb88e401310c7f1</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>NVS - Reminder on open issue</sys_name>
         <sys_overrides/>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
@@ -60,7 +60,7 @@
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sysevent_email_action_2f1d5e6e4f2f7e803fb88e401310c7f1</sys_update_name>
         <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-06-27 11:38:52</sys_updated_on>
+        <sys_updated_on>2017-07-13 13:11:01</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>

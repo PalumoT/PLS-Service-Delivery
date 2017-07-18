@@ -2,6 +2,7 @@
 <database>
     <element label="Country" max_length="40" name="x_novrp_pls_country" type="collection">
         <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
-        <element display="true" label="Name" max_length="40" name="name" type="string"/>
+        <element label="ID" mandatory="true" max_length="40" name="id" type="string"/>
+        <element display="true" label="Name" mandatory="true" max_length="40" name="name" type="string"/>
     </element>
 </database>

@@ -9,7 +9,7 @@
         <collection>x_novrp_pls_service_request</collection>
         <condition/>
         <content_type>text/html</content_type>
-        <description/>
+        <description>This notification informs Service Request Owners about a non compliant SR</description>
         <event_name>x_novrp_pls.sr.nc.trigger_email</event_name>
         <event_parm_1>false</event_parm_1>
         <event_parm_2>false</event_parm_2>
@@ -42,11 +42,11 @@
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>GALMOPA1</sys_created_by>
         <sys_created_on>2017-06-21 16:39:39</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>af692c344f2bb28062b50fbf0310c714</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>NVS - Reminder on non compliant SR</sys_name>
         <sys_overrides/>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
@@ -55,7 +55,7 @@
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sysevent_email_action_af692c344f2bb28062b50fbf0310c714</sys_update_name>
         <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-06-21 16:40:48</sys_updated_on>
+        <sys_updated_on>2017-07-13 13:13:42</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>

@@ -4,7 +4,7 @@
         <active>true</active>
         <applies_extended>false</applies_extended>
         <condition/>
-        <description/>
+        <description>Control validity of the requested start date</description>
         <field>requested_start_date</field>
         <global>true</global>
         <messages/>
@@ -54,11 +54,11 @@
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>GALMOPA1</sys_created_by>
         <sys_created_on>2017-06-09 09:38:06</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>da155df04f93be003fb88e401310c72c</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name>NVS - Valid Requested Start Date</sys_name>
         <sys_overrides/>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
@@ -67,7 +67,7 @@
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_script_client_da155df04f93be003fb88e401310c72c</sys_update_name>
         <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-06-21 16:45:47</sys_updated_on>
+        <sys_updated_on>2017-07-13 13:50:45</sys_updated_on>
         <table>x_novrp_pls_demand</table>
         <type>onChange</type>
         <ui_type>0</ui_type>

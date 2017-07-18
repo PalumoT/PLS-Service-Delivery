@@ -4,7 +4,7 @@
         <action_name>generate_resource_plan</action_name>
         <active>true</active>
         <client>true</client>
-        <comments/>
+        <comments>This action enables to create resource plans based on the configuration</comments>
         <condition>!current.catalog_item.nil() &amp;&amp; current.state == 1;</condition>
         <form_action>true</form_action>
         <form_button>false</form_button>
@@ -67,9 +67,16 @@ function runBusRuleCode(){
 		gs.addInfoMessage("No milestone defined for the selected subservice");
 	}
 	
+	var dateTimeHelper = new DateTimeHelper();
+	var start = current.getValue("planned_start_date");
+	
 	for(var i=0; i<tasks.length; i++){
 		var task = tasks[i];
-		var plan = createResourcePlan(task, current);
+		var plan = createResourcePlan(task, current, start);
+		
+		if(plan){
+			start = plan.getValue("end_date");	
+		}
 	}
 	
 	current.update();
@@ -83,20 +90,23 @@ function deleteResourcePlan(task){
 	glideResourcePlan.deleteMultiple();	
 }
 
-function createResourcePlan(task, parent){
+function createResourcePlan(task, parent, start){
 	if(!task.group){
 		gs.addInfoMessage("Assignment group is missing in the task configuration for milestone " + task.stage);
 		return;
 	}
 	
+	var dateTimeHelper = new DateTimeHelper();
 	var glideResourcePlan = new GlideRecord("x_novrp_pls_resource_plan");
 	glideResourcePlan.addQuery("group_resource", task.group);
 	glideResourcePlan.addQuery("task", parent.getUniqueValue());
 	glideResourcePlan.addQuery("short_description", task.stage);
 	glideResourcePlan.query();
 	
-	if(glideResourcePlan.next()){	
+	if(glideResourcePlan.next()){
 		glideResourcePlan.planned_hours += parseFloat(task.hours);
+		glideResourcePlan.end_date = dateTimeHelper.calculateEndDate(glideResourcePlan.start_date,
+																	 glideResourcePlan.planned_hours);
 		glideResourcePlan.update();
 		
 		return glideResourcePlan;
@@ -106,6 +116,8 @@ function createResourcePlan(task, parent){
 	glideResourcePlan.short_description = task.stage;
 	glideResourcePlan.group_resource = task.group;
 	glideResourcePlan.planned_hours = task.hours;
+	glideResourcePlan.start_date = start;
+	glideResourcePlan.end_date = dateTimeHelper.calculateEndDate(start, task.hours);
 	glideResourcePlan.members_preference = 3;
 	glideResourcePlan.task = current.getUniqueValue();
 	glideResourcePlan.insert();
@@ -176,11 +188,11 @@ function getSubtasks(task){
         <sys_class_name>sys_ui_action</sys_class_name>
         <sys_created_by>paul.galmot</sys_created_by>
         <sys_created_on>2017-05-09 15:12:14</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>76397e3e4f6ef600b734260f0310c717</sys_id>
-        <sys_mod_count>151</sys_mod_count>
+        <sys_mod_count>160</sys_mod_count>
         <sys_name>Generate Resource Plan</sys_name>
         <sys_overrides/>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
@@ -189,7 +201,7 @@ function getSubtasks(task){
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_ui_action_76397e3e4f6ef600b734260f0310c717</sys_update_name>
         <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-06-22 23:41:52</sys_updated_on>
+        <sys_updated_on>2017-07-17 11:45:40</sys_updated_on>
         <table>x_novrp_pls_service_request</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
