@@ -5,7 +5,7 @@
         <element label="Billing Code" max_length="40" name="billing_code" type="string"/>
         <element label="Business Unit" mandatory="true" max_length="32" name="business_unit" reference="x_novrp_pls_business_unit" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
         <element label="Country" mandatory="true" max_length="32" name="country" reference="x_novrp_pls_country" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
-        <element label="Division" mandatory="true" max_length="32" name="division" read_only="true" reference="x_novrp_pls_division" reference_qual="inactive=true^EQ" reference_qual_condition="inactive=true^EQ" type="reference"/>
+        <element label="Division" max_length="32" name="division" read_only="true" reference="x_novrp_pls_division" reference_qual="inactive=true^EQ" reference_qual_condition="inactive=true^EQ" type="reference"/>
         <element label="ID" mandatory="true" max_length="40" name="id" type="string"/>
         <element label="Name" mandatory="true" max_length="40" name="name" type="string"/>
         <element label="Region" mandatory="true" max_length="32" name="region" reference="x_novrp_pls_region" type="reference"/>

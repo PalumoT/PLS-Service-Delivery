@@ -26,13 +26,13 @@
         <mandatory>false</mandatory>
         <message/>
         <message_html><![CDATA[<p>Dear colleague,</p>
-<p>This is to inform a demand has been moved to "Scoped". Now it is up to you</p>
+<p>This is to inform you have been assigned as&nbsp;one of the Service Request Owners for demand ${short_description}.</p>
 <p>Click ${URI} to open the demand</p>
 <p>Best,</p>
 <p>The ServiceNow team</p>]]></message_html>
         <message_list/>
         <message_text/>
-        <name>NVS - Demand To Scoped</name>
+        <name>NVS - Service Request Owners Change</name>
         <omit_watermark>false</omit_watermark>
         <order>100</order>
         <push_message_only>false</push_message_only>
@@ -43,7 +43,7 @@
         <send_self>true</send_self>
         <sms_alternate/>
         <style/>
-        <subject>${number} - Demand moved to Scoped</subject>
+        <subject>${number} - Service request owners has changed</subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>paul.galmot</sys_created_by>
@@ -52,8 +52,8 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8a80307d4f93f2403fb88e401310c7b8</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_name>NVS - Demand To Scoped</sys_name>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>NVS - Service Request Owners Change</sys_name>
         <sys_overrides/>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
         <sys_policy/>
@@ -61,7 +61,7 @@
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sysevent_email_action_8a80307d4f93f2403fb88e401310c7b8</sys_update_name>
         <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-07-13 13:13:04</sys_updated_on>
+        <sys_updated_on>2017-07-25 12:58:53</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>

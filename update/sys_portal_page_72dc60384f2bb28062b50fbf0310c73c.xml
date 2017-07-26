@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<record_update node_type="sys_portal_page" unload_date="2017-07-18 13:25:23">
+<record_update node_type="sys_portal_page" unload_date="2017-07-26 08:50:21">
     <sys_portal_page action="INSERT_OR_UPDATE">
         <layout/>
         <order/>
@@ -33,88 +33,88 @@
                 <page display_value="PLS Homepage">72dc60384f2bb28062b50fbf0310c73c</page>
                 <summary/>
                 <sys_created_by>KENNEGA1</sys_created_by>
-                <sys_created_on>2017-07-05 07:38:48</sys_created_on>
-                <sys_id>1c1436494fb73ec03fb88e401310c77e</sys_id>
+                <sys_created_on>2017-07-25 13:46:27</sys_created_on>
+                <sys_id>7008cf274f8043003fb88e401310c75a</sys_id>
                 <sys_mod_count>0</sys_mod_count>
                 <sys_updated_by>KENNEGA1</sys_updated_by>
-                <sys_updated_on>2017-07-05 07:38:48</sys_updated_on>
+                <sys_updated_on>2017-07-25 13:46:27</sys_updated_on>
                 <related_items_node>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
-                        <name>report_type</name>
-                        <portal_section display_value="Created 05/07/2017 08:38:48">1c1436494fb73ec03fb88e401310c77e</portal_section>
-                        <sys_created_by>KENNEGA1</sys_created_by>
-                        <sys_created_on>2017-07-05 07:38:48</sys_created_on>
-                        <sys_id>181436494fb73ec03fb88e401310c780</sys_id>
-                        <sys_mod_count>0</sys_mod_count>
-                        <sys_updated_by>KENNEGA1</sys_updated_by>
-                        <sys_updated_on>2017-07-05 07:38:48</sys_updated_on>
-                        <value>list</value>
-                    </sys_portal_preferences>
-                    <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>help_text_window</name>
-                        <portal_section display_value="Created 05/07/2017 08:38:48">1c1436494fb73ec03fb88e401310c77e</portal_section>
+                        <portal_section display_value="Created 25/07/2017 14:46:27">7008cf274f8043003fb88e401310c75a</portal_section>
                         <sys_created_by>KENNEGA1</sys_created_by>
-                        <sys_created_on>2017-07-05 07:38:48</sys_created_on>
-                        <sys_id>1c1436494fb73ec03fb88e401310c77f</sys_id>
+                        <sys_created_on>2017-07-25 13:46:27</sys_created_on>
+                        <sys_id>3008cf274f8043003fb88e401310c75b</sys_id>
                         <sys_mod_count>0</sys_mod_count>
                         <sys_updated_by>KENNEGA1</sys_updated_by>
-                        <sys_updated_on>2017-07-05 07:38:48</sys_updated_on>
+                        <sys_updated_on>2017-07-25 13:46:27</sys_updated_on>
                         <value>report_widget_description</value>
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
-                        <name>can_subscribe</name>
-                        <portal_section display_value="Created 05/07/2017 08:38:48">1c1436494fb73ec03fb88e401310c77e</portal_section>
+                        <name>current_page</name>
+                        <portal_section display_value="Created 25/07/2017 14:46:27">7008cf274f8043003fb88e401310c75a</portal_section>
                         <sys_created_by>KENNEGA1</sys_created_by>
-                        <sys_created_on>2017-07-05 07:38:48</sys_created_on>
-                        <sys_id>901436494fb73ec03fb88e401310c780</sys_id>
+                        <sys_created_on>2017-07-25 13:46:27</sys_created_on>
+                        <sys_id>3008cf274f8043003fb88e401310c75d</sys_id>
                         <sys_mod_count>0</sys_mod_count>
                         <sys_updated_by>KENNEGA1</sys_updated_by>
-                        <sys_updated_on>2017-07-05 07:38:48</sys_updated_on>
+                        <sys_updated_on>2017-07-25 13:46:27</sys_updated_on>
+                        <value>72dc60384f2bb28062b50fbf0310c73c</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 25/07/2017 14:46:27">7008cf274f8043003fb88e401310c75a</portal_section>
+                        <sys_created_by>KENNEGA1</sys_created_by>
+                        <sys_created_on>2017-07-25 13:46:27</sys_created_on>
+                        <sys_id>3808cf274f8043003fb88e401310c75c</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>KENNEGA1</sys_updated_by>
+                        <sys_updated_on>2017-07-25 13:46:27</sys_updated_on>
+                        <value>PLS - My Demands</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 25/07/2017 14:46:27">7008cf274f8043003fb88e401310c75a</portal_section>
+                        <sys_created_by>KENNEGA1</sys_created_by>
+                        <sys_created_on>2017-07-25 13:46:27</sys_created_on>
+                        <sys_id>3c08cf274f8043003fb88e401310c75b</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>KENNEGA1</sys_updated_by>
+                        <sys_updated_on>2017-07-25 13:46:27</sys_updated_on>
+                        <value>list</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 25/07/2017 14:46:27">7008cf274f8043003fb88e401310c75a</portal_section>
+                        <sys_created_by>KENNEGA1</sys_created_by>
+                        <sys_created_on>2017-07-25 13:46:27</sys_created_on>
+                        <sys_id>b008cf274f8043003fb88e401310c75c</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>KENNEGA1</sys_updated_by>
+                        <sys_updated_on>2017-07-25 13:46:27</sys_updated_on>
                         <value>true</value>
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>renderer</name>
-                        <portal_section display_value="Created 05/07/2017 08:38:48">1c1436494fb73ec03fb88e401310c77e</portal_section>
+                        <portal_section display_value="Created 25/07/2017 14:46:27">7008cf274f8043003fb88e401310c75a</portal_section>
                         <sys_created_by>KENNEGA1</sys_created_by>
-                        <sys_created_on>2017-07-05 07:38:48</sys_created_on>
-                        <sys_id>941436494fb73ec03fb88e401310c77f</sys_id>
+                        <sys_created_on>2017-07-25 13:46:27</sys_created_on>
+                        <sys_id>b408cf274f8043003fb88e401310c75b</sys_id>
                         <sys_mod_count>0</sys_mod_count>
                         <sys_updated_by>KENNEGA1</sys_updated_by>
-                        <sys_updated_on>2017-07-05 07:38:48</sys_updated_on>
+                        <sys_updated_on>2017-07-25 13:46:27</sys_updated_on>
                         <value>com.glide.ui.portal.RenderReport</value>
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
-                        <name>current_page</name>
-                        <portal_section display_value="Created 05/07/2017 08:38:48">1c1436494fb73ec03fb88e401310c77e</portal_section>
-                        <sys_created_by>KENNEGA1</sys_created_by>
-                        <sys_created_on>2017-07-05 07:38:48</sys_created_on>
-                        <sys_id>941436494fb73ec03fb88e401310c781</sys_id>
-                        <sys_mod_count>0</sys_mod_count>
-                        <sys_updated_by>KENNEGA1</sys_updated_by>
-                        <sys_updated_on>2017-07-05 07:38:48</sys_updated_on>
-                        <value>72dc60384f2bb28062b50fbf0310c73c</value>
-                    </sys_portal_preferences>
-                    <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>sys_id</name>
-                        <portal_section display_value="Created 05/07/2017 08:38:48">1c1436494fb73ec03fb88e401310c77e</portal_section>
+                        <portal_section display_value="Created 25/07/2017 14:46:27">7008cf274f8043003fb88e401310c75a</portal_section>
                         <sys_created_by>KENNEGA1</sys_created_by>
-                        <sys_created_on>2017-07-05 07:38:48</sys_created_on>
-                        <sys_id>9c1436494fb73ec03fb88e401310c77e</sys_id>
+                        <sys_created_on>2017-07-25 13:46:27</sys_created_on>
+                        <sys_id>f008cf274f8043003fb88e401310c75a</sys_id>
                         <sys_mod_count>0</sys_mod_count>
                         <sys_updated_by>KENNEGA1</sys_updated_by>
-                        <sys_updated_on>2017-07-05 07:38:48</sys_updated_on>
-                        <value>068775504fa3328062b50fbf0310c77b</value>
-                    </sys_portal_preferences>
-                    <sys_portal_preferences action="INSERT_OR_UPDATE">
-                        <name>title</name>
-                        <portal_section display_value="Created 05/07/2017 08:38:48">1c1436494fb73ec03fb88e401310c77e</portal_section>
-                        <sys_created_by>KENNEGA1</sys_created_by>
-                        <sys_created_on>2017-07-05 07:38:48</sys_created_on>
-                        <sys_id>9c1436494fb73ec03fb88e401310c780</sys_id>
-                        <sys_mod_count>0</sys_mod_count>
-                        <sys_updated_by>KENNEGA1</sys_updated_by>
-                        <sys_updated_on>2017-07-05 07:38:48</sys_updated_on>
-                        <value>PLS - My Service Requests</value>
+                        <sys_updated_on>2017-07-25 13:46:27</sys_updated_on>
+                        <value>92c9a1764f973a4062b50fbf0310c7d9</value>
                     </sys_portal_preferences>
                 </related_items_node>
             </sys_portal>
@@ -124,178 +124,178 @@
                 <page display_value="PLS Homepage">72dc60384f2bb28062b50fbf0310c73c</page>
                 <summary/>
                 <sys_created_by>KENNEGA1</sys_created_by>
-                <sys_created_on>2017-07-05 07:38:49</sys_created_on>
-                <sys_id>901436494fb73ec03fb88e401310c785</sys_id>
+                <sys_created_on>2017-07-25 13:46:27</sys_created_on>
+                <sys_id>7008cf274f8043003fb88e401310c761</sys_id>
                 <sys_mod_count>0</sys_mod_count>
                 <sys_updated_by>KENNEGA1</sys_updated_by>
-                <sys_updated_on>2017-07-05 07:38:49</sys_updated_on>
+                <sys_updated_on>2017-07-25 13:46:27</sys_updated_on>
                 <related_items_node>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
-                        <name>sys_id</name>
-                        <portal_section display_value="Created 05/07/2017 08:38:49">901436494fb73ec03fb88e401310c785</portal_section>
+                        <name>current_page</name>
+                        <portal_section display_value="Created 25/07/2017 14:46:27">7008cf274f8043003fb88e401310c761</portal_section>
                         <sys_created_by>KENNEGA1</sys_created_by>
-                        <sys_created_on>2017-07-05 07:38:48</sys_created_on>
-                        <sys_id>141436494fb73ec03fb88e401310c785</sys_id>
+                        <sys_created_on>2017-07-25 13:46:27</sys_created_on>
+                        <sys_id>3008cf274f8043003fb88e401310c789</sys_id>
                         <sys_mod_count>0</sys_mod_count>
                         <sys_updated_by>KENNEGA1</sys_updated_by>
-                        <sys_updated_on>2017-07-05 07:38:48</sys_updated_on>
-                        <value>ade704894f6ff28062b50fbf0310c723</value>
-                    </sys_portal_preferences>
-                    <sys_portal_preferences action="INSERT_OR_UPDATE">
-                        <name>renderer</name>
-                        <portal_section display_value="Created 05/07/2017 08:38:49">901436494fb73ec03fb88e401310c785</portal_section>
-                        <sys_created_by>KENNEGA1</sys_created_by>
-                        <sys_created_on>2017-07-05 07:38:49</sys_created_on>
-                        <sys_id>1c1436494fb73ec03fb88e401310c785</sys_id>
-                        <sys_mod_count>0</sys_mod_count>
-                        <sys_updated_by>KENNEGA1</sys_updated_by>
-                        <sys_updated_on>2017-07-05 07:38:49</sys_updated_on>
-                        <value>com.glide.ui.portal.RenderReport</value>
+                        <sys_updated_on>2017-07-25 13:46:27</sys_updated_on>
+                        <value>72dc60384f2bb28062b50fbf0310c73c</value>
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>title</name>
-                        <portal_section display_value="Created 05/07/2017 08:38:49">901436494fb73ec03fb88e401310c785</portal_section>
+                        <portal_section display_value="Created 25/07/2017 14:46:27">7008cf274f8043003fb88e401310c761</portal_section>
                         <sys_created_by>KENNEGA1</sys_created_by>
-                        <sys_created_on>2017-07-05 07:38:49</sys_created_on>
-                        <sys_id>241436494fb73ec03fb88e401310c787</sys_id>
+                        <sys_created_on>2017-07-25 13:46:27</sys_created_on>
+                        <sys_id>3808cf274f8043003fb88e401310c788</sys_id>
                         <sys_mod_count>0</sys_mod_count>
                         <sys_updated_by>KENNEGA1</sys_updated_by>
-                        <sys_updated_on>2017-07-05 07:38:49</sys_updated_on>
+                        <sys_updated_on>2017-07-25 13:46:27</sys_updated_on>
                         <value>PLS - My Tasks</value>
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>can_subscribe</name>
-                        <portal_section display_value="Created 05/07/2017 08:38:49">901436494fb73ec03fb88e401310c785</portal_section>
+                        <portal_section display_value="Created 25/07/2017 14:46:27">7008cf274f8043003fb88e401310c761</portal_section>
                         <sys_created_by>KENNEGA1</sys_created_by>
-                        <sys_created_on>2017-07-05 07:38:49</sys_created_on>
-                        <sys_id>281436494fb73ec03fb88e401310c786</sys_id>
+                        <sys_created_on>2017-07-25 13:46:27</sys_created_on>
+                        <sys_id>3c08cf274f8043003fb88e401310c787</sys_id>
                         <sys_mod_count>0</sys_mod_count>
                         <sys_updated_by>KENNEGA1</sys_updated_by>
-                        <sys_updated_on>2017-07-05 07:38:49</sys_updated_on>
+                        <sys_updated_on>2017-07-25 13:46:27</sys_updated_on>
                         <value>true</value>
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
-                        <name>current_page</name>
-                        <portal_section display_value="Created 05/07/2017 08:38:49">901436494fb73ec03fb88e401310c785</portal_section>
+                        <name>report_type</name>
+                        <portal_section display_value="Created 25/07/2017 14:46:27">7008cf274f8043003fb88e401310c761</portal_section>
                         <sys_created_by>KENNEGA1</sys_created_by>
-                        <sys_created_on>2017-07-05 07:38:49</sys_created_on>
-                        <sys_id>2c1436494fb73ec03fb88e401310c787</sys_id>
+                        <sys_created_on>2017-07-25 13:46:27</sys_created_on>
+                        <sys_id>b008cf274f8043003fb88e401310c788</sys_id>
                         <sys_mod_count>0</sys_mod_count>
                         <sys_updated_by>KENNEGA1</sys_updated_by>
-                        <sys_updated_on>2017-07-05 07:38:49</sys_updated_on>
-                        <value>72dc60384f2bb28062b50fbf0310c73c</value>
+                        <sys_updated_on>2017-07-25 13:46:27</sys_updated_on>
+                        <value>list</value>
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>help_text_window</name>
-                        <portal_section display_value="Created 05/07/2017 08:38:49">901436494fb73ec03fb88e401310c785</portal_section>
+                        <portal_section display_value="Created 25/07/2017 14:46:27">7008cf274f8043003fb88e401310c761</portal_section>
                         <sys_created_by>KENNEGA1</sys_created_by>
-                        <sys_created_on>2017-07-05 07:38:49</sys_created_on>
-                        <sys_id>901436494fb73ec03fb88e401310c786</sys_id>
+                        <sys_created_on>2017-07-25 13:46:27</sys_created_on>
+                        <sys_id>b408cf274f8043003fb88e401310c787</sys_id>
                         <sys_mod_count>0</sys_mod_count>
                         <sys_updated_by>KENNEGA1</sys_updated_by>
-                        <sys_updated_on>2017-07-05 07:38:49</sys_updated_on>
+                        <sys_updated_on>2017-07-25 13:46:27</sys_updated_on>
                         <value>report_widget_description</value>
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
-                        <name>report_type</name>
-                        <portal_section display_value="Created 05/07/2017 08:38:49">901436494fb73ec03fb88e401310c785</portal_section>
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 25/07/2017 14:46:27">7008cf274f8043003fb88e401310c761</portal_section>
                         <sys_created_by>KENNEGA1</sys_created_by>
-                        <sys_created_on>2017-07-05 07:38:49</sys_created_on>
-                        <sys_id>ac1436494fb73ec03fb88e401310c786</sys_id>
+                        <sys_created_on>2017-07-25 13:46:27</sys_created_on>
+                        <sys_id>f008cf274f8043003fb88e401310c761</sys_id>
                         <sys_mod_count>0</sys_mod_count>
                         <sys_updated_by>KENNEGA1</sys_updated_by>
-                        <sys_updated_on>2017-07-05 07:38:49</sys_updated_on>
-                        <value>list</value>
+                        <sys_updated_on>2017-07-25 13:46:27</sys_updated_on>
+                        <value>ade704894f6ff28062b50fbf0310c723</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 25/07/2017 14:46:27">7008cf274f8043003fb88e401310c761</portal_section>
+                        <sys_created_by>KENNEGA1</sys_created_by>
+                        <sys_created_on>2017-07-25 13:46:27</sys_created_on>
+                        <sys_id>f808cf274f8043003fb88e401310c761</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>KENNEGA1</sys_updated_by>
+                        <sys_updated_on>2017-07-25 13:46:27</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
                     </sys_portal_preferences>
                 </related_items_node>
             </sys_portal>
             <sys_portal action="INSERT_OR_UPDATE">
-                <dropzone>dropzone1</dropzone>
-                <offset>0</offset>
+                <dropzone>dropzone0</dropzone>
+                <offset>1</offset>
                 <page display_value="PLS Homepage">72dc60384f2bb28062b50fbf0310c73c</page>
                 <summary/>
                 <sys_created_by>KENNEGA1</sys_created_by>
-                <sys_created_on>2017-07-05 07:38:48</sys_created_on>
-                <sys_id>dc1436494fb73ec03fb88e401310c781</sys_id>
+                <sys_created_on>2017-07-25 13:46:27</sys_created_on>
+                <sys_id>bc08cf274f8043003fb88e401310c75d</sys_id>
                 <sys_mod_count>0</sys_mod_count>
                 <sys_updated_by>KENNEGA1</sys_updated_by>
-                <sys_updated_on>2017-07-05 07:38:48</sys_updated_on>
+                <sys_updated_on>2017-07-25 13:46:27</sys_updated_on>
                 <related_items_node>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>sys_id</name>
-                        <portal_section display_value="Created 05/07/2017 08:38:48">dc1436494fb73ec03fb88e401310c781</portal_section>
+                        <portal_section display_value="Created 25/07/2017 14:46:27">bc08cf274f8043003fb88e401310c75d</portal_section>
                         <sys_created_by>KENNEGA1</sys_created_by>
-                        <sys_created_on>2017-07-05 07:38:48</sys_created_on>
-                        <sys_id>501436494fb73ec03fb88e401310c782</sys_id>
+                        <sys_created_on>2017-07-25 13:46:27</sys_created_on>
+                        <sys_id>3008cf274f8043003fb88e401310c75e</sys_id>
                         <sys_mod_count>0</sys_mod_count>
                         <sys_updated_by>KENNEGA1</sys_updated_by>
-                        <sys_updated_on>2017-07-05 07:38:48</sys_updated_on>
-                        <value>92c9a1764f973a4062b50fbf0310c7d9</value>
+                        <sys_updated_on>2017-07-25 13:46:27</sys_updated_on>
+                        <value>068775504fa3328062b50fbf0310c77b</value>
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>title</name>
-                        <portal_section display_value="Created 05/07/2017 08:38:48">dc1436494fb73ec03fb88e401310c781</portal_section>
+                        <portal_section display_value="Created 25/07/2017 14:46:27">bc08cf274f8043003fb88e401310c75d</portal_section>
                         <sys_created_by>KENNEGA1</sys_created_by>
-                        <sys_created_on>2017-07-05 07:38:48</sys_created_on>
-                        <sys_id>501436494fb73ec03fb88e401310c784</sys_id>
+                        <sys_created_on>2017-07-25 13:46:27</sys_created_on>
+                        <sys_id>3008cf274f8043003fb88e401310c760</sys_id>
                         <sys_mod_count>0</sys_mod_count>
                         <sys_updated_by>KENNEGA1</sys_updated_by>
-                        <sys_updated_on>2017-07-05 07:38:48</sys_updated_on>
-                        <value>PLS - My Demands</value>
+                        <sys_updated_on>2017-07-25 13:46:27</sys_updated_on>
+                        <value>PLS - My Service Requests</value>
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>report_type</name>
-                        <portal_section display_value="Created 05/07/2017 08:38:48">dc1436494fb73ec03fb88e401310c781</portal_section>
+                        <portal_section display_value="Created 25/07/2017 14:46:27">bc08cf274f8043003fb88e401310c75d</portal_section>
                         <sys_created_by>KENNEGA1</sys_created_by>
-                        <sys_created_on>2017-07-05 07:38:48</sys_created_on>
-                        <sys_id>541436494fb73ec03fb88e401310c783</sys_id>
+                        <sys_created_on>2017-07-25 13:46:27</sys_created_on>
+                        <sys_id>3408cf274f8043003fb88e401310c75f</sys_id>
                         <sys_mod_count>0</sys_mod_count>
                         <sys_updated_by>KENNEGA1</sys_updated_by>
-                        <sys_updated_on>2017-07-05 07:38:48</sys_updated_on>
+                        <sys_updated_on>2017-07-25 13:46:27</sys_updated_on>
                         <value>list</value>
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>help_text_window</name>
-                        <portal_section display_value="Created 05/07/2017 08:38:48">dc1436494fb73ec03fb88e401310c781</portal_section>
+                        <portal_section display_value="Created 25/07/2017 14:46:27">bc08cf274f8043003fb88e401310c75d</portal_section>
                         <sys_created_by>KENNEGA1</sys_created_by>
-                        <sys_created_on>2017-07-05 07:38:48</sys_created_on>
-                        <sys_id>581436494fb73ec03fb88e401310c782</sys_id>
+                        <sys_created_on>2017-07-25 13:46:27</sys_created_on>
+                        <sys_id>3808cf274f8043003fb88e401310c75e</sys_id>
                         <sys_mod_count>0</sys_mod_count>
                         <sys_updated_by>KENNEGA1</sys_updated_by>
-                        <sys_updated_on>2017-07-05 07:38:48</sys_updated_on>
+                        <sys_updated_on>2017-07-25 13:46:27</sys_updated_on>
                         <value>report_widget_description</value>
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>current_page</name>
-                        <portal_section display_value="Created 05/07/2017 08:38:48">dc1436494fb73ec03fb88e401310c781</portal_section>
+                        <portal_section display_value="Created 25/07/2017 14:46:27">bc08cf274f8043003fb88e401310c75d</portal_section>
                         <sys_created_by>KENNEGA1</sys_created_by>
-                        <sys_created_on>2017-07-05 07:38:48</sys_created_on>
-                        <sys_id>581436494fb73ec03fb88e401310c784</sys_id>
+                        <sys_created_on>2017-07-25 13:46:27</sys_created_on>
+                        <sys_id>3808cf274f8043003fb88e401310c760</sys_id>
                         <sys_mod_count>0</sys_mod_count>
                         <sys_updated_by>KENNEGA1</sys_updated_by>
-                        <sys_updated_on>2017-07-05 07:38:48</sys_updated_on>
+                        <sys_updated_on>2017-07-25 13:46:27</sys_updated_on>
                         <value>72dc60384f2bb28062b50fbf0310c73c</value>
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>can_subscribe</name>
-                        <portal_section display_value="Created 05/07/2017 08:38:48">dc1436494fb73ec03fb88e401310c781</portal_section>
+                        <portal_section display_value="Created 25/07/2017 14:46:27">bc08cf274f8043003fb88e401310c75d</portal_section>
                         <sys_created_by>KENNEGA1</sys_created_by>
-                        <sys_created_on>2017-07-05 07:38:48</sys_created_on>
-                        <sys_id>d81436494fb73ec03fb88e401310c783</sys_id>
+                        <sys_created_on>2017-07-25 13:46:27</sys_created_on>
+                        <sys_id>b808cf274f8043003fb88e401310c75f</sys_id>
                         <sys_mod_count>0</sys_mod_count>
                         <sys_updated_by>KENNEGA1</sys_updated_by>
-                        <sys_updated_on>2017-07-05 07:38:48</sys_updated_on>
+                        <sys_updated_on>2017-07-25 13:46:27</sys_updated_on>
                         <value>true</value>
                     </sys_portal_preferences>
                     <sys_portal_preferences action="INSERT_OR_UPDATE">
                         <name>renderer</name>
-                        <portal_section display_value="Created 05/07/2017 08:38:48">dc1436494fb73ec03fb88e401310c781</portal_section>
+                        <portal_section display_value="Created 25/07/2017 14:46:27">bc08cf274f8043003fb88e401310c75d</portal_section>
                         <sys_created_by>KENNEGA1</sys_created_by>
-                        <sys_created_on>2017-07-05 07:38:48</sys_created_on>
-                        <sys_id>dc1436494fb73ec03fb88e401310c782</sys_id>
+                        <sys_created_on>2017-07-25 13:46:27</sys_created_on>
+                        <sys_id>bc08cf274f8043003fb88e401310c75e</sys_id>
                         <sys_mod_count>0</sys_mod_count>
                         <sys_updated_by>KENNEGA1</sys_updated_by>
-                        <sys_updated_on>2017-07-05 07:38:48</sys_updated_on>
+                        <sys_updated_on>2017-07-25 13:46:27</sys_updated_on>
                         <value>com.glide.ui.portal.RenderReport</value>
                     </sys_portal_preferences>
                 </related_items_node>

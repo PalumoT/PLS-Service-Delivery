@@ -14,6 +14,12 @@
         <script><![CDATA[var answer = getPermission();
 
 function getPermission(){
+	var task = current.task;
+	
+	if(task.state != 2 && task.state != 3){
+		return false;
+	}
+	
 	var workingDay = new GlideDateTime(current.week_starts_on);
 	var limit = new x_novrp_pls.timecard_helper().getLimit(workingDay);
 
@@ -29,7 +35,7 @@ function getPermission(){
         <sys_created_on>2017-07-04 10:18:27</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>a7ddcaf84fb73ac062b50fbf0310c715</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>36</sys_mod_count>
         <sys_name>x_novrp_pls_time_card</sys_name>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
         <sys_policy/>
@@ -37,7 +43,7 @@ function getPermission(){
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_security_acl_a7ddcaf84fb73ac062b50fbf0310c715</sys_update_name>
         <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-07-17 10:56:00</sys_updated_on>
+        <sys_updated_on>2017-07-25 17:30:22</sys_updated_on>
         <type display_value="record">record</type>
     </sys_security_acl>
 </record_update>

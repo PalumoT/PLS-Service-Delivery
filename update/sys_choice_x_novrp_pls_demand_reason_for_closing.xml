@@ -89,15 +89,15 @@
             <sys_created_on>2017-06-12 13:16:50</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_id>b3d42d754f1bf2403fb88e401310c726</sys_id>
-            <sys_mod_count>19</sys_mod_count>
+            <sys_mod_count>20</sys_mod_count>
             <sys_name>reason_for_closing</sys_name>
             <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
             <sys_policy/>
             <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
             <sys_update_name>sys_choice_x_novrp_pls_demand_reason_for_closing</sys_update_name>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-07-10 17:14:33</sys_updated_on>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-07-25 09:56:56</sys_updated_on>
         </sys_choice_set>
     </sys_choice>
 </record_update>

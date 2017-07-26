@@ -19,7 +19,7 @@
         <new_condition><![CDATA[var answer = canCreate();
 	
 function canCreate(){
-	if(gs.hasRole("x_novrp_pls.service_request_admin")){
+	if(gs.hasRole("x_novrp_pls.service_request_manager")){
 		return false;
 	}
 	
@@ -45,7 +45,7 @@ function canCreate(){
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>85dc2c164fcb72003fb88e401310c77f</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>x_novrp_pls_demand</sys_name>
         <sys_overrides display_value="">global</sys_overrides>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
@@ -53,7 +53,7 @@ function canCreate(){
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_ui_list_control_85dc2c164fcb72003fb88e401310c77f</sys_update_name>
-        <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-07-13 09:14:11</sys_updated_on>
+        <sys_updated_by>paul.galmot</sys_updated_by>
+        <sys_updated_on>2017-07-19 08:06:17</sys_updated_on>
     </sys_ui_list_control>
 </record_update>

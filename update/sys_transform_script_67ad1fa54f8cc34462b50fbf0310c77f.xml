@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_transform_script">
+    <sys_transform_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <map display_value="Process PLS Activities">7c8d1ba54f8cc34462b50fbf0310c74a</map>
+        <order>100</order>
+        <script><![CDATA[(function runTransformScript(source, map, log, target /*undefined onStart*/ ) {
+	var topTask = source.u_top_task;
+	var subservice = source.u_catalog_item;
+	
+	if(topTask && subservice){
+		var logs = "Top Task " + topTask + " subservice " + subservice;
+		var glideTask = new GlideRecord("x_novrp_pls_catalog_item_task");
+		glideTask.addQuery("short_description", topTask);
+		glideTask.addQuery("catalog_item.name", subservice);
+		glideTask.query();
+		
+		if(glideTask.next()){
+			target.top_task = glideTask.getUniqueValue();
+			target.catalog_item = "NULL";
+			target.update();
+			
+			logs += "\nTask " + source.u_short_description + " has been mapped to " +
+				glideTask.short_description + " (" + glideTask.getDisplayValue("catalog_item") + ")";
+			
+		}else{
+			logs += "\nNo mapping to top task " + topTask + " (" + subservice + ")";
+		}
+		
+		gs.info(logs);
+	}
+
+})(source, map, log, target);]]></script>
+        <sys_class_name>sys_transform_script</sys_class_name>
+        <sys_created_by>paul.galmot</sys_created_by>
+        <sys_created_on>2017-07-19 10:13:28</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>67ad1fa54f8cc34462b50fbf0310c77f</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>onAfter</sys_name>
+        <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
+        <sys_update_name>sys_transform_script_67ad1fa54f8cc34462b50fbf0310c77f</sys_update_name>
+        <sys_updated_by>paul.galmot</sys_updated_by>
+        <sys_updated_on>2017-07-19 15:51:10</sys_updated_on>
+        <when>onAfter</when>
+    </sys_transform_script>
+</record_update>

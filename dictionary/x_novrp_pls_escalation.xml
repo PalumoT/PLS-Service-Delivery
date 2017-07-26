@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element extends="x_novrp_pls_incident" label="Escalation" max_length="40" name="x_novrp_pls_escalation" sizeclass="29" type="collection">
+    <element audit="true" extends="x_novrp_pls_incident" label="Escalation" max_length="40" name="x_novrp_pls_escalation" sizeclass="1" type="collection">
         <element label="Created From Issue" max_length="32" name="created_from_issue" reference="x_novrp_pls_issue" type="reference"/>
         <element choice="1" label="Escalation Received By" mandatory="true" max_length="40" name="escalation_received_by" type="choice">
             <choice>

@@ -23,12 +23,12 @@
         <order>100</order>
         <script><![CDATA[var parent = current.top_task.getRefRecord();
 
-while(parent.getTableName() != "x_novrp_pls_service_request"){
+while(parent.getTableName() != "x_novrp_pls_service_request"){	
 	if(parent.top_task.nil()){
 		gs.addInfoMessage("This activity is not related to a Service Request");
 		break;
 	}
-	parent = current.top_task.getRefRecord();
+	parent = parent.top_task.getRefRecord();
 }
 
 action.setRedirectURL(parent);]]></script>
@@ -43,7 +43,7 @@ action.setRedirectURL(parent);]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>76ed39614fffbec03fb88e401310c783</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Go to the related service request</sys_name>
         <sys_overrides/>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
@@ -52,7 +52,7 @@ action.setRedirectURL(parent);]]></script>
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_ui_action_76ed39614fffbec03fb88e401310c783</sys_update_name>
         <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-07-13 12:45:07</sys_updated_on>
+        <sys_updated_on>2017-07-25 14:31:02</sys_updated_on>
         <table>x_novrp_pls_sr_task</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
-        <client_script><![CDATA[function($scope, $rootScope, spUtil, RPService, RMHeatMapService, RMBarChartService, spPreference, $interpolate) {
+        <client_script><![CDATA[function($scope, $rootScope, spUtil, PlsRPService, RMHeatMapService, RMBarChartService, spPreference, $interpolate) {
     var c = this;
     
     $scope.showConfirm = false;
@@ -82,21 +82,21 @@
     }
     
     function confirm() {
-        RPService.confirmPlans($scope.selectedPlanIds).then(function(response) {
+        PLS_RPService.confirmPlans($scope.selectedPlanIds).then(function(response) {
             var text = interpolate(c.data.confirmedMsg);
             closeModalAndTriggerReload(text);
         });
     }
     
     function reject() {
-        RPService.rejectPlans($scope.selectedPlanIds).then(function(response) {
+        PlsRPService.rejectPlans($scope.selectedPlanIds).then(function(response) {
             var text = interpolate(c.data.rejectedMsg);
             closeModalAndTriggerReload(text);
         });
     }
     
     function confirmAndAllocate() {
-        RPService.confirmAndAllocatePlans($scope.selectedPlanIds).then(function(response) {
+        PlsRPService.confirmAndAllocatePlans($scope.selectedPlanIds).then(function(response) {
             var text = interpolate(c.data.confirmedAndAllocatedMsg);
             closeModalAndTriggerReload(text);
         });
@@ -130,7 +130,7 @@
 		$scope.data.activeRequests++;
         
         var timeScaleLabel = c.data.timeScale == 'm' ? c.data.timeScaleMonthlyLabel : c.data.timeScaleWeeklyLabel;
-        RPService.getResourceChartData(c.data.chartType, 'forecasted_utilization', c.data.heatmapGroupType, c.data.timeScale, $scope.selectedPlanIds).then(function(response) {
+        PlsRPService.getResourceChartData(c.data.chartType, 'forecasted_utilization', c.data.heatmapGroupType, c.data.timeScale, $scope.selectedPlanIds).then(function(response) {
 			if ($scope.data.activeRequests > 1) {
 				$scope.chartOptions = null;
 				decrementActiveRequests();
@@ -418,15 +418,15 @@
         <sys_created_on>2017-06-16 10:57:07</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>444b658b4f5b7a4062b50fbf0310c715</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>NVS - PLS Resource Availability</sys_name>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sp_widget_444b658b4f5b7a4062b50fbf0310c715</sys_update_name>
-        <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-07-13 14:45:43</sys_updated_on>
+        <sys_updated_by>paul.galmot</sys_updated_by>
+        <sys_updated_on>2017-07-20 09:45:39</sys_updated_on>
         <template><![CDATA[<now-message key="Capacity" value="${Capacity}"></now-message>
 <now-message key="Resource" value="${Resource}"></now-message>
 <now-message key="Work Hours" value="${Work Hours}"></now-message>
@@ -448,7 +448,7 @@
                 </ul>
             </span>
           	<span class="settings">
-            	<a uib-popover-template="'ppsrpPortalSettings'" popover-placement="bottom-right" popover-trigger="outsideClick" class="panel-button dropdown-toggle settings-icon" type="button">
+            	<a uib-popover-template="'nbs-pls-portal_settings'" popover-placement="bottom-right" popover-trigger="outsideClick" class="panel-button dropdown-toggle settings-icon" type="button">
                   <span class="sr-only">${Settings}</span>
                   <i class="fa fa-sliders"></i>
               	</a>

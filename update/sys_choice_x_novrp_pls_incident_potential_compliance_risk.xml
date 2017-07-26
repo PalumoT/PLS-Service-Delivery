@@ -49,7 +49,7 @@
             <sys_created_on>2017-07-14 09:36:19</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
             <sys_id>6145694c4f448b0462b50fbf0310c77a</sys_id>
-            <sys_mod_count>8</sys_mod_count>
+            <sys_mod_count>9</sys_mod_count>
             <sys_name>potential_compliance_risk</sys_name>
             <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
             <sys_policy/>
@@ -57,7 +57,7 @@
             <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
             <sys_update_name>sys_choice_x_novrp_pls_incident_potential_compliance_risk</sys_update_name>
             <sys_updated_by>GALMOPA1</sys_updated_by>
-            <sys_updated_on>2017-07-14 09:37:22</sys_updated_on>
+            <sys_updated_on>2017-07-25 09:56:45</sys_updated_on>
         </sys_choice_set>
     </sys_choice>
 </record_update>

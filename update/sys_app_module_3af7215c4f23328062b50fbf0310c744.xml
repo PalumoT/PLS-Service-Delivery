@@ -6,7 +6,7 @@
         <assessment/>
         <content_page/>
         <device_type/>
-        <filter table="sys_user_grmember">group=5ba5c9a44fdb3e003fb88e401310c78a^EQ<item display_table="sys_user_group" display_value="PLS - Demand Submitter" endquery="false" field="group" goto="false" newquery="false" operator="=" or="false" value="5ba5c9a44fdb3e003fb88e401310c78a"/>
+        <filter table="sys_user_grmember">group=5ba5c9a44fdb3e003fb88e401310c78a^EQ<item endquery="false" field="group" goto="false" newquery="false" operator="=" or="false" value="5ba5c9a44fdb3e003fb88e401310c78a"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter>
         <hint/>

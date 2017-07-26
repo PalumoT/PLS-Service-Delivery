@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="requested_allocation" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>end_date</element>
+            <list_id display_value="requested_allocation" element="NULL" name="requested_allocation" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f29f7a074f627a00b734260f0310c73d</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>abhinava.potla</sys_created_by>
+            <sys_created_on>2017-05-10 10:18:35</sys_created_on>
+            <sys_id>4f9f7a074f627a00b734260f0310c73d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>abhinava.potla</sys_updated_by>
+            <sys_updated_on>2017-05-10 10:18:35</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>fte</element>
+            <list_id display_value="requested_allocation" element="NULL" name="requested_allocation" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f29f7a074f627a00b734260f0310c73d</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>abhinava.potla</sys_created_by>
+            <sys_created_on>2017-05-10 10:18:35</sys_created_on>
+            <sys_id>c39f7a074f627a00b734260f0310c73e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>abhinava.potla</sys_updated_by>
+            <sys_updated_on>2017-05-10 10:18:35</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>requested_cost</element>
+            <list_id display_value="requested_allocation" element="NULL" name="requested_allocation" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f29f7a074f627a00b734260f0310c73d</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>abhinava.potla</sys_created_by>
+            <sys_created_on>2017-05-10 10:18:35</sys_created_on>
+            <sys_id>479f7a074f627a00b734260f0310c73e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>abhinava.potla</sys_updated_by>
+            <sys_updated_on>2017-05-10 10:18:35</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>requested_hours</element>
+            <list_id display_value="requested_allocation" element="NULL" name="requested_allocation" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f29f7a074f627a00b734260f0310c73d</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>abhinava.potla</sys_created_by>
+            <sys_created_on>2017-05-10 10:18:35</sys_created_on>
+            <sys_id>c79f7a074f627a00b734260f0310c73e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>abhinava.potla</sys_updated_by>
+            <sys_updated_on>2017-05-10 10:18:35</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>resource_plan</element>
+            <list_id display_value="requested_allocation" element="NULL" name="requested_allocation" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f29f7a074f627a00b734260f0310c73d</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>abhinava.potla</sys_created_by>
+            <sys_created_on>2017-05-10 10:18:35</sys_created_on>
+            <sys_id>4b9f7a074f627a00b734260f0310c73e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>abhinava.potla</sys_updated_by>
+            <sys_updated_on>2017-05-10 10:18:35</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>start_date</element>
+            <list_id display_value="requested_allocation" element="NULL" name="requested_allocation" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f29f7a074f627a00b734260f0310c73d</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>abhinava.potla</sys_created_by>
+            <sys_created_on>2017-05-10 10:18:35</sys_created_on>
+            <sys_id>cb9f7a074f627a00b734260f0310c73e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>abhinava.potla</sys_updated_by>
+            <sys_updated_on>2017-05-10 10:18:35</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_domain</element>
+            <list_id display_value="requested_allocation" element="NULL" name="requested_allocation" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">f29f7a074f627a00b734260f0310c73d</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>abhinava.potla</sys_created_by>
+            <sys_created_on>2017-05-10 10:18:35</sys_created_on>
+            <sys_id>4f9f7a074f627a00b734260f0310c73e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>abhinava.potla</sys_updated_by>
+            <sys_updated_on>2017-05-10 10:18:35</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>requested_allocation</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>paul.galmot</sys_created_by>
+            <sys_created_on>2017-07-20 10:18:56</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d09860064f40874462b50fbf0310c703</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>requested_allocation</sys_name>
+            <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
+            <sys_update_name>sys_ui_list_requested_allocation_null</sys_update_name>
+            <sys_updated_by>paul.galmot</sys_updated_by>
+            <sys_updated_on>2017-07-20 10:18:56</sys_updated_on>
+            <sys_user display_value="Paul Galmot">7b8c0fd34feaea40b734260f0310c71e</sys_user>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

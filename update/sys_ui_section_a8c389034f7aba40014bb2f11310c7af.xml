@@ -265,16 +265,16 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>a8c389034f7aba40014bb2f11310c7af</sys_id>
-            <sys_mod_count>2</sys_mod_count>
+            <sys_mod_count>3</sys_mod_count>
             <sys_name>x_novrp_pls_req_item</sys_name>
             <sys_overrides/>
             <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
             <sys_policy/>
-            <sys_replace_on_upgrade>true</sys_replace_on_upgrade>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
             <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
             <sys_update_name>sys_ui_section_a8c389034f7aba40014bb2f11310c7af</sys_update_name>
-            <sys_updated_by>paul.galmot</sys_updated_by>
-            <sys_updated_on>2017-07-12 08:50:09</sys_updated_on>
+            <sys_updated_by>GALMOPA1</sys_updated_by>
+            <sys_updated_on>2017-07-25 09:56:54</sys_updated_on>
             <sys_user/>
             <title>false</title>
             <view display_value="Pre SLA" name="pre_sla">0403c2be4f6af600b734260f0310c721</view>

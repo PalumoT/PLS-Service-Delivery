@@ -23,7 +23,7 @@
         <is_rest>false</is_rest>
         <message/>
         <name>NVS - Reminder on non-compliant SR</name>
-        <order>100</order>
+        <order>120</order>
         <priority>100</priority>
         <rest_method/>
         <rest_method_text/>
@@ -49,7 +49,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>cb260e544fe3328062b50fbf0310c74a</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name>NVS - Reminder on non-compliant SR</sys_name>
         <sys_overrides/>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
@@ -58,7 +58,7 @@
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_script_cb260e544fe3328062b50fbf0310c74a</sys_update_name>
         <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-07-13 12:25:31</sys_updated_on>
+        <sys_updated_on>2017-07-25 15:47:37</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

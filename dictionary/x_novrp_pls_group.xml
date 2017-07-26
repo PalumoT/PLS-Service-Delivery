@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_user_group" label="Group" max_length="40" name="x_novrp_pls_group" type="collection"/>
+</database>

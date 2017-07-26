@@ -7,7 +7,7 @@
         <action_insert>true</action_insert>
         <action_query>false</action_query>
         <action_update>true</action_update>
-        <active>true</active>
+        <active>false</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <change_fields>false</change_fields>
@@ -23,7 +23,7 @@
         <is_rest>false</is_rest>
         <message/>
         <name>NVS - Update Parent Actuals</name>
-        <order>100</order>
+        <order>140</order>
         <priority>100</priority>
         <rest_method/>
         <rest_method_text/>
@@ -44,10 +44,7 @@
 		}
 		
 		var aggregate = {
-			estimated_efforts_hours: 0,
 			actual_efforts_hours: 0,
-			resource_plan_cost: 0,
-			estimated_cost_dollars: 0
 		};
 		
 		var glideTask = new GlideAggregate("x_novrp_pls_task");
@@ -57,7 +54,6 @@
 		glideTask.query();
 		
 		if(glideTask.next()){
-			aggregate.actual_cost_dollars = glideTask.getAggregate("SUM", "actual_cost_dollars");
 			aggregate.actual_efforts_hours = glideTask.getAggregate("SUM", "actual_efforts_hours");
 		}
 		
@@ -71,7 +67,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>fdfb157e4f173a4062b50fbf0310c764</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>NVS - Update Parent Actuals</sys_name>
         <sys_overrides/>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
@@ -80,7 +76,7 @@
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_script_fdfb157e4f173a4062b50fbf0310c764</sys_update_name>
         <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-07-13 12:29:09</sys_updated_on>
+        <sys_updated_on>2017-07-25 16:21:28</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

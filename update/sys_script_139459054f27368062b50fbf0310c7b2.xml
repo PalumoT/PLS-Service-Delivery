@@ -13,13 +13,13 @@
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
         <collection>x_novrp_pls_catalog_item_task</collection>
-        <condition>current.operation() == "delete" || current.estimated_price_dollars.changes();</condition>
+        <condition>current.operation() == "delete" || current.estimated_price_dollars.changes() || current.top_task.changes()</condition>
         <description>This BR calculates the "Estimated Price (Dollars)" for the related catalog item based on  the aggregation of the "Estimated  Price (Dollars)" of catalog item tasks</description>
         <execute_function>false</execute_function>
         <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
-        <name>NVS - Calculate Parent Estimated Price</name>
+        <name>NVS - Calc. Est. Price [Top Task]</name>
         <order>50</order>
         <priority>100</priority>
         <rest_method/>
@@ -29,18 +29,28 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-	var item = current.catalog_item.getRefRecord();
-	var glideTask = new GlideAggregate("x_novrp_pls_catalog_item_task");
-	glideTask.addQuery("catalog_item", item.getUniqueValue());
-	glideTask.addAggregate("SUM", "estimated_price_dollars");
-	glideTask.setGroup(false);
-	glideTask.query();
 	
-	if(glideTask.next()){
-		item.estimated_price_dollars = glideTask.getAggregate("SUM", "estimated_price_dollars");
+	calculateEstimatedPrice(previous);
+	calculateEstimatedPrice(current);
+	
+	function calculateEstimatedPrice(task){
+		if(!task.top_task){
+			return;
+		}
+		
+		var parent = task.top_task.getRefRecord();
+		var glideTask = new GlideAggregate("x_novrp_pls_catalog_item_task");
+		glideTask.addQuery("top_task", parent.getUniqueValue());
+		glideTask.addAggregate("SUM", "estimated_price_dollars");
+		glideTask.setGroup(false);
+		glideTask.query();
+		
+		if(glideTask.next()){
+			parent.estimated_price_dollars = glideTask.getAggregate("SUM", "estimated_price_dollars");
+			parent.update();
+		}
 	}
 	
-	item.update();
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>GALMOPA1</sys_created_by>
@@ -49,16 +59,16 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>139459054f27368062b50fbf0310c7b2</sys_id>
-        <sys_mod_count>14</sys_mod_count>
-        <sys_name>NVS - Calculate Parent Estimated Price</sys_name>
+        <sys_mod_count>29</sys_mod_count>
+        <sys_name>NVS - Calc. Est. Price [Top Task]</sys_name>
         <sys_overrides/>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_script_139459054f27368062b50fbf0310c7b2</sys_update_name>
-        <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-07-13 11:33:58</sys_updated_on>
+        <sys_updated_by>paul.galmot</sys_updated_by>
+        <sys_updated_on>2017-07-19 14:20:38</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

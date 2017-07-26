@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="Imp Tmpl X Novrp Pls Group" max_length="40" name="u_imp_tmpl_x_novrp_pls_group" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Active" max_length="40" name="u_active" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="40" name="u_description" type="string"/>
+        <element attributes="import_attribute_name=Granted by,edge_encryption_enabled=true" label="Granted by" max_length="40" name="u_granted_by" type="string"/>
+        <element attributes="import_attribute_name=Group,edge_encryption_enabled=true" label="Group" max_length="40" name="u_group" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Group email" max_length="40" name="u_group_email" type="string"/>
+        <element attributes="import_attribute_name=Inherits,edge_encryption_enabled=true" label="Inherits" max_length="40" name="u_inherits" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Manager" max_length="40" name="u_manager" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" max_length="40" name="u_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Parent" max_length="40" name="u_parent" type="string"/>
+        <element attributes="import_attribute_name=Role,edge_encryption_enabled=true" label="Role" max_length="40" name="u_role" type="string"/>
+    </element>
+</database>

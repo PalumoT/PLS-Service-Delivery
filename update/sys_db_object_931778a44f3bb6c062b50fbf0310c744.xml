@@ -8,7 +8,7 @@
         <configuration_access>false</configuration_access>
         <create_access>false</create_access>
         <create_access_controls>true</create_access_controls>
-        <delete_access>false</delete_access>
+        <delete_access>true</delete_access>
         <extension_model/>
         <is_extendable>true</is_extendable>
         <label>Incident</label>
@@ -23,15 +23,15 @@
         <sys_created_on>2017-07-03 09:17:52</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>931778a44f3bb6c062b50fbf0310c744</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Incident</sys_name>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_db_object_931778a44f3bb6c062b50fbf0310c744</sys_update_name>
-        <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-07-03 09:45:44</sys_updated_on>
+        <sys_updated_by>paul.galmot</sys_updated_by>
+        <sys_updated_on>2017-07-19 08:45:50</sys_updated_on>
         <update_access>false</update_access>
         <user_role display_value="x_novrp_pls.incident_user" name="x_novrp_pls.incident_user">ff87b0e44f3bb6c062b50fbf0310c782</user_role>
         <ws_access>true</ws_access>

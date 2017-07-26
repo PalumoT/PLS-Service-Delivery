@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element extends="x_novrp_pls_incident" label="Issue" max_length="40" name="x_novrp_pls_issue" sizeclass="16" type="collection">
+    <element audit="true" extends="x_novrp_pls_incident" label="Issue" max_length="40" name="x_novrp_pls_issue" sizeclass="5" type="collection">
         <element choice="1" label="Issue Criteria" mandatory="true" max_length="40" name="issue_criteria" type="choice">
             <choice>
                 <element label="Collaboration / Communication" value="1"/>

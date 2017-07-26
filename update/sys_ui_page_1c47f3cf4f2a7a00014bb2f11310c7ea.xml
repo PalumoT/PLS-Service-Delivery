@@ -34,7 +34,6 @@
 response.sendRedirect(task_table + "_list.do");
 
 function copyRecord(table, sys_id){
-	gs.info(table);
 	if(counter < 1){
 		gs.addErrorMessage("Please insert a value greater than 0");
 		return;
@@ -117,7 +116,7 @@ function getTables(table){
         <sys_created_on>2017-05-10 14:27:38</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>1c47f3cf4f2a7a00014bb2f11310c7ea</sys_id>
-        <sys_mod_count>43</sys_mod_count>
+        <sys_mod_count>44</sys_mod_count>
         <sys_name>multiple_insert</sys_name>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
         <sys_policy/>
@@ -125,6 +124,6 @@ function getTables(table){
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_ui_page_1c47f3cf4f2a7a00014bb2f11310c7ea</sys_update_name>
         <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-07-13 09:29:46</sys_updated_on>
+        <sys_updated_on>2017-07-25 14:18:54</sys_updated_on>
     </sys_ui_page>
 </record_update>

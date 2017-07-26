@@ -55,7 +55,7 @@
         <order>100</order>
         <push_message_only>false</push_message_only>
         <recipient_fields/>
-        <recipient_groups name="PLS Gxp Team">80ee5a224f6f7e803fb88e401310c7db</recipient_groups>
+        <recipient_groups name="PLS Gxp Team">6d5382af4f80cf4462b50fbf0310c71e</recipient_groups>
         <recipient_users/>
         <reply_to/>
         <send_self>true</send_self>
@@ -70,7 +70,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>158ed6ee4f2f7e803fb88e401310c731</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>NVS - Inform GxP Team</sys_name>
         <sys_overrides/>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
@@ -79,7 +79,7 @@
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sysevent_email_action_158ed6ee4f2f7e803fb88e401310c731</sys_update_name>
         <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-07-17 11:17:29</sys_updated_on>
+        <sys_updated_on>2017-07-25 12:38:07</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>

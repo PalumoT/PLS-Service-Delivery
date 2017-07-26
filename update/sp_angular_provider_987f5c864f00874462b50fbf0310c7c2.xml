@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_angular_provider">
+    <sp_angular_provider action="INSERT_OR_UPDATE">
+        <name>PlsRPService</name>
+        <script><![CDATA[function RPService($http) {
+    
+    return {
+        
+        getPlans: function(encodedQuery, maxPlans) {
+            if (!maxPlans)
+                maxPlans = 50;
+            var fields = 'sysparm_fields=number%2Csys_id%2Cgroup_resource%2Cresource_type%2Cuser_resource%2Ctask%2Cplanned_hours%2Cstate%2Cshort_description%2Ctask.priority%2Ctask.short_description';
+            var url = '/api/now/table/x_novrp_pls_resource_plan?' + fields + '&sysparm_limit=' + maxPlans + '&sysparm_display_value=all&sysparm_exclude_reference_link=true&sysparm_query=' + encodedQuery + '^ORDERBYtask.priority';
+            return $http.get(url);
+        },
+        
+        allocatePlan: function(sysId) {
+            return $http({
+                url: '/resource_management_processor.do',
+                method: 'post',
+                params: {
+                    sysparm_name: 'allocatePlan',
+                    sysparm_processor: 'ResourcePortalService',
+                    sysparm_sys_id: sysId
+                }
+            });
+        },
+        
+        cancelPlan: function(sysId) {
+            return $http({
+                url: '/resource_management_processor.do',
+                method: 'post',
+                params: {
+                    sysparm_name: 'cancelPlan',
+                    sysparm_processor: 'ResourcePortalService',
+                    sysparm_sys_id: sysId
+                }
+            });
+        },
+        
+        confirmPlans: function(plans) {
+            return $http({
+                url: '/resource_management_processor.do',
+                method: 'post',
+                params: {
+                    sysparm_name: 'confirmPlans',
+                    sysparm_processor: 'ResourcePortalService',
+                    sysparm_include_plans: plans.join(',')
+                }
+            });
+        },
+        
+        confirmAndAllocatePlans: function(plans) {
+            return $http({
+                url: '/resource_management_processor.do',
+                method: 'post',
+                params: {
+                    sysparm_name: 'confirmAndAllocatePlans',
+                    sysparm_processor: 'ResourcePortalService',
+                    sysparm_include_plans: plans.join(',')
+                }
+            });
+        },
+        
+        rejectPlans: function(plans) {
+            return $http({
+                url: '/resource_management_processor.do',
+                method: 'post',
+                params: {
+                    sysparm_name: 'rejectPlans',
+                    sysparm_processor: 'ResourcePortalService',
+                    sysparm_include_plans: plans.join(',')
+                }
+            });
+        },
+        
+        getResourceChartData: function(chartType, chartSubType, heatmapGroupType, timeScale, selectedPlans) {
+            return $http({
+                url: '/resource_management_processor.do',
+                method: 'get',
+                params: {
+                    sysparm_name: 'getChartData',
+                    sysparm_processor: 'ResourcePortalService',
+                    sysparm_chart_type: chartType,
+                    sysparm_chart_sub_type: chartSubType,
+                    sysparm_heat_map_group_type: heatmapGroupType,
+                    sysparm_time_scale: timeScale,
+                    sysparm_include_plans: selectedPlans.join(',')
+                }
+            });
+        },
+
+        getTaskData: function(taskSysId) {
+            return $http({
+                url: '/resource_management_processor.do',
+                method: 'get',
+                params: {
+                    sysparm_name: 'getTaskData',
+                    sysparm_processor: 'ResourcePortalService',
+                    sysparm_sys_id: taskSysId
+                }
+            });
+        }
+    };
+}]]></script>
+        <sys_class_name>sp_angular_provider</sys_class_name>
+        <sys_created_by>paul.galmot</sys_created_by>
+        <sys_created_on>2017-07-20 09:39:17</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>987f5c864f00874462b50fbf0310c7c2</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>PlsRPService</sys_name>
+        <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
+        <sys_update_name>sp_angular_provider_987f5c864f00874462b50fbf0310c7c2</sys_update_name>
+        <sys_updated_by>paul.galmot</sys_updated_by>
+        <sys_updated_on>2017-07-20 09:45:42</sys_updated_on>
+        <type>factory</type>
+    </sp_angular_provider>
+</record_update>

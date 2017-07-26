@@ -8,7 +8,7 @@
         <configuration_access>false</configuration_access>
         <create_access>false</create_access>
         <create_access_controls>true</create_access_controls>
-        <delete_access>false</delete_access>
+        <delete_access>true</delete_access>
         <extension_model/>
         <is_extendable>false</is_extendable>
         <label>Time Sheet</label>
@@ -23,15 +23,15 @@
         <sys_created_on>2017-07-07 13:52:19</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>a0ac92b94f7bbec062b50fbf0310c7b0</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Time Sheet</sys_name>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_db_object_a0ac92b94f7bbec062b50fbf0310c7b0</sys_update_name>
-        <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-07-07 13:52:19</sys_updated_on>
+        <sys_updated_by>paul.galmot</sys_updated_by>
+        <sys_updated_on>2017-07-19 08:44:53</sys_updated_on>
         <update_access>false</update_access>
         <user_role display_value="x_novrp_pls.time_sheet_user" name="x_novrp_pls.time_sheet_user">1fbc1ef54f7bbec062b50fbf0310c7ba</user_role>
         <ws_access>true</ws_access>

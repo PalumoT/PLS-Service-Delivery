@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element audit="true" extends="x_novrp_pls_task" label="Service Request" max_length="40" name="x_novrp_pls_service_request" sizeclass="102" type="collection">
+    <element audit="true" extends="x_novrp_pls_task" label="Service Request" max_length="40" name="x_novrp_pls_service_request" sizeclass="32" type="collection">
         <element label="Actual Close Date" max_length="40" name="actual_close_date" type="glide_date"/>
         <element label="Brand" max_length="32" name="brand" reference="x_novrp_pls_brand" type="reference"/>
         <element label="Subservice" mandatory="true" max_length="32" name="catalog_item" reference="x_novrp_pls_catalog_item" reference_qual="javascript: new x_novrp_pls.sr_helper().filterCatalogItems(current);" type="reference" use_reference_qualifier="advanced"/>
@@ -12,7 +12,7 @@
                 <element label="No" sequence="2" value="no"/>
             </choice>
         </element>
-        <element label="Lead Location" max_length="32" name="lead_location" reference="cmn_location" reference_qual="company=36f1db574fa97e403fb88e401310c7ea^EQ" reference_qual_condition="company=36f1db574fa97e403fb88e401310c7ea^EQ" type="reference"/>
+        <element label="Lead Location" max_length="32" name="lead_location" reference="x_novrp_pls_location" reference_qual="company=36f1db574fa97e403fb88e401310c7ea^EQ" reference_qual_condition="company=36f1db574fa97e403fb88e401310c7ea^EQ" type="reference"/>
         <element default="0" label="Number of scope change" max_length="40" name="number_of_scope_change" read_only="true" type="integer"/>
         <element label="Practice" max_length="32" name="practice" reference="x_novrp_pls_practice" type="reference"/>
         <element label="Requester" max_length="32" name="requester" reference="sys_user" type="reference"/>

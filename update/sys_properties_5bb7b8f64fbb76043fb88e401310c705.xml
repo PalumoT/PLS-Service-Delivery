@@ -13,7 +13,7 @@
         <sys_created_on>2017-07-10 09:04:58</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>5bb7b8f64fbb76043fb88e401310c705</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>x_novrp_pls.group.practice_ops_manager</sys_name>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
         <sys_policy/>
@@ -21,9 +21,9 @@
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_properties_5bb7b8f64fbb76043fb88e401310c705</sys_update_name>
         <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-07-10 09:07:30</sys_updated_on>
+        <sys_updated_on>2017-07-25 10:27:51</sys_updated_on>
         <type>string</type>
-        <value>91d445644fdb3e003fb88e401310c775</value>
+        <value>e55382af4f80cf4462b50fbf0310c703</value>
         <write_roles/>
     </sys_properties>
     <sys_translated_text action="delete_multiple" query="documentkey=5bb7b8f64fbb76043fb88e401310c705"/>

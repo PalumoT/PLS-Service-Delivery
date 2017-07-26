@@ -3,7 +3,7 @@
     <sys_ui_action action="INSERT_OR_UPDATE">
         <action_name>move_to_confirmed</action_name>
         <active>true</active>
-        <client>false</client>
+        <client>true</client>
         <comments>This action enables to move state to "Confirmed"</comments>
         <condition>current.canWrite() &amp;&amp; current.state == 3;</condition>
         <form_action>true</form_action>
@@ -19,13 +19,43 @@
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <name>Move to Confirmed</name>
-        <onclick/>
+        <onclick>confirmDemand()</onclick>
         <order>100</order>
-        <script><![CDATA[current.sla_status = 'sla_agreed';
-current.state = 4;
-current.update();
+        <script><![CDATA[function confirmDemand(){
+	var cancel = false;
+	g_form.setValue("sla_status", 'sla_agreed');
+	g_form.hideAllFieldMsgs('error');
+	
+	if(g_form.getValue("sla_id") == ""){
+		g_form.setMandatory("sla_id", true);
+		g_form.showFieldMsg("sla_id",
+							"Please provide a value",
+							'error');
+		cancel = true;
+	}
+	
+	if(cancel){
+		g_tabs2Sections.setActive(3);
+		return false;
+	}
 
-action.setRedirectURL(current);]]></script>
+	gsftSubmit(null, g_form.getFormElement(), 'move_to_confirmed');
+}
+
+//Code that runs without 'onclick'
+//Ensure call to server-side function with no browser errors
+if(typeof window == 'undefined'){
+	runBusRuleCode();
+}
+
+//Server-side function
+function runBusRuleCode(){
+	current.sla_status = 'sla_agreed';
+	current.state = 4;
+	current.update();
+
+	action.setRedirectURL(current);
+}]]></script>
         <show_insert>false</show_insert>
         <show_multiple_update>false</show_multiple_update>
         <show_query>false</show_query>
@@ -37,7 +67,7 @@ action.setRedirectURL(current);]]></script>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f55e20754f93f2403fb88e401310c70e</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>Move to Confirmed</sys_name>
         <sys_overrides/>
         <sys_package display_value="Novartis  PLS Service Delivery Management" source="x_novrp_pls">00c705cf4f9a724462b50fbf0310c7ad</sys_package>
@@ -46,7 +76,7 @@ action.setRedirectURL(current);]]></script>
         <sys_scope display_value="Novartis  PLS Service Delivery Management">00c705cf4f9a724462b50fbf0310c7ad</sys_scope>
         <sys_update_name>sys_ui_action_f55e20754f93f2403fb88e401310c70e</sys_update_name>
         <sys_updated_by>GALMOPA1</sys_updated_by>
-        <sys_updated_on>2017-07-13 12:47:53</sys_updated_on>
+        <sys_updated_on>2017-07-25 10:30:43</sys_updated_on>
         <table>x_novrp_pls_demand</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

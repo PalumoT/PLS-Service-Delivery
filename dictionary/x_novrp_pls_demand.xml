@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element audit="true" extends="x_novrp_pls_task" label="Demand" max_length="40" name="x_novrp_pls_demand" sizeclass="50" type="collection">
+    <element audit="true" extends="x_novrp_pls_task" label="Demand" max_length="40" name="x_novrp_pls_demand" sizeclass="13" type="collection">
         <element label="Brand" max_length="32" name="brand" reference="x_novrp_pls_brand" reference_qual="javascript:&quot;franchise=&quot; + current.franchise;" type="reference" use_reference_qualifier="advanced"/>
         <element label="Business Unit" mandatory="true" max_length="32" name="business_unit" reference="x_novrp_pls_business_unit" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
         <element label="Country" mandatory="true" max_length="32" name="country" reference="x_novrp_pls_country" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
